@@ -1,4 +1,37 @@
-.main{
+/* includes/footer all  css */
 
-    background-color: darkblue;
+.footer {
+    /* position: absolute;
+    width: 1440px;
+    height: 575px;
+    left: 0px;
+    top: 2345px; */
+    background: #F7F7F7
+}
+
+.col-A {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.titulo-col {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.item-col {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 }

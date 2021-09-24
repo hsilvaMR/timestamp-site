@@ -8,9 +8,9 @@
 
 <body>
 
-    @include('site/includes/header')
+    {{-- @include('site/includes/header')
     @yield('menu')
-    @yield('home')
+    @yield('home') --}}
 
     @include('site/includes/footer')
 

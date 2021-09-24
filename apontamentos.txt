@@ -1,0 +1,9 @@
+atalhos importante{
+
+ save all file => CRTL + G 
+ procurar ficheiros => CRTL + T 
+
+
+
+}
+

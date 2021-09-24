@@ -1,5 +1,2 @@
 
-alert('test js file')
-
-
-
+// alert('test js file')
