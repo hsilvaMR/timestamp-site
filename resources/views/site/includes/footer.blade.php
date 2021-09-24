@@ -40,6 +40,17 @@
             <img src="{{ asset('img/Footer_logos.png') }}" class="img-fluid" alt="">
         </div>
 
+        {{--  sobre a mredis--}}
+        <div class="d-flex bd-highlight mb-3 mt-3">
+            <div class="me-auto p-2 bd-highlight  titulo-col ">Mredis, Lda.</div>
+            <div class="p-2 bd-highlight item-col">Sobre</div>
+            <div class="p-2 bd-highlight item-col">Mapa do site</div>
+            <div class="p-2 bd-highlight item-col">Termos e Condições</div>
+            <div class="p-2 bd-highlight item-col">Politica de Privacidade</div>
+            <div class="p-2 bd-highlight item-col">Contactos</div>
+        </div>
+
+
     </div>
 
 </div>
