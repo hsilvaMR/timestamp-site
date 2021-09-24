@@ -2,6 +2,8 @@
 
 <div class="container-fluid header">
 
+    {{-- <img src="{{ asset('img/headerBackground.png') }}" class="img-fluid" alt=""> --}}
+
     <div class="container">
 
         <div class="d-flex bd-highlight mb-3">
