@@ -4,10 +4,69 @@
 
 @section('home')
 
-<div class="container-fluid home">
+<div class="container-fluid home ">
 
     <div class="container">
 
+        {{-- row-1 --}}
+        <div class="row mt-5  justify-content-center">
+
+            {{-- row1 coluna 1  --}}
+            <div class=" col coluna1">
+                <img src="{{ asset('img/row1-col1.png') }}" class="img-fluid" alt="">
+            </div>
+
+            {{--row1  coluna 2  --}}
+            <div class=" col coluna2">
+
+                <div class="d-flex flex-column  justify-content-center mb-1">
+                    <div class="p-2 bd-highlight titulo-col mt-4">
+                        Quando, Onde e Como precisar!
+                    </div>
+
+                    <div class="p-2 bd-highlight item-col">
+                        Os serviços da Time Stamp Solutions (Selos Temporais) fazem-se valer de chaves
+                        públicas e fontes de tempo credíveis para disponibilizar selos temporais
+                        fiáveis, de acordo com os padrões internacionais.
+                    </div>
+
+                    <div class="p-2 bd-highlight item-col">
+                        Um serviço com o objetivo de validação cronológica para disponibilizar selos
+                        temporais para uso como suporte às assinaturas eletrónicas, conforme Diretiva
+                        1999/93/CE do Parlamento Europeu e do
+                        Conselho de 13 de Dezembro de 1999, do Decreto Lei 290-D/99, e demais legislação nacional
+                        aplicável.
+                    </div>
+
+                    <div class="p-2 bd-highlight item-col">
+                        Contudo, os selos temporais podem também ser utilizados para qualquer outro objetivo que
+                        requeira prova de que determinado(s) dado(s) existiu(ram) numa determinada data/hora.
+                    </div>
+
+                    <div class="p-2 bd-highlight item-col">
+                        Os selos temporais emitidos pelos nossos
+                        serviços Time Stamp Solutions respeitam e implementam os seguintes standards:
+                    </div>
+
+                    <div class="p-2 bd-highlight item-col">
+                        - ETSI TS 102.023: Electronic Signatures and Infrastructures (ESI); Policy requirements
+                        for
+                        time-stamping authorities
+                        - RFC 3628: Requirements for Time-Stamping Authorities
+                    </div>
+
+                    <div class="p-2 bd-highlight item-col">
+                        A Política e Práticas de Certificação de Validação Cronológica e a Declaração de Práticas de
+                        Certificação (DPC) da
+                        Time Stamp Solutions poderão ser consultadas em: http://www.timestampsolutions.pt/pt/dpc
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        {{-- row-2 --}}
         <div class="row mt-5  justify-content-center">
 
             {{-- coluna 1  --}}
