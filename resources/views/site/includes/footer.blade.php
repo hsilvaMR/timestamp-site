@@ -4,6 +4,7 @@
         <div class="row mt-5  justify-content-center">
             <div class="col col-A">
                 {{-- {!! trans('footerWords.timestampSolution') !!} --}}
+                <img src="{{ asset('img/logoFoter.png') }}" class="img-fluid" alt="">
                 Quando, Onde e Como Precisar!
             </div>
 

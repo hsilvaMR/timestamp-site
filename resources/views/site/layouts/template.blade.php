@@ -8,8 +8,8 @@
 
 <body>
 
-    {{-- @include('site/includes/header')--}}
-    {{-- @yield('menu-header') --}}
+    @include('site/includes/header')
+    @yield('menu-header')
     @yield('home')
 
     @include('site/includes/footer')
