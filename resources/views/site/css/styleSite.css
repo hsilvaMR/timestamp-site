@@ -1,11 +1,51 @@
 /* includes/header all  css */
 
 .header {
-    background-image: url("{{ asset('img/headerBackground.png') }}");
+    /* background-image: url("{{asset('img/headerBackground.png')}}"); */
+    background-image: url("/img/headerBackground.png");
     background-repeat: no-repeat;
+    height: 651px;
+    width: auto;
     background-size: cover;
+    /* position: absolute; */
     /* background-attachment: fixed; */
 }
+
+.loginArea {
+    cursor: pointer;
+}
+
+.logoHeader {
+    cursor: pointer;
+}
+
+
+/* .row-descobrir-registe { */
+
+
+/* box-shadow: #F7F7F7 2px 2px; */
+
+
+/* position: absolute !important; */
+
+
+/* left: 0px !important; */
+
+
+/* top: 0px !important; */
+
+
+/* z-index: 1 !important; */
+
+
+/* } */
+
+.bt-register {
+    cursor: pointer !important;
+    background-color: #F78065 !important;
+    color: #F7F7F7 !important;
+}
+
 
 /* includes/footer all  css */
 
@@ -46,4 +86,71 @@
     cursor: pointer;
 }
 
+
 /* home all  css */
+
+.content-zIndex {
+    background-color: white !important;
+    /* box-shadow: #F7F7F7 15px 15px 15px; */
+    position: relative !important;
+    /* position: absolute; */
+    left: 0px !important;
+    top: 0px !important;
+    z-index: 99 !important;
+    transform: translateY(-120px);
+    /* transform: translateY(150px); */
+}
+
+.font-title-header {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    /* .font-title-box1  */
+}
+
+.font-words-body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 500; */
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.color-rose-words {
+    font-style: normal !important;
+    color: #F78065;
+}
+
+.font-title-box2 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.font-body-box2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 500; */
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.font-body-box2-color {
+    color: #F78065;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 500px; */
+    font-weight: bold;
+    font-size: 20px;
+    /* line-height: 24px; */
+}

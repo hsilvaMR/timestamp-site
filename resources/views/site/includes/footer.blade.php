@@ -1,4 +1,4 @@
-<div class="container-fluid footer">
+<div class="container-fluid footer border-top border-2">
 
     <div class="container">
         <div class="row mt-5  justify-content-center">

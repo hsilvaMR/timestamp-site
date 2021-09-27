@@ -1,9 +1,165 @@
-atalhos importante{
 
+
+======================================= Teclas de Atalho =============================================================
+ 
  save all file => CRTL + G 
  procurar ficheiros => CRTL + T 
 
+   ===================================== Apontamentos Laravel ========================================================
 
 
-}
+sobre Rotas 
+ https://laravel.com/docs/8.x/routing#redirect-routes
+
+ Middleware
+https://laravel.com/docs/8.x/middleware
+
+CSRF Protection
+https://laravel.com/docs/8.x/csrf
+
+
+
+    aceder nova maquina 93
+   https://hosting93.serverhs.org:2083/logout/?locale=pt
+
+Curso Laravel udemy  
+https://www.udemy.com/course/curso-de-laravel-8/learn/lecture/22603654?start=165#overview
+
+
+consultar a versão laravel 
+# php artisan -V
+
+instalação
+
+ 
+ step1 
+instalar o composer
+ https://getcomposer.org/download/
+
+após a instalação do composer 
+abrir cmd > e digitar seguinte comando # composer create-project laravel/laravel example-app
+para instalar laravel 
+
+criação de projectos 
+abrir cmd > ir no diretorio onde será gerado o projecto e inserir o comando 
+# C:\User\myuser\mydir\laravelProject> laravel new myFirtsProject
+
+abrir o projecto  no visual code
+# code .
+
+criando ficheiro 
+# php artisan make:nome_pasta nome_ficheiro
+
+configuracao global do composer p/ aceder remotamente update de todos  pacotes
+#composer config -g repo.packagist composer https://packagist.org  
+
+configuracao global do composer p/ protocolos 
+#composer config -g github-protocols https ssh
+
+
+
+produtivade com artisan
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20122238#overview
+
+ver todos comandos do artisan 
+# php artisan list
+
+abrir a app no browser
+# php artisan serve 
+
+configurar porta no browser 
+# php artisan list --port=900
+
+colocando app em modo de manutenção
+# php artisan down
+tirar a app do modo de manutenção
+# php artisan down
+
+
+enviando paramentro em rotas 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761948#overview
+
+enviando paramentro em rotas opcionais 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761960#overview
+
+rotas de fallback 404 not found
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20903732#overview 
+
+encaminhar parametros de rota para controladores 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20906220#overview
+
+encaminhar parametros de controladores para views
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20926580#overview
+
+agrupando rotas 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761984#overview
+
+redirecionamento de rota
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761982#overview
+
+
+listar as todas rotas 
+#php artisan route:list
+sobre Rotas 
+ https://laravel.com/docs/8.x/routing#redirect-routes
+
+ Middleware
+https://laravel.com/docs/8.x/middleware
+
+CSRF Protection
+https://laravel.com/docs/8.x/csrf
+
+
+carregar ficheiro para servidores remoto comercial cpanel
+https://www.youtube.com/watch?v=WN2hHvxMHTI
+
+
+
+============================                 ============================
+
+============================  BLADE RESUMO  ============================ 
+
+
+Incluindo comentarios e blocos PHP 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20945398#overview
+
+if e else
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20129552#overview
+
+@iseet
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20966138#overview
+
+balde diretivas
+https://laravel.com/docs/8.x/blade#section-directives
+
+assets
+https://laravel.com/docs/8.x/mix#introduction
+
+GERENCIANDO E ORGANIZANDO ASSETS 
+https://www.youtube.com/watch?v=_SgRRuYwpj0
+
+instalando biblioteca jquery e bootstrap no laravel
+https://www.youtube.com/watch?v=LQQk1ZSyqLM 
+# npm install jquery
+# npm install bootstrap 
+
+
+Ver logs de erro 
+storage/logs/laravel.log
+
+como corrigir erro ao rodar o comando #php artisan serve
+1º atualizar o composer de modo a gerar o vendor  #Composer update
+https://stackoverflow.com/questions/64523505/php-artisan-failed-to-open-stream-no-such-file-or-directory
+
+2º criar uma cópia do ficheiro env.example # copy .env.example .env 
+https://pt.stackoverflow.com/questions/370513/500-server-error-laravel  
+3º gerar uma nova para o artisan # php artisan key:generate
+4º rodar aplicação #php artisan serve 
+
+Como corrigir erro ao rodar comando #npm run dev | npm run watch 
+https://stackoverflow.com/questions/61044879/npm-error-in-laravel-7-when-running-npm-run-dev
+
+1º verificar a pasta node_modules caso ñ existir rodar comando #npm install
+2º rodar novamente comando # npm run dev 
+
 
