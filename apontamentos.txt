@@ -5,6 +5,8 @@
  save all file => CRTL + G 
  procurar ficheiros => CRTL + T 
 
+ open new workspace CRTL + SHIFT+ N 
+
    ===================================== Apontamentos Laravel ========================================================
 
 
