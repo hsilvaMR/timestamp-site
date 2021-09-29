@@ -35,4 +35,10 @@ mudar de branch
 consultar log 
 # git log 
 
+consultar branch abertas(ativas)
+#git branch
+
+remover branch
+#git branch -dev nomeDaBranch
+
 
