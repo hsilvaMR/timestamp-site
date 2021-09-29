@@ -1,0 +1,13 @@
+
+no gitIgnore estão os diretorios ou ficheiros que não são mandados para o repositorio quando se faz commit 
+para subir todos ficheiros do projecto basta ir ao gitIgnore  comentar ou apagar o ficheiro
+
+
+
+criar varias branch para um determinado projecto | após clonar o projecto deve-se criar uma nova branch 
+
+https://www.youtube.com/watch?v=8znk5eDbVGA
+
+https://www.youtube.com/watch?v=NR9jc5ODvuM 
+
+passos: 
