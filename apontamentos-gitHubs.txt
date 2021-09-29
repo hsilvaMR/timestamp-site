@@ -49,8 +49,8 @@ passar o comando # git merge master(nome_da_branch)
 clonar um repositorio apartir de um novo dispositivo e fazer commit | windows
 https://www.youtube.com/watch?v=CeVwylVFv-M
 
-1º partindo do principio que no novo dispositivo tem gitBash 
-2º abrir o painel de control > gestor de credenciais > credenciais do windows > apagar credencias github
+1º partindo do principio que no novo dispositivo tem gitBash instalado 
+2º abrir o painel de control ir  gestor de credenciais > credenciais do windows > apagar credencias github
 2º dentro do diretorio clonado abrir o terminal e configurar dados de usuario #git config --global user.name "name" | #git config --global user.email "seu email" 
 3º git add .
 4º git commit -m "commit from new device"
