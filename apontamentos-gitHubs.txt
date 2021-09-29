@@ -10,4 +10,20 @@ https://www.youtube.com/watch?v=8znk5eDbVGA
 
 https://www.youtube.com/watch?v=NR9jc5ODvuM 
 
-passos: 
+listar ficheiros de uma branch
+https://stackoverflow.com/questions/1910783/git-1-list-all-files-in-a-branch-2-compare-files-from-different-branch/1910828
+# git ls-tree -r branch(nome da branch)
+
+estando dentro de uma branch listar todos ficheiros 
+# git ls-files
+
+listar ficheiros adicionados na nova branch para master 
+# git diff --name-only branch1 master
+
+consultar a branch onde  que se encontra 
+# git branch –show-current
+
+mudar de branch 
+#git checkout branch(nome da branch)
+
+
