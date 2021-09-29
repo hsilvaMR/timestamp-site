@@ -10,6 +10,12 @@ https://www.youtube.com/watch?v=8znk5eDbVGA
 
 https://www.youtube.com/watch?v=NR9jc5ODvuM 
 
+criar branch 
+#  git checkout -b [name_of_your_new_branch]
+
+consultar todas branch
+# git branch -a
+
 listar ficheiros de uma branch
 https://stackoverflow.com/questions/1910783/git-1-list-all-files-in-a-branch-2-compare-files-from-different-branch/1910828
 # git ls-tree -r branch(nome da branch)
@@ -25,5 +31,8 @@ consultar a branch onde  que se encontra
 
 mudar de branch 
 #git checkout branch(nome da branch)
+
+consultar log 
+# git log 
 
 
