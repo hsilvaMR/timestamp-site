@@ -164,4 +164,8 @@ https://stackoverflow.com/questions/61044879/npm-error-in-laravel-7-when-running
 1º verificar a pasta node_modules caso ñ existir rodar comando #npm install
 2º rodar novamente comando # npm run dev 
 
-
+como corrigir erro ao carregar/abrir app com  php artisan serve   "Warning: Unknown: failed to open stream: No such file or directory in Unknown on line"
+1º verificar na raiz do projecto se existe o ficheiro server.php
+2º pausar anti-virus por alguns minutos e de seguida  ir  em qualquer projecto laravel e copiar este ficheiro e colar no seu projecto. Antes desta  
+3º rodar novamente  app.  
+ 

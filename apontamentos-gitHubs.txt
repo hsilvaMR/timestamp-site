@@ -41,7 +41,8 @@ remover branch
 #git branch -dev nomeDaBranch
 
 juntar as versõe de uma branch para outra branch
-estando na branch A copiar as dados da branch master para isso basta  passar o comando # git merge master(nome_da_branch)
+estando na branch A copiar as dados da branch master .  Para isso basta  
+passar o comando # git merge master(nome_da_branch)
 
 # git merge master
 
