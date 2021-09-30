@@ -50,11 +50,15 @@ clonar um repositorio apartir de um novo dispositivo e fazer commit | windows
 https://www.youtube.com/watch?v=CeVwylVFv-M
 
 1º partindo do principio que no novo dispositivo tem gitBash instalado 
-2º abrir o painel de control ir  gestor de credenciais > credenciais do windows > apagar credencias github
+2º abrir o painel de control ir ao  gestor de credenciais > credenciais do windows > apagar credencias github
 2º dentro do diretorio clonado abrir o terminal e configurar dados de usuario #git config --global user.name "name" | #git config --global user.email "seu email" 
 3º git add .
 4º git commit -m "commit from new device"
 5º git push origin nome-da-branch 
+
+fazer commit de fciheiros quando se troca de varios dispositivos para o mesmo repositorio.
+1º #git pull url_do_repositorio  nome_da_branch 
+2º #git push origin nome_da_branch 
 
 
 
