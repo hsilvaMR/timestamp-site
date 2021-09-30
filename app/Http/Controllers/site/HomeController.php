@@ -9,6 +9,6 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('site/pages/home', ['title' => 'TimeStamp']);
+        return view('site/pages/home', ['title' => 'TimeStamp - Home']);
     }
 }

@@ -11,6 +11,16 @@
     /* background-attachment: fixed; */
 }
 
+.content-zIndex {
+    position: relative;
+    width: 741px;
+    /* height: 537px; */
+    top: -250px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
 .loginArea {
     cursor: pointer;
 }
@@ -19,33 +29,11 @@
     cursor: pointer;
 }
 
-
-/* .row-descobrir-registe { */
-
-
-/* box-shadow: #F7F7F7 2px 2px; */
-
-
-/* position: absolute !important; */
-
-
-/* left: 0px !important; */
-
-
-/* top: 0px !important; */
-
-
-/* z-index: 1 !important; */
-
-
-/* } */
-
 .bt-register {
     cursor: pointer !important;
     background-color: #F78065 !important;
     color: #F7F7F7 !important;
 }
-
 
 /* includes/footer all  css */
 
@@ -86,19 +74,10 @@
     cursor: pointer;
 }
 
-
 /* home all  css */
 
-.content-zIndex {
-    background-color: white !important;
-    /* box-shadow: #F7F7F7 15px 15px 15px; */
-    position: relative !important;
-    /* position: absolute; */
-    left: 0px !important;
-    top: 0px !important;
-    z-index: 99 !important;
-    transform: translateY(-120px);
-    /* transform: translateY(150px); */
+.home-box-1 {
+    margin-top: -200px;
 }
 
 .font-title-header {
