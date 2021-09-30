@@ -10,7 +10,7 @@
 
     <div class="container home-box-1">
 
-        {{-- row-1 --}}
+        {{-- row-1  quando e onde comprar ... --}}
         <div class="row">
 
             {{-- row1 coluna 1 --}}
@@ -69,7 +69,7 @@
         {{-- row-2 --}}
         <div class="row mt-5  justify-content-center">
 
-            {{-- coluna 1 --}}
+            {{-- coluna 1  tabela de precos --}}
             <div class=" col col-1A">
                 <img src="{{ asset('img/col1.png') }}" class="img-fluid" alt="">
 
@@ -87,7 +87,7 @@
 
             </div>
 
-            {{-- coluna 2 --}}
+            {{-- coluna 2 processo de compra --}}
             <div class=" col col-2B">
                 <img src="{{ asset('img/col2.png') }}" class="img-fluid" alt="">
 
@@ -104,7 +104,7 @@
                 </div>
 
             </div>
-            {{-- coluna 3 --}}
+            {{-- coluna 3 como adquirir --}}
             <div class=" col col-3B">
                 <img src="{{ asset('img/col3.png') }}" class="img-fluid" alt="">
 
@@ -123,6 +123,28 @@
             </div>
         </div>
     </div>
+
+    {{--  Modal tabela de precos ! tipos de selos  --}}
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
 @endsection
