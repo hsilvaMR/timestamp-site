@@ -2,6 +2,8 @@
 
 return [
 
+        'titulo' => 'Timestamp - Controller',
+
         'tabelaPreco' => 'Tabela de Preços',
         'consulteDiferentes' => 'Consulte os diferentes valores, de acordo com o tipo de de selo e com o 
                             pacote que mais convém',
@@ -9,9 +11,8 @@ return [
 
         'processoCompra' => 'Processo de Compra',
 
-        'simplesFacil' => 'Processo de Compra Simples, fácil e acessível! A partir do registo, siga os 
-                      paços e as opções de compra preenchendo com os seus dados. Queremos que tudo 
-                      seja simples, e quando tiver dúvidas, nós ajudamos!',
+        'simplesFacil' => 'Simples, fácil e acessível! A partir do registo, siga os 
+                      passos e as opções de compra preenchendo com os seus dados.',
 
         'queremosTudo' => 'Queremos que tudo seja simples, e quando tiver dúvidas, nós ajudamos!',
 

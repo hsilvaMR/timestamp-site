@@ -19,7 +19,7 @@ return [
     'faqs' => 'FAQS',
     'segurancaPrivacidade' => 'Segurança e Privacidade',
 
-    'mredisLda' => 'Mredis,Lda.',
+    'mredisLda' => 'Mredis, Lda.',
     'sobre' => 'Sobre',
     'mapSite' => 'Mapa do site',
     'termsCondition' => 'Termos e Condições',
