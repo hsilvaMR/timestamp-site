@@ -168,4 +168,12 @@ como corrigir erro ao carregar/abrir app com  php artisan serve   "Warning: Unkn
 1º verificar na raiz do projecto se existe o ficheiro server.php
 2º pausar anti-virus por alguns minutos e de seguida  ir  em qualquer projecto laravel e copiar este ficheiro e colar no seu projecto. Antes desta  
 3º rodar novamente  app.  
+
+
+Eloquents --> ORM(Object Relational Mapping) são os objectos que permitem e simplicam a 
+manipulação de dados vinda da base de dados  atualmente existem dois padrões Data Mapper | Active Record 
+ https://laravel.com/docs/8.x/eloquent#introduction
+ https://imasters.com.br/banco-de-dados/aprenda-9-truques-para-o-eloquent-laravel
+
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21496246#overview
  
