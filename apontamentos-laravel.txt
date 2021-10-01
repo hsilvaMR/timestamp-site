@@ -172,6 +172,8 @@ como corrigir erro ao carregar/abrir app com  php artisan serve   "Warning: Unkn
 
 Eloquents --> ORM(Object Relational Mapping) são os objectos que permitem e simplicam a 
 manipulação de dados vinda da base de dados  atualmente existem dois padrões Data Mapper | Active Record 
+
+OBS :. Laravel Utiliza o padrão active record 
  https://laravel.com/docs/8.x/eloquent#introduction
  https://imasters.com.br/banco-de-dados/aprenda-9-truques-para-o-eloquent-laravel
 
