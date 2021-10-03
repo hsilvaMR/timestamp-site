@@ -85,7 +85,7 @@ return [
     'pagamentoTitle' => 'Pagamento',
     'podeAdicionar' => 'Pode adicionar fácilmente os seus
          dados de pagamento á ficha de cliente, e gerir tudo a partir daí.',
-    'comoFunciona' => 'Como Funciona',
+    'comoFunciona' => 'Como Funciona?',
 
      //col-D gesttor de carteira
      'gestorCarteiraTitle' => 'Gestor de Carteira',
