@@ -87,7 +87,7 @@
             </div>
 
             {{-- coluna 2 processo de compra --}}
-            <div class=" col col-2B">
+            <div class=" col col-2B" data-bs-toggle="modal" data-bs-target="#proce-compra">
                 <img src="{{ asset('img/col2.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">

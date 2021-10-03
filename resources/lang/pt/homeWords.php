@@ -4,8 +4,6 @@ return [
 
     'titulo' => 'Timestamp - Controller',
 
-
-
     'tabelaPreco' => 'Tabela de Preços',
     'consulteDiferentes' => 'Consulte os diferentes valores, de acordo com o tipo de de selo e com o 
                             pacote que mais convém',
@@ -50,8 +48,50 @@ return [
                     em: http://www.timestampsolutions.pt/pt/dpc',
 
     // modal conteudo
+  
     'modatTitleTiposSelos' => 'Os nossos Selos Temporais',
 
-  'mtsa' => ''
+    'titleMstamp' =>'Mstamp',
+
+    'oQueSaoSelosMsTamp' => ' São Selos Temporais de maior abrangência, geralmente utilizados nas 
+                            Plataformas Electrónicas de Contratos Públicos. Os nossos Selos Temporais foram 
+                            desenvolvidos para que possam ser aceites em todas as Plataformas de Contratos Públicos, 
+                             tais como a Ana, Miroma, Saphety, Vortal, 
+                             Acin e Mercado Electrónico.',
+    'msTampVejaOspreco' => 'Veja os Preços',
+
+    'titleMtech' =>'Mtech',
+
+    'oQueSaoSelosMtech'=>'Os Selos Mtech, conferem ao seu software, API, app, negócio
+                         todas as garantias de certificação, autenticidade e integridade que os registos 
+                         electrónicos necessitam. Com o reconecimento pela Autoridade Nacional de Segurança
+                         e com Valor Legal em toda a União Europeia.',
+
+    'mTechVejaPreco' => 'Veja os Preços',
+
+    // processo de compra  '' => '',
+
+    // col-A  escolha o tipo de selo 
+    'escTipoSeloTitle' => 'Escolha o Tipo de Selo',
+    'SelecioneAtipodeSelo' => 'Selecione o tipo de Selo, seja para oficializar documentos, propostas, seja para uma API  ou serviço online.',
+    'vejaAsDiferenca' => 'Veja as diferenças ...',
+
+    // col-B  selecione o plano
+    'selecionePlanoTitle' => 'Selecione o seu plano!',
+    'entreVarios' => 'Entre os vários pacotes, escolha aquele que melhor se adapta às suas necessidades ou da sua empresa.',
+    'vejaPacotes' => 'Veja os Pacotes ...',
+
+    // col-C  pagamentos
+    'pagamentoTitle' => 'Pagamento',
+    'podeAdicionar' => 'Pode adicionar fácilmente os seus
+         dados de pagamento á ficha de cliente, e gerir tudo a partir daí.',
+    'comoFunciona' => 'Como Funciona',
+
+     //col-D gesttor de carteira
+     'gestorCarteiraTitle' => 'Gestor de Carteira',
+     'AposAdquirirselos' => 'Após adquirir selos temporais, 
+            pode gerir de forma a utiliza-los 
+            conforme pretender. ',
+     'verMais' => 'Ver mais ...',
 
 ];

@@ -11,7 +11,7 @@
             <div class=" col col-b">
                 <div class="d-flex flex-column  justify-content-cente mb-1">
                     <div class="p-2 bd-highlight titulo-col"> {{trans('footerWords.descobrir')}} </div>
-                    <div class="p-2 bd-highlight item-col"> {{trans('footerWords.processoCompra')}}</div>
+                    <div class="p-2 bd-highlight item-col"  data-bs-toggle="modal" data-bs-target="#proce-compra">{{trans('footerWords.processoCompra')}}</div>
                     <div class="p-2 bd-highlight item-col"> {{trans('footerWords.tabelaPreco')}}</div>
                     <div class="p-2 bd-highlight item-col"> {{trans('footerWords.comoAdquirir')}}</div>
                     <div class="p-2 bd-highlight item-col"> {{trans('footerWords.sobreNos')}}</div>
