@@ -62,44 +62,80 @@
 
                 {{-- title --}}
                 <div class="modal-header border-0">
-                    <h5 class="modal-title" id="exampleModalLabel">Processo de Compra</h5>
+                    <h5 class="modal-title " id="exampleModalLabel">Processo de Compra</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 {{-- body --}}
                 <div class="modal-body">
                     <div class="row justify-content-center">
-                         {{-- col escolhe tipo de selo --}}
+                        {{-- col escolhe tipo de selo --}}
                         <div class="col col-tipo-selo">
 
                             <img src="{{ asset('img/col-a-tipoSelo.png') }}" class="img-fluid" alt="">
 
                             <div class="d-flex flex-column  justify-content-center">
-                                <div class="p-2 bd-highlight">
-                                    {{ trans('homeWords.tabelaPreco') }}
+                                <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                    {{ trans('homeWords.escTipoSeloTitle') }}
                                 </div>
                                 <div class="p-2 bd-highlight  font-body-box2">
-                                    {{ trans('homeWords.consulteDiferentes') }}
+                                    {{ trans('homeWords.SelecioneAtipodeSelo') }}
                                 </div>
-                                <div class="p-2 bd-highlight  font-body-box2-color ">
-                                    {{ trans('homeWords.dispomosAmpla') }}
+                                <div class="p-2 bd-highlight  font-body-box2-color">
+                                    {{ trans('homeWords.vejaAsDiferenca') }}
                                 </div>
                             </div>
 
                         </div>
 
-                         {{-- col seleciona o seu plano --}}
+                        {{-- col seleciona o seu plano --}}
                         <div class="col col-plano">
                             <img src="{{ asset('img/col-b-plano.png') }}" class="img-fluid" height="80px" alt="">
+
+                            <div class="d-flex flex-column  justify-content-center">
+                                <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                    {{ trans('homeWords.selecionePlanoTitle') }}
+                                </div>
+                                <div class="p-2 bd-highlight  font-body-box2">
+                                    {{ trans('homeWords.entreVarios') }}
+                                </div>
+                                <div class="p-2 bd-highlight  font-body-box2-color">
+                                    {{ trans('homeWords.vejaPacotes') }}
+                                </div>
+                            </div>
                         </div>
 
-                        {{-- col pagamentos--}}
+                        {{-- col pagamentos --}}
                         <div class="col col-pagamento">
                             <img src="{{ asset('img/col-c-pagamento.png') }}" class="img-fluid" alt="">
+
+                            <div class="d-flex flex-column  justify-content-center">
+                                <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                    {{ trans('homeWords.pagamentoTitle') }}
+                                </div>
+                                <div class="p-2 bd-highlight  font-body-box2">
+                                    {{ trans('homeWords.podeAdicionar') }}
+                                </div>
+                                <div class="p-2 bd-highlight  font-body-box2-color">
+                                    {{ trans('homeWords.comoFunciona') }}
+                                </div>
+                            </div>
                         </div>
 
-                         {{-- col gestor de carteira--}}
+                        {{-- col gestor de carteira --}}
                         <div class="col col-gestao-carteira">
                             <img src="{{ asset('img/col-d-gestao-carteira.png') }}" class="img-fluid" alt="">
+
+                            <div class="d-flex flex-column  justify-content-center">
+                                <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                    {{ trans('homeWords.gestorCarteiraTitle') }}
+                                </div>
+                                <div class="p-2 bd-highlight  font-body-box2">
+                                    {{ trans('homeWords.AposAdquirirselos') }}
+                                </div>
+                                <div class="p-2 bd-highlight  font-body-box2-color">
+                                    {{ trans('homeWords.verMais') }}
+                                </div>
+                            </div>
                         </div>
 
                     </div>

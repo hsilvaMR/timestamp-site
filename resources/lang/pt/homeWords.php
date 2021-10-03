@@ -72,7 +72,7 @@ return [
     // processo de compra  '' => '',
 
     // col-A  escolha o tipo de selo 
-    'escTipoSeloTitle' => 'Escolha o Tipo de Selo',
+    'escTipoSeloTitle' => 'Escolha o tipo de Selo',
     'SelecioneAtipodeSelo' => 'Selecione o tipo de Selo, seja para oficializar documentos, propostas, seja para uma API  ou serviço online.',
     'vejaAsDiferenca' => 'Veja as diferenças ...',
 
