@@ -138,35 +138,37 @@
     cursor: pointer;
 }
 
+/* modal style include/modals.blade.php */
+
 .modal-dialog {
     max-width: 1254px !important;
-    /* height: 872px !important; */
 }
-
-.modal-title-process-compra-font {
-    font-family: 'Merriweather', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
-    color: #000000;
-}
-
-/* #proce-compra h5 {
-    font-family: 'Merriweather', sans-serif;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 27px;
-    /* line-height: 45px; */
-
-/* color: #000000; 
-} */
 
 .modal-header-title-font {
     font-family: 'Merriweather', sans-serif;
     font-style: normal;
     font-weight: bolder;
     font-size: 27px;
-    /* line-height: 45px; */
     color: #000000;
+}
+
+.col-basico {
+    background-image: url("/img/price-mstamp-basic.svg");
+    background-repeat: no-repeat;
+    /* width: auto; */
+    Height: 639px;
+}
+
+.col-premium {
+    background-image: url("/img/price-mstamp-premium.svg");
+    background-repeat: no-repeat;
+    /* width: auto; */
+    Height: 639px;
+}
+
+.col-ultimate {
+    background-image: url("/img/price-mstamp-ultimate.svg");
+    background-repeat: no-repeat;
+    /* width: auto; */
+    Height: 639px;
 }

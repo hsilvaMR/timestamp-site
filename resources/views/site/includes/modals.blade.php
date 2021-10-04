@@ -41,21 +41,64 @@
         </div>
     </div>
 </div>
-
-{{-- Modal Tabela de Preços --}}
-<div class="modal fade" id="tabelaPreco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+{{-- Modal Tabela de Preços | Mstamp--}}
+<div class="modal fade" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             {{-- title --}}
             <div class="modal-header modal-header-title-font border-0">
-                <h5 class="modal-title" id="exampleModalLabel">Tabela de Preço | </h5>
+                <h5 class="modal-title" id="exampleModalLabel">Tabela de Preço | Mstamp </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             {{-- body --}}
             <div class="modal-body">
-                ...
-            </div>
+                {{-- row --}}
+                <div class="row">
+                    {{-- col-basico --}}
+                    <div class="col col-basico ">
 
+                    </div>
+                    {{-- col-premium --}}
+                    <div class="col col-premium ">
+
+                    </div>
+                    {{-- col-ultimate --}}
+                    <div class="col col-ultimate ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- Modal Tabela de Preços |  Mtech--}}
+<div class="modal fade" id="tabelaPreco-Mtech" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            {{-- title --}}
+            <div class="modal-header modal-header-title-font border-0">
+                <h5 class="modal-title" id="exampleModalLabel">Tabela de Preço | Mtech </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            {{-- body --}}
+            <div class="modal-body">
+                {{-- row --}}
+                <div class="row justify-content-center">
+
+                    {{-- col-starter --}}
+                    <div class="col col-starter">
+
+                    </div>
+                    {{-- col-premium --}}
+                    <div class="col col-premium">
+
+                    </div>
+                    {{-- col-ultimate --}}
+                    <div class="col col-ultimate">
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
