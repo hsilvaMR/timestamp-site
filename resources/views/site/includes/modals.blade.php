@@ -53,6 +53,33 @@
 
     {{-- Modal registe-se --}}
 
+    <div class="modal fade modal-processo-compra" id="modal-registar" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                {{-- title --}}
+                <div class="modal-header border-0">
+                    {{-- <h5 class="modal-title " id="exampleModalLabel">Processo de Compra</h5> --}}
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                {{-- body --}}
+                <div class="modal-body">
+
+                    <div class="d-flex justify-content-center">
+
+                        <span class="text-light">
+                            <img src="{{ asset('img/register.png') }}" class="img-fluid" alt="">
+                            Regista-se
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- Modal Processo de Compra --}}
     <div class="modal fade modal-processo-compra" id="proce-compra" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
