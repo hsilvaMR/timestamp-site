@@ -35,7 +35,6 @@
     color: #F7F7F7 !important;
 }
 
-
 /* includes/footer all  css */
 
 .footer {
@@ -74,7 +73,6 @@
     color: #000000;
     cursor: pointer;
 }
-
 
 /* home all  css */
 
@@ -136,44 +134,25 @@
     /* line-height: 24px; */
 }
 
-.col-2B,
-.col-1A,
-.col-3B {
+.col-2B, .col-1A, .col-3B {
     cursor: pointer;
 }
 
-.modal-tipo-selos .title-modal-tipos-selos {
-    font-family: 'Merriweather', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    /* line-height: 45px; */
-    color: #000000;
-}
+/* modal style include/modals.blade.php */
 
 .modal-dialog {
     max-width: 1254px !important;
-    /* height: 872px !important; */
 }
 
-.modal-title-process-compra-font {
-    font-family: 'Merriweather', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
-    color: #000000;
-}
-
-#proce-compra h5 {
+.modal-header-title-font {
     font-family: 'Merriweather', sans-serif;
     font-style: normal;
     font-weight: bolder;
     font-size: 27px;
-    /* line-height: 45px; */
     color: #000000;
 }
 
+<<<<<<< HEAD
 #modal-registar .modal-content {
     /* display: flex; */
     /* flex-direction: row; */
@@ -186,4 +165,25 @@
     /* left: 360px; */
     /* top: 157px; */
     background: #F78065;
+=======
+.col-basico {
+    background-image: url("/img/price-mstamp-basic.svg");
+    background-repeat: no-repeat;
+    /* width: auto; */
+    Height: 639px;
+}
+
+.col-premium {
+    background-image: url("/img/price-mstamp-premium.svg");
+    background-repeat: no-repeat;
+    /* width: auto; */
+    Height: 639px;
+}
+
+.col-ultimate {
+    background-image: url("/img/price-mstamp-ultimate.svg");
+    background-repeat: no-repeat;
+    /* width: auto; */
+    Height: 639px;
+>>>>>>> ccbb02e73d6438a93aac301c29d44d31038a2ae4
 }

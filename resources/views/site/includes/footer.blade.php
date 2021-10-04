@@ -3,21 +3,25 @@
     <div class="container">
         <div class="row mt-5  justify-content-center">
             <div class="col col-A">
-                {{-- {!! trans('footerWords.timestampSolution') !!} --}}
                 <img src="{{ asset('img/logoFoter.png') }}" class="img-fluid" alt="">
                 {{trans('footerWords.timestampSolution')}}
             </div>
 
+            {{-- Descobrir  | Processo de compra  | Tabela precos | ... --}}
             <div class=" col col-b">
                 <div class="d-flex flex-column  justify-content-cente mb-1">
                     <div class="p-2 bd-highlight titulo-col"> {{trans('footerWords.descobrir')}} </div>
-                    <div class="p-2 bd-highlight item-col"  data-bs-toggle="modal" data-bs-target="#proce-compra">{{trans('footerWords.processoCompra')}}</div>
-                    <div class="p-2 bd-highlight item-col"> {{trans('footerWords.tabelaPreco')}}</div>
+                    <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#proce-compra">
+                        {{trans('footerWords.processoCompra')}}</div>
+                    <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#tabelaPreco-Mstamp">
+                        {{trans('footerWords.tabelaPreco')}}
+                    </div>
                     <div class="p-2 bd-highlight item-col"> {{trans('footerWords.comoAdquirir')}}</div>
                     <div class="p-2 bd-highlight item-col"> {{trans('footerWords.sobreNos')}}</div>
                 </div>
             </div>
 
+            {{-- col Crie uma conta  | Registe-se | FAQS | as vantagem--}}
             <div class="col col col-c titulo-col">
                 <div class="d-flex flex-column  justify-content-cente mb-1">
                     <div class="p-2 bd-highlight titulo-col">{{trans('footerWords.criarConta')}}</div>
@@ -26,6 +30,7 @@
                 </div>
             </div>
 
+            {{-- col Assistencia | suporte | FAQS | Seguranca e Privacidade --}}
             <div class="col col-d titulo-col">
                 <div class="d-flex flex-column  justify-content-center mb-1">
                     <div class="p-2 bd-highlight titulo-col">{{trans('footerWords.assistencia')}}</div>

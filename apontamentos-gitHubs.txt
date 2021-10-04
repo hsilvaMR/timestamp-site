@@ -58,7 +58,11 @@ https://www.youtube.com/watch?v=CeVwylVFv-M
 
 fazer commit de fciheiros quando se troca de varios dispositivos para o mesmo repositorio.
 1º #git pull url_do_repositorio  nome_da_branch 
-2º #git push origin nome_da_branch 
+2º #git push origin nome_da_branch
+
+atualizar o repositorio quando se trabalha numa máquina diferente (supondo que já existe uma cópia do repositorio na maquina )
+1º #git pull url_do_repositorio  nome_da_branch 
+
 
 
 
