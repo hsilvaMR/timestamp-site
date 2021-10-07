@@ -104,7 +104,7 @@
 
             </div>
             {{-- coluna 3 como adquirir --}}
-            <div class=" col col-3B">
+            <div class=" col col-3B"   data-bs-toggle="modal" data-bs-target="#modal-registar">
                 <img src="{{ asset('img/col3.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">
