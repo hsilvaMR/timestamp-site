@@ -192,3 +192,13 @@ OBS :. Laravel Utiliza o padrão active record
 			return 'O campo endereço de email inválido. Introduza um endereço de email válido.';
  }
  
+verificar a password quando vem encriptada da base de dados 
+if (!Hash::check($password, $client->password)) {
+				return 'Dados incorretos. Email ou password incorretos.';
+}
+
+criar cookies  
+	Cookie::queue(Cookie::make('time_user_cookie', $client->id, 43200));
+
+   pegar valor da cookie 
+   $id_user = Cookie::get('time_user_cookie');
