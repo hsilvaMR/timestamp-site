@@ -182,4 +182,8 @@ OBS :. Laravel Utiliza o padrão active record
 
  editor Online php 
  https://extendsclass.com/php.html
+
+
+ consulta em tabelas 
+ https://laravel.com/docs/8.x/queries
  
