@@ -186,4 +186,9 @@ OBS :. Laravel Utiliza o padrão active record
 
  consulta em tabelas 
  https://laravel.com/docs/8.x/queries
+
+ validar o formato do email --->  FILTER_VALIDATE_EMAIL
+ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			return 'O campo endereço de email inválido. Introduza um endereço de email válido.';
+ }
  
