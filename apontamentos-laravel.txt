@@ -202,3 +202,6 @@ criar cookies
 
    pegar valor da cookie 
    $id_user = Cookie::get('time_user_cookie');
+
+   Apontamentos genericos laravel  -- tutorialspoint --
+   https://www.tutorialspoint.com/laravel/laravel_request.htm
