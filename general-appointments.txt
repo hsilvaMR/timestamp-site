@@ -17,7 +17,22 @@ remover border " border-0"
                                                    JAVASCRIPTS  
 ================================================               =================================================
 
+funcão para test de ajax
+ var myAjax = new XMLHttpRequest();
+		 myAjax.open("POST", document.getElementById("#formCSelos").value + "ajax-test", true);
+		 myAjax.onreadystatechange() = function(){
+			// ajax.onreadystatechange() = function(){
 
+			if(this.readyState== 4 && this.status==200){
+				console.log(this.responseText);
+     		}
+			if(this.status==500){
+				console.log(this.responseText);
+			}
+			// if(this.status==404){
+			// 	console.log(this.responseText);
+			// }	
+		}
 
 ================================================                ================================================
                                                     LARAVEL  
