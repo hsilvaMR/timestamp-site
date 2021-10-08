@@ -8,3 +8,7 @@ https://www.figma.com/proto/w7Q4mWXLOgI2yVW24B72EP/Selos-Temporais---Website?pag
 
 link repositorio github
 https://github.com/hsilvaMR/timestamp-site/tree/master
+
+
+error ajaxa jquery 500
+https://www.codeproject.com/Questions/653678/500-Internal-Server-Error-when-pass-data-in-ajax
