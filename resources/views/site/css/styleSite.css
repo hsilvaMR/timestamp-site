@@ -169,3 +169,10 @@
     /* top: 157px; */
     background: #F78065;
 }
+
+.modal-title-process-compra-font {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+}
