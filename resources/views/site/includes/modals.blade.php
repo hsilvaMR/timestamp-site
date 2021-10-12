@@ -134,73 +134,89 @@
 
 </div>
 
-{{-- Modal Processo de Compra --}}
-<div class="modal fade modal-processo-compra" id="processo-compra" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-
+{{-- Modal Processo de Compra  --}}
+<div class="modal fade" id="processo-compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-
-        <img src="{{ asset('img/col-a-tipoSelo.png') }}" class="img-fluid" alt="">
-
-        <div class="d-flex flex-column  justify-content-center">
-            <div class="p-2 bd-highlight modal-title-process-compra-font">
-                {{ trans('homeWords.escTipoSeloTitle') }}
+        <div class="modal-content">
+            {{-- title --}}
+            <div class="modal-header modal-header-title-font border-0">
+                <h5 class="modal-title" id="exampleModalLabel">Processo de Compra </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="p-2 bd-highlight  font-body-box2">
-                {{ trans('homeWords.SelecioneAtipodeSelo') }}
-            </div>
-            <div class="p-2 bd-highlight  font-body-box2-color">
-                {{ trans('homeWords.vejaAsDiferenca') }}
-            </div>
-        </div>
+            {{-- body --}}
+            <div class="modal-body">
+                {{-- row --}}
+                <div class="row">
 
-        {{-- col seleciona o seu plano --}}
-        <div class="col col-plano">
-            <img src="{{ asset('img/col-b-plano.png') }}" class="img-fluid" height="80px" alt="">
+                    {{-- Escolha o tipo de selo --}}
+                    <div class="col col-plano">
+                        <img src="{{ asset('img/col-a-tipoSelo.png') }}" class="img-fluid" alt="">
 
-            <div class="d-flex flex-column  justify-content-center">
-                <div class="p-2 bd-highlight modal-title-process-compra-font">
-                    {{ trans('homeWords.selecionePlanoTitle') }}
-                </div>
-                <div class="p-2 bd-highlight  font-body-box2">
-                    {{ trans('homeWords.entreVarios') }}
-                </div>
-                <div class="p-2 bd-highlight  font-body-box2-color">
-                    {{ trans('homeWords.vejaPacotes') }}
-                </div>
-            </div>
-        </div>
+                        <div class="d-flex flex-column  justify-content-center">
+                            <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                {{ trans('homeWords.escTipoSeloTitle') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2">
+                                {{ trans('homeWords.SelecioneAtipodeSelo') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2-color">
+                                {{ trans('homeWords.vejaAsDiferenca') }}
+                            </div>
+                        </div>
+                    </div>
 
-        {{-- col pagamentos --}}
-        <div class="col col-pagamento">
-            <img src="{{ asset('img/col-c-pagamento.png') }}" class="img-fluid" alt="">
+                    {{-- col seleciona o seu plano --}}
+                    <div class="col col-plano">
+                        <img src="{{ asset('img/col-b-plano.png') }}" class="img-fluid" height="80px" alt="">
 
-            <div class="d-flex flex-column  justify-content-center">
-                <div class="p-2 bd-highlight modal-title-process-compra-font">
-                    {{ trans('homeWords.pagamentoTitle') }}
-                </div>
-                <div class="p-2 bd-highlight  font-body-box2">
-                    {{ trans('homeWords.podeAdicionar') }}
-                </div>
-                <div class="p-2 bd-highlight  font-body-box2-color">
-                    {{ trans('homeWords.comoFunciona') }}
-                </div>
-            </div>
-        </div>
+                        <div class="d-flex flex-column  justify-content-center">
+                            <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                {{ trans('homeWords.selecionePlanoTitle') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2">
+                                {{ trans('homeWords.entreVarios') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2-color">
+                                {{ trans('homeWords.vejaPacotes') }}
+                            </div>
+                        </div>
+                    </div>
 
-        {{-- col gestor de carteira --}}
-        <div class="col col-gestao-carteira">
-            <img src="{{ asset('img/col-d-gestao-carteira.png') }}" class="img-fluid" alt="">
 
-            <div class="d-flex flex-column  justify-content-center">
-                <div class="p-2 bd-highlight modal-title-process-compra-font">
-                    {{ trans('homeWords.gestorCarteiraTitle') }}
-                </div>
-                <div class="p-2 bd-highlight  font-body-box2">
-                    {{ trans('homeWords.AposAdquirirselos') }}
-                </div>
-                <div class="p-2 bd-highlight  font-body-box2-color">
-                    {{ trans('homeWords.verMais') }}
+                    {{-- col pagamentos --}}
+                    <div class="col col-pagamento">
+                        <img src="{{ asset('img/col-c-pagamento.png') }}" class="img-fluid" alt="">
+
+                        <div class="d-flex flex-column  justify-content-center">
+                            <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                {{ trans('homeWords.pagamentoTitle') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2">
+                                {{ trans('homeWords.podeAdicionar') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2-color">
+                                {{ trans('homeWords.comoFunciona') }}
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- col gestor de carteira --}}
+                    <div class="col col-gestao-carteira">
+                        <img src="{{ asset('img/col-d-gestao-carteira.png') }}" class="img-fluid" alt="">
+
+                        <div class="d-flex flex-column  justify-content-center">
+                            <div class="p-2 bd-highlight modal-title-process-compra-font">
+                                {{ trans('homeWords.gestorCarteiraTitle') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2">
+                                {{ trans('homeWords.AposAdquirirselos') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2-color">
+                                {{ trans('homeWords.verMais') }}
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
