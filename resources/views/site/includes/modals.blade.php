@@ -152,7 +152,7 @@
                     <div class="col col-plano">
                         <img src="{{ asset('img/col-a-tipoSelo.png') }}" class="img-fluid" alt="">
 
-                        <div class="d-flex flex-column  justify-content-center">
+                        <div class="d-flex flex-column  justify-content-center mt-3">
                             <div class="p-2 bd-highlight modal-title-process-compra-font">
                                 {{ trans('homeWords.escTipoSeloTitle') }}
                             </div>
@@ -169,7 +169,7 @@
                     <div class="col col-plano">
                         <img src="{{ asset('img/col-b-plano.png') }}" class="img-fluid" height="80px" alt="">
 
-                        <div class="d-flex flex-column  justify-content-center">
+                        <div class="d-flex flex-column  justify-content-center mt-3">
                             <div class="p-2 bd-highlight modal-title-process-compra-font">
                                 {{ trans('homeWords.selecionePlanoTitle') }}
                             </div>
@@ -187,7 +187,7 @@
                     <div class="col col-pagamento">
                         <img src="{{ asset('img/col-c-pagamento.png') }}" class="img-fluid" alt="">
 
-                        <div class="d-flex flex-column  justify-content-center">
+                        <div class="d-flex flex-column  justify-content-center mt-3">
                             <div class="p-2 bd-highlight modal-title-process-compra-font">
                                 {{ trans('homeWords.pagamentoTitle') }}
                             </div>
@@ -204,7 +204,7 @@
                     <div class="col col-gestao-carteira">
                         <img src="{{ asset('img/col-d-gestao-carteira.png') }}" class="img-fluid" alt="">
 
-                        <div class="d-flex flex-column  justify-content-center">
+                        <div class="d-flex flex-column  justify-content-center mt-3">
                             <div class="p-2 bd-highlight modal-title-process-compra-font">
                                 {{ trans('homeWords.gestorCarteiraTitle') }}
                             </div>
