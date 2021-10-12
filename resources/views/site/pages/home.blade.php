@@ -87,7 +87,7 @@
             </div>
 
             {{-- coluna 2 processo de compra --}}
-            <div class=" col col-2B" data-bs-toggle="modal" data-bs-target="#proce-compra">
+            <div class=" col col-2B" data-bs-toggle="modal" data-bs-target="#processo-compra">
                 <img src="{{ asset('img/col2.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">
@@ -104,7 +104,7 @@
 
             </div>
             {{-- coluna 3 como adquirir --}}
-            <div class=" col col-3B"   data-bs-toggle="modal" data-bs-target="#modal-registar">
+            <div class=" col col-3B" data-bs-toggle="modal" data-bs-target="#register">
                 <img src="{{ asset('img/col3.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">

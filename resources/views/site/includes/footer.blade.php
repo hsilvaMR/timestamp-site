@@ -11,7 +11,7 @@
             <div class=" col col-b">
                 <div class="d-flex flex-column  justify-content-cente mb-1">
                     <div class="p-2 bd-highlight titulo-col"> {{trans('footerWords.descobrir')}} </div>
-                    <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#proce-compra">
+                    <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#processo-compra">
                         {{trans('footerWords.processoCompra')}}</div>
                     <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#tabelaPreco-Mstamp">
                         {{trans('footerWords.tabelaPreco')}}
@@ -25,7 +25,8 @@
             <div class="col col col-c titulo-col">
                 <div class="d-flex flex-column  justify-content-cente mb-1">
                     <div class="p-2 bd-highlight titulo-col">{{trans('footerWords.criarConta')}}</div>
-                    <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#modal-registar">{{trans('footerWords.registar')}}</div>
+                    <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#modal-registar">
+                        {{trans('footerWords.registar')}}</div>
                     <div class="p-2 bd-highlight item-col">{{trans('footerWords.vantagem')}}</div>
                 </div>
             </div>
