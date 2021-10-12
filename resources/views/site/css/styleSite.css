@@ -152,7 +152,7 @@
     font-family: 'Merriweather', sans-serif;
     font-style: normal;
     font-weight: bolder;
-    font-size: 27px;
+    font-size: 36px;
     color: #000000;
 }
 
@@ -175,4 +175,14 @@
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
+}
+
+.col-mstamp:hover {
+    box-shadow: -20px -20px 60px 0.15px rgba(248, 155, 134, 0.2), 20px 20px 60px 0.15px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+.col-mstamp:hover {
+    box-shadow: -20px -20px 60px 0.15px rgba(248, 155, 134, 0.2), 20px 20px 60px 0.15px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
 }

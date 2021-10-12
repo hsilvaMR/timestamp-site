@@ -7,7 +7,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             {{-- title --}}
-            <div class="modal-header border-0 modal-header-title-font">
+            <div class="modal-header border-0 ms-5 modal-header-title-font">
                 <h5 class="modal-title" id="staticBackdropLabel">
                     {{ trans('homeWords.modatTitleTiposSelos') }}
                 </h5>
@@ -16,9 +16,9 @@
             {{-- body --}}
             <div class="modal-body">
 
-                <div class="row mt-5  justify-content-center">
+                <div class="row mt-1  justify-content-center">
                     {{-- col  Mstamp --}}
-                    <div class="col col-mstamp">
+                    <div class="col-5 col-mstamp" style="cursor: pointer;">
 
                         <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
 
@@ -40,7 +40,7 @@
 
                     </div>
                     {{-- col  Mtech --}}
-                    <div class="col col-mstamp">
+                    <div class="col-5 col-mstamp" style="cursor: pointer;">
 
                         <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
 
