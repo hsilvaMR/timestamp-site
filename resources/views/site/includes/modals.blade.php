@@ -1,6 +1,6 @@
 @section('modal')
-{{-- Modal os nossos selos temporais  tipos de selos MsTamp | Mtech --}}
 
+{{-- Modal os nossos selos temporais  tipos de selos MsTamp | Mtech --}}
 <div class="modal fade modal-tipo-selos" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
@@ -9,7 +9,8 @@
             {{-- title --}}
             <div class="modal-header border-0 modal-header-title-font">
                 <h5 class="modal-title" id="staticBackdropLabel">
-                    {{ trans('homeWords.modatTitleTiposSelos') }}</h5>
+                    {{ trans('homeWords.modatTitleTiposSelos') }}
+                </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             {{-- body --}}
@@ -19,7 +20,7 @@
                     {{-- col  Mstamp --}}
                     <div class="col col-mstamp">
 
-                        <img src="{{ asset('img/col1.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
 
                         <div class="d-flex flex-column  justify-content-center mb-1">
                             <div class="p-2 bd-highlight  mt-4">
@@ -34,6 +35,27 @@
                         </div>
 
                     </div>
+                    {{-- col  Mtech --}}
+                    <div class="col col-mstamp">
+
+                        <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
+
+                        <div class="d-flex flex-column  justify-content-center mb-1">
+                            <div class="p-2 bd-highlight  mt-4">
+                                {{ trans('homeWords.tabelaPreco') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2">
+                                {{ trans('homeWords.consulteDiferentes') }}
+                            </div>
+                            <div class="p-2 bd-highlight  font-body-box2-color ">
+                                {{ trans('homeWords.dispomosAmpla') }}
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
 
             </div>
@@ -222,6 +244,5 @@
         </div>
     </div>
 </div>
-
 
 @endsection
