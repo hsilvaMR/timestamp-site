@@ -23,14 +23,18 @@
                         <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
 
                         <div class="d-flex flex-column  justify-content-center mb-1">
+
+                            {{-- LOGO Mstamp --}}
                             <div class="p-2 bd-highlight  mt-4">
-                                {{ trans('homeWords.tabelaPreco') }}
+                                <img src="{{ asset('img/Mstamp-logoA.svg') }}" width="100px" height="100px" alt="">
                             </div>
+                            {{-- descrição Mstamp  --}}
                             <div class="p-2 bd-highlight  font-body-box2">
-                                {{ trans('homeWords.consulteDiferentes') }}
+                                {{ trans('homeWords.oQueSaoSelosMsTamp') }}
                             </div>
-                            <div class="p-2 bd-highlight  font-body-box2-color ">
-                                {{ trans('homeWords.dispomosAmpla') }}
+                            {{-- link  precos --}}
+                            <div class="p-2 bd-highlight  font-body-box2-color">
+                                {{ trans('homeWords.msTampVejaOspreco') }}
                             </div>
                         </div>
 
@@ -41,20 +45,22 @@
                         <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
 
                         <div class="d-flex flex-column  justify-content-center mb-1">
+
+                            {{-- LOGO Mtech --}}
                             <div class="p-2 bd-highlight  mt-4">
-                                {{ trans('homeWords.tabelaPreco') }}
+                                <img src="{{ asset('img/Mtech-logoB.svg') }}" width="100px" height="100px" alt="">
                             </div>
+                            {{-- descrição Mtech  --}}
                             <div class="p-2 bd-highlight  font-body-box2">
-                                {{ trans('homeWords.consulteDiferentes') }}
+                                {{ trans('homeWords.oQueSaoSelosMtech') }}
                             </div>
+                            {{-- link  precos Mtech   --}}
                             <div class="p-2 bd-highlight  font-body-box2-color ">
-                                {{ trans('homeWords.dispomosAmpla') }}
+                                {{ trans('homeWords.mTechVejaPreco') }}
                             </div>
                         </div>
 
                     </div>
-
-
 
                 </div>
 
