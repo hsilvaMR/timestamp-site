@@ -1,5 +1,4 @@
 @section('modal')
-
 {{-- Modal os nossos selos temporais  tipos de selos MsTamp | Mtech --}}
 <div class="modal fade modal-tipo-selos" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -7,18 +6,21 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             {{-- title --}}
-            <div class="modal-header border-0 ms-5 modal-header-title-font">
-                <h5 class="modal-title" id="staticBackdropLabel">
+            <div class="modal-header modal-header-title-font  border-0">
+                <h5 class="modal-title  " id="staticBackdropLabel">
                     {{ trans('homeWords.modatTitleTiposSelos') }}
                 </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                {{-- <span> <i class="fas fa-times" data-bs-dismiss="modal"></i> </span> --}}
             </div>
+
             {{-- body --}}
             <div class="modal-body">
 
-                <div class="row mt-1  justify-content-center">
+                <div class="row mt-1 justify-content-center">
+
                     {{-- col  Mstamp --}}
-                    <div class="col-5 col-mstamp" style="cursor: pointer;">
+                    <div class="col col-mstamp" style="cursor: pointer;">
 
                         <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
 
@@ -40,7 +42,7 @@
 
                     </div>
                     {{-- col  Mtech --}}
-                    <div class="col-5 col-mstamp" style="cursor: pointer;">
+                    <div class="col col-mstamp" style="cursor: pointer;">
 
                         <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
 
@@ -209,7 +211,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     {{-- col pagamentos --}}
                     <div class="col col-pagamento">
