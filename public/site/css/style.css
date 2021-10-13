@@ -152,7 +152,7 @@
     font-family: 'Merriweather', sans-serif;
     font-style: normal;
     font-weight: bolder;
-    font-size: 36px;
+    font-size: 26px;
     color: #000000;
 }
 
@@ -175,6 +175,14 @@
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
+}
+
+.btnCloseModal {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: bolder !important;
+    font-size: 36px !important;
+    color: #000000;
 }
 
 .col-mstamp:hover {

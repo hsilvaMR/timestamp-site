@@ -1,0 +1,11 @@
+.header {
+    /* background-image: url("{{asset('img/headerBackground.png')}}"); */
+    background-image: url("/img/headerBackground.png");
+    background-repeat: no-repeat;
+    height: 651px;
+    width: auto;
+    background-size: cover;
+    opacity: 0.3;
+    /* position: absolute; */
+    /* background-attachment: fixed; */
+}

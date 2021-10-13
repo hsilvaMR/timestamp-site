@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\plataforma\LoginPFM_Controller;
 use App\Http\Controllers\site\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/login-page', [LoginPFM_Controller::class, 'pageLogin'])->name('box-login');
+//Route::post('/login-validation', [LoginPFM_Controller::class, 'validation']);
