@@ -24,7 +24,15 @@
     /* color: #222222; */
 }
 
-.modal-login-fields-font {}
+.modal-login-fields-font {
+    font-family: 'Montserrat', 'serif';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.085em;
+    color: #F78065;
+}
 
 .modal-login-btn-close {
     /* position: absolute; */
@@ -37,4 +45,19 @@
 
 .modal-login-btn-color {
     color: rgba(247, 128, 101, 0.5) !important;
+}
+
+.col-registar {
+    width: 242px;
+    height: 67px;
+    background: #E8E9EB;
+    color: #F78065;
+}
+
+.col-entrar {
+    /*position: absolute;*/
+    width: 242px;
+    height: 67px;
+    background: #F78065;
+    color: #E8E9EB;
 }

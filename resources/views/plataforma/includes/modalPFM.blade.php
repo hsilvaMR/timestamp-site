@@ -17,16 +17,30 @@
             {{-- body --}}
             <div class="modal-body">
                 <div class="d-flex flex-column bd-highlight mb-3">
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight modal-login-fields-font ">
                         <label for="">EMAIL</label>
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight modal-login-fields-font ">
                         <label for="">PASSWORD</label>
                     </div>
-                    <div class="p-2 bd-highlight text-center">
+                    <div class="p-2 bd-highlight text-center modal-login-fields-font ">
                         <label for="">ESQUECEU A PASSWORD?</label>
                     </div>
                 </div>
+
+            </div>
+            {{-- BTN REGISTAR |  ENTRAR --}}
+            <div class="container-fluid">
+
+                <div class="row  align-items-center">
+                    <div class="col col-registar text-center">
+                        <span>ENTRAR</span>
+                    </div>
+                    <div class="col col-entrar text-center">
+                        <span>REGISTAR</span>
+                    </div>
+                </div>
+
             </div>
 
         </div>
