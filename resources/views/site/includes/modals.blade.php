@@ -3,10 +3,10 @@
 <div class="modal fade modal-tipo-selos" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered  modal-site">
         <div class="modal-content">
             {{-- title --}}
-            <div class="modal-header modal-header-title-font  border-0">
+            <div class="modal-header  modal-header-title-font  border-0">
                 <h5 class="modal-title  " id="staticBackdropLabel">
                     {{ trans('homeWords.modatTitleTiposSelos') }}
                 </h5>
@@ -73,7 +73,7 @@
 </div>
 {{-- Modal Tabela de Preços | Mstamp--}}
 <div class="modal fade" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
             <div class="modal-header modal-header-title-font border-0">
@@ -103,7 +103,7 @@
 </div>
 {{-- Modal Tabela de Preços |  Mtech--}}
 <div class="modal fade" id="tabelaPreco-Mtech" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
             <div class="modal-header modal-header-title-font border-0">
@@ -137,7 +137,7 @@
 <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
     <div class="modal fade" id="modal-registar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-site">
             <div class="modal-content">
                 {{-- title --}}
                 <div class="modal-header border-0">
@@ -166,7 +166,7 @@
 
 {{-- Modal Processo de Compra  --}}
 <div class="modal fade" id="processo-compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
             <div class="modal-header modal-header-title-font border-0">

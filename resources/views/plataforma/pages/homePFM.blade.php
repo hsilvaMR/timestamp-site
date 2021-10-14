@@ -1,4 +1,4 @@
-@extends('plataforma.layouts.templatePFM')
+@extends('plataforma/layouts/templatePFM')
 
 {{-- title --}}
 @section('title', $title)

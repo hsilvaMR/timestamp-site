@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="{{ asset('site/css/bootstrap.min.css') }}">
 {{-- custom   css  --}}
 <link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('plataforma/css/stylePFM.css') }}">
 
 {{-- GOOGLE FONTS --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">

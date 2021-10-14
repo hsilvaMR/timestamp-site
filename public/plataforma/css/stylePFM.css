@@ -1,11 +1,40 @@
-.header {
+.headerPFM {
     /* background-image: url("{{asset('img/headerBackground.png')}}"); */
     background-image: url("/img/headerBackground.png");
     background-repeat: no-repeat;
     height: 651px;
     width: auto;
     background-size: cover;
-    opacity: 0.3;
+    /*  desfocar a imagem  */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
     /* position: absolute; */
     /* background-attachment: fixed; */
+}
+
+.modal-login-title-font {
+    font-family: 'Montserrat', 'sans-serif';
+    font-style: normal;
+    /* font-weight: 300; */
+    font-weight: bolder !important;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+    color: black !important;
+    /* color: #222222; */
+}
+
+.modal-login-fields-font {}
+
+.modal-login-btn-close {
+    /* position: absolute; */
+    width: 18px;
+    height: 18px;
+    left: 925px;
+    top: 258px;
+    color: rgba(247, 128, 101, 0.5) !important;
+}
+
+.modal-login-btn-color {
+    color: rgba(247, 128, 101, 0.5) !important;
 }
