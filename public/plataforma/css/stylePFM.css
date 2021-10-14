@@ -52,6 +52,7 @@
     height: 67px;
     background: #E8E9EB;
     color: #F78065;
+    /* vertical-align: middle !important; */
 }
 
 .col-entrar {
@@ -60,4 +61,25 @@
     height: 67px;
     background: #F78065;
     color: #E8E9EB;
+    /* vertical-align: middle !important; */
+}
+
+.col-registar span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.085em;
+}
+
+.col-entrar span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.085em;
 }
