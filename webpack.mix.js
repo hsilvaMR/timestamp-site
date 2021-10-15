@@ -16,18 +16,19 @@ const mix = require('laravel-mix');
 //         //
 //     ]);
 // // integração das dependenas bt js 
-mix.styles([
-        'resources/views/site/css/styleSite.css'
-    ], 'public/site/css/style.css')
-    .styles('node_modules/bootstrap/dist/css/bootstrap.min.css', 'public/site/css/bootstrap.min.css')
+mix.styles(['resources/css/custom.css'], 'public/css/style.css')
 
-.styles('resources/views/plataforma/stylePFM.css/', 'public/plataforma/css/stylePFM.css')
+.styles('node_modules/bootstrap/dist/css/bootstrap.min.css', 'public/css/bootstrap.min.css')
 
-.scripts('resources/views/site/js/scriptSite.js', 'public/site/js/script.js')
+// .styles('resources/views/plataforma/stylePFM.css/', 'public/plataforma/css/stylePFM.css')
 
-.scripts('resources/views/plataforma/js/scriptPFM.js', 'public/plataforma/js/scriptPFM.js')
+.scripts('resources/js/custom.js', 'public/js/script.js')
 
-.scripts(['node_modules/jquery/dist/jquery.js'], 'public/site/js/jquery.js')
+//.scripts('resources/views/plataforma/js/scriptPFM.js', 'public/plataforma/js/scriptPFM.js')
 
-.scripts('node_modules/bootstrap/dist/js/bootstrap.min.js', 'public/site/js/bootstrap.min.js')
-    .scripts('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'public/site/js/bootstrap.bundle.min.js');
+.scripts(['node_modules/jquery/dist/jquery.js'], 'public/js/jquery.js')
+
+.sass('resources/sass/custom.scss/', 'public/css/mainSass.css')
+
+.scripts('node_modules/bootstrap/dist/js/bootstrap.min.js', 'public/js/bootstrap.min.js')
+    .scripts('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'public/js/bootstrap.bundle.min.js');

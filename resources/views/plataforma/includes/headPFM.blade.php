@@ -10,10 +10,12 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 {{-- bootstrap css  --}}
-<link rel="stylesheet" href="{{ asset('site/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 {{-- custom   css  --}}
-<link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('plataforma/css/stylePFM.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{{-- custom   sass bootstrap --}}
+<link rel="stylesheet" href="{{ asset('css/mainSass.css') }}">
+{{-- <link rel="stylesheet" href="{{ mix('css/mainSass.css') }}"> --}}
 
 {{-- GOOGLE FONTS --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">

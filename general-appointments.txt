@@ -9,7 +9,20 @@ https://getbootstrap.com/docs/5.1/components/modal/
 
 remover border " border-0"
 
+customizar o bootstrap com sass in laravel
+https://www.youtube.com/watch?v=SOIIl33nthw
 
+customizar bootstrap  com sass 
+https://www.youtube.com/watch?v=aWmiEQYxy1w
+
+
+================================================                ================================================
+                                                     CSS  
+================================================               =================================================
+
+
+criar desfoque | desfocagem  na imagem 
+https://www.w3schools.com/howto/howto_css_blurred_background.asp
 
 
 

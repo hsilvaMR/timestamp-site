@@ -1,0 +1,278 @@
+/*
+================================                    ========================================
+                                        SITE              
+================================                    ==========================================
+*/
+
+
+/* HEADER */
+
+.header {
+    /* background-image: url("{{asset('img/headerBackground.png')}}"); */
+    background-image: url("/img/headerBackground.png");
+    background-repeat: no-repeat;
+    height: 651px;
+    width: auto;
+    background-size: cover;
+    /* position: absolute; */
+    /* background-attachment: fixed; */
+}
+
+.content-zIndex {
+    position: relative;
+    width: 741px;
+    /* height: 537px; */
+    top: -250px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.loginArea {
+    cursor: pointer;
+}
+
+.logoHeader {
+    cursor: pointer;
+}
+
+.bt-register {
+    cursor: pointer !important;
+    background-color: #F78065 !important;
+    color: #F7F7F7 !important;
+}
+
+
+/* includes/footer all  css */
+
+.footer {
+    /* position: absolute;
+    width: 1440px;
+    height: 575px;
+    left: 0px;
+    top: 2345px; */
+    background: #F7F7F7
+}
+
+.col-A {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.titulo-col {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.item-col {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+/* home all  css */
+
+.home-box-1 {
+    margin-top: -200px;
+}
+
+.font-title-header {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+}
+
+.font-words-body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 500;  trts  s lkdlççldf*/
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.color-rose-words {
+    font-style: normal !important;
+    color: #F78065;
+}
+
+.font-title-box2 {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.font-body-box2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 500; */
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.font-body-box2-color {
+    color: #F78065;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    /* font-weight: 500px; */
+    font-weight: bold;
+    font-size: 20px;
+    /* line-height: 24px; */
+}
+
+.col-2B,
+.col-1A,
+.col-3B {
+    cursor: pointer;
+}
+
+
+/* modal style include/modals.blade.php */
+
+.modal-site {
+    max-width: 1254px !important;
+}
+
+.modal-header-title-font {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 26px;
+    color: #000000;
+}
+
+#modal-registar .modal-content {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 12px 24px 12px 16px; */
+    /* position: absolute; */
+    /* width: 720px; */
+    max-height: 187px;
+    /* left: 360px; */
+    /* top: 157px; */
+    background: #F78065;
+}
+
+.modal-title-process-compra-font {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.btnCloseModal {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: bolder !important;
+    font-size: 36px !important;
+    color: #000000;
+}
+
+.col-mstamp:hover {
+    box-shadow: -20px -20px 60px 0.15px rgba(248, 155, 134, 0.2), 20px 20px 60px 0.15px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+.col-mstamp:hover {
+    box-shadow: -20px -20px 60px 0.15px rgba(248, 155, 134, 0.2), 20px 20px 60px 0.15px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+
+/*
+================================                    ========================================
+                                    PLATAFORMA              
+================================                    ==========================================
+*/
+
+
+/******************************************************** HEADER *********************************************************/
+
+.headerPFM {
+    /* background-image: url("{{asset('img/headerBackground.png')}}"); */
+    background-image: url("/img/headerBackground.png");
+    background-repeat: no-repeat;
+    height: 651px;
+    width: auto;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+
+/******************************************************** MODAL LOGIN  *********************************************************/
+
+.modal-login .title-font {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+    color: #222222;
+}
+
+.modal-login .fields-font {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.085em;
+    color: #F78065;
+}
+
+.modal-login .col-registar {
+    width: 242px;
+    height: 67px;
+    background: #E8E9EB;
+}
+
+.modal-login .col-entrar {
+    width: 242px;
+    height: 67px;
+    background: #F78065;
+}
+
+.modal-login .col-registar span {
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.085em;
+    color: #F78065;
+}
+
+.modal-login .col-entrar span {
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.085em;
+    color: #E8E9EB;
+}
