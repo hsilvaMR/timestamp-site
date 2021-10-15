@@ -23,7 +23,7 @@
                         <input type="text" id="fname" name="fname" class="py-2">
                     </div>
                     <div class="p-2 bd-highlight text-center fields-font">
-                        <label for="">ESQUECEU A PASSWORD?</label>
+                        <label for="" class="py-3">ESQUECEU A PASSWORD?</label>
                     </div>
                 </div>
 
@@ -31,13 +31,22 @@
             {{-- BTN REGISTAR |  ENTRAR --}}
             <div class="container-fluid">
 
-                <div class="row  align-items-center">
-                    <div class="col col-registar text-center">
-                        {{-- <span class="mt-5"> REGISTAR</span> --}}
+                {{-- <div class="d-flex flex-row bd-highlight mb-3 col-registar">
+                    <div class="d-flex justify-content-center">
                         <span>REGISTAR</span>
                     </div>
-                    <div class="col col-entrar text-center">
-                        <span class="mt-5">ENTRAR</span>
+
+                    <div class="d-flex justify-content-center col-entrar">
+                        <span>ENTRAR</span>
+                    </div>
+                </div> --}}
+
+                <div class="row  align-items-center">
+                    <div class="col col-registar  d-flex justify-content-center">
+                        <span class="py-4">REGISTAR</span>
+                    </div>
+                    <div class="col col-entrar d-flex justify-content-center">
+                        <span class="py-4">ENTRAR</span>
                     </div>
                 </div>
 
