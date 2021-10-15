@@ -249,12 +249,14 @@
     width: 242px;
     height: 67px;
     background: #E8E9EB;
+    cursor: pointer;
 }
 
 .modal-login .col-entrar {
     width: 242px;
     height: 67px;
     background: #F78065;
+    cursor: pointer;
 }
 
 .modal-login .col-registar span {
@@ -265,6 +267,7 @@
     line-height: 22px;
     letter-spacing: 0.085em;
     color: #F78065;
+    text-align: center;
 }
 
 .modal-login .col-entrar span {
@@ -275,4 +278,19 @@
     line-height: 22px;
     letter-spacing: 0.085em;
     color: #E8E9EB;
+    text-align: center;
+}
+
+.modal-login .box-fields input {
+    width: 454px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: black;
+}
+
+.modal-login .box-fields input:focus {
+    outline: none;
 }

@@ -13,12 +13,14 @@
             </div>
             {{-- body --}}
             <div class="modal-body">
-                <div class="d-flex flex-column bd-highlight mb-3">
+                <div class="d-flex flex-column bd-highlight mb-3 box-fields">
                     <div class="p-2 bd-highlight fields-font">
-                        <label for="">EMAIL</label>
+                        <label for="">EMAIL</label><br>
+                        <input type="text" id="fname" name="fname" class="py-2">
                     </div>
                     <div class="p-2 bd-highlight  fields-font">
-                        <label for="">PASSWORD</label>
+                        <label for="">PASSWORD</label><br>
+                        <input type="text" id="fname" name="fname" class="py-2">
                     </div>
                     <div class="p-2 bd-highlight text-center fields-font">
                         <label for="">ESQUECEU A PASSWORD?</label>
@@ -31,10 +33,11 @@
 
                 <div class="row  align-items-center">
                     <div class="col col-registar text-center">
-                        <span> REGISTAR</span>
+                        {{-- <span class="mt-5"> REGISTAR</span> --}}
+                        <span>REGISTAR</span>
                     </div>
                     <div class="col col-entrar text-center">
-                        <span>ENTRAR</span>
+                        <span class="mt-5">ENTRAR</span>
                     </div>
                 </div>
 
