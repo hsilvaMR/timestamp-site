@@ -340,3 +340,12 @@ atualizar o repositorio quando se trabalha numa máquina diferente (supondo que 
 
 error ajaxa jquery 500
 https://www.codeproject.com/Questions/653678/500-Internal-Server-Error-when-pass-data-in-ajax
+
+
+
+================================================                ================================================
+                                                    FIGMA  
+================================================               =================================================
+
+Atalhos
+ocultar colunas esq e direita --> CTRL + \
