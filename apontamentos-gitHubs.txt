@@ -12,6 +12,7 @@ https://www.youtube.com/watch?v=NR9jc5ODvuM
 
 acerca de branch
 https://zepel.io/blog/how-to-create-a-new-branch-in-github/
+https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/
 
 criar branch 
 #  git checkout -b [name_of_your_new_branch]
