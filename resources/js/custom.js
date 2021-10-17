@@ -1,6 +1,6 @@
     $(function() {
 
-        src = '{{ route("home") }}'
+        //src = '{{ route("home") }}'
 
         // window.location.href = "{{URL::to('restaurants/20')}}"
         // window.location.href = "<?php echo URL::to('restaurants/20'); ?>";
@@ -37,11 +37,11 @@
         window.location.href = url;*/
         // })
 
-        $('#btn-login').click(function(e) {
+        $('#btn-login').on('click', function() {
 
             var routeName = 'dashboard-home'
             var url = '/area-cliente';
-            window.location.href = routeName
+            window.location.href = url
                 //console.log(url)
         });
 
