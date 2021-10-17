@@ -9,9 +9,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-{{-- bootstrap css  --}}
+{{-- bootstrap css --}}
 <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-{{-- custom   css  --}}
+{{-- custom   css --}}
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 {{-- custom   sass bootstrap --}}
 <link rel="stylesheet" href="{{ asset('css/mainSass.css') }}">
@@ -30,3 +30,7 @@
 {{-- Font Awesome --}}
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
+

@@ -7,5 +7,6 @@
 {{-- MODALS  --}}
 @include('plataforma/includes/modalPFM')
 @yield('modal')
+@yield('scripts')
 
 @endsection

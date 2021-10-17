@@ -22,7 +22,8 @@
                             <label for="">PASSWORD</label><br>
                             <input type="text" id="fname" name="fname" class="py-2">
                         </div>
-                        <div class="p-2 bd-highlight text-center fields-font" data-bs-toggle="modal" data-bs-target="#boxModalPassword"> 
+                        <div class="p-2 bd-highlight text-center fields-font" data-bs-toggle="modal"
+                            data-bs-target="#boxModalPassword">
                             <label for="" class="py-3" id="recoverPass">ESQUECEU A PASSWORD?</label>
                         </div>
                     </div>
@@ -36,7 +37,7 @@
                             data-bs-target="#boxModalRegister">
                             <span class="py-4">REGISTAR</span>
                         </div>
-                        <div class="col col-entrar d-flex justify-content-center">
+                        <div class="col col-entrar d-flex justify-content-center" id="btn-login">
                             <span class="py-4">ENTRAR</span>
                         </div>
                     </div>
@@ -112,7 +113,7 @@
                         </div>
                     </div>
 
-                </div> 
+                </div>
 
             </div>
         </div>
@@ -151,8 +152,9 @@
                             <span class="py-4">RECUPERAR</span>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
 @endsection
+
