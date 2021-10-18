@@ -9,11 +9,19 @@ https://www.youtube.com/watch?v=8znk5eDbVGA
 
 https://www.youtube.com/watch?v=NR9jc5ODvuM 
 
+
+acerca de branch
+https://zepel.io/blog/how-to-create-a-new-branch-in-github/
+https://linuxize.com/post/how-to-rename-local-and-remote-git-branch/
+
 criar branch 
 #  git checkout -b [name_of_your_new_branch]
 
 consultar todas branch
 # git branch -a
+
+renomear branch
+# git branch -m <new_name>
 
 listar ficheiros de uma branch
 https://stackoverflow.com/questions/1910783/git-1-list-all-files-in-a-branch-2-compare-files-from-different-branch/1910828
@@ -38,7 +46,7 @@ consultar branch abertas(ativas)
 #git branch
 
 remover branch
-#git branch -dev nomeDaBranch
+#git branch -d nomeDaBranch
 
 juntar as versõe de uma branch para outra branch
 estando na branch A copiar as dados da branch master .  Para isso basta  
@@ -61,7 +69,11 @@ fazer commit de fciheiros quando se troca de varios dispositivos para o mesmo re
 2º #git push origin nome_da_branch
 
 atualizar o repositorio quando se trabalha numa máquina diferente (supondo que já existe uma cópia do repositorio na maquina )
-1º #git pull url_do_repositorio  nome_da_branch 
+1º #git pull url_do_repositorio  nome_da_branch
+
+atualizar todas branch quando elas foram  criada numa maquina diferente 
+https://cursos.alura.com.br/forum/topico-erro-pathspec-master-did-not-match-any-file-s-known-to-git-102451
+#git fetch
 
 
 

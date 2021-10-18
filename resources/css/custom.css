@@ -164,13 +164,6 @@
 }
 
 #modal-registar .modal-content {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding: 12px 24px 12px 16px; */
-    /* position: absolute; */
-    /* width: 720px; */
     max-height: 187px;
     /* left: 360px; */
     /* top: 157px; */
@@ -224,9 +217,10 @@
 }
 
 
-/******************************************************** MODAL LOGIN  *********************************************************/
+/************************************************** MODAL LOGIN | REGISTAR  *********************************************************/
 
-.modal-login .title-font {
+.modal-login .title-font,
+.modal-registar .title-font {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bolder;
@@ -236,7 +230,9 @@
     color: #222222;
 }
 
-.modal-login .fields-font {
+.modal-login .fields-font,
+.modal-registar .fields-font,
+.modal-password .fields-font {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
@@ -245,21 +241,25 @@
     color: #F78065;
 }
 
-.modal-login .col-registar {
+.modal-login .col-registar,
+.modal-registar .col-registar {
     width: 242px;
     height: 67px;
     background: #E8E9EB;
     cursor: pointer;
 }
 
-.modal-login .col-entrar {
+.modal-login .col-entrar,
+.modal-registar .col-entrar,
+.modal-password .col-registar {
     width: 242px;
     height: 67px;
     background: #F78065;
     cursor: pointer;
 }
 
-.modal-login .col-registar span {
+.modal-login .col-registar span,
+.modal-registar .col-registar span {
     font-family: 'Montserrat' !important;
     font-style: normal;
     font-weight: bold;
@@ -270,7 +270,8 @@
     text-align: center;
 }
 
-.modal-login .col-entrar span {
+.modal-login .col-entrar span,
+.modal-registar .col-entrar span {
     font-family: 'Montserrat' !important;
     font-style: normal;
     font-weight: bold;
@@ -281,7 +282,9 @@
     text-align: center;
 }
 
-.modal-login .box-fields input {
+.modal-login .box-fields input[type='text'][type='text'],
+.modal-registar .box-fields input[type='text'][type='text'],
+.modal-password .box-fields input[type='text'][type='text'] {
     width: 454px;
     border: 0.5px solid rgba(0, 0, 0, 0.1);
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
@@ -291,6 +294,90 @@
     color: black;
 }
 
-.modal-login .box-fields input:focus {
+.box-fields #recoverPass {
+    cursor: pointer;
+}
+
+.modal-login .box-fields input[type='text']:focus,
+.modal-password .box-fields input[type='text']:focus,
+.modal-registar .box-fields input[type='text']:focus {
     outline: none;
 }
+
+.box-termos label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 11px;
+    /* identical to box height */
+    color: #F78065;
+}
+
+
+/* recover password  */
+
+.modal-password .col-recuperar {
+    width: 242px;
+    height: 67px;
+    background: #F78065;
+    cursor: pointer;
+}
+
+.modal-password .col-recuperar span {
+    font-family: 'Montserrat' !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.085em;
+    color: #E8E9EB;
+    text-align: center;
+}
+
+
+/*********************  area de client ******************************************************************/
+
+.main-client {}
+
+
+/*.check-round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    /* left: 0; */
+
+
+/* position: absolute; 
+    /* top: 0; 
+    width: 28px;
+}
+
+.check-round label::after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    /*position: absolute; 
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+
+.check-round input[type='text'][type="checkbox"] {
+    visibility: hidden;
+}
+
+.check-round input[type='text'][type='checkbox']:checked+label {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.check-round input[type='text'][type="checkbox"]:checked+label::after {
+    opacity: 1;
+}*/

@@ -24,6 +24,8 @@ https://www.youtube.com/watch?v=aWmiEQYxy1w
 criar desfoque | desfocagem  na imagem 
 https://www.w3schools.com/howto/howto_css_blurred_background.asp
 
+rounded checkBox
+https://codepen.io/AllThingsSmitty/pen/WjZVjo
 
 
 ================================================                ================================================
@@ -53,7 +55,11 @@ funcão para test de ajax
                                                     LARAVEL  
 ================================================               =================================================
 
+windows loaction 
+window.location.href = '/area-cliente'
 
+comunity
+https://laravelquestions.com/2020/12/07/window-location-href-not-working-properly/
 
 ========Teclas de Atalho ======
  
@@ -340,3 +346,13 @@ atualizar o repositorio quando se trabalha numa máquina diferente (supondo que 
 
 error ajaxa jquery 500
 https://www.codeproject.com/Questions/653678/500-Internal-Server-Error-when-pass-data-in-ajax
+
+
+
+================================================                ================================================
+                                                    FIGMA  
+================================================               =================================================
+
+Atalhos
+ocultar colunas esq e direita --> CTRL + \
+aumentar zoom de um objecto/box CTRL + SCROLL(BOTAO AUMENTAR/DIMINUIR RATO)
