@@ -402,6 +402,16 @@
     cursor: pointer;
 }
 
+.left-menu .item:hover {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F78065;
+    cursor: pointer;
+}
+
 .right-menu .titleName {
     font-family: 'Montserrat';
     font-style: normal;

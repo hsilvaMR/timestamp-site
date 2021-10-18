@@ -13,52 +13,64 @@
                     <label for="" id="nameClient" class="py-2">Honorio Silva</label>
                 </div>
                 {{-- adquirir selos btn --}}
-                <div class="p-2 bd-highlight btn-pay-selos text-center">
+                <div class="p-2 bd-highlight btn-pay-selos text-center mb-3 mt-3">
                     <span>{{trans('areaClientWords.adqSelos')}}</span>
                 </div>
-                {{-- items   list-group-flush --}}
-                <div class="p-2 bd-highlight">
-                    <ul class="list-group">
-                        <li class="list-group-item border-0">
-                            <span class="border-bottom">
-                                {{trans('areaClientWords.meuSelos')}}
-                                <i class="fas ms-5 fa-chevron-right"></i>
-                            </span>
-
-                        </li>
-                        <li class="list-group-item border-0">
-                            <span class="border-bottom">
-                                {{trans('areaClientWords.historicoC')}}
-                                <i class="fas ms-5 fa-chevron-right"></i>
-                            </span>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <span class="border-bottom">
-                                {{trans('areaClientWords.meusDados')}}
-                                <i class="fas ms-5 fa-chevron-right"></i>
-                            </span>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <span class="border-bottom">
-                                {{trans('areaClientWords.meusVale')}}
-                                <i class="fas ms-5 fa-chevron-right"></i>
-                            </span>
-
-                        </li>
-                        <li class="list-group-item border-0">
-                            <span class="border-bottom">
-                                {{trans('areaClientWords.metodoPagamento')}}
-                                <i class="fas ms-5 fa-chevron-right"></i>
-                            </span>
-                        </li>
-                        <li class="list-group-item border-0">
-                            <span class="border-bottom">
-                                {{trans('areaClientWords.encerrar')}}
-                                <i class="fas ms-5 fa-chevron-right"></i>
-                            </span>
-                        </li>
-                    </ul>
+                {{--       items    --}}
+                <div class="d-flex bd-highlight border-bottom">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.meuSelos')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
                 </div>
+
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item  ">
+                        {{trans('areaClientWords.historicoC')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight  item">
+                        {{trans('areaClientWords.meusDados')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.meusVale')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item">
+                        {{trans('areaClientWords.metodoPagamento')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.encerrar')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
             </div>
 
         </div>
