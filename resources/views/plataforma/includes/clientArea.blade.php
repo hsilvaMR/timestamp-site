@@ -224,7 +224,7 @@
                     <div class="me-auto p-2 bd-highlight descricao">
                         {{trans('areaClientWords.descr')}}
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight" id="backBoxClient">
                         <i class="fas fa-chevron-left"></i>
                         {{trans('areaClientWords.btnBack')}}
                     </div>
@@ -232,6 +232,14 @@
             </div>
             {{-- formulario --}}
             <div class="box-form">
+
+                <form action="">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
 
             </div>
 

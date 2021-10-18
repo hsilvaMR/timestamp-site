@@ -460,12 +460,21 @@
 
 .client-dados {
     position: relative;
-    height: 1063px;
+    height: 950px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
     padding: auto;
     margin: auto;
     text-align: center;
+}
+
+#backBoxClient {
+    cursor: pointer;
+}
+
+#backBoxClient:hover {
+    color: #F78065;
+    cursor: pointer;
 }
 
 
