@@ -37,7 +37,7 @@
                 </div>
                 {{--  items | meus dados   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight  item">
+                    <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
                         {{trans('areaClientWords.meusDados')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -76,8 +76,9 @@
 
         </div>
         {{-- menu direita  --}}
+        {{-- menu direita  --}}
+        {{-- menu direita  --}}
         <div class="col-6 right-menu">
-
             {{-- title  | descricao --}}
             <div class="d-flex flex-column   text-start bd-highlight mb-3 mt-2  ">
                 {{-- title --}}
@@ -137,7 +138,6 @@
 {{--  dados cliente --}}
 {{--  dados cliente --}}
 <div class="container client-dados d-none">
-
     <div class="row">
         {{--  menu esquerda --}}
         <div class="col-4 left-menu text-start">
@@ -173,7 +173,7 @@
                 </div>
                 {{--  items | meus dados   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight  item">
+                    <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
                         {{trans('areaClientWords.meusDados')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -207,26 +207,28 @@
                         <i class="fas ms-5 fa-chevron-right"></i>
                     </div>
                 </div>
-
             </div>
-
         </div>
+        {{--  menu direita --}}
+        {{--  menu direita --}}
         {{--  menu direita --}}
         <div class="col-6 right-menu">
             {{-- title  | descricao --}}
-            <div class="d-flex flex-column   text-start bd-highlight mb-3 mt-2  ">
+            <div class="d-flex flex-column text-start bd-highlight mb-3 mt-2  ">
                 {{-- title --}}
                 <div class="p-2 bd-highlight mb-3">
-                    <span class="titleName">{{trans('areaClientWords.titleBox')}}</span>
+                    <span class="titleName">{{trans('areaClientWords.titleDadosPessoa')}}</span>
                 </div>
-                {{-- welcome descricao --}}
-                <div class="p-2 bd-highlight descricao mb-3">
-                    <span>{{trans('areaClientWords.welcome')}}</span>
+                {{-- welcome descricao  | voltar --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight descricao">
+                        {{trans('areaClientWords.descr')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas fa-chevron-left"></i>
+                        {{trans('areaClientWords.btnBack')}}
+                    </div>
                 </div>
-
-                <div class="p-2 bd-highlight  border-bottom">
-                </div>
-
             </div>
             {{-- formulario --}}
             <div class="box-form">
