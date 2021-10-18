@@ -69,7 +69,11 @@ fazer commit de fciheiros quando se troca de varios dispositivos para o mesmo re
 2º #git push origin nome_da_branch
 
 atualizar o repositorio quando se trabalha numa máquina diferente (supondo que já existe uma cópia do repositorio na maquina )
-1º #git pull url_do_repositorio  nome_da_branch 
+1º #git pull url_do_repositorio  nome_da_branch
+
+atualizar todas branch quando elas foram  criada numa maquina diferente 
+https://cursos.alura.com.br/forum/topico-erro-pathspec-master-did-not-match-any-file-s-known-to-git-102451
+#git fetch
 
 
 
