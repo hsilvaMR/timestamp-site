@@ -14,7 +14,7 @@
 {{-- custom   css  --}}
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 {{-- custom   sass bootstrap --}}
-<link rel="stylesheet" href="{{ asset('css/mainSass.css') }}">
+<link rel="stylesheet" href="{{ mix('css/mainSass.css') }}">
 {{-- <link rel="stylesheet" href="{{ mix('css/mainSass.css') }}"> --}}
 
 {{-- GOOGLE FONTS --}}
