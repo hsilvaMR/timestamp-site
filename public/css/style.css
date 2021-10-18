@@ -209,11 +209,11 @@
     /* background-image: url("{{asset('img/headerBackground.png')}}"); */
     background-image: url("/img/headerBackground.png");
     background-repeat: no-repeat;
-    height: 651px;
     width: auto;
+    height: 700px;
     background-size: cover;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
 }
 
 
@@ -336,9 +336,117 @@
 }
 
 
-/*********************  area de client ******************************************************************/
+/******************************************AREA DE CLIENT MAIN BOX ******************************************************************/
 
-.main-client {}
+.main-client {
+    position: relative;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.main-client .left-menu .titleName {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #222222;
+}
+
+.main-client .left-menu #nameClient {
+    font-family: 'Montserrat';
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 15px;
+    line-height: 15px;
+    color: #F78065;
+}
+
+.btn-pay-selos {
+    width: 181px;
+    height: 40px;
+    /* left: 290px;
+    top: 352px; */
+    border: 1.5px solid #F78065;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #F78065;
+}
+
+.btn-pay-selos:hover {
+    border: 1.5px solid #F78065;
+    background-color: #F78065;
+    cursor: pointer;
+    color: #FFFFFF !important;
+}
+
+.btn-pay-selos span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 15px;
+    /* identical to box height */
+}
+
+.left-menu .list-group .list-group-item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.48);
+    cursor: pointer;
+}
+
+.right-menu .titleName {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+}
+
+.right-menu .descricao {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F78065;
+}
+
+.right-menu .box-btn {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 2px solid #F78065;
+    box-sizing: border-box;
+    width: 190px;
+    height: 70px;
+    cursor: pointer;
+    color: #F78065;
+}
+
+.right-menu .box-btn:hover {
+    border: 2px solid #F78065;
+    background: #F78065;
+    color: #FFFFFF;
+}
+
+.right-menu .box-btn span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
 
 
 /*.check-round label {
