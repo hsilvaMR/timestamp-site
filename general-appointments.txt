@@ -358,6 +358,13 @@ ocultar colunas esq e direita --> CTRL + \
 aumentar zoom de um objecto/box CTRL + SCROLL(BOTAO AUMENTAR/DIMINUIR RATO)
 
 
+================================================                ================================================
+                                                    VS CODE  
+================================================               =================================================
+TECLAS DE Atalho
+Abrir varias janelas nos mesmo workspace ---> CRTL + \ (ideal para análise de código do mesmo projecto)
+
+
 
 ================================================                ================================================
                                                     OUTRO  

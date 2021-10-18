@@ -458,6 +458,16 @@
     line-height: 15px;
 }
 
+.client-dados {
+    position: relative;
+    height: 1063px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+
 
 /*.check-round label {
     background-color: #fff;
