@@ -507,7 +507,7 @@
 .right-menu .box-form .btn-guardar {
     position: absolute;
     width: 760px;
-    height: 50px;
+    height: 47px;
     background: #F78065;
     color: #FFFFFF !important;
     /* cursor: pointer; */
@@ -536,6 +536,19 @@
 .right-menu .box-form .btn-guardar input[type='radio']:focus {
     outline: none;
     outline-color: #F78065;
+}
+
+
+/*   box selos */
+
+.selo-box {
+    position: relative;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
+    padding: auto;
+    margin: auto;
+    text-align: center;
 }
 
 

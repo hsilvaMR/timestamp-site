@@ -336,10 +336,6 @@ atualizar o repositorio quando se trabalha numa máquina diferente (supondo que 
 1º #git pull url_do_repositorio  nome_da_branch 
 
 
-
-
-
-
 ================================================                ================================================
                                                     PROJECTOS  
 ================================================               =================================================
@@ -361,8 +357,12 @@ aumentar zoom de um objecto/box CTRL + SCROLL(BOTAO AUMENTAR/DIMINUIR RATO)
 ================================================                ================================================
                                                     VS CODE  
 ================================================               =================================================
+https://code.visualstudio.com/docs/getstarted/tips-and-tricks
+
 TECLAS DE Atalho
 Abrir varias janelas nos mesmo workspace ---> CRTL + \ (ideal para análise de código do mesmo projecto)
+
+expandir(toggle) a tela F11 
 
 How to Remove the file preview in Visual Studio Code  | remover  barra de navegação lado direito  "miniMap"
 https://stackoverflow.com/questions/44774709/removing-the-file-preview-on-the-right-side-of-the-editor-in-vs-code

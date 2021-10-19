@@ -77,7 +77,6 @@
         </div>
         {{-- menu direita  --}}
         {{-- menu direita  --}}
-        {{-- menu direita  --}}
         <div class="col-6 right-menu">
             {{-- title  | descricao --}}
             <div class="d-flex flex-column   text-start bd-highlight mb-3 mt-2  ">
@@ -134,9 +133,9 @@
     </div>
 
 </div>
-{{--  dados cliente --}}
-{{--  dados cliente --}}
-{{--  dados cliente --}}
+{{--  BOX  dados cliente --}}
+{{-- BOX  dados cliente --}}
+{{-- BOX  dados cliente --}}
 <div class="container client-dados ">
     <div class="row">
         {{--  menu esquerda --}}
@@ -209,7 +208,6 @@
                 </div>
             </div>
         </div>
-        {{--  menu direita --}}
         {{--  menu direita --}}
         {{--  menu direita --}}
         <div class="col-7 right-menu">
@@ -322,6 +320,131 @@
         </div>
 
     </div>
+</div>
+{{--  BOX OS MEUS SELOS  --}}
+{{--  BOX OS MEUS SELOS  --}}
+{{--  BOX OS MEUS SELOS  --}}
+<div class="container selo-box  justify-content-center mt-5 mb-2">
 
+    <div class="row">
+
+        {{--  menu esquerda  --}}
+        <div class="col-4 left-menu text-start">
+            <div class="d-flex flex-column bd-highlight mb-1 mt-2 ms-3">
+                {{-- name title --}}
+                <div class="p-2 bd-highlight">
+                    <label for="" class="titleName">{{trans('areaClientWords.nomeCliente')}}</label><br>
+                    <label for="" id="nameClient" class="py-2">Honorio Silva</label>
+                </div>
+                {{-- adquirir selos btn --}}
+                <div class="p-2 bd-highlight btn-pay-selos text-center mb-3 mt-3">
+                    <span>{{trans('areaClientWords.adqSelos')}}</span>
+                </div>
+                {{--       items | meus selos     --}}
+                <div class="d-flex bd-highlight border-bottom">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.meuSelos')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                {{--  items | historico consumo  --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item  ">
+                        {{trans('areaClientWords.historicoC')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | meus dados   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
+                        {{trans('areaClientWords.meusDados')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | vale de desconto   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.meusVale')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | metodo de pagamento   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item">
+                        {{trans('areaClientWords.metodoPagamento')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | encerrar sessão   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.encerrar')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {{-- menu direita --}}
+        {{-- menu direita --}}
+        <div class="col-7 right-menu">
+
+            {{-- title  | descricao --}}
+            <div class="d-flex flex-column text-start bd-highlight mb-3 mt-2  ">
+                {{-- title --}}
+                <div class="p-2 bd-highlight mb-3">
+                    <span class="titleName">{{trans('areaClientWords.titleDadosPessoa')}}</span>
+                </div>
+                {{-- welcome descricao  | voltar --}}
+                <div class="d-flex bd-highlight">
+                    <div class="me-auto p-2 bd-highlight descricao">
+                        {{trans('areaClientWords.descr')}}
+                    </div>
+                    <div class="p-2 bd-highlight" id="backBoxClient">
+                        <i class="fas fa-chevron-left"></i>
+                        {{trans('areaClientWords.btnBack')}}
+                    </div>
+                </div>
+
+                {{-- Tipos de selos  | btn Pesquisa --}}
+                <div class="d-flex flex-row bd-highlight">
+                    {{-- radioBTN tipos de selos  me-auto   class=" p-2 bd-highlight " --}}
+                    <div>
+                        {{-- radioBtn | MSTAMP --}}
+                        <input type="radio" id="mstamp" name="typeAcount" value="">
+                        <label for="mstamp" class="me-3">
+                            <img src="{{ asset('img/Mstamp-logoA.svg') }}" width="100px" height="100px" alt="">
+                        </label>
+                        {{--  radioBtn | MTECH --}}
+                        <input type="radio" id="mtech" name="typeAcount" value="">
+                        <label for="mtech">
+                            <img src="{{ asset('img/Mtech-logoB.svg') }}" width="90px" height="90px" alt="">
+                        </label>
+                    </div>
+                    {{-- btn Pesquisa class="p-2 bd-highlight" --}}
+                    <div id="backBoxClient">
+                        <label for="fname">{{trans('areaClientWords.frLocalidade')}}</label>
+                        <input type="text" id="fname" name="fname" value="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>
 @endsection

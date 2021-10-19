@@ -37,5 +37,8 @@ return [
     'frNewPassword' => 'Nova Palavra Passe*',
     'frPassConfirm' => 'Confirmação da Nova palavra-passe*',
     'btnSave' => 'Guardar',
-
+    // selos 
+    'title' => 'Os meus Selos Temporais',
+    'descrSelos' => 'Aqui encontrará uma lista com as suas compras',
+    'search' => 'pesquisar',
 ];
