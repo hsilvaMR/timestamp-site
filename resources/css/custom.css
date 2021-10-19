@@ -529,6 +529,15 @@
     font-size: 23px;
 }
 
+.right-menu .box-form .btn-guardar input[type='radio'] {
+    /* color: #F78065; */
+}
+
+.right-menu .box-form .btn-guardar input[type='radio']:focus {
+    outline: none;
+    outline-color: #F78065;
+}
+
 
 /*.right-menu .box-form .btn-guardar button {
     background-color: none;

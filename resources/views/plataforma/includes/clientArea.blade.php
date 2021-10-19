@@ -233,7 +233,6 @@
             {{-- formulario --}}
             <div class="box-form  d-flex flex-column justify-content-start bd-highlight mb-3">
                 <form action="">
-
                     {{-- title  |  tipo de cliente  --}}
                     <div class="p-2 bd-highlight text-start">
                         {{-- title  --}}

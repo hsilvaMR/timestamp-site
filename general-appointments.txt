@@ -364,6 +364,13 @@ aumentar zoom de um objecto/box CTRL + SCROLL(BOTAO AUMENTAR/DIMINUIR RATO)
 TECLAS DE Atalho
 Abrir varias janelas nos mesmo workspace ---> CRTL + \ (ideal para análise de código do mesmo projecto)
 
+How to Remove the file preview in Visual Studio Code  | remover  barra de navegação lado direito  "miniMap"
+https://stackoverflow.com/questions/44774709/removing-the-file-preview-on-the-right-side-of-the-editor-in-vs-code
+https://www.youtube.com/watch?v=wJpQidmp_ts
+
+para desativar o mini mapa ou barra de navegação vertical do lado direito 
+ir configuracao > na area de pesquisa  inserir "editor.minimap.enabled" 
+
 
 
 ================================================                ================================================
