@@ -40,6 +40,13 @@ $(function() {
     $('#boxData-client').on('click', function() {
         console.log("open-box-client-data");
         $('.client-dados').removeClass("d-none")
+        $('.main-client').addClass("d-none")
+    });
+    // open box area client
+    $('#backBoxClient').on('click', function() {
+        console.log("open-box-client-data");
+        $('.client-dados').addClass("d-none")
+        $('.main-client').removeClass("d-none")
     });
 
 })

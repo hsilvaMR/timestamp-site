@@ -78,8 +78,8 @@ make:cast
 configuracao global do composer p/ aceder remotamente update de todos  pacotes
 #composer config -g repo.packagist composer https://packagist.org  
 
-configuracao global do composer p/ protocolos 
-#composer config -g github-protocols https ssh
+configuracao global do composer p/ protocolo 
+#composer config -g github-protocols https ssh  
 
 
 

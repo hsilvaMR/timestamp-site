@@ -301,6 +301,7 @@
 .modal-login .box-fields input[type='text']:focus,
 .modal-password .box-fields input[type='text']:focus,
 .modal-registar .box-fields input[type='text']:focus {
+    /* .right-menu .box-form input[type='text']:focus { */
     outline: none;
 }
 
@@ -460,12 +461,66 @@
 
 .client-dados {
     position: relative;
-    height: 1063px;
+    height: 1050px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
     padding: auto;
     margin: auto;
     text-align: center;
+}
+
+#backBoxClient {
+    cursor: pointer;
+}
+
+#backBoxClient:hover {
+    color: #F78065;
+    cursor: pointer;
+}
+
+.right-menu .box-form input[type='text'] {
+    width: 750px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: black;
+}
+
+.right-menu .box-form input[type='text']:focus {
+    /* outline: none; */
+    /* border-bottom: 0.5px solid #F78065; */
+    /* outline-style:  */
+    outline-color: #F78065;
+}
+
+.right-menu .box-form label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #222222;
+}
+
+.right-menu .box-form .btn-guardar {
+    position: absolute;
+    width: 760px;
+    height: 50px;
+    background: #F78065;
+    color: #FFFFFF;
+}
+
+.right-menu .box-form .btn-guardar input[type='submit'] {
+    color: #FFFFFF;
+    background-color: none;
+    background: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
 }
 
 

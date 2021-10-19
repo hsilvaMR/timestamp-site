@@ -137,7 +137,7 @@
 {{--  dados cliente --}}
 {{--  dados cliente --}}
 {{--  dados cliente --}}
-<div class="container client-dados d-none">
+<div class="container client-dados ">
     <div class="row">
         {{--  menu esquerda --}}
         <div class="col-4 left-menu text-start">
@@ -212,7 +212,7 @@
         {{--  menu direita --}}
         {{--  menu direita --}}
         {{--  menu direita --}}
-        <div class="col-6 right-menu">
+        <div class="col-7 right-menu">
             {{-- title  | descricao --}}
             <div class="d-flex flex-column text-start bd-highlight mb-3 mt-2  ">
                 {{-- title --}}
@@ -224,14 +224,86 @@
                     <div class="me-auto p-2 bd-highlight descricao">
                         {{trans('areaClientWords.descr')}}
                     </div>
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight" id="backBoxClient">
                         <i class="fas fa-chevron-left"></i>
                         {{trans('areaClientWords.btnBack')}}
                     </div>
                 </div>
             </div>
             {{-- formulario --}}
-            <div class="box-form">
+            <div class="box-form  d-flex flex-column justify-content-start bd-highlight mb-3">
+                <form action="">
+                    {{-- TIPO DE CLIENTE --}}
+                    <div class="p-2 bd-highlight text-start ">
+                        <label for="fname">{{trans('areaClientWords.frTypeClient')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{--  NIF  --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frNIF')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- NOME --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frNome')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- APELIDO --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frApelido')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- ENDER. FACTURACAO --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frAdressFactura')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- LOCALIDADE --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frLocalidade')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- CODIGO POSTAL --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frCodPostal')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- PAÍS --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frPais')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- E-MAIL --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frEmail')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- NOME EMPRESA --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frNomeEmpresa')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- PALAVRA PASSE ACTUAL --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frPass')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- PALAVRA PASSE NOVA --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frNewPassword')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- COMFIRMAR PALAVRA PASSE  --}}
+                    <div class="p-2 bd-highlight text-start">
+                        <label for="fname">{{trans('areaClientWords.frPassConfirm')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
+                    {{-- btn | guardar --}}
+                    <div class="p-2 bd-highlight btn-guardar text-center">
+                        <input type="submit" value="{{trans('areaClientWords.btnSave')}}">
+                    </div>
+
+                </form>
 
             </div>
 
