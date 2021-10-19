@@ -551,6 +551,27 @@
     text-align: center;
 }
 
+.selo-box .right-menu #pesquisa input[type='text'] {
+    /* border-color: #F78065; */
+    width: 300px;
+    height: 28px;
+    border: 1.25px solid rgba(247, 128, 101, 0.25);
+}
+
+.selo-box .right-menu #pesquisa input[type='text']:focus {
+    outline: none;
+    /* outline-color: #F78065; */
+}
+
+.selo-box .right-menu #pesquisa label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+    color: #F78065;
+}
+
 
 /*.right-menu .box-form .btn-guardar button {
     background-color: none;

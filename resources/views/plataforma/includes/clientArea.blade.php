@@ -406,12 +406,12 @@
             <div class="d-flex flex-column text-start bd-highlight mb-3 mt-2  ">
                 {{-- title --}}
                 <div class="p-2 bd-highlight mb-3">
-                    <span class="titleName">{{trans('areaClientWords.titleDadosPessoa')}}</span>
+                    <span class="titleName">{{trans('areaClientWords.titleAreaSelo')}}</span>
                 </div>
                 {{-- welcome descricao  | voltar --}}
                 <div class="d-flex bd-highlight">
                     <div class="me-auto p-2 bd-highlight descricao">
-                        {{trans('areaClientWords.descr')}}
+                        {{trans('areaClientWords.descrSelos')}}
                     </div>
                     <div class="p-2 bd-highlight" id="backBoxClient">
                         <i class="fas fa-chevron-left"></i>
@@ -420,9 +420,9 @@
                 </div>
 
                 {{-- Tipos de selos  | btn Pesquisa --}}
-                <div class="d-flex flex-row bd-highlight">
+                <div class="d-flex flex-row bd-highlight align-items-center">
                     {{-- radioBTN tipos de selos  me-auto   class=" p-2 bd-highlight " --}}
-                    <div>
+                    <div class=" me-auto">
                         {{-- radioBtn | MSTAMP --}}
                         <input type="radio" id="mstamp" name="typeAcount" value="">
                         <label for="mstamp" class="me-3">
@@ -435,9 +435,16 @@
                         </label>
                     </div>
                     {{-- btn Pesquisa class="p-2 bd-highlight" --}}
-                    <div id="backBoxClient">
-                        <label for="fname">{{trans('areaClientWords.frLocalidade')}}</label>
-                        <input type="text" id="fname" name="fname" value="">
+                    <div id="pesquisa" class="d-flex flex-column align-items-end">
+                        <div class="p-1 bd-highlight">
+                            <label for="fname">
+                                <i class="fas fa-search fa-1x"></i>
+                                {{trans('areaClientWords.search')}}
+                            </label>
+                        </div>
+                        <div class="p-1 bd-highlight">
+                            <input type="text" id="fname" name="fname" value="">
+                        </div>
                     </div>
                 </div>
 
