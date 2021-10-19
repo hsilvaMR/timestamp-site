@@ -17,7 +17,7 @@
                     <span>{{trans('areaClientWords.adqSelos')}}</span>
                 </div>
                 {{--       items | meus selos     --}}
-                <div class="d-flex bd-highlight border-bottom">
+                <div class="d-flex bd-highlight border-bottom" id="seloArea">
                     <div class="me-auto p-2 bd-highlight item ">
                         {{trans('areaClientWords.meuSelos')}}
                     </div>
@@ -136,7 +136,7 @@
 {{--  BOX  dados cliente --}}
 {{-- BOX  dados cliente --}}
 {{-- BOX  dados cliente --}}
-<div class="container client-dados ">
+<div class="container client-dados d-none">
     <div class="row">
         {{--  menu esquerda --}}
         <div class="col-4 left-menu text-start">
@@ -324,7 +324,7 @@
 {{--  BOX OS MEUS SELOS  --}}
 {{--  BOX OS MEUS SELOS  --}}
 {{--  BOX OS MEUS SELOS  --}}
-<div class="container selo-box  justify-content-center mt-5 mb-2">
+<div class="container selo-box justify-content-center mt-5 mb-2 d-none">
 
     <div class="row">
 

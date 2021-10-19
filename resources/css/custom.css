@@ -553,9 +553,9 @@
 
 .selo-box .right-menu #pesquisa input[type='text'] {
     /* border-color: #F78065; */
-    width: 300px;
+    width: 320px;
     height: 28px;
-    border: 1.25px solid rgba(247, 128, 101, 0.25);
+    border: 1.25px solid #F78065;
 }
 
 .selo-box .right-menu #pesquisa input[type='text']:focus {
@@ -570,6 +570,11 @@
     font-size: 18px;
     line-height: 15px;
     color: #F78065;
+    cursor: pointer;
+}
+
+.selo-box .right-menu #pesquisa label:hover {
+    font-size: 16.5px;
 }
 
 

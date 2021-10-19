@@ -46,7 +46,18 @@ $(function() {
     $('#backBoxClient').on('click', function() {
         console.log("open-box-client-data");
         $('.client-dados').addClass("d-none")
+        $('.selo-box').addClass("d-none")
         $('.main-client').removeClass("d-none")
     });
+    // open box area selos
+    $('#seloArea').on('click', function() {
+        console.log("open-box-client-data");
+        //$('.client-dados').addClass("d-none")
+        $('.selo-box').removeClass("d-none")
+        $('.main-client').addClass("d-none")
+    });
+
+
+
 
 })
