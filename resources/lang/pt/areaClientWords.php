@@ -22,6 +22,8 @@ return [
     'btnBack' => 'voltar',
     'campoOBRIG' => '*Campos Obrigatório',
     'frTypeClient' => 'Tipo de Cliente*',
+    'rbtnEmpresa' => 'Empresa',
+    'rbtnParticular' => 'Particular / Por Conta Própria',
     'frNIF' => 'Nº de Identificação Fiscal*',
     'frNome' => 'Nome*',
     'frApelido' => 'Apelido*',
@@ -35,4 +37,5 @@ return [
     'frNewPassword' => 'Nova Palavra Passe*',
     'frPassConfirm' => 'Confirmação da Nova palavra-passe*',
     'btnSave' => 'Guardar',
+
 ];

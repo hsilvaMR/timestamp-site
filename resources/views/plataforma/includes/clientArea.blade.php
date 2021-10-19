@@ -233,10 +233,20 @@
             {{-- formulario --}}
             <div class="box-form  d-flex flex-column justify-content-start bd-highlight mb-3">
                 <form action="">
-                    {{-- TIPO DE CLIENTE --}}
-                    <div class="p-2 bd-highlight text-start ">
-                        <label for="fname">{{trans('areaClientWords.frTypeClient')}}</label><br>
-                        <input type="text" id="fname" name="fname" value=""><br>
+
+                    {{-- title  |  tipo de cliente  --}}
+                    <div class="p-2 bd-highlight text-start">
+                        {{-- title  --}}
+                        <label for="fname">{{trans('areaClientWords.frTypeClient')}}</label>
+                    </div>
+                    {{-- RADIOBTN | Empresas  Particular --}}
+                    <div class="p-2 bd-highlight text-start border-bottom">
+                        {{-- radioBtn | empresa --}}
+                        <input type="radio" id="empresa" name="typeAcount" value="">
+                        <label for="empresa">{{trans('areaClientWords.rbtnEmpresa')}}</label>
+                        {{--  radioBtn | particular --}}
+                        <input type="radio" id="particular" name="typeAcount" value="">
+                        <label for="particular">{{trans('areaClientWords.rbtnParticular')}}</label>
                     </div>
                     {{--  NIF  --}}
                     <div class="p-2 bd-highlight text-start">
