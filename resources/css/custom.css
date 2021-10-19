@@ -509,19 +509,37 @@
     width: 760px;
     height: 50px;
     background: #F78065;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+    /* cursor: pointer; */
+    border: 1.5px solid #F78065;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
 }
 
-.right-menu .box-form .btn-guardar input[type='submit'] {
-    color: #FFFFFF;
+.right-menu .box-form .btn-guardar:hover {
+    background: #FFFFFF;
+    color: #F78065 !important;
+    cursor: pointer;
+    border: 1.5px solid #F78065;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+}
+
+
+/*.right-menu .box-form .btn-guardar button {
     background-color: none;
     background: none;
     border: none;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 23px;
-}
+    /* color: none; 
+}*/
 
 
 /*.check-round label {

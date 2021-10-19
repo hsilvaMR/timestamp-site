@@ -300,7 +300,10 @@
                     </div>
                     {{-- btn | guardar --}}
                     <div class="p-2 bd-highlight btn-guardar text-center">
-                        <input type="submit" value="{{trans('areaClientWords.btnSave')}}">
+
+                        {{trans('areaClientWords.btnSave')}}
+                        {{-- <button type="button">{{trans('areaClientWords.btnSave')}}</button> --}}
+                        {{-- <input type="submit"><label for="submit">{{trans('areaClientWords.btnSave')}}</label> --}}
                     </div>
 
                 </form>
