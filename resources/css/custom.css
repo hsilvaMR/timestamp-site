@@ -591,6 +591,18 @@
     text-align: center;
 }
 
+.box-pagamentos .form-payment .cardID input[type="text"] {
+    width: 630px;
+    height: 28px;
+    border: 1px solid rgba(247, 128, 101, 0.5);
+    border-radius: 2px;
+}
+
+.box-pagamentos .form-payment .cardID input[type="text"]:focus {
+    outline: none;
+    outline-color: #F78065;
+}
+
 
 /*.right-menu .box-form .btn-guardar button {
     background-color: none;
