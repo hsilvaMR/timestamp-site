@@ -454,4 +454,81 @@
 
     </div>
 </div>
+{{--  BOX METODO DE PAGAMENTO  --}}
+{{--  BOX METODO DE PAGAMENTO  --}}
+{{--  BOX METODO DE PAGAMENTO  --}}
+<div class="container box-pagamentos d-none">
+    <div class="row">
+        {{--  menu esquerda  --}}
+        {{--  menu esquerda  --}}
+        <div class="col-4 left-menu text-start">
+            <div class="p-2 bd-highlight">
+                <label for="" class="titleName">{{trans('areaClientWords.nomeCliente')}}</label><br>
+                <label for="" id="nameClient" class="py-2">Honorio Silva</label>
+            </div>
+            {{-- adquirir selos btn --}}
+            <div class="p-2 bd-highlight btn-pay-selos text-center mb-3 mt-3">
+                <span>{{trans('areaClientWords.adqSelos')}}</span>
+            </div>
+            {{--       items | meus selos     --}}
+            <div class="d-flex bd-highlight border-bottom">
+                <div class="me-auto p-2 bd-highlight item ">
+                    {{trans('areaClientWords.meuSelos')}}
+                </div>
+                <div class="p-2 bd-highlight">
+                    <i class="fas ms-5 fa-chevron-right"></i>
+                </div>
+            </div>
+
+            {{--  items | historico consumo  --}}
+            <div class="d-flex bd-highlight border-bottom ">
+                <div class="me-auto p-2 bd-highlight item  ">
+                    {{trans('areaClientWords.historicoC')}}
+                </div>
+                <div class="p-2 bd-highlight">
+                    <i class="fas ms-5 fa-chevron-right"></i>
+                </div>
+            </div>
+            {{--  items | meus dados   --}}
+            <div class="d-flex bd-highlight border-bottom ">
+                <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
+                    {{trans('areaClientWords.meusDados')}}
+                </div>
+                <div class="p-2 bd-highlight">
+                    <i class="fas ms-5 fa-chevron-right"></i>
+                </div>
+            </div>
+            {{--  items | vale de desconto   --}}
+            <div class="d-flex bd-highlight border-bottom ">
+                <div class="me-auto p-2 bd-highlight item ">
+                    {{trans('areaClientWords.meusVale')}}
+                </div>
+                <div class="p-2 bd-highlight">
+                    <i class="fas ms-5 fa-chevron-right"></i>
+                </div>
+            </div>
+            {{--  items | metodo de pagamento   --}}
+            <div class="d-flex bd-highlight border-bottom ">
+                <div class="me-auto p-2 bd-highlight item">
+                    {{trans('areaClientWords.metodoPagamento')}}
+                </div>
+                <div class="p-2 bd-highlight">
+                    <i class="fas ms-5 fa-chevron-right"></i>
+                </div>
+            </div>
+            {{--  items | encerrar sessão   --}}
+            <div class="d-flex bd-highlight border-bottom ">
+                <div class="me-auto p-2 bd-highlight item ">
+                    {{trans('areaClientWords.encerrar')}}
+                </div>
+                <div class="p-2 bd-highlight">
+                    <i class="fas ms-5 fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        {{--  menu esquerda  --}}
+        {{--  menu esquerda  --}}
+    </div>
+
+</div>
 @endsection

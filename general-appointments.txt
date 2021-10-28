@@ -24,6 +24,9 @@ https://www.youtube.com/watch?v=aWmiEQYxy1w
 criar desfoque | desfocagem  na imagem 
 https://www.w3schools.com/howto/howto_css_blurred_background.asp
 
+criar desfoque numa determinada zona especifica 
+https://www.studytonight.com/css-howtos/how-to-create-a-blurry-background-image-with-css
+
 rounded checkBox
 https://codepen.io/AllThingsSmitty/pen/WjZVjo
 
