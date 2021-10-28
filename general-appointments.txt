@@ -372,7 +372,10 @@ https://stackoverflow.com/questions/44774709/removing-the-file-preview-on-the-ri
 https://www.youtube.com/watch?v=wJpQidmp_ts
 
 para desativar o mini mapa ou barra de navegação vertical do lado direito 
-ir configuracao > na area de pesquisa  inserir "editor.minimap.enabled" 
+ir configuracao > na area de pesquisa  inserir "editor.minimap.enabled"
+
+selecionar todas ocorrencia de uma palavra 
+CRTL + F2
 
 
 

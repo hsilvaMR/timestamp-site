@@ -337,9 +337,9 @@
 }
 
 
-/******************************************AREA DE CLIENT MAIN BOX ******************************************************************/
+/****************************************** AREA DE CLIENTE  ******************************************************************/
 
-.main-client {
+.box-client-area {
     position: relative;
     height: 500px;
     background: #FFFFFF;
@@ -349,7 +349,7 @@
     text-align: center;
 }
 
-.main-client .left-menu .titleName {
+.box-client-area.left-menu .titleName {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
@@ -357,7 +357,7 @@
     color: #222222;
 }
 
-.main-client .left-menu #nameClient {
+.box-client-area.left-menu #nameClient {
     font-family: 'Montserrat';
     font-style: normal;
     /* font-weight: bold; */
@@ -459,7 +459,7 @@
     line-height: 15px;
 }
 
-.client-dados {
+.box-client-dados {
     position: relative;
     height: 1050px;
     background: #FFFFFF;
@@ -539,9 +539,9 @@
 }
 
 
-/*   box selos */
+/****************************************   BOX SELOS *****************/
 
-.selo-box {
+.box-selos {
     position: relative;
     height: 500px;
     background: #FFFFFF;
@@ -551,19 +551,19 @@
     text-align: center;
 }
 
-.selo-box .right-menu #pesquisa input[type='text'] {
+.box-selos.right-menu #pesquisa input[type='text'] {
     /* border-color: #F78065; */
     width: 320px;
     height: 28px;
     border: 1.25px solid #F78065;
 }
 
-.selo-box .right-menu #pesquisa input[type='text']:focus {
+.box-selos.right-menu #pesquisa input[type='text']:focus {
     outline: none;
     /* outline-color: #F78065; */
 }
 
-.selo-box .right-menu #pesquisa label {
+.box-selos.right-menu #pesquisa label {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
@@ -573,8 +573,22 @@
     cursor: pointer;
 }
 
-.selo-box .right-menu #pesquisa label:hover {
+.box-selos.right-menu #pesquisa label:hover {
     font-size: 16.5px;
+}
+
+
+/************************************************ BOX METODO PAGAMENTO *************************************** */
+
+.box-pagamentos {
+    position: relative;
+    height: 773px;
+    width: 709px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
+    padding: auto;
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -630,3 +644,10 @@
 .check-round input[type='text'][type="checkbox"]:checked+label::after {
     opacity: 1;
 }*/
+
+
+/*
+=======================                                              ============================
+                        RESPONSIVE DEVICE | MOBILE | TABLET | LAPTOP              
+=======================                                              ============================
+*/

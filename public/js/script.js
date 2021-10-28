@@ -39,22 +39,30 @@ $(function() {
     //open box data-client 
     $('#boxData-client').on('click', function() {
         console.log("open-box-client-data");
-        $('.client-dados').removeClass("d-none")
-        $('.main-client').addClass("d-none")
+        $('.box-client-dados').removeClass("d-none")
+        $('.box-client-area').addClass("d-none")
     });
     // open box area client
     $('#backBoxClient').on('click', function() {
         console.log("open-box-client-data");
-        $('.client-dados').addClass("d-none")
-        $('.selo-box').addClass("d-none")
-        $('.main-client').removeClass("d-none")
+        $('.box-client-dados').addClass("d-none")
+        $('.box-selos').addClass("d-none")
+        $('.box-client-area').removeClass("d-none")
     });
     // open box area selos
     $('#seloArea').on('click', function() {
         console.log("open-box-client-data");
-        //$('.client-dados').addClass("d-none")
-        $('.selo-box').removeClass("d-none")
-        $('.main-client').addClass("d-none")
+        //$('.box-client-dados').addClass("d-none")
+        $('.box-selos').removeClass("d-none")
+        $('.box-client-area').addClass("d-none")
+    });
+
+    // open box metodo de pagamento
+    $('#box-pagamento').on('click', function() {
+        console.log("open-box-client-data");
+        //$('.box-client-dados').addClass("d-none")
+        $('.box-pagamentos').removeClass("d-none")
+        $('.box-client-area').addClass("d-none")
     });
 
 

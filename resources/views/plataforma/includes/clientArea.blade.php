@@ -1,7 +1,8 @@
 @section('client-box')
 {{-- BOX AREA DE CLIENTE --}}
-{{-- {{trans('footerWords.tabelaPreco')}} --}}
-<div class="container main-client  justify-content-center mt-5 mb-2">
+{{-- BOX AREA DE CLIENTE --}}
+{{-- BOX AREA DE CLIENTE   --}}
+<div class="container box-client-area  justify-content-center mt-5 mb-2">
 
     <div class="row">
         {{--  menu esquerda col --}}
@@ -54,7 +55,7 @@
                     </div>
                 </div>
                 {{--  items | metodo de pagamento   --}}
-                <div class="d-flex bd-highlight border-bottom ">
+                <div class="d-flex bd-highlight border-bottom" id="box-pagamento">
                     <div class="me-auto p-2 bd-highlight item">
                         {{trans('areaClientWords.metodoPagamento')}}
                     </div>
@@ -136,7 +137,7 @@
 {{--  BOX  dados cliente --}}
 {{-- BOX  dados cliente --}}
 {{-- BOX  dados cliente --}}
-<div class="container client-dados d-none">
+<div class="container box-client-dados d-none">
     <div class="row">
         {{--  menu esquerda --}}
         <div class="col-4 left-menu text-start">
@@ -324,7 +325,7 @@
 {{--  BOX OS MEUS SELOS  --}}
 {{--  BOX OS MEUS SELOS  --}}
 {{--  BOX OS MEUS SELOS  --}}
-<div class="container selo-box justify-content-center mt-5 mb-2 d-none">
+<div class="container box-selos justify-content-center mt-5 mb-2 d-none">
 
     <div class="row">
 
@@ -529,6 +530,5 @@
         {{--  menu esquerda  --}}
         {{--  menu esquerda  --}}
     </div>
-
 </div>
 @endsection
