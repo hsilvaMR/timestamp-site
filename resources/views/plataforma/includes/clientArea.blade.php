@@ -579,10 +579,12 @@
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- termos   --}}
-                    <div class="p-2 bd-highlight text-start cardTerms">
-                        <label for="fname">{{trans('areaClientWords.terms')}}</label><br>
+                    <div class="p-2 bd-highlight checkbox-custom text-start cardTerms">
+                        <input id="checkboxValidTerm" type="checkbox">
+                        <label for="checkboxValidTerm" class="labelCheck">
+                            {{trans('areaClientWords.terms')}}
+                        </label>
                     </div>
-
                 </div>
                 {{-- Mtech adicão automatica --}}
                 <div class="d-flex flex-column bd-highlight mb-3 text-start">
