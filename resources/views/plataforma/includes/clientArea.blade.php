@@ -550,19 +550,19 @@
             {{-- formulario pagamento  --}}
             <form action="" class="form-payment">
                 {{-- card type | validade | cvv --}}
-                <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="d-flex flex-row bd-highlight mb-3 cardType">
                     {{-- card type  --}}
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight text-start">
                         <label for="fname">{{trans('areaClientWords.cardType')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- card validade  --}}
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight text-start">
                         <label for="fname">{{trans('areaClientWords.cardValidade')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- card CVV  --}}
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight text-start">
                         <label for="fname">{{trans('areaClientWords.cardCvv')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
@@ -570,26 +570,38 @@
                 {{-- card   | number | name | terms --}}
                 <div class="d-flex flex-column bd-highlight mb-3 cardID">
                     {{-- card number   --}}
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight text-start">
                         <label for="fname">{{trans('areaClientWords.cardNumber')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- card name   --}}
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight text-start">
                         <label for="fname">{{trans('areaClientWords.cardName')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- termos   --}}
-                    <div class="p-2 bd-highlight">
+                    <div class="p-2 bd-highlight  text-start">
                         <label for="fname">{{trans('areaClientWords.terms')}}</label><br>
                     </div>
 
                 </div>
                 {{-- Mtech adicão automatica --}}
-                <div class="d-flex flex-column bd-highlight mb-3">
-                    <div class="p-2 bd-highlight">Flex item 1</div>
-                    <div class="p-2 bd-highlight">Flex item 2</div>
-                    <div class="p-2 bd-highlight">Flex item 3</div>
+                <div class="d-flex flex-column bd-highlight mb-3 text-start">
+                    {{--  logo |  MTECH --}}
+                    <div class="p-2 bd-highlight">
+                        <label for="mtech">
+                            <img src="{{ asset('img/Mtech-logoB.svg') }}" width="90px" height="90px" alt="">
+                        </label>
+                    </div>
+                    {{-- validar   nº de selos automatico --}}
+                    <div class="p-2 bd-highlight">
+                        <label for="fname">{{trans('areaClientWords.definirMtech')}}</label><br>
+                    </div>
+                    {{-- definir nº de selos --}}
+                    <div class="p-2 bd-highlight addSelos">
+                        <label for="fname">{{trans('areaClientWords.numberSelo')}}</label><br>
+                        <input type="text" id="fname" name="fname" value=""><br>
+                    </div>
                 </div>
 
             </form>

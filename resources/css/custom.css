@@ -592,7 +592,7 @@
 }
 
 .box-pagamentos .form-payment .cardID input[type="text"] {
-    width: 630px;
+    width: 726px;
     height: 28px;
     border: 1px solid rgba(247, 128, 101, 0.5);
     border-radius: 2px;
@@ -601,6 +601,25 @@
 .box-pagamentos .form-payment .cardID input[type="text"]:focus {
     outline: none;
     outline-color: #F78065;
+}
+
+.box-pagamentos .form-payment .cardType input[type="text"] {
+    width: 118px;
+    height: 28px;
+    border: 1px solid rgba(247, 128, 101, 0.5);
+    border-radius: 2px;
+}
+
+.box-pagamentos .form-payment .cardType input[type="text"]:focus {
+    outline: none;
+    outline-color: #F78065;
+}
+
+.box-pagamentos .form-payment .addSelos input[type="text"] {
+    width: 300px;
+    height: 28px;
+    border: 1px solid rgba(247, 128, 101, 0.5);
+    border-radius: 2px;
 }
 
 
