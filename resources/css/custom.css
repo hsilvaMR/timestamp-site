@@ -643,6 +643,23 @@
 }
 
 
+/*  customização checkBox */
+
+.form-payment .checkbox-custom input {
+    display: none;
+}
+
+.form-payment .checkbox-custom input+label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.42);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
 /*.right-menu .box-form .btn-guardar button {
     background-color: none;
     background: none;

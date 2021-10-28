@@ -593,8 +593,11 @@
                         </label>
                     </div>
                     {{-- validar   nº de selos automatico --}}
-                    <div class="p-2 bd-highlight">
-                        <label for="fname">{{trans('areaClientWords.definirMtech')}}</label><br>
+                    <div class="p-2 bd-highlight checkbox-custom">
+                        <input id="checkboxValid" type="checkbox">
+                        <label for="checkboxValid" class="labelCheck">
+                            {{trans('areaClientWords.definirMtech')}}
+                        </label>
                     </div>
                     {{-- definir nº de selos --}}
                     <div class="p-2 bd-highlight addSelos">
@@ -602,7 +605,6 @@
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                 </div>
-
             </form>
 
         </div>

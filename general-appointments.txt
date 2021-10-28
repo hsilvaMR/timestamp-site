@@ -33,6 +33,9 @@ https://codepen.io/AllThingsSmitty/pen/WjZVjo
 customizar radio button | alterando o item de selecão
 https://codepen.io/imohkay/pen/wyxuB
 
+customizar checkBox 
+https://www.youtube.com/watch?v=cksgCkee2uY
+
 
 ================================================                ================================================
                                                    JAVASCRIPTS  
@@ -379,6 +382,9 @@ ir configuracao > na area de pesquisa  inserir "editor.minimap.enabled"
 
 selecionar todas ocorrencia de uma palavra 
 CRTL + F2
+
+renomear todas ocorrencia de palavra
+F2
 
 
 

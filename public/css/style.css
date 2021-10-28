@@ -622,11 +622,6 @@
     border-radius: 2px;
 }
 
-.box-pagamentos .form-payment .addSelos input[type="text"]:focus {
-    outline: none;
-    outline-color: #F78065;
-}
-
 .form-payment .cardType label,
 .form-payment .cardID label,
 .form-payment .addSelos label {
@@ -645,6 +640,23 @@
     font-size: 14px;
     line-height: 15px;
     color: #F78065;
+}
+
+
+/*  customização checkBox */
+
+.form-payment .checkbox-custom input {
+    display: none;
+}
+
+.form-payment .checkbox-custom input+label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.42);
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
