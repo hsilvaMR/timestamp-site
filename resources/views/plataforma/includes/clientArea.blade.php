@@ -528,7 +528,6 @@
         </div>
         {{--  menu direita  --}}
         {{--  menu direita  --}}
-
         <div class="col-7 right-menu">
             {{-- title  | descricao --}}
             <div class="d-flex flex-column text-start bd-highlight mb-3 mt-2  ">
@@ -537,7 +536,7 @@
                     <span class="titleName">{{trans('areaClientWords.titlePagamento')}}</span>
                 </div>
                 {{-- welcome descricao  | voltar --}}
-                <div class="d-flex bd-highlight border-bottom ">
+                <div class="d-flex bd-highlight">
                     <div class="me-auto p-2 bd-highlight descricao">
                         {{trans('areaClientWords.descrPayment')}}
                     </div>
@@ -568,19 +567,19 @@
                     </div>
                 </div>
                 {{-- card   | number | name | terms --}}
-                <div class="d-flex flex-column bd-highlight mb-3 cardID">
+                <div class="d-flex flex-column bd-highlight mb-3 ">
                     {{-- card number   --}}
-                    <div class="p-2 bd-highlight text-start">
+                    <div class="p-2 bd-highlight text-start cardID">
                         <label for="fname">{{trans('areaClientWords.cardNumber')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- card name   --}}
-                    <div class="p-2 bd-highlight text-start">
+                    <div class="p-2 bd-highlight text-start cardID">
                         <label for="fname">{{trans('areaClientWords.cardName')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- termos   --}}
-                    <div class="p-2 bd-highlight  text-start">
+                    <div class="p-2 bd-highlight text-start cardTerms">
                         <label for="fname">{{trans('areaClientWords.terms')}}</label><br>
                     </div>
 

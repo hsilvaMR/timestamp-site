@@ -30,6 +30,9 @@ https://www.studytonight.com/css-howtos/how-to-create-a-blurry-background-image-
 rounded checkBox
 https://codepen.io/AllThingsSmitty/pen/WjZVjo
 
+customizar radio button | alterando o item de selecão
+https://codepen.io/imohkay/pen/wyxuB
+
 
 ================================================                ================================================
                                                    JAVASCRIPTS  

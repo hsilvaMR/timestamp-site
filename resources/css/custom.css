@@ -425,8 +425,8 @@
 .right-menu .descricao {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
+    font-weight: bolder;
+    font-size: 14px;
     line-height: 15px;
     color: #F78065;
 }
@@ -620,6 +620,26 @@
     height: 28px;
     border: 1px solid rgba(247, 128, 101, 0.5);
     border-radius: 2px;
+}
+
+.form-payment .cardType label,
+.form-payment .cardID label,
+.form-payment .addSelos label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 15px;
+    color: black;
+}
+
+.form-payment .cardTerms label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 15px;
+    color: #F78065;
 }
 
 
