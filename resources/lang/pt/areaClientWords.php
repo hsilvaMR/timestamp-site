@@ -41,4 +41,15 @@ return [
     'titleAreaSelo' => 'Os meus Selos Temporais',
     'descrSelos' => 'Aqui encontrará uma lista com as suas compras',
     'search' => 'pesquisar',
+    // metodo de pagamentos 
+    'titlePagamento' => 'Método de Pagamento',
+    'descrPayment' => ' Preencha com os seus dados os campos que se seguem',
+    'visaExclusiv' => 'Visa Exclusivo',
+    'validade' => 'Validade',
+    'cvv' => 'CVV',
+    'cardNumber' => 'Numero do Cartão',
+    'nameCard' => 'Nome do Cartão',
+    'terms' => 'Aceitar Os Termos e Condições',
+    'definirMtech' => ' Definir nº de selos Mtech de segurança, para aquisição automática de novo Pacote de Selos',
+    'numberSelo' => 'Número de Selos',
 ];
