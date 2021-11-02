@@ -725,11 +725,18 @@
                     <input type="text" id="fname" name="fname" value=""><br>
                 </div>
                 {{-- codigo de api | text area  --}}
+                {{-- <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div> --}}
+
                 <div class="p-2 bd-highlight text-start">
                     <label for="fname">{{trans('areaClientWords.codAPI')}}</label><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                        style="resize:none !important"></textarea>
                 </div>
                 {{-- copiad codigo de api |   --}}
-                <div class="p-2 bd-highlight text-start">
+                <div class="p-2 bd-highlight text-start border-bottom">
                     <label for="fname">{{trans('areaClientWords.copyCod')}}</label><br>
                 </div>
             </div>

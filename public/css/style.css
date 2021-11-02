@@ -681,7 +681,7 @@
 
 .box-api {
     position: relative;
-    height: 550px;
+    height: 630px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
     padding: auto;
@@ -710,6 +710,26 @@
     border-left: none;
     border-right: none;
     color: black;
+}
+
+.box-api .right-menu input[type='text']:focus {
+    outline: none;
+    /* outline-color: #F78065; */
+}
+
+.box-api .right-menu textarea {
+    width: 750px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: black !important;
+}
+
+.box-api .right-menu textarea:focus {
+    outline: none !important;
+    /* outline-color: #F78065; */
 }
 
 .box-api .right-menu .form-api label {
