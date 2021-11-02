@@ -96,7 +96,8 @@
 
             <div class="d-flex justify-content-start">
                 {{-- btn | meus selos temporais  --}}
-                <div class="p-2 mx-2 mb-2  box-btn  bd-highlight text-center">
+                <div class="p-2 mx-2 mb-2 d-flex flex-column  box-btn  bd-highlight">
+                    <span class="mb-1"> <img src="{{ asset('img/selo.svg') }}" alt="" width="60px" height="45px"></span>
                     <span>{{trans('areaClientWords.meuSelos')}}</span>
                 </div>
                 {{-- btn | historico de consumo --}}
