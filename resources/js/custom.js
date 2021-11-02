@@ -65,7 +65,11 @@ $(function() {
         $('.box-client-area').addClass("d-none")
     });
 
-
-
+    //open box api 
+    $('#apiBX').on('click', function() {
+        console.log("open box api");
+        $('.box-api').removeClass("d-none")
+        $('.box-client-area').addClass("d-none")
+    });
 
 })

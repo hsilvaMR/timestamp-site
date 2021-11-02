@@ -52,4 +52,11 @@ return [
     'terms' => 'Aceitar Os Termos e Condições',
     'definirMtech' => ' Definir nº de selos Mtech de segurança, para aquisição automática de novo Pacote de Selos',
     'numberSelo' => 'Número de Selos',
+    //integração api
+    'apTitle' => 'Integração com a API',
+    'descrApi' => 'Aqui tem acesso a todos os dados necessários para integração com a sua API.',
+    'frUserID' => 'ID Utilizador',
+    'frPassAPI' => 'Palavra Pass',
+    'codAPI' => 'Código de Integração API',
+    'faQS' => '? FQS´s',
 ];

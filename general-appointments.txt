@@ -386,7 +386,14 @@ CRTL + F2
 renomear todas ocorrencia de palavra
 F2
 
+================================================                ================================================
+                                                    GOOGLE  
+================================================               =================================================
 
+ FONTES 
+ https://fonts.google.com/
+ https://fonts.google.com/specimen/Merriweather
+ https://developers.google.com/fonts/docs/getting_started
 
 ================================================                ================================================
                                                     OUTRO  

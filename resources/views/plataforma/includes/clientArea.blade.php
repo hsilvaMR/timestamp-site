@@ -74,7 +74,6 @@
                 </div>
 
             </div>
-
         </div>
         {{-- menu direita  --}}
         {{-- menu direita  --}}
@@ -123,7 +122,7 @@
             </div>
             {{-- btn | Integração API --}}
 
-            <div class="d-flex  mx-2 mt-2 justify-content-start">
+            <div class="d-flex  mx-2 mt-2 justify-content-start" id="apiBX">
                 <div class="p-2 box-btn  bd-highlight">
                     <span>{{trans('areaClientWords.integraAPI')}}</span>
                 </div>
@@ -134,9 +133,9 @@
     </div>
 
 </div>
-{{--  BOX  dados cliente --}}
-{{-- BOX  dados cliente --}}
-{{-- BOX  dados cliente --}}
+{{--  BOX  DADOS PESSOAIS --}}
+{{-- BOX  DADOS PESSOAIS --}}
+{{-- BOX  DADOS PESSOAIS --}}
 <div class="container box-client-dados d-none">
     <div class="row">
         {{--  menu esquerda --}}
@@ -611,5 +610,134 @@
 
         </div>
     </div>
+</div>
+{{--  BOX INTEGRAÇÃO API  --}}
+{{--  BOX INTEGRAÇÃO API  --}}
+{{--  BOX INTEGRAÇÃO API  --}}
+<div class="container box-api d-none">
+    <div class="row">
+        {{--  menu esquerda --}}
+        <div class="col-4 left-menu text-start">
+
+            <div class="d-flex flex-column bd-highlight mb-1 mt-2 ms-3">
+                {{-- name title --}}
+                <div class="p-2 bd-highlight">
+                    <label for="" class="titleName">{{trans('areaClientWords.nomeCliente')}}</label><br>
+                    <label for="" id="nameClient" class="py-2">Honorio Silva</label>
+                </div>
+                {{-- adquirir selos btn --}}
+                <div class="p-2 bd-highlight btn-pay-selos text-center mb-3 mt-3">
+                    <span>{{trans('areaClientWords.adqSelos')}}</span>
+                </div>
+                {{--       items | meus selos     --}}
+                <div class="d-flex bd-highlight border-bottom">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.meuSelos')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                {{--  items | historico consumo  --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item  ">
+                        {{trans('areaClientWords.historicoC')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | meus dados   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
+                        {{trans('areaClientWords.meusDados')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | vale de desconto   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.meusVale')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | metodo de pagamento   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item">
+                        {{trans('areaClientWords.metodoPagamento')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+                {{--  items | encerrar sessão   --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight item ">
+                        {{trans('areaClientWords.encerrar')}}
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <i class="fas ms-5 fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{--  menu direita --}}
+        <div class="col-7 right-menu">
+            {{-- title  | descricao --}}
+            <div class="d-flex flex-column text-start bd-highlight  mt-2  ">
+                {{-- title --}}
+                <div class="p-2 bd-highlight mb-3 ">
+                    <span class="me-2">
+                        <img src="{{ asset('img/Mtech-logoB.svg') }}" width="90px" height="90px" alt="">
+                    </span>
+                    <span class="titleName">{{trans('areaClientWords.apTitle')}}</span>
+                </div>
+                {{-- welcome descricao  | voltar --}}
+                <div class="d-flex bd-highlight border-bottom ">
+                    <div class="me-auto p-2 bd-highlight descricao">
+                        {{trans('areaClientWords.descrApi')}}
+                    </div>
+                    <div class="p-2 bd-highlight" id="backBoxClient">
+                        <i class="fas fa-chevron-left"></i>
+                        {{trans('areaClientWords.btnBack')}}
+                    </div>
+                </div>
+                {{-- welcome descricao  | FAQS --}}
+                <div class="p-2 bd-highlight mt-4 text-end curso-pointer" id="faQsAPI">
+                    <span>{{trans('areaClientWords.faQS')}}</span>
+                </div>
+            </div>
+            {{-- form  | id user | password --}}
+            <div class="d-flex flex-column text-start bd-highlight ">
+                {{--  id utilizador  --}}
+                <div class="p-2 bd-highlight text-start">
+                    <label for="fname">{{trans('areaClientWords.frUserID')}}</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                </div>
+                {{-- palavra pass --}}
+                <div class="p-2 bd-highlight text-start">
+                    <label for="fname">{{trans('areaClientWords.frPassAPI')}}</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                </div>
+                {{-- codigo de api | text area  --}}
+                {{-- <div class="p-2 bd-highlight text-start">
+                    <label for="fname">{{trans('areaClientWords.frPassAPI')}}</label><br>
+                <textarea id="codApi" rows="4" cols="50">
+                </div> --}}
+            </div>
+        </div>
+    </div>
+
+</div>
+{{--  BOX PROMOÇÕES  --}}
+{{--  BOX PROMOÇÕES   --}}
+{{--  BOX PROMOÇÕES   --}}
+<div class="container box-promocao d-none">
+
 </div>
 @endsection
