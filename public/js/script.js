@@ -98,9 +98,9 @@ $(function() {
             $('.box-api').addClass("d-none")
             $('.box-client-area').removeClass("d-none")
         }
-        if ($('#selectDiv').is(':visible')) {
+        if ($('.box-promocao').is(':visible')) {
 
-            $('.box-client-area').addClass("d-none")
+            $('.box-promocao').addClass("d-none")
             $('.box-client-area').removeClass("d-none")
         }
 

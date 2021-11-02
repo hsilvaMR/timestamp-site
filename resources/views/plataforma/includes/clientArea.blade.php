@@ -818,6 +818,27 @@
         </div>
         {{-- menu direita  --}}
         {{-- menu direita  --}}
+        <div class="col-7 right-menu">
+            {{-- title  | descricao --}}
+            <div class="d-flex flex-column text-start bd-highlight mb-3 mt-2  ">
+                {{-- title --}}
+                <div class="p-2 bd-highlight mb-3">
+                    <span class="titleName">{{trans('areaClientWords.promoTitle')}}</span>
+                </div>
+                {{-- welcome descricao  | voltar --}}
+                <div class="d-flex bd-highlight border-bottom">
+                    <div class="me-auto p-2 bd-highlight descricao">
+                        {{trans('areaClientWords.promoDescr')}}
+                    </div>
+                    <div class="p-2 bd-highlight btnBack">
+                        <i class="fas fa-chevron-left"></i>
+                        {{trans('areaClientWords.btnBack')}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>
 @endsection

@@ -60,4 +60,7 @@ return [
     'copyCod' => 'Copiar Código HTML',
     'codAPI' => 'Código de Integração API',
     'faQS' => '? FQS´s',
+    // promocao
+    'promoTitle' => 'As minhas Promoções',
+    'promoDescr' => 'Aqui encontrá promoções exclusivas dispóniveis para si',
 ];
