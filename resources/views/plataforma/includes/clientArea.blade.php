@@ -101,8 +101,9 @@
                     <span>{{trans('areaClientWords.meuSelos')}}</span>
                 </div>
                 {{-- btn | historico de consumo --}}
-                <div class="p-2 mb-2   box-btn mx-2  bd-highlight text-center">
-                    <span>{{trans('areaClientWords.historicoC')}}</span>
+                <div class="p-2 mb-2   box-btn mx-2 d-flex flex-column  bd-highlight text-center">
+                    <span> <img src="{{ asset('img/consumo.svg') }}" alt="" width="60px" height="45px"></span>
+                    <span class="py-1">{{trans('areaClientWords.historicoC')}}</span>
                 </div>
                 {{-- btn | promoções --}}
                 <div class="p-2 mb-2  box-btn mx-2 bd-highlight text-center bxPromo">
