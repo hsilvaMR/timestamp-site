@@ -586,6 +586,25 @@
     font-size: 16.5px;
 }
 
+.box-selos .right-menu .typeSelo input {
+    display: none;
+}
+
+.box-selos .right-menu .typeSelo input+label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.42);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.box-selos .right-menu .typeSelo input:checked+label:before {
+    background-image: url("/img/TS_Visto.svg");
+}
+
 
 /************************************************ BOX METODO PAGAMENTO *************************************** */
 

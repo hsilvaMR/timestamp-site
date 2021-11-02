@@ -321,9 +321,9 @@
 
     </div>
 </div>
-{{--  BOX OS MEUS SELOS  --}}
-{{--  BOX OS MEUS SELOS  --}}
-{{--  BOX OS MEUS SELOS  --}}
+{{--  BOX  SELOS  --}}
+{{--  BOX  SELOS  --}}
+{{--  BOX  SELOS  --}}
 <div class="container box-selos justify-content-center mt-5 mb-2 d-none">
 
     <div class="row">
@@ -422,7 +422,7 @@
                 {{-- Tipos de selos  | btn Pesquisa --}}
                 <div class="d-flex flex-row bd-highlight align-items-center">
                     {{-- radioBTN tipos de selos  me-auto   class=" p-2 bd-highlight " --}}
-                    <div class=" me-auto">
+                    <div class=" me-auto typeSelo">
                         {{-- radioBtn | MSTAMP --}}
                         <input type="radio" id="mstamp" name="typeAcount" value="">
                         <label for="mstamp" class="me-3">
