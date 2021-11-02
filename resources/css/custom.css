@@ -560,7 +560,7 @@
     text-align: center;
 }
 
-.box-selos.right-menu #pesquisa input[type='text'] {
+.box-selos.right-menu .btnPesquisa input[type="text"] {
     /* border-color: #F78065; */
     width: 320px;
     height: 28px;
@@ -569,10 +569,10 @@
 
 .box-selos.right-menu #pesquisa input[type='text']:focus {
     outline: none;
-    /* outline-color: #F78065; */
+    outline-color: #F78065;
 }
 
-.box-selos.right-menu #pesquisa label {
+.box-selos.right-menu .btnPesquisa label {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;

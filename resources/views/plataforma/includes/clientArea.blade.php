@@ -435,7 +435,7 @@
                         </label>
                     </div>
                     {{-- btn Pesquisa class="p-2 bd-highlight" --}}
-                    <div id="pesquisa" class="d-flex flex-column align-items-end">
+                    <div id="pesquisa" class="btnPesquisa d-flex flex-column align-items-end">
                         <div class="p-1 bd-highlight">
                             <label for="fname">
                                 <i class="fas fa-search fa-1x"></i>
