@@ -713,7 +713,7 @@
                 </div>
             </div>
             {{-- form  | id user | password --}}
-            <div class="d-flex flex-column text-start bd-highlight ">
+            <div class="d-flex flex-column text-start bd-highlight form-api ">
                 {{--  id utilizador  --}}
                 <div class="p-2 bd-highlight text-start">
                     <label for="fname">{{trans('areaClientWords.frUserID')}}</label><br>
@@ -725,10 +725,13 @@
                     <input type="text" id="fname" name="fname" value=""><br>
                 </div>
                 {{-- codigo de api | text area  --}}
-                {{-- <div class="p-2 bd-highlight text-start">
-                    <label for="fname">{{trans('areaClientWords.frPassAPI')}}</label><br>
-                <textarea id="codApi" rows="4" cols="50">
-                </div> --}}
+                <div class="p-2 bd-highlight text-start">
+                    <label for="fname">{{trans('areaClientWords.codAPI')}}</label><br>
+                </div>
+                {{-- copiad codigo de api |   --}}
+                <div class="p-2 bd-highlight text-start">
+                    <label for="fname">{{trans('areaClientWords.copyCod')}}</label><br>
+                </div>
             </div>
         </div>
     </div>

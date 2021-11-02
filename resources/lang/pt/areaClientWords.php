@@ -57,6 +57,7 @@ return [
     'descrApi' => 'Aqui tem acesso a todos os dados necessários para integração com a sua API.',
     'frUserID' => 'ID Utilizador',
     'frPassAPI' => 'Palavra Pass',
+    'copyCod' => 'Cpiar Código HTML',
     'codAPI' => 'Código de Integração API',
     'faQS' => '? FQS´s',
 ];
