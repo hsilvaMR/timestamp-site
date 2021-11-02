@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 /*
 ================================                    ========================================
@@ -751,6 +752,21 @@
     padding: auto;
     margin: auto;
     text-align: center;
+}
+
+.box-promocao .right-menu .pack-promo {
+    width: 119px;
+    height: 65px;
+    background: #F78065;
+}
+
+.pack-promo span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    align-items: center;
+    color: #FFFFFF;
 }
 
 

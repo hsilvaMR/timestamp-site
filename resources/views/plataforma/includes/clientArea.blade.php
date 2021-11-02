@@ -826,7 +826,7 @@
                     <span class="titleName">{{trans('areaClientWords.promoTitle')}}</span>
                 </div>
                 {{-- welcome descricao  | voltar --}}
-                <div class="d-flex bd-highlight border-bottom">
+                <div class="d-flex bd-highlight">
                     <div class="me-auto p-2 bd-highlight descricao">
                         {{trans('areaClientWords.promoDescr')}}
                     </div>
@@ -834,6 +834,22 @@
                         <i class="fas fa-chevron-left"></i>
                         {{trans('areaClientWords.btnBack')}}
                     </div>
+                </div>
+            </div>
+
+            {{--  box promoções  --}}
+            <div class="d-flex justify-content-center mt-5">
+                {{-- pack | 20% --}}
+                <div class="p-2 bd-highlight me-2 pack-promo curso-pointer">
+                    <span class="mb-2"> -20%</span>
+                </div>
+                {{-- pack | 30% --}}
+                <div class="p-2 bd-highlight me-2 pack-promo curso-pointer">
+                    <span class="mb-2"> -30%</span>
+                </div>
+                {{-- pack | 40% --}}
+                <div class="p-2 bd-highlight me-2 pack-promo curso-pointer">
+                    <span class="mb-2"> -40%</span>
                 </div>
             </div>
 
