@@ -36,19 +36,15 @@ $(function() {
             //console.log(url)
     });
 
+
+
     //open box data-client 
     $('#boxData-client').on('click', function() {
         console.log("open-box-client-data");
         $('.box-client-dados').removeClass("d-none")
         $('.box-client-area').addClass("d-none")
     });
-    // open box area client
-    $('#backBoxClient').on('click', function() {
-        console.log("open-box-client-data");
-        $('.box-client-dados').addClass("d-none")
-        $('.box-selos').addClass("d-none")
-        $('.box-client-area').removeClass("d-none")
-    });
+
     // open box area selos
     $('#seloArea').on('click', function() {
         console.log("open-box-client-data");
@@ -71,5 +67,45 @@ $(function() {
         $('.box-api').removeClass("d-none")
         $('.box-client-area').addClass("d-none")
     });
+
+    //open box promocao 
+    $('.bxPromo').on('click', function() {
+        console.log("open box api");
+        $('.box-promocao').removeClass("d-none")
+        $('.box-client-area').addClass("d-none")
+    });
+
+    // voltar area client
+    $('.btnBack').on('click', function() {
+
+        if ($('.box-client-dados').is(':visible')) {
+
+            $('.box-client-dados').addClass("d-none")
+            $('.box-client-area').removeClass("d-none")
+        }
+        if ($('.box-selos').is(':visible')) {
+
+            $('.box-selos').addClass("d-none")
+            $('.box-client-area').removeClass("d-none")
+        }
+        if ($('.box-pagamentos').is(':visible')) {
+
+            $('.box-pagamentos').addClass("d-none")
+            $('.box-client-area').removeClass("d-none")
+        }
+        if ($('.box-api').is(':visible')) {
+
+            $('.box-api').addClass("d-none")
+            $('.box-client-area').removeClass("d-none")
+        }
+        if ($('#selectDiv').is(':visible')) {
+
+            $('.box-client-area').addClass("d-none")
+            $('.box-client-area').removeClass("d-none")
+        }
+
+    });
+
+
 
 })

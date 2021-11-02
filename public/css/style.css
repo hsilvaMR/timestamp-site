@@ -477,11 +477,11 @@
     text-align: center;
 }
 
-#backBoxClient {
+.btnBack {
     cursor: pointer;
 }
 
-#backBoxClient:hover {
+.btnBack:hover {
     color: #F78065;
     cursor: pointer;
 }
@@ -738,6 +738,19 @@
     font-weight: bold;
     font-size: 12px;
     color: #222222 !important;
+}
+
+
+/*  box promocao  */
+
+.box-promocao {
+    position: relative;
+    height: 630px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
+    padding: auto;
+    margin: auto;
+    text-align: center;
 }
 
 

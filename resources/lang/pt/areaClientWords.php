@@ -9,7 +9,7 @@ return [
     'meuSelos' => 'Os meus selos Temporais',
     'historicoC' => 'Historico de Consumo',
     'meusDados' => 'Os meus dados pessoais',
-    'meusVale' => 'Os meus vales de desconto',
+    'meusVale' => 'As minhas Promoções',
     'metodoPagamento' => 'Método de  Pagamento',
     'promocao' => 'As minhas Promoções',
     'integraAPI' => 'Integração API',
