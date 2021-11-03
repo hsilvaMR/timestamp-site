@@ -106,23 +106,45 @@ $(function() {
 
     });
 
-    // check mouse Over evtMVr mouseenter mouseleave
+    // change icon whem mouseOver
 
     $('.evtMVr').on('mouseenter', function() {
 
+        // selos btn 
         if ($('.btnSelos:hover').length > 0) {
             var pathImage = "img/selo-white.svg"
             $(".btnSelosIMG").attr("src", pathImage);
         }
+        // consumo btn
+        if ($('.btnConsumo:hover').length > 0) {
+            var pathImage = "img/consumo-white.svg"
+            $(".btnConsumoIMG").attr("src", pathImage);
+        }
+        // promocao btn
+        if ($('.bxPromo:hover').length > 0) {
+            var pathImage = "img/promocao-white.svg"
+            $(".bxPromoIMG").attr("src", pathImage);
+        }
 
     });
 
-    // check mouse leave 
+    // change icon whem mouseLeave
     $('.evtMVr').on('mouseleave', function() {
 
+        // selo btn leave 
         if ($('.btnSelos:hover').length == 0) {
             var pathImage = "img/selo.svg"
             $(".btnSelosIMG").attr("src", pathImage);
+        }
+        // consumo btn leave 
+        if ($('.btnConsumo:hover').length == 0) {
+            var pathImage = "img/consumo.svg"
+            $(".btnConsumoIMG").attr("src", pathImage);
+        }
+        // promocao btn leave 
+        if ($('.bxPromo:hover').length == 0) {
+            var pathImage = "img/promocao.svg"
+            $(".bxPromoIMG").attr("src", pathImage);
         }
 
     });
