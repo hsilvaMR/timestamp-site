@@ -107,9 +107,7 @@ $(function() {
     });
 
     // change icon whem mouseOver
-
     $('.evtMVr').on('mouseenter', function() {
-
         // selos btn 
         if ($('.btnSelos:hover').length > 0) {
             var pathImage = "img/selo-white.svg"
@@ -125,12 +123,16 @@ $(function() {
             var pathImage = "img/promocao-white.svg"
             $(".bxPromoIMG").attr("src", pathImage);
         }
+        // dados pessoas btn
+        if ($('.boxDados:hover').length > 0) {
+            var pathImage = "img/dadosP-white.svg"
+            $(".boxDadoIMG").attr("src", pathImage);
+        }
 
     });
 
     // change icon whem mouseLeave
     $('.evtMVr').on('mouseleave', function() {
-
         // selo btn leave 
         if ($('.btnSelos:hover').length == 0) {
             var pathImage = "img/selo.svg"
@@ -145,6 +147,11 @@ $(function() {
         if ($('.bxPromo:hover').length == 0) {
             var pathImage = "img/promocao.svg"
             $(".bxPromoIMG").attr("src", pathImage);
+        }
+        // dados pessoas btn
+        if ($('.boxDados:hover').length == 0) {
+            var pathImage = "img/dadosP.svg"
+            $(".boxDadoIMG").attr("src", pathImage);
         }
 
     });

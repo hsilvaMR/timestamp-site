@@ -116,7 +116,12 @@
 
             <div class="d-flex  justify-content-start">
                 {{-- btn | meus dados  --}}
-                <div class="p-2 mx-2  box-btn  bd-highlight"><span>{{trans('areaClientWords.meusDados')}}</span></div>
+                <div class="p-2 mx-2  box-btn  bd-highlight d-flex flex-column  evtMVr boxDados">
+                    <span class="pb-2">
+                        <img class="boxDadoIMG" src="{{ asset('img/dadosP.svg') }}" alt="" width="60px" height="45px">
+                    </span>
+                    <span>{{trans('areaClientWords.meusDados')}}</span>
+                </div>
                 {{-- btn | selos disponíveis --}}
                 <div class="p-2  mx-2 box-btn  bd-highlight"><span>{{trans('areaClientWords.seloDisponivel')}}</span>
                 </div>
