@@ -256,12 +256,12 @@
                         <label for="fname">{{trans('areaClientWords.frTypeClient')}}</label>
                     </div>
                     {{-- RADIOBTN | Empresas  Particular --}}
-                    <div class="p-2 bd-highlight text-start border-bottom">
+                    <div class="p-2 bd-highlight text-start border-bottom typeAcount">
                         {{-- radioBtn | empresa --}}
-                        <input type="radio" id="empresa" name="typeAcount" value="">
+                        <input type="radio" id="empresa" name="typeacount" value="">
                         <label for="empresa">{{trans('areaClientWords.rbtnEmpresa')}}</label>
                         {{--  radioBtn | particular --}}
-                        <input type="radio" id="particular" name="typeAcount" value="">
+                        <input type="radio" id="particular" name="typeacount" value="">
                         <label for="particular">{{trans('areaClientWords.rbtnParticular')}}</label>
                     </div>
                     {{--  NIF  --}}
@@ -346,7 +346,6 @@
 <div class="container box-selos justify-content-center mt-5 mb-2 d-none">
 
     <div class="row">
-
         {{--  menu esquerda  --}}
         <div class="col-4 left-menu text-start">
             <div class="d-flex flex-column bd-highlight mb-1 mt-2 ms-3">
@@ -567,19 +566,22 @@
             {{-- formulario pagamento  --}}
             <form action="" class="form-payment">
                 {{-- card type | validade | cvv --}}
-                <div class="d-flex flex-row bd-highlight mb-3 cardType">
+                <div class="d-flex flex-row bd-highlight mb-3 ">
                     {{-- card type  --}}
-                    <div class="p-2 bd-highlight text-start">
+                    <div class="p-2 bd-highlight  text-start cardType">
                         <label for="fname">{{trans('areaClientWords.cardType')}}</label><br>
-                        <input type="text" id="fname" name="fname" value=""><br>
+                        <div class="input-img d-flex  bd-highligh p-1">
+                            <img src="{{ asset('img/visaLogo.svg') }}" width="45px" height="22px" alt="">
+                            {{-- <input type="text" id="fname" name="fname" value=""><br> --}}
+                        </div>
                     </div>
                     {{-- card validade  --}}
-                    <div class="p-2 bd-highlight text-start">
+                    <div class="p-2 bd-highlight text-start cardType">
                         <label for="fname">{{trans('areaClientWords.cardValidade')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
                     {{-- card CVV  --}}
-                    <div class="p-2 bd-highlight text-start">
+                    <div class="p-2 bd-highlight text-start cardType">
                         <label for="fname">{{trans('areaClientWords.cardCvv')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>

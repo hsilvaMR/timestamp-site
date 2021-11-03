@@ -357,19 +357,18 @@
     text-align: center;
 }
 
-.box-client-area.left-menu .titleName {
+.left-menu .titleName {
     font-family: 'Montserrat';
     font-style: normal;
-    /* font-weight: 700px; */
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 20px;
-    color: black;
+    color: #222222 !important;
 }
 
-.box-client-area.left-menu #nameClient {
-    font-family: 'Montserrat';
+.left-menu #nameClient {
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 15px;
     line-height: 15px;
     color: #F78065;
@@ -489,9 +488,12 @@
     align-items: center;
 }
 
+
+/*******************  Box Dados cliente */
+
 .box-client-dados {
     position: relative;
-    height: 1050px;
+    height: 1080px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
     padding: auto;
@@ -559,8 +561,23 @@
     font-size: 23px;
 }
 
-.right-menu .box-form .btn-guardar input[type='radio'] {
-    /* color: #F78065; */
+.box-client-dados .box-form .typeAcount input {
+    display: none;
+}
+
+.box-client-dados .box-form .typeAcount input+label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.42);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.box-client-dados .box-form .typeAcount input:checked+label:before {
+    background-image: url("/img/TS_Visto.svg");
 }
 
 .right-menu .box-form .btn-guardar input[type='radio']:focus {
@@ -689,6 +706,23 @@
     font-size: 14px;
     line-height: 15px;
     color: #F78065;
+}
+
+.input-img input {
+    width: 75px;
+    border: none;
+    color: black;
+}
+
+.input-img input:focus {
+    outline: none;
+}
+
+.input-img {
+    width: 118px;
+    height: 28px;
+    border: 1px solid rgba(247, 128, 101, 0.5);
+    border-radius: 2px;
 }
 
 
