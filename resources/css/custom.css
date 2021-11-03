@@ -648,7 +648,7 @@
 
 .box-pagamentos {
     position: relative;
-    height: 773px;
+    height: 700px;
     width: 709px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.48);
@@ -708,10 +708,12 @@
     color: #F78065;
 }
 
-.input-img input {
-    width: 75px;
-    border: none;
-    color: black;
+.form-payment .btn-save-paymentM {
+    width: 319px;
+    height: 67px;
+    left: 683px;
+    top: 946px;
+    background: #F78065;
 }
 
 .input-img input:focus {
@@ -723,6 +725,31 @@
     height: 28px;
     border: 1px solid rgba(247, 128, 101, 0.5);
     border-radius: 2px;
+}
+
+.form-payment .btn-save-paymentM {
+    /* width: 709px; */
+    width: 730px;
+    height: 67px;
+    background: #F78065;
+    color: white;
+    border: 1px solid #F78065;
+}
+
+.form-payment .btn-save-paymentM:hover {
+    /* width: 709px; */
+    width: 730px;
+    height: 67px;
+    background: white;
+    color: #F78065;
+    border: 1px solid #F78065;
+}
+
+.form-payment .btn-save-paymentM label {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 23px;
 }
 
 

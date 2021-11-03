@@ -152,9 +152,9 @@
     </div>
 
 </div>
-{{--  BOX  DADOS PESSOAIS --}}
-{{-- BOX  DADOS PESSOAIS --}}
-{{-- BOX  DADOS PESSOAIS --}}
+{{--  BOX  DADOS  --}}
+{{-- BOX  DADOS  --}}
+{{-- BOX  DADOS  --}}
 <div class="container box-client-dados d-none">
     <div class="row">
         {{--  menu esquerda --}}
@@ -626,7 +626,16 @@
                         <label for="fname">{{trans('areaClientWords.numberSelo')}}</label><br>
                         <input type="text" id="fname" name="fname" value=""><br>
                     </div>
+
                 </div>
+
+                {{-- btn salvar  --}}
+                <div class="d-flex justify-content-center  btn-save-paymentM curso-pointer">
+                    <div class="p-2 pt-3 bd-highlight  text-center">
+                        <label for="">{{trans('areaClientWords.btnSave')}} </label>
+                    </div>
+                </div>
+
             </form>
 
         </div>
