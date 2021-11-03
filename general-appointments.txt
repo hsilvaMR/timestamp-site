@@ -58,7 +58,17 @@ funcão para test de ajax
 			// }	
 		}
 
-#npm run watch		
+#npm run watch	
+
+// jquery mouse Over  event
+$('.evtMVr').on('mouseenter', function() {
+https://stackoverflow.com/questions/1273566/how-do-i-check-if-the-mouse-is-over-an-element-in-jquery
+
+// check mouseOver
+if ($('#element:hover').length < 0) {
+    // do something ;)
+}
+
 
 ================================================                ================================================
                                                     LARAVEL  
@@ -385,6 +395,9 @@ CRTL + F2
 
 renomear todas ocorrencia de palavra
 F2
+comentario multiplas linhas  Toggles
+shift+alt+A //Toggles comments in VScode.
+
 
 ================================================                ================================================
                                                     GOOGLE  

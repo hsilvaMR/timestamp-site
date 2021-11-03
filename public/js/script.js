@@ -106,6 +106,27 @@ $(function() {
 
     });
 
+    // check mouse Over evtMVr mouseenter mouseleave
+
+    $('.evtMVr').on('mouseenter', function() {
+
+        if ($('.btnSelos:hover').length > 0) {
+            var pathImage = "img/selo-white.svg"
+            $(".btnSelosIMG").attr("src", pathImage);
+        }
+
+    });
+
+    // check mouse leave 
+    $('.evtMVr').on('mouseleave', function() {
+
+        if ($('.btnSelos:hover').length == 0) {
+            var pathImage = "img/selo.svg"
+            $(".btnSelosIMG").attr("src", pathImage);
+        }
+
+    });
+
 
 
 })
