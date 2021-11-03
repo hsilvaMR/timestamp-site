@@ -36,15 +36,12 @@ $(function() {
             //console.log(url)
     });
 
-
-
-    //open box data-client 
+    //abrir box dados pessoais menu-left
     $('#boxData-client').on('click', function() {
         console.log("open-box-client-data");
         $('.box-client-dados').removeClass("d-none")
         $('.box-client-area').addClass("d-none")
     });
-
     // open box area selos
     $('#seloArea').on('click', function() {
         console.log("open-box-client-data");
@@ -128,6 +125,16 @@ $(function() {
             var pathImage = "img/dadosP-white.svg"
             $(".boxDadoIMG").attr("src", pathImage);
         }
+        // pagamento btn
+        if ($('.boxPagamento:hover').length > 0) {
+            var pathImage = "img/payment-white.svg"
+            $(".boxPagamentoIMG").attr("src", pathImage);
+        }
+        // api  btn
+        if ($('.boxAPI:hover').length > 0) {
+            var pathImage = "img/api-white.svg"
+            $(".boxAPiIMG").attr("src", pathImage);
+        }
 
     });
 
@@ -153,9 +160,48 @@ $(function() {
             var pathImage = "img/dadosP.svg"
             $(".boxDadoIMG").attr("src", pathImage);
         }
+        // pagamento btn
+        if ($('.boxPagamento:hover').length == 0) {
+            var pathImage = "img/payment.svg"
+            $(".boxPagamentoIMG").attr("src", pathImage);
+        }
+        // api  btn
+        if ($('.boxAPI:hover').length == 0) {
+            var pathImage = "img/api.svg"
+            $(".boxAPiIMG").attr("src", pathImage);
+        }
 
     });
 
+    //abrir box menu-right
+    $('.evtMVr').on('click', function() {
+        // abrir box selos 
+        if ($('.btnSelos:hover').length > 0) {
+            $('.box-selos').removeClass("d-none")
+            $('.box-client-area').addClass("d-none")
+        }
+        // abrir box promocao 
+        if ($('.bxPromo:hover').length > 0) {
+            $('.box-promocao').removeClass("d-none")
+            $('.box-client-area').addClass("d-none")
+        }
+        // abrir box dados pessoas 
+        if ($('.boxDados:hover').length > 0) {
+            $('.box-client-dados').removeClass("d-none")
+            $('.box-client-area').addClass("d-none")
+        }
 
+        // abrir box pagamentos 
+        if ($('.boxPagamento:hover').length > 0) {
+            $('.box-pagamentos').removeClass("d-none")
+            $('.box-client-area').addClass("d-none")
+        }
+        // abrir box api 
+        if ($('.boxAPI:hover').length > 0) {
+            $('.box-api').removeClass("d-none")
+            $('.box-client-area').addClass("d-none")
+        }
+
+    })
 
 })

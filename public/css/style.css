@@ -440,7 +440,8 @@
     color: #F78065;
 }
 
-.right-menu .box-btn {
+.right-menu .box-btn,
+.right-menu .boxStatuSelos {
     left: 0%;
     right: 0%;
     top: 0%;
@@ -454,11 +455,15 @@
     color: #F78065;
 }
 
-.right-menu .box-btn:hover {
+.right-menu .box-btn:hover,
+.right-menu .boxStatuSelos:hover {
     border: 2px solid #F78065;
     background: #F78065;
     color: #FFFFFF;
 }
+
+
+/* selos disponíveis numberSelos  */
 
 .right-menu .box-btn span {
     font-family: 'Montserrat';
@@ -466,6 +471,22 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
+}
+
+.boxStatuSelos .numberSelos {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    align-items: center;
+}
+
+.boxStatuSelos .textNumberSelo {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
 }
 
 .box-client-dados {

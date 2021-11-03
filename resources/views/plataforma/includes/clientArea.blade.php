@@ -88,7 +88,6 @@
                 <div class="p-2 bd-highlight descricao mb-3">
                     <span>{{trans('areaClientWords.welcome')}}</span>
                 </div>
-
                 <div class="p-2 bd-highlight  border-bottom">
                 </div>
             </div>
@@ -123,17 +122,27 @@
                     <span>{{trans('areaClientWords.meusDados')}}</span>
                 </div>
                 {{-- btn | selos disponíveis --}}
-                <div class="p-2  mx-2 box-btn  bd-highlight"><span>{{trans('areaClientWords.seloDisponivel')}}</span>
+                <div class="p-2  mx-2  d-flex flex-column   bd-highlight boxStatuSelos">
+                    <span class="numberSelos"> 301 </span>
+                    <span class="textNumberSelo">{{trans('areaClientWords.seloDisponivel')}}</span>
                 </div>
                 {{-- btn | metodo pagamento --}}
-                <div class="p-2 mx-2 box-btn  bd-highlight"><span>{{trans('areaClientWords.metodoPagamento')}}</span>
+                <div class="p-2 mx-2 box-btn d-flex flex-column  bd-highlight evtMVr boxPagamento">
+                    <span class="pb-2">
+                        <img class="boxPagamentoIMG" src="{{ asset('img/payment.svg') }}" alt="" width="60px"
+                            height="45px">
+                    </span>
+                    <span>{{trans('areaClientWords.metodoPagamento')}}</span>
                 </div>
 
             </div>
             {{-- btn | Integração API --}}
 
             <div class="d-flex  mx-2 mt-2 justify-content-start" id="apiBX">
-                <div class="p-2 box-btn  bd-highlight">
+                <div class="p-2 box-btn d-flex flex-column  bd-highlight  boxAPI evtMVr">
+                    <span class="pb-2">
+                        <img class="boxAPiIMG" src="{{ asset('img/api.svg') }}" alt="" width="60px" height="45px">
+                    </span>
                     <span>{{trans('areaClientWords.integraAPI')}}</span>
                 </div>
             </div>
