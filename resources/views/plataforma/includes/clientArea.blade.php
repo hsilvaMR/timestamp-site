@@ -198,9 +198,9 @@
                         <i class="fas ms-5 fa-chevron-right"></i>
                     </div>
                 </div>
-                {{--  items | vale de desconto   --}}
+                {{--  items | vale de desconto    --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item  evtOclick itemPromocao">
                         {{trans('areaClientWords.meusVale')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -208,8 +208,8 @@
                     </div>
                 </div>
                 {{--  items | metodo de pagamento   --}}
-                <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item">
+                <div class="d-flex bd-highlight border-bottom">
+                    <div class="me-auto p-2 bd-highlight item  evtOclick itemPagamento">
                         {{trans('areaClientWords.metodoPagamento')}}
                     </div>
                     <div class="p-2 bd-highlight">

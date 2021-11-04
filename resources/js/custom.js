@@ -218,6 +218,20 @@ $(function() {
             $('.box-client-area').addClass("d-none")
         }
 
+    });
+    //abrir box menu-left
+    $('.evtOclick').on('click', function() {
+        //  box dados pessoas  | abrir pagamentos 
+        if ($('.itemPagamento:hover').length > 0) {
+            $('.box-pagamentos').removeClass("d-none")
+            $('.box-client-dados').addClass("d-none")
+        }
+        //  box dados pessoas  | abrir promocao 
+        if ($('.itemPromocao:hover').length > 0) {
+            $('.box-promocao').removeClass("d-none")
+            $('.box-client-dados').addClass("d-none")
+        }
+
     })
 
 })

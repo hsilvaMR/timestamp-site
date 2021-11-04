@@ -398,6 +398,9 @@ F2
 comentario multiplas linhas  Toggles
 shift+alt+A //Toggles comments in VScode.
 
+comentario uma linha toggle 
+CRTL + 7
+
 
 ================================================                ================================================
                                                     GOOGLE  
