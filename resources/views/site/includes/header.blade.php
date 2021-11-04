@@ -23,15 +23,15 @@
 
 {{-- card z-index --}}
 <div class="container content-zIndex ">
-    <div class="col-6  justify-content-start">
+    <div class="col-7  justify-content-start col-zIndex mt-4">
 
-        <div class="d-flex flex-column mb-1 ">
-            <div class="p-2 bd-highlight  font-title-header">
+        <div class="d-flex flex-column mb-1  ms-3 me-5">
+            <div class="p-2 bd-highlight  font-title-header mt-5">
                 Descubra <i class="color-rose-words">como</i>, <i class="color-rose-words">onde</i> e para que
                 servem os
                 <i class="color-rose-words">Selos Temporais</i>!
             </div>
-            <div class="p-2 bd-highlight item-col font-words-body">
+            <div class="p-2 bd-highlight  font-words-body mt-3 cardZindex me-5">
                 Confira aos seus documentos, processos, aplicações e serviços a prova temporal que
                 tanto necessitam, através dos <i class="color-rose-words">Mstamp</i> e <i
                     class="color-rose-words">Mtech</i>

@@ -28,12 +28,27 @@
 
 .content-zIndex {
     position: relative;
-    width: 741px;
+    max-width: 450px;
     /* height: 537px; */
     top: -250px;
+    z-index: 2;
+}
+
+.content-zIndex .col-zIndex {
     background: #FFFFFF;
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
-    z-index: 2;
+    height: 537px;
+}
+
+.content-zIndex .cardZindex {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    cursor: pointer;
+    text-align: justify;
 }
 
 .loginArea {
