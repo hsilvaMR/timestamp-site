@@ -38,13 +38,11 @@
                 . Os selos temporais
                 são uma garantia não só do conteúdo comunicado, mas também do exato momento em que ocorreu.
             </div>
-            <div class="p-2 bd-highlight item-col bt-register bg-primary mt-3 w-50">
-                <div class="d-flex justify-content-center mt-1">
-                    <span>
-                        <img src="{{ asset('img/register.png') }}" class="img-fluid" alt="">
-                        Regista-se
-                    </span>
-                </div>
+            <div class="p-2 bd-highlight item-col btnRegister evtMVr  mt-5 text-center pt-3">
+                <span>
+                    <img src="{{ asset('img/register-white.png') }}" width="25px" height="25px" class="btnRegs" alt="">
+                    {{trans('footerWords.registar')}}
+                </span>
             </div>
         </div>
 

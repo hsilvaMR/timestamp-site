@@ -136,6 +136,15 @@ $(function() {
             $(".boxAPiIMG").attr("src", pathImage);
         }
 
+        // registar btn header 
+        if ($('.btnRegister:hover').length > 0) {
+            var pathImage = "img/register.svg"
+            $(".btnRegs").attr("src", pathImage);
+            $(".btnRegs").attr("width", "25px");
+            $(".btnRegs").attr("height", "25px");
+        }
+
+
     });
 
     // change icon whem mouseLeave
@@ -169,6 +178,13 @@ $(function() {
         if ($('.boxAPI:hover').length == 0) {
             var pathImage = "img/api.svg"
             $(".boxAPiIMG").attr("src", pathImage);
+        }
+        // registar btn header 
+        if ($('.btnRegister:hover').length == 0) {
+            var pathImage = "img/register-white.png"
+            $(".btnRegs").attr("src", pathImage);
+            $(".btnRegs").attr("width", "25px");
+            $(".btnRegs").attr("height", "25px");
         }
 
     });

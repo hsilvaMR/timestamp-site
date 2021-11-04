@@ -51,6 +51,27 @@
     text-align: justify;
 }
 
+.content-zIndex .btnRegister {
+    width: 320px;
+    height: 65px;
+    background: #F78065;
+    color: white;
+    border: 1.5px solid #F78065;
+}
+
+.content-zIndex .btnRegister:hover {
+    background: white;
+    color: #F78065;
+    border: 1.5px solid #F78065;
+}
+
+.content-zIndex .btnRegister span {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .loginArea {
     cursor: pointer;
 }
