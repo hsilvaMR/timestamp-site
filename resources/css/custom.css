@@ -173,7 +173,8 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    opacity: 0.7;
+    opacity: 0.4;
+    text-align: justify;
 }
 
 .font-body-box2-color {
@@ -219,6 +220,30 @@
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
+}
+
+.tblMstamp .col-basico {
+    background-image: url("/img/price-mstamp-basic.svg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 639px;
+    /* background-size: cover; */
+}
+
+.tblMstamp .col-premium {
+    background-image: url("/img/price-mstamp-premium.svg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 639px;
+    /* background-size: cover; */
+}
+
+.tblMstamp .col-ultimate {
+    background-image: url("/img/price-mstamp-ultimate.svg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 639px;
+    /* background-size: cover; */
 }
 
 .btnCloseModal {

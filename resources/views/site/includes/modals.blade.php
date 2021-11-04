@@ -7,7 +7,7 @@
         <div class="modal-content">
             {{-- title --}}
             <div class="modal-header  modal-header-title-font  border-0">
-                <h5 class="modal-title  " id="staticBackdropLabel">
+                <h5 class="modal-title" id="staticBackdropLabel">
                     {{ trans('homeWords.modatTitleTiposSelos') }}
                 </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -20,18 +20,19 @@
                 <div class="row mt-1 justify-content-center">
 
                     {{-- col  Mstamp --}}
-                    <div class="col col-mstamp" style="cursor: pointer;">
+                    <div class="col  curso-pointer">
 
-                        <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
-
-                        <div class="d-flex flex-column  justify-content-center mb-1">
-
+                        <div class="d-flex flex-column col-mstamp  justify-content-center ms-4 me-4 mb-1">
+                            {{-- img  Mstamp --}}
+                            <div class="p-2 bd-highlight">
+                                <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
+                            </div>
                             {{-- LOGO Mstamp --}}
                             <div class="p-2 bd-highlight  mt-4">
                                 <img src="{{ asset('img/Mstamp-logoA.svg') }}" width="100px" height="100px" alt="">
                             </div>
                             {{-- descrição Mstamp  --}}
-                            <div class="p-2 bd-highlight  font-body-box2">
+                            <div class="p-2 bd-highlight ps-2 font-body-box2">
                                 {{ trans('homeWords.oQueSaoSelosMsTamp') }}
                             </div>
                             {{-- link  precos --}}
@@ -42,11 +43,13 @@
 
                     </div>
                     {{-- col  Mtech --}}
-                    <div class="col col-mstamp" style="cursor: pointer;">
+                    <div class="col " style="cursor: pointer;">
 
-                        <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
-
-                        <div class="d-flex flex-column  justify-content-center mb-1">
+                        <div class="d-flex flex-column col-mstamp ms-4 me-4  justify-content-center mb-1">
+                            {{-- img  Mtech --}}
+                            <div class="p-2 bd-highlight">
+                                <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
+                            </div>
 
                             {{-- LOGO Mtech --}}
                             <div class="p-2 bd-highlight  mt-4">
@@ -72,7 +75,8 @@
     </div>
 </div>
 {{-- Modal Tabela de Preços | Mstamp--}}
-<div class="modal fade" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade tblMstamp" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
@@ -83,7 +87,7 @@
             {{-- body --}}
             <div class="modal-body">
                 {{-- row --}}
-                <div class="row">
+                <div class="row justify-content-md-center">
                     {{-- col-basico --}}
                     <div class="col col-basico ">
 
