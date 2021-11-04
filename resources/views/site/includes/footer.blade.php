@@ -32,7 +32,7 @@
             </div>
 
             {{-- col Assistencia | suporte | FAQS | Seguranca e Privacidade --}}
-            <div class="col col-d ">
+            <div class="col col-d">
                 <div class="d-flex flex-column  justify-content-center mb-1">
                     <div class="p-2 bd-highlight titulo-col">{{trans('footerWords.assistencia')}}</div>
                     <div class="p-2 bd-highlight item-col">{{trans('footerWords.suporte')}}</div>
