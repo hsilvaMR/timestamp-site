@@ -172,7 +172,7 @@
                 </div>
                 {{--       items | meus selos     --}}
                 <div class="d-flex bd-highlight border-bottom">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item evtOclick itemSelos ">
                         {{trans('areaClientWords.meuSelos')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -378,8 +378,8 @@
                     </div>
                 </div>
                 {{--  items | meus dados   --}}
-                <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
+                <div class="d-flex bd-highlight border-bottom  ">
+                    <div class="me-auto p-2 bd-highlight  item evtOclick  itemDados" id="boxData-client">
                         {{trans('areaClientWords.meusDados')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -388,7 +388,7 @@
                 </div>
                 {{--  items | vale de desconto   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item itemPromocao evtOclick">
                         {{trans('areaClientWords.meusVale')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -397,7 +397,7 @@
                 </div>
                 {{--  items | metodo de pagamento   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item">
+                    <div class="me-auto p-2 bd-highlight item  evtOclick itemPagamento">
                         {{trans('areaClientWords.metodoPagamento')}}
                     </div>
                     <div class="p-2 bd-highlight">

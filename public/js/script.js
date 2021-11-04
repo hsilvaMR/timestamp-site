@@ -219,17 +219,41 @@ $(function() {
         }
 
     });
+
     //abrir box menu-left
     $('.evtOclick').on('click', function() {
-        //  box dados pessoas  | abrir pagamentos 
+        /*  box dados pessoas  */
+        //  abrir pagamentos
         if ($('.itemPagamento:hover').length > 0) {
             $('.box-pagamentos').removeClass("d-none")
             $('.box-client-dados').addClass("d-none")
         }
-        //  box dados pessoas  | abrir promocao 
+        //   abrir promocao 
         if ($('.itemPromocao:hover').length > 0) {
             $('.box-promocao').removeClass("d-none")
             $('.box-client-dados').addClass("d-none")
+        }
+        //   abrir meus selos 
+        if ($('.itemSelos:hover').length > 0) {
+            $('.box-selos').removeClass("d-none")
+            $('.box-client-dados').addClass("d-none")
+        }
+
+        /****  box selos   ****/
+        // pagamento
+        if ($('.itemPagamento:hover').length > 0) {
+            $('.box-pagamentos').removeClass("d-none")
+            $('.box-selos').addClass("d-none")
+        }
+        //   abrir promocao 
+        if ($('.itemPromocao:hover').length > 0) {
+            $('.box-promocao').removeClass("d-none")
+            $('.box-selos').addClass("d-none")
+        }
+        //   abrir dados pessoas  
+        if ($('.itemDados:hover').length > 0) {
+            $('.box-selos').addClass("d-none")
+            $('.box-client-dados').removeClass("d-none")
         }
 
     })
