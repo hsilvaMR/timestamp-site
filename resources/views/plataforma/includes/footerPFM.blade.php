@@ -1,4 +1,4 @@
-<div class="container-fluid footer border-top border-2">
+<div class="container-fluid footer border-top border-1">
 
     <div class="container">
         <div class="row mt-5  justify-content-center">
@@ -22,7 +22,7 @@
             </div>
 
             {{-- col Crie uma conta  | Registe-se | FAQS | as vantagem--}}
-            <div class="col col col-c titulo-col">
+            <div class="col  col-c ">
                 <div class="d-flex flex-column  justify-content-cente mb-1">
                     <div class="p-2 bd-highlight titulo-col">{{trans('footerWords.criarConta')}}</div>
                     <div class="p-2 bd-highlight item-col" data-bs-toggle="modal" data-bs-target="#modal-registar">
@@ -32,7 +32,7 @@
             </div>
 
             {{-- col Assistencia | suporte | FAQS | Seguranca e Privacidade --}}
-            <div class="col col-d titulo-col">
+            <div class="col col-d">
                 <div class="d-flex flex-column  justify-content-center mb-1">
                     <div class="p-2 bd-highlight titulo-col">{{trans('footerWords.assistencia')}}</div>
                     <div class="p-2 bd-highlight item-col">{{trans('footerWords.suporte')}}</div>
