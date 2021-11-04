@@ -51,12 +51,12 @@ $(function() {
     });
 
     // open box metodo de pagamento
-    $('#box-pagamento').on('click', function() {
+    /* $('#box-pagamento').on('click', function() {
         console.log("open-box-client-data");
         //$('.box-client-dados').addClass("d-none")
         $('.box-pagamentos').removeClass("d-none")
         $('.box-client-area').addClass("d-none")
-    });
+    }); */
 
     //open box api 
     $('#apiBX').on('click', function() {
@@ -254,6 +254,40 @@ $(function() {
         if ($('.itemDados:hover').length > 0) {
             $('.box-selos').addClass("d-none")
             $('.box-client-dados').removeClass("d-none")
+        }
+
+        /**** box  pagamentos   ****/
+        // selos 
+        if ($('.itemSelos:hover').length > 0) {
+            $('.box-selos').removeClass("d-none")
+            $('.box-pagamentos').addClass("d-none")
+        }
+        // 
+        //  abrir promocao 
+        if ($('.itemPromocao:hover').length > 0) {
+            $('.box-pagamentos').addClass("d-none")
+            $('.box-promocao').removeClass("d-none")
+        }
+        //   abrir dados pessoas  
+        if ($('.itemDados:hover').length > 0) {
+            $('.box-client-dados').removeClass("d-none")
+            $('.box-pagamentos').addClass("d-none")
+        }
+        /**** box  promocao    ****/
+        // selos 
+        if ($('.itemSelos:hover').length > 0) {
+            $('.box-selos').removeClass("d-none")
+            $('.box-promocao').addClass("d-none")
+        }
+        //  abrir pagamento 
+        if ($('.itemPagamento:hover').length > 0) {
+            $('.box-pagamentos').removeClass("d-none")
+            $('.box-promocao').addClass("d-none")
+        }
+        //   abrir dados pessoas  
+        if ($('.itemDados:hover').length > 0) {
+            $('.box-client-dados').removeClass("d-none")
+            $('.box-promocao').addClass("d-none")
         }
 
     })
