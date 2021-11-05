@@ -401,7 +401,6 @@ shift+alt+A //Toggles comments in VScode.
 comentario uma linha toggle 
 CRTL + 7
 
-
 ================================================                ================================================
                                                     GOOGLE  
 ================================================               =================================================
@@ -419,5 +418,30 @@ Site referencia hesasoft
 https://mwatt5.webnode.pt/ 
 
 
-criar subdominio
-https://www.youtube.com/watch?v=LCz6CfvznoA
+================================================                ================================================
+                                                     CPANEL  
+================================================               =================================================
+
+ SUBIR PROJECTO  LARAVEL NO SERVIDOR NUM SUBDOMINIO   "subdomain"
+
+1º criar subdominio
+   https://www.youtube.com/watch?v=LCz6CfvznoA
+ 
+ 2º na raiz de ficheiros do dominio principal   (/home/mainDomain/)   
+ criar pasta exemplo  /home/subDomainFolder  exportar la o projecto todo  ex: laravelProject.zip
+
+3º ir na pasta onde foi exportado o projecto todo /home/subDomainFolder localizar o diretorio public e MOVER todos ficheiros e pasta 
+que estiverem lá excepto o ficheiro mix-manifest.json  PARA  a raiz do seu subdomain  public_html/subdomain 
+
+4º estando dentro do seu subdomain [public_html/subdomain]   , localizar o ficheiro index.php 
+alterar :   require __DIR__.'/../../subDomainFolder/vendor/autoload.php'  |  $app = require_once __DIR__.'/../../subDomainFolder/bootstrap/app.php';
+
+5º alterar o asset dos ficheiros css e js  para mix 
+exemplo  :  <link rel="stylesheet" href="{{ mix('css/style.css') }}"> |  <script src="{{ mix('js/script.js') }}"></script>
+
+
+
+
+      
+
+  
