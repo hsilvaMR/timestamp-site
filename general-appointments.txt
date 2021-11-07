@@ -378,6 +378,12 @@ aumentar zoom de um objecto/box CTRL + SCROLL(BOTAO AUMENTAR/DIMINUIR RATO)
 ================================================               =================================================
 https://code.visualstudio.com/docs/getstarted/tips-and-tricks
 
+visão geral VScode
+https://code.visualstudio.com/api/references/extension-guidelines
+
+ativar Status bar 
+Views > Appaearence > Show Status Bar 
+
 TECLAS DE Atalho
 Abrir varias janelas nos mesmo workspace ---> CRTL + \ (ideal para análise de código do mesmo projecto)
 
@@ -400,6 +406,9 @@ shift+alt+A //Toggles comments in VScode.
 
 comentario uma linha toggle 
 CRTL + 7
+
+
+
 
 ================================================                ================================================
                                                     GOOGLE  
