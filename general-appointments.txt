@@ -15,7 +15,6 @@ https://www.youtube.com/watch?v=SOIIl33nthw
 customizar bootstrap  com sass 
 https://www.youtube.com/watch?v=aWmiEQYxy1w
 
-
 ================================================                ================================================
                                                      CSS  
 ================================================               =================================================
@@ -35,6 +34,9 @@ https://codepen.io/imohkay/pen/wyxuB
 
 customizar checkBox 
 https://www.youtube.com/watch?v=cksgCkee2uY
+
+Build interactive web with less code
+https://toruskit.com/docs/effects/responsiveness/
 
 
 ================================================                ================================================
@@ -285,6 +287,18 @@ criar cookies
 
    Apontamentos genericos laravel  -- tutorialspoint --
    https://www.tutorialspoint.com/laravel/laravel_request.htm
+
+
+   ================================================                ================================================
+                                                         PHP  
+  ================================================               =================================================
+ 
+   validar sintaxe php  | validar codigo 
+   https://phpcodechecker.com/
+
+
+
+
 ================================================                ================================================
                                                     GITHUBS  
 ================================================               =================================================
@@ -417,12 +431,16 @@ CRTL + 7
 Site referencia hesasoft
 https://mwatt5.webnode.pt/ 
 
+PLATAFORMA para teste de responsividade 
+https://www.lambdatest.com/lt-browser
 
 ================================================                ================================================
                                                      CPANEL  
 ================================================               =================================================
 
  SUBIR PROJECTO  LARAVEL NO SERVIDOR NUM SUBDOMINIO   "subdomain"
+
+ https://stackoverflow.com/questions/45153738/the-mix-manifest-does-not-exist-when-it-does-exist
 
 1º criar subdominio
    https://www.youtube.com/watch?v=LCz6CfvznoA

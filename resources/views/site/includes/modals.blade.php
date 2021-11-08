@@ -44,7 +44,6 @@
                     </div>
                     {{-- col  Mtech --}}
                     <div class="col " style="cursor: pointer;">
-
                         <div class="d-flex flex-column col-mstamp ms-4 me-4  justify-content-center mb-1">
                             {{-- img  Mtech --}}
                             <div class="p-2 bd-highlight">
@@ -64,7 +63,6 @@
                                 {{ trans('homeWords.mTechVejaPreco') }}
                             </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -80,30 +78,39 @@
     <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
-            <div class="modal-header modal-header-title-font border-0">
-                <h5 class="modal-title" id="exampleModalLabel">Tabela de Preço | Mstamp </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="d-flex bd-highlight  modal-header border-0 ">
+                <div class="p-2 flex-grow-1 bd-highlight  border-0">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Tabela de Preços | <img src="{{ asset('img/Mstamp-logoA.svg') }}" width="100px" height="65px"
+                            alt="">
+                    </h5>
+                </div>
+                <div class="p-2 bd-highlight flex-shrink-1 curso-pointer text-end">
+                    <i class=" fas fa-times fa-2x" data-bs-dismiss="modal" aria-label="Close"></i>
+                </div>
             </div>
             {{-- body --}}
             <div class="modal-body">
-                {{-- row --}}
-                <div class="row justify-content-md-center">
-                    {{-- col-basico --}}
-                    <div class="col col-basico ">
+                <div class="container d-flex  justify-content-center">
+                    <div class="row align-items-center">
+                        {{-- col-basico --}}
+                        <div class="col  text-center  me-3 border border-warning col-basico  mb-2">
+                            jhdjkds
+                        </div>
+                        {{-- col-premium --}}
+                        <div class="col  text-center  me-3 border border-info col-premium  mb-2">
+                        </div>
 
-                    </div>
-                    {{-- col-premium --}}
-                    <div class="col col-premium ">
-
-                    </div>
-                    {{-- col-ultimate --}}
-                    <div class="col col-ultimate ">
-
+                        {{-- col-ultimate --}}
+                        <div class="col  text-center  me-3 border border-primary col-ultimate  mb-2">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 {{-- Modal Tabela de Preços |  Mtech--}}
 <div class="modal fade" id="tabelaPreco-Mtech" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -119,16 +126,16 @@
                 {{-- row --}}
                 <div class="row justify-content-center">
 
-                    {{-- col-starter --}}
-                    <div class="col col-starter">
+                    {{-- col-basico   --}}
+                    <div class="col col-basico   border-primary">
 
                     </div>
                     {{-- col-premium --}}
-                    <div class="col col-premium">
+                    <div class="col col-premium border-secondary">
 
                     </div>
                     {{-- col-ultimate --}}
-                    <div class="col col-ultimate">
+                    <div class="col col-ultimate border-success">
 
                     </div>
                 </div>
