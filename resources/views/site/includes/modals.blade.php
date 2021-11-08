@@ -91,26 +91,98 @@
             </div>
             {{-- body --}}
             <div class="modal-body">
-                <div class="container d-flex  justify-content-center">
-                    <div class="row align-items-center">
+                <div
+                    class="container d-flex  justify-content-md-center  justify-content-xl-center justify-content-sm-center   ">
+                    <div class="row ">
                         {{-- col-basico --}}
-                        <div class="col  text-center  me-3 border border-warning col-basico  mb-2">
-                            jhdjkds
+                        <div class="col .col-sm-3 col-lg-3 col-xxl-3 col-basico ">
+
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item ">
+
+                                <div class="p-2 bd-highlight ">
+                                    <label for="">BÁSICO</label>
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    50 Mstamp
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Carteira de Gestão
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Info Adicional
+                                </div>
+                            </div>
+
                         </div>
                         {{-- col-premium --}}
-                        <div class="col  text-center  me-3 border border-info col-premium  mb-2">
+                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-premium  ">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    50 Mstamp
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Carteira de Gestão
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Info Adicional
+                                </div>
+                            </div>
+
                         </div>
 
                         {{-- col-ultimate --}}
-                        <div class="col  text-center  me-3 border border-primary col-ultimate  mb-2">
+                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-ultimate  ">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    50 Mstamp
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Carteira de Gestão
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Info Adicional
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 {{-- Modal Tabela de Preços |  Mtech--}}
 <div class="modal fade" id="tabelaPreco-Mtech" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -129,6 +201,26 @@
                     {{-- col-basico   --}}
                     <div class="col col-basico   border-primary">
 
+                        <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+
+                            <div class="p-2 bd-highlight">
+                                <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px" height="20px">
+                                50 Mstamp
+                            </div>
+
+                            <div class="p-2 bd-highlight">
+
+                                <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px" height="20px">
+                                Carteira de Gestão
+                            </div>
+
+                            <div class="p-2 bd-highlight">
+
+                                <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px" height="20px">
+                                Info Adicional
+                            </div>
+                        </div>
+
                     </div>
                     {{-- col-premium --}}
                     <div class="col col-premium border-secondary">
@@ -138,6 +230,7 @@
                     <div class="col col-ultimate border-success">
 
                     </div>
+
                 </div>
             </div>
         </div>

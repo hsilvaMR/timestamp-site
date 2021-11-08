@@ -223,7 +223,6 @@
 #modal-registar .modal-content {
     max-height: 187px;
     /* left: 360px; */
-    /* top: 157px; */
     background: #F78065;
 }
 
@@ -239,13 +238,13 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 635px;
-    width: 100%;
+    width: 324px;
 }
 
 .tblMstamp .col-premium {
     background-image: url("/img/price-mstamp-premium.svg");
     background-repeat: no-repeat;
-    width: 100%;
+    width: 324px;
     background-position: center;
     height: 635px;
 }
@@ -253,10 +252,9 @@
 .tblMstamp .col-ultimate {
     background-image: url("/img/price-mstamp-ultimate.svg");
     background-repeat: no-repeat;
-    /* background-size: 100%; */
     background-position: center;
     height: 635px;
-    width: 100%;
+    width: 324px;
 }
 
 .tblMstamp .col-basico .item label,
