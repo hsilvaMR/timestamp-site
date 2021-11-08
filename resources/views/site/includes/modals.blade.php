@@ -97,7 +97,7 @@
                         {{-- col-basico --}}
                         <div class="col .col-sm-3 col-lg-3 col-xxl-3 col-basico ">
 
-                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item ">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
 
                                 <div class="p-2 bd-highlight ">
                                     <label for="">BÁSICO</label>
@@ -122,29 +122,34 @@
                                         height="20px">
                                     Info Adicional
                                 </div>
+
                             </div>
 
                         </div>
                         {{-- col-premium --}}
-                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-premium  ">
-                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-premium ">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
+
+                                <div class="p-2 bd-highlight ">
+                                    <label for="">PREMIUM</label>
+                                </div>
 
                                 <div class="p-2 bd-highlight">
-                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                    <img src="{{ asset('img/premium-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     50 Mstamp
                                 </div>
 
                                 <div class="p-2 bd-highlight">
 
-                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                    <img src="{{ asset('img/premium-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     Carteira de Gestão
                                 </div>
 
                                 <div class="p-2 bd-highlight">
 
-                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                    <img src="{{ asset('img/premium-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     Info Adicional
                                 </div>
@@ -153,25 +158,29 @@
                         </div>
 
                         {{-- col-ultimate --}}
-                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-ultimate  ">
-                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-ultimate    ">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
+
+                                <div class="p-2 bd-highlight ">
+                                    <label for="">ULTIMATE</label>
+                                </div>
 
                                 <div class="p-2 bd-highlight">
-                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                    <img src="{{ asset('img/ultimate-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     50 Mstamp
                                 </div>
 
                                 <div class="p-2 bd-highlight">
 
-                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                    <img src="{{ asset('img/ultimate-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     Carteira de Gestão
                                 </div>
 
                                 <div class="p-2 bd-highlight">
 
-                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                    <img src="{{ asset('img/ultimate-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     Info Adicional
                                 </div>
