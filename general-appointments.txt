@@ -364,7 +364,10 @@ fazer commit de fciheiros quando se troca de varios dispositivos para o mesmo re
 2º #git push origin nome_da_branch
 
 atualizar o repositorio quando se trabalha numa máquina diferente (supondo que já existe uma cópia do repositorio na maquina )
-1º #git pull url_do_repositorio  nome_da_branch 
+1º git fetch 
+2º #git pull url_do_repositorio  nome_da_branch 
+3º git push origin  nome_da_branch
+3.1 º git add . | git commit -m "update"  | git push origin  nome_da_branch
 
 
 ================================================                ================================================
