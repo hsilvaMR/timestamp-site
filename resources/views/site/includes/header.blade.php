@@ -22,7 +22,7 @@
 </div>
 
 {{-- card z-index --}}
-<div class="container content-zIndex ">
+<div class="container content-zIndex">
     <div class=" col-7    justify-content-start col-zIndex mt-4">
 
         <div class="d-flex flex-column mb-1  ms-3 me-5">

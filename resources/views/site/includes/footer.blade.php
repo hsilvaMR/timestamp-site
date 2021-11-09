@@ -48,8 +48,9 @@
         </div>
 
         {{--  sobre a mredis--}}
-        <div class="d-flex bd-highlight mb-3 mt-3">
-            <div class="me-auto p-2 bd-highlight  titulo-col ">{{trans('footerWords.mredisLda')}}</div>
+        <div class="d-flex  bd-highlight mb-3 mt-3 aboutMredis">
+            <div class="me-auto  p-2 bd-highlight  titulo-col ">
+                {{trans('footerWords.mredisLda')}}</div>
             <div class="p-2 bd-highlight item-col"> {{trans('footerWords.sobre')}}</div>
             <div class="p-2 bd-highlight item-col"> {{trans('footerWords.mapSite')}}</div>
             <div class="p-2 bd-highlight item-col"> {{trans('footerWords.termsCondition')}}</div>

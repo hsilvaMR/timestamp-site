@@ -27,34 +27,40 @@
                         {{trans('homeWords.QuandoOnde')}}
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none  d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block ">
                         Os serviços da <i class="color-rose-words">Time Stamp Solutions </i> (Selos Temporais) fazem-se
                         valer de chaves
                         públicas e fontes de tempo credíveis para disponibilizar selos temporais
                         fiáveis, de acordo com os padrões internacionais.
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body  d-none d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block">
 
                         {{trans('homeWords.umServico')}}
 
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block">
                         {{trans('homeWords.contudo')}}
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none d-md-none d-sm-none d-lg-block d-xl-block  d-xxl-block ">
                         Os selos temporais emitidos pelos nossos
                         serviços <i class="color-rose-words">Time Stamp Solutions </i> respeitam e implementam os
                         seguintes standards:
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block">
                         {{trans('homeWords.eTSI')}}
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none  d-md-none d-sm-none d-lg-block d-xl-block  d-xxl-block">
                         A Política e Práticas de Certificação de Validação Cronológica e a Declaração de Práticas de
                         Certificação (DPC) da
                         <i class="color-rose-words">Time Stamp Solutions </i> poderão ser consultadas em:

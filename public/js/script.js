@@ -292,4 +292,41 @@ $(function() {
 
     })
 
+    window.addEventListener('resize', function() {
+        // if (window.innerWidth < 770) {
+        if (window.matchMedia("(max-width: 770px)").matches) {
+            $('.aboutMredis').addClass("row")
+        } else {
+            $('.aboutMredis').removeClass("row")
+        }
+    }, false);
+
 })
+
+
+function resizeScren() {
+
+    if (window.matchMedia("(max-width: >=700px)").matches) {
+        /* The viewport is less than, or equal to, 700 pixels wide */
+    } else {
+        /* The viewport is greater than 700 pixels wide */
+    }
+}
+
+// REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml
+
+// var display = window.matchMedia("screen and (max-device-width: 765px) and (orientation: portrait)")
+// var display = window.matchMedia("screen and (max-device-width: 765px)")
+/*matchDisplay(display) // call listener function explicitly at run time
+display.addEventListener(matchDisplay) */ // attach listener function to listen in on state changes
+
+/*function matchDisplay(matchD) {
+    if (matchD.matches) { // if media query matches
+        console.log("The condition " + matchD.media + " has been met")
+        $('.aboutMredis').addClass("row")
+
+    } else {
+        // console.log("Condition not met yet")
+        $('.aboutMredis').removeClass("row")
+    }
+}*/

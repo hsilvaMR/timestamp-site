@@ -29,7 +29,7 @@
 .content-zIndex {
     position: relative;
     max-width: 450px;
-    /* height: 537px; */
+    height: auto;
     top: -250px;
     z-index: 2;
 }
@@ -1065,6 +1065,13 @@
     .tblMstamp .col-premium {
         margin-bottom: 15px;
     }
+    .content-zIndex .col-zIndex {
+        height: 800px;
+        width: 400px;
+    }
+    .content-zIndex {
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -1078,12 +1085,31 @@
     .tblMstamp .row {
         justify-content: center;
     }
+    .content-zIndex .col-zIndex {
+        height: 820px;
+        width: 400px;
+    }
+    .content-zIndex {
+        margin-bottom: 40px;
+        /* width: 400px; */
+    }
 }
 
 
 /* // Medium devices (tablets, less than 992px) */
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .content-zIndex .col-zIndex {
+        /* position: relative; */
+        /* width: 450px; */
+        height: 820px;
+        width: 430px;
+    }
+    .content-zIndex {
+        margin-bottom: 40px;
+        width: 400px;
+    }
+}
 
 
 /* // Extra large devices (large desktops, 1200px and up) */
