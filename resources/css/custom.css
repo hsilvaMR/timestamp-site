@@ -276,6 +276,27 @@
     top: 45%;
 }
 
+.tblMstamp .col-basico .itemPrice span,
+.tblMstamp .col-premium .itemPrice span,
+.tblMstamp .col-ultimate .itemPrice span {
+    color: #ccc9c2;
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.tblMstamp .col-basico .btnPay span,
+.tblMstamp .col-premium .btnPay span,
+.tblMstamp .col-ultimate .btnPay span {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
 
 /* .col-basico .items .subItem {
     /* vertical-align: middle; */

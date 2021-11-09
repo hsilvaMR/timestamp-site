@@ -99,7 +99,7 @@
 
                             <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
 
-                                <div class="p-2 bd-highlight ">
+                                <div class="p-2 bd-highlight mb-2">
                                     <label for="">BÁSICO</label>
                                 </div>
 
@@ -110,17 +110,26 @@
                                 </div>
 
                                 <div class="p-2 bd-highlight">
-
                                     <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     Carteira de Gestão
                                 </div>
 
                                 <div class="p-2 bd-highlight">
-
                                     <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     Info Adicional
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex flex-column bd-highlight  align-items-center  item ">
+
+                                <div class="p-2 bd-highlight itemPrice">
+                                    <label> € 15 </label> <span> /pack </span>
+                                </div>
+                                <div class="p-2 bd-highlight mt-5 btnPay">
+                                    <span> Comprar</span>
                                 </div>
 
                             </div>
@@ -155,6 +164,17 @@
                                 </div>
                             </div>
 
+                            <div class="d-flex flex-column bd-highlight  align-items-center  item ">
+
+                                <div class="p-2 bd-highlight itemPrice">
+                                    <label> € 99 </label> <span> /pack </span>
+                                </div>
+                                <div class="p-2 bd-highlight mt-5 btnPay">
+                                    <span> Comprar</span>
+                                </div>
+
+                            </div>
+
                         </div>
 
                         {{-- col-ultimate --}}
@@ -172,7 +192,6 @@
                                 </div>
 
                                 <div class="p-2 bd-highlight">
-
                                     <img src="{{ asset('img/ultimate-icon.svg') }}" class="me-2" width="20px"
                                         height="20px">
                                     Carteira de Gestão
@@ -184,6 +203,17 @@
                                         height="20px">
                                     Info Adicional
                                 </div>
+                            </div>
+
+                            <div class="d-flex flex-column bd-highlight  align-items-center item">
+
+                                <div class="p-2 bd-highlight  itemPrice">
+                                    <label> € 150 </label> <span> /pack </span>
+                                </div>
+                                <div class="p-2 bd-highlight mt-5  btnPay">
+                                    <span class="btnPay"> Comprar</span>
+                                </div>
+
                             </div>
 
                         </div>
