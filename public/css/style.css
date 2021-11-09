@@ -367,6 +367,7 @@
     height: 67px;
     background: #E8E9EB;
     cursor: pointer;
+    border-top: 1.5px solid #E8E9EB;
 }
 
 .modal-login .col-entrar,
@@ -376,6 +377,7 @@
     height: 67px;
     background: #F78065;
     cursor: pointer;
+    border-top: 1.5px solid #F78065;
 }
 
 .modal-login .col-registar span,
@@ -388,6 +390,14 @@
     letter-spacing: 0.085em;
     color: #F78065;
     text-align: center;
+}
+
+.modal-login .col-registar:hover {
+    border-top: 1.5px solid #F78065;
+}
+
+.modal-login .col-entrar:hover {
+    border-top: 1.5px solid #141313;
 }
 
 .modal-login .col-entrar span,

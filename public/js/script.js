@@ -301,8 +301,11 @@ $(function() {
         }
     }, false);
 
+    // autoload Modal on Page Load
+    $(window).on('load', function() {
+        $('#boxModalLogin').modal('show');
+    });
 })
-
 
 function resizeScren() {
 
