@@ -91,15 +91,14 @@
             </div>
             {{-- body --}}
             <div class="modal-body">
-                <div
-                    class="container d-flex  justify-content-md-center  justify-content-xl-center justify-content-sm-center   ">
-                    <div class="row ">
+                <div class="container d-flex    justify-content-xl-center ">
+                    <div class="row">
                         {{-- col-basico --}}
-                        <div class="col .col-sm-3 col-lg-3 col-xxl-3 col-basico ">
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xxl-3 col-basico text-center">
 
                             <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
 
-                                <div class="p-2 bd-highlight mb-2">
+                                <div class="p-2 bd-highlight mb-1">
                                     <label for="">BÁSICO</label>
                                 </div>
 
@@ -136,10 +135,10 @@
 
                         </div>
                         {{-- col-premium --}}
-                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-premium ">
+                        <div class="col-sm-4 col-lg-3 col-xxl-3  text-center  col-premium">
                             <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
 
-                                <div class="p-2 bd-highlight ">
+                                <div class="p-2 bd-highlight mb-1 ">
                                     <label for="">PREMIUM</label>
                                 </div>
 
@@ -178,10 +177,10 @@
                         </div>
 
                         {{-- col-ultimate --}}
-                        <div class="col-sm-3 col-lg-3 col-xxl-3  text-center  col-ultimate    ">
+                        <div class="col-sm-4 col-lg-3 col-xxl-3  text-center  col-ultimate  ">
                             <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
 
-                                <div class="p-2 bd-highlight ">
+                                <div class="p-2 bd-highlight  mb-1">
                                     <label for="">ULTIMATE</label>
                                 </div>
 
