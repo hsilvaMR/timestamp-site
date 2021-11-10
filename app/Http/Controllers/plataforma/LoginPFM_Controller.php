@@ -41,4 +41,19 @@ class LoginPFM_Controller extends Controller
 
         return view('plataforma/pages/homePFM');
     }
+
+
+    public function registarUtilizador(Request $request)
+    {
+
+        $nome = trim($request->email);
+        $apelido = trim($request->password);
+        $email = trim($request->email);
+        $password = trim($request->password);
+
+
+        // $utilizador = \DB::table('time_clients')->where('email', $email)->first();
+
+        return view('plataforma/pages/homePFM');
+    }
 }
