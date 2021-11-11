@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class LoginPFM_Controller extends Controller
 {
-    //
 
     public function index()
     {

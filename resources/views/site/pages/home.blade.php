@@ -29,10 +29,18 @@
 
                     <div
                         class="p-2 bd-highlight  font-words-body d-none  d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block ">
-                        Os serviços da <i class="color-rose-words">Time Stamp Solutions </i> (Selos Temporais) fazem-se
+
+                        @if($name!=null || $name!="")
+                        @foreach($name as $nomes)
+
+                        <label>Nome: {{ $nomes->nome }}</label>
+                        {{-- Os serviços da <i class="color-rose-words">Time Stamp Solutions </i> (Selos Temporais) fazem-se
                         valer de chaves
                         públicas e fontes de tempo credíveis para disponibilizar selos temporais
                         fiáveis, de acordo com os padrões internacionais.
+                        @endforeach --}}
+                        @endforeach
+                        @endif
                     </div>
 
                     <div

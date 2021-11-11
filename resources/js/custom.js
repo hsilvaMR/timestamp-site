@@ -305,6 +305,12 @@ $(function() {
     $(window).on('load', function() {
         $('#boxModalLogin').modal('show');
     });
+
+
+
+
+
+
 })
 
 function resizeScren() {
@@ -315,6 +321,9 @@ function resizeScren() {
         /* The viewport is greater than 700 pixels wide */
     }
 }
+
+
+
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml
 

@@ -100,7 +100,6 @@ CSRF Protection
 https://laravel.com/docs/8.x/csrf
 
 
-
     aceder nova maquina 93
    https://hosting93.serverhs.org:2083/logout/?locale=pt
 
@@ -154,6 +153,11 @@ make:cast
       make:rule
       make:seeder
       make:test
+ EXECUTAR FICHEIROS 
+
+ php artisan serve
+ php artisan migrate
+ ....      
 
 configuracao global do composer p/ aceder remotamente update de todos  pacotes
 #composer config -g repo.packagist composer https://packagist.org  
@@ -213,16 +217,26 @@ https://laravel.com/docs/8.x/middleware
 CSRF Protection
 https://laravel.com/docs/8.x/csrf
 
-
 carregar ficheiro para servidores remoto comercial cpanel
 https://www.youtube.com/watch?v=WN2hHvxMHTI
 
 
+====== migration =========
+ editar | adicionar colunas nas tabelas que já foram criado pela migration
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510382#overview
+
+ relacionamento de tabelas um para um 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510670#overview
+
+ relacionamento de tabelas um para muitos 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510684#overview
+
+ relacionamento de tabelas muitos  para muitos 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510694#overview
 
 
 
 ============================  BLADE RESUMO  ============================ 
-
 
 Incluindo comentarios e blocos PHP 
 https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20945398#overview
