@@ -85,15 +85,21 @@
                     {{-- TERMOS --}}
                     <div class="p-2 bd-highlight  fields-font box-termos">
                         {{-- politica de privacidade   Li e aceito a "Politica de privacidade --}}
-                        <div class="mb-3 check-round">
+                        <input type="radio" id="RBprivacit" name="typeTermo" value="">
+                        <label for="RBprivacit">Li e aceito a Politica de privacidade</label><br>
+
+                        {{-- <div class="mb-3 check-round">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label for="checkbox">Li e aceito a "Politica de privacidade</label><br>
-                        </div>
+                        </div> --}}
                         {{-- descontos --}}
-                        <div class="check-round">
+                        <input type="radio" id="RBdescontos" name="typeTermo" value="">
+                        <label for="RBdescontos">Deseja receber os melhores descontos?</label>
+                        {{-- <div class="check-round">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label for="checkbox">Deseja receber os melhores descontos?</label>
-                        </div>
+                        </div> --}}
+
                     </div>
                     <div class="p-2 bd-highlight text-center fields-font">
                         <label for="" class="py-3">ESQUECEU A PASSWORD?</label>
