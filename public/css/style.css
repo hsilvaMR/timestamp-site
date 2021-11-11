@@ -226,6 +226,25 @@
     background: #F78065;
 }
 
+.modal-registar .box-termos input {
+    display: none;
+}
+
+.modal-registar .box-termos input+label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.42);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.modal-registar .box-termos input:checked+label:before {
+    background-image: url("/img/TS_Visto.svg");
+}
+
 .modal-title-process-compra-font {
     font-family: 'Merriweather', sans-serif;
     font-style: normal;

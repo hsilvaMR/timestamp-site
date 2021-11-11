@@ -444,3 +444,6 @@ https://mwatt5.webnode.pt/
 
 fixe this problem in xampp server HTTP Error 404 The requested resource is not found
 https://www.youtube.com/watch?v=UHdF0qODFeg&t=159s
+
+HTTP 404 PAGE NOT FOUND
+https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-using-port-80-on-your-server-field-notes/
