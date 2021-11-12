@@ -7,7 +7,7 @@
         <div class="modal-content">
             {{-- title --}}
             <div class="modal-header  modal-header-title-font  border-0">
-                <h5 class="modal-title  " id="staticBackdropLabel">
+                <h5 class="modal-title" id="staticBackdropLabel">
                     {{ trans('homeWords.modatTitleTiposSelos') }}
                 </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -20,18 +20,19 @@
                 <div class="row mt-1 justify-content-center">
 
                     {{-- col  Mstamp --}}
-                    <div class="col col-mstamp" style="cursor: pointer;">
+                    <div class="col  curso-pointer">
 
-                        <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
-
-                        <div class="d-flex flex-column  justify-content-center mb-1">
-
+                        <div class="d-flex flex-column col-mstamp  justify-content-center ms-4 me-4 mb-1">
+                            {{-- img  Mstamp --}}
+                            <div class="p-2 bd-highlight">
+                                <img src="{{ asset('img/Mstamp-figureA.svg') }}" class="img-fluid" alt="">
+                            </div>
                             {{-- LOGO Mstamp --}}
                             <div class="p-2 bd-highlight  mt-4">
                                 <img src="{{ asset('img/Mstamp-logoA.svg') }}" width="100px" height="100px" alt="">
                             </div>
                             {{-- descrição Mstamp  --}}
-                            <div class="p-2 bd-highlight  font-body-box2">
+                            <div class="p-2 bd-highlight ps-2 font-body-box2">
                                 {{ trans('homeWords.oQueSaoSelosMsTamp') }}
                             </div>
                             {{-- link  precos --}}
@@ -42,11 +43,12 @@
 
                     </div>
                     {{-- col  Mtech --}}
-                    <div class="col col-mstamp" style="cursor: pointer;">
-
-                        <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
-
-                        <div class="d-flex flex-column  justify-content-center mb-1">
+                    <div class="col " style="cursor: pointer;">
+                        <div class="d-flex flex-column col-mstamp ms-4 me-4  justify-content-center mb-1">
+                            {{-- img  Mtech --}}
+                            <div class="p-2 bd-highlight">
+                                <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
+                            </div>
 
                             {{-- LOGO Mtech --}}
                             <div class="p-2 bd-highlight  mt-4">
@@ -61,7 +63,6 @@
                                 {{ trans('homeWords.mTechVejaPreco') }}
                             </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -72,29 +73,149 @@
     </div>
 </div>
 {{-- Modal Tabela de Preços | Mstamp--}}
-<div class="modal fade" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade tblMstamp" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
-            <div class="modal-header modal-header-title-font border-0">
-                <h5 class="modal-title" id="exampleModalLabel">Tabela de Preço | Mstamp </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="d-flex bd-highlight  modal-header border-0 ">
+                <div class="p-2 flex-grow-1 bd-highlight  border-0">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Tabela de Preços | <img src="{{ asset('img/Mstamp-logoA.svg') }}" width="100px" height="65px"
+                            alt="">
+                    </h5>
+                </div>
+                <div class="p-2 bd-highlight flex-shrink-1 curso-pointer text-end">
+                    <i class=" fas fa-times fa-2x" data-bs-dismiss="modal" aria-label="Close"></i>
+                </div>
             </div>
             {{-- body --}}
             <div class="modal-body">
-                {{-- row --}}
-                <div class="row">
-                    {{-- col-basico --}}
-                    <div class="col col-basico ">
+                <div class="container d-flex    justify-content-xl-center ">
+                    <div class="row">
+                        {{-- col-basico --}}
+                        <div class="col-sm-3 col-md-3 col-lg-3 col-xxl-3 col-basico text-center">
 
-                    </div>
-                    {{-- col-premium --}}
-                    <div class="col col-premium ">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
 
-                    </div>
-                    {{-- col-ultimate --}}
-                    <div class="col col-ultimate ">
+                                <div class="p-2 bd-highlight mb-1">
+                                    <label for="">BÁSICO</label>
+                                </div>
 
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    50 Mstamp
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Carteira de Gestão
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Info Adicional
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex flex-column bd-highlight  align-items-center  item ">
+
+                                <div class="p-2 bd-highlight itemPrice">
+                                    <label> € 15 </label> <span> /pack </span>
+                                </div>
+                                <div class="p-2 bd-highlight mt-5 btnPay">
+                                    <span> Comprar</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        {{-- col-premium --}}
+                        <div class="col-sm-4 col-lg-3 col-xxl-3  text-center  col-premium">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
+
+                                <div class="p-2 bd-highlight mb-1 ">
+                                    <label for="">PREMIUM</label>
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/premium-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    50 Mstamp
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/premium-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Carteira de Gestão
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/premium-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Info Adicional
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column bd-highlight  align-items-center  item ">
+
+                                <div class="p-2 bd-highlight itemPrice">
+                                    <label> € 99 </label> <span> /pack </span>
+                                </div>
+                                <div class="p-2 bd-highlight mt-5 btnPay">
+                                    <span> Comprar</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {{-- col-ultimate --}}
+                        <div class="col-sm-4 col-lg-3 col-xxl-3  text-center  col-ultimate  ">
+                            <div class="d-flex flex-column bd-highlight mb-3 align-items-center item">
+
+                                <div class="p-2 bd-highlight  mb-1">
+                                    <label for="">ULTIMATE</label>
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/ultimate-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    50 Mstamp
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+                                    <img src="{{ asset('img/ultimate-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Carteira de Gestão
+                                </div>
+
+                                <div class="p-2 bd-highlight">
+
+                                    <img src="{{ asset('img/ultimate-icon.svg') }}" class="me-2" width="20px"
+                                        height="20px">
+                                    Info Adicional
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column bd-highlight  align-items-center item">
+
+                                <div class="p-2 bd-highlight  itemPrice">
+                                    <label> € 150 </label> <span> /pack </span>
+                                </div>
+                                <div class="p-2 bd-highlight mt-5  btnPay">
+                                    <span class="btnPay"> Comprar</span>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,18 +236,39 @@
                 {{-- row --}}
                 <div class="row justify-content-center">
 
-                    {{-- col-starter --}}
-                    <div class="col col-starter">
+                    {{-- col-basico   --}}
+                    <div class="col col-basico   border-primary">
+
+                        <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+
+                            <div class="p-2 bd-highlight">
+                                <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px" height="20px">
+                                50 Mstamp
+                            </div>
+
+                            <div class="p-2 bd-highlight">
+
+                                <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px" height="20px">
+                                Carteira de Gestão
+                            </div>
+
+                            <div class="p-2 bd-highlight">
+
+                                <img src="{{ asset('img/basic-icon.svg') }}" class="me-2" width="20px" height="20px">
+                                Info Adicional
+                            </div>
+                        </div>
 
                     </div>
                     {{-- col-premium --}}
-                    <div class="col col-premium">
+                    <div class="col col-premium border-secondary">
 
                     </div>
                     {{-- col-ultimate --}}
-                    <div class="col col-ultimate">
+                    <div class="col col-ultimate border-success">
 
                     </div>
+
                 </div>
             </div>
         </div>

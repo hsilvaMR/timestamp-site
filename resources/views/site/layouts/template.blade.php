@@ -14,6 +14,8 @@
 
     @include('site/includes/footer')
 
+    {{-- @yield('javascript') --}}
+
     {{-- library jquery --}}
     <script src="{{ asset('js/jquery.js') }}"></script>
 

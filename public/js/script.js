@@ -30,6 +30,13 @@ window.location.href = url;*/
 $(function() {
 
     $('#btn-login').on('click', function() {
+
+
+        alert("test login")
+            // $('.modal-login').addClass("border border-danger")
+            //   $('.errorMessage').addClass("d-block")
+
+
         var routeName = 'dashboard-home'
         var url = '/area-cliente';
         window.location.href = url
@@ -51,12 +58,12 @@ $(function() {
     });
 
     // open box metodo de pagamento
-    $('#box-pagamento').on('click', function() {
+    /* $('#box-pagamento').on('click', function() {
         console.log("open-box-client-data");
         //$('.box-client-dados').addClass("d-none")
         $('.box-pagamentos').removeClass("d-none")
         $('.box-client-area').addClass("d-none")
-    });
+    }); */
 
     //open box api 
     $('#apiBX').on('click', function() {
@@ -136,6 +143,14 @@ $(function() {
             $(".boxAPiIMG").attr("src", pathImage);
         }
 
+        // registar btn header 
+        if ($('.btnRegister:hover').length > 0) {
+            var pathImage = "img/register.svg"
+            $(".btnRegs").attr("src", pathImage);
+            $(".btnRegs").attr("width", "25px");
+            $(".btnRegs").attr("height", "25px");
+        }
+
     });
 
     // change icon whem mouseLeave
@@ -170,6 +185,13 @@ $(function() {
             var pathImage = "img/api.svg"
             $(".boxAPiIMG").attr("src", pathImage);
         }
+        // registar btn header 
+        if ($('.btnRegister:hover').length == 0) {
+            var pathImage = "img/register-white.png"
+            $(".btnRegs").attr("src", pathImage);
+            $(".btnRegs").attr("width", "25px");
+            $(".btnRegs").attr("height", "25px");
+        }
 
     });
 
@@ -202,6 +224,122 @@ $(function() {
             $('.box-client-area').addClass("d-none")
         }
 
+    });
+
+    //abrir box menu-left
+    $('.evtOclick').on('click', function() {
+        /*  box dados pessoas  */
+        //  abrir pagamentos
+        if ($('.itemPagamento:hover').length > 0) {
+            $('.box-pagamentos').removeClass("d-none")
+            $('.box-client-dados').addClass("d-none")
+        }
+        //   abrir promocao 
+        if ($('.itemPromocao:hover').length > 0) {
+            $('.box-promocao').removeClass("d-none")
+            $('.box-client-dados').addClass("d-none")
+        }
+        //   abrir meus selos 
+        if ($('.itemSelos:hover').length > 0) {
+            $('.box-selos').removeClass("d-none")
+            $('.box-client-dados').addClass("d-none")
+        }
+
+        /****  box selos   ****/
+        // pagamento
+        if ($('.itemPagamento:hover').length > 0) {
+            $('.box-pagamentos').removeClass("d-none")
+            $('.box-selos').addClass("d-none")
+        }
+        //   abrir promocao 
+        if ($('.itemPromocao:hover').length > 0) {
+            $('.box-promocao').removeClass("d-none")
+            $('.box-selos').addClass("d-none")
+        }
+        //   abrir dados pessoas  
+        if ($('.itemDados:hover').length > 0) {
+            $('.box-selos').addClass("d-none")
+            $('.box-client-dados').removeClass("d-none")
+        }
+
+        /**** box  pagamentos   ****/
+        // selos 
+        if ($('.itemSelos:hover').length > 0) {
+            $('.box-selos').removeClass("d-none")
+            $('.box-pagamentos').addClass("d-none")
+        }
+        // 
+        //  abrir promocao 
+        if ($('.itemPromocao:hover').length > 0) {
+            $('.box-pagamentos').addClass("d-none")
+            $('.box-promocao').removeClass("d-none")
+        }
+        //   abrir dados pessoas  
+        if ($('.itemDados:hover').length > 0) {
+            $('.box-client-dados').removeClass("d-none")
+            $('.box-pagamentos').addClass("d-none")
+        }
+        /**** box  promocao    ****/
+        // selos 
+        if ($('.itemSelos:hover').length > 0) {
+            $('.box-selos').removeClass("d-none")
+            $('.box-promocao').addClass("d-none")
+        }
+        //  abrir pagamento 
+        if ($('.itemPagamento:hover').length > 0) {
+            $('.box-pagamentos').removeClass("d-none")
+            $('.box-promocao').addClass("d-none")
+        }
+        //   abrir dados pessoas  
+        if ($('.itemDados:hover').length > 0) {
+            $('.box-client-dados').removeClass("d-none")
+            $('.box-promocao').addClass("d-none")
+        }
+
     })
 
+    window.addEventListener('resize', function() {
+        // if (window.innerWidth < 770) {
+        if (window.matchMedia("(max-width: 770px)").matches) {
+            $('.aboutMredis').addClass("row")
+        } else {
+            $('.aboutMredis').removeClass("row")
+        }
+    }, false);
+
+    // Open autoload Modal 
+    $(window).on('load', function() {
+        $('#boxModalLogin').modal('show');
+    });
+
 })
+
+function resizeScren() {
+
+    if (window.matchMedia("(max-width: >=700px)").matches) {
+        /* The viewport is less than, or equal to, 700 pixels wide */
+    } else {
+        /* The viewport is greater than 700 pixels wide */
+    }
+}
+
+
+
+
+// REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml
+
+// var display = window.matchMedia("screen and (max-device-width: 765px) and (orientation: portrait)")
+// var display = window.matchMedia("screen and (max-device-width: 765px)")
+/*matchDisplay(display) // call listener function explicitly at run time
+display.addEventListener(matchDisplay) */ // attach listener function to listen in on state changes
+
+/*function matchDisplay(matchD) {
+    if (matchD.matches) { // if media query matches
+        console.log("The condition " + matchD.media + " has been met")
+        $('.aboutMredis').addClass("row")
+
+    } else {
+        // console.log("Condition not met yet")
+        $('.aboutMredis').removeClass("row")
+    }
+}*/

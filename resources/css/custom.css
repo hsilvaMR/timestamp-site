@@ -28,12 +28,48 @@
 
 .content-zIndex {
     position: relative;
-    width: 741px;
-    /* height: 537px; */
+    max-width: 450px;
+    height: auto;
     top: -250px;
+    z-index: 2;
+}
+
+.content-zIndex .col-zIndex {
     background: #FFFFFF;
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
-    z-index: 2;
+    height: 537px;
+}
+
+.content-zIndex .cardZindex {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.content-zIndex .btnRegister {
+    width: 320px;
+    height: 65px;
+    background: #F78065;
+    color: white;
+    border: 1.5px solid #F78065;
+}
+
+.content-zIndex .btnRegister:hover {
+    background: white;
+    color: #F78065;
+    border: 1.5px solid #F78065;
+}
+
+.content-zIndex .btnRegister span {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .loginArea {
@@ -137,7 +173,8 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    opacity: 0.7;
+    opacity: 0.4;
+    text-align: justify;
 }
 
 .font-body-box2-color {
@@ -171,11 +208,41 @@
     color: #000000;
 }
 
+.tblMstamp .modal-header i {
+    width: 65px;
+    height: 0px;
+}
+
+.tblMstamp .modal-header h5 {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 #modal-registar .modal-content {
     max-height: 187px;
     /* left: 360px; */
-    /* top: 157px; */
     background: #F78065;
+}
+
+.modal-registar .box-termos input {
+    display: none;
+}
+
+.modal-registar .box-termos input+label:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.42);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.modal-registar .box-termos input:checked+label:before {
+    background-image: url("/img/TS_Visto.svg");
 }
 
 .modal-title-process-compra-font {
@@ -183,6 +250,70 @@
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
+}
+
+.tblMstamp .col-basico {
+    background-image: url("/img/price-mstamp-basic.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 635px;
+    width: 324px;
+}
+
+.tblMstamp .col-premium {
+    background-image: url("/img/price-mstamp-premium.svg");
+    background-repeat: no-repeat;
+    width: 324px;
+    background-position: center;
+    height: 635px;
+}
+
+.tblMstamp .col-ultimate {
+    background-image: url("/img/price-mstamp-ultimate.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 635px;
+    width: 324px;
+}
+
+.tblMstamp .col-basico .item label,
+.tblMstamp .col-premium .item label,
+.tblMstamp .col-ultimate .item label {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 39px;
+    color: #F89B86;
+}
+
+.tblMstamp .col-basico .item,
+.tblMstamp .col-premium .item,
+.tblMstamp .col-ultimate .item {
+    position: relative;
+    /* vertical-align: middle !important; */
+    top: 45%;
+}
+
+.tblMstamp .col-basico .itemPrice span,
+.tblMstamp .col-premium .itemPrice span,
+.tblMstamp .col-ultimate .itemPrice span {
+    color: #ccc9c2;
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.tblMstamp .col-basico .btnPay span,
+.tblMstamp .col-premium .btnPay span,
+.tblMstamp .col-ultimate .btnPay span {
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
 }
 
 .btnCloseModal {
@@ -255,6 +386,7 @@
     height: 67px;
     background: #E8E9EB;
     cursor: pointer;
+    border-top: 1.5px solid #E8E9EB;
 }
 
 .modal-login .col-entrar,
@@ -264,6 +396,7 @@
     height: 67px;
     background: #F78065;
     cursor: pointer;
+    border-top: 1.5px solid #F78065;
 }
 
 .modal-login .col-registar span,
@@ -276,6 +409,14 @@
     letter-spacing: 0.085em;
     color: #F78065;
     text-align: center;
+}
+
+.modal-login .col-registar:hover {
+    border-top: 1.5px solid #F78065;
+}
+
+.modal-login .col-entrar:hover {
+    border-top: 1.5px solid #141313;
 }
 
 .modal-login .col-entrar span,
@@ -941,3 +1082,70 @@
                         RESPONSIVE DEVICE | MOBILE | TABLET | LAPTOP              
 =======================                                              ============================
 */
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .tblMstamp .row {
+        justify-content: center;
+    }
+    .tblMstamp .col-basico,
+    .tblMstamp .col-premium {
+        margin-bottom: 15px;
+    }
+    .content-zIndex .col-zIndex {
+        height: 800px;
+        width: 400px;
+    }
+    .content-zIndex {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .tblMstamp .col-basico,
+    .tblMstamp .col-premium {
+        margin-bottom: 15px;
+    }
+    .tblMstamp .row {
+        justify-content: center;
+    }
+    .content-zIndex .col-zIndex {
+        height: 820px;
+        width: 400px;
+    }
+    .content-zIndex {
+        margin-bottom: 40px;
+        /* width: 400px; */
+    }
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .content-zIndex .col-zIndex {
+        /* position: relative; */
+        /* width: 450px; */
+        height: 820px;
+        width: 430px;
+    }
+    .content-zIndex {
+        margin-bottom: 40px;
+        width: 400px;
+    }
+}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {}

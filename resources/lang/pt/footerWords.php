@@ -11,7 +11,7 @@ return [
     'sobreNos' => 'Sobre nós',
 
     'criarConta' => 'Crie uma conta!',
-    'registar' => 'Registe-se',
+    'registar' => 'Registar-se',
     'vantagem' => 'As vantagem',
 
     'assistencia' => 'Assistência',

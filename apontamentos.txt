@@ -100,7 +100,6 @@ CSRF Protection
 https://laravel.com/docs/8.x/csrf
 
 
-
     aceder nova maquina 93
    https://hosting93.serverhs.org:2083/logout/?locale=pt
 
@@ -131,13 +130,40 @@ abrir o projecto  no visual code
 
 criando ficheiro 
 # php artisan make:nome_pasta nome_ficheiro
+make:cast
+      make:channel
+      make:command
+      make:component
+      make:controller
+      make:event
+      make:exception
+      make:factory
+      make:job
+      make:listener
+      make:mail
+      make:middleware
+      make:migration
+      make:model
+      make:notification
+      make:observer
+      make:policy
+      make:provider
+      make:request
+      make:resource
+      make:rule
+      make:seeder
+      make:test
+ EXECUTAR FICHEIROS 
+
+ php artisan serve
+ php artisan migrate
+ ....      
 
 configuracao global do composer p/ aceder remotamente update de todos  pacotes
 #composer config -g repo.packagist composer https://packagist.org  
 
 configuracao global do composer p/ protocolos 
 #composer config -g github-protocols https ssh
-
 
 
 produtivade com artisan
@@ -191,16 +217,26 @@ https://laravel.com/docs/8.x/middleware
 CSRF Protection
 https://laravel.com/docs/8.x/csrf
 
-
 carregar ficheiro para servidores remoto comercial cpanel
 https://www.youtube.com/watch?v=WN2hHvxMHTI
 
 
+====== migration =========
+ editar | adicionar colunas nas tabelas que já foram criado pela migration
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510382#overview
+
+ relacionamento de tabelas um para um 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510670#overview
+
+ relacionamento de tabelas um para muitos 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510684#overview
+
+ relacionamento de tabelas muitos  para muitos 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510694#overview
 
 
 
 ============================  BLADE RESUMO  ============================ 
-
 
 Incluindo comentarios e blocos PHP 
 https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20945398#overview
@@ -415,3 +451,13 @@ shift+alt+A //Toggles comments in VScode.
 Site referencia hesasoft
 https://mwatt5.webnode.pt/ 
 
+
+================================================                ================================================
+                                                    XAMPP  
+================================================               =================================================
+
+fixe this problem in xampp server HTTP Error 404 The requested resource is not found
+https://www.youtube.com/watch?v=UHdF0qODFeg&t=159s
+
+HTTP 404 PAGE NOT FOUND
+https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-using-port-80-on-your-server-field-notes/

@@ -172,7 +172,7 @@
                 </div>
                 {{--       items | meus selos     --}}
                 <div class="d-flex bd-highlight border-bottom">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item evtOclick itemSelos ">
                         {{trans('areaClientWords.meuSelos')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -198,9 +198,9 @@
                         <i class="fas ms-5 fa-chevron-right"></i>
                     </div>
                 </div>
-                {{--  items | vale de desconto   --}}
+                {{--  items | vale de desconto    --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item  evtOclick itemPromocao">
                         {{trans('areaClientWords.meusVale')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -208,8 +208,8 @@
                     </div>
                 </div>
                 {{--  items | metodo de pagamento   --}}
-                <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item">
+                <div class="d-flex bd-highlight border-bottom">
+                    <div class="me-auto p-2 bd-highlight item  evtOclick itemPagamento">
                         {{trans('areaClientWords.metodoPagamento')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -378,8 +378,8 @@
                     </div>
                 </div>
                 {{--  items | meus dados   --}}
-                <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
+                <div class="d-flex bd-highlight border-bottom  ">
+                    <div class="me-auto p-2 bd-highlight  item evtOclick  itemDados" id="boxData-client">
                         {{trans('areaClientWords.meusDados')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -388,7 +388,7 @@
                 </div>
                 {{--  items | vale de desconto   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item itemPromocao evtOclick">
                         {{trans('areaClientWords.meusVale')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -397,7 +397,7 @@
                 </div>
                 {{--  items | metodo de pagamento   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item">
+                    <div class="me-auto p-2 bd-highlight item  evtOclick itemPagamento">
                         {{trans('areaClientWords.metodoPagamento')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -490,7 +490,7 @@
             </div>
             {{--       items | meus selos     --}}
             <div class="d-flex bd-highlight border-bottom">
-                <div class="me-auto p-2 bd-highlight item ">
+                <div class="me-auto p-2 bd-highlight item  evtOclick itemSelos">
                     {{trans('areaClientWords.meuSelos')}}
                 </div>
                 <div class="p-2 bd-highlight">
@@ -498,7 +498,7 @@
                 </div>
             </div>
             {{--  items | historico consumo  --}}
-            <div class="d-flex bd-highlight border-bottom ">
+            <div class="d-flex bd-highlight border-bottom">
                 <div class="me-auto p-2 bd-highlight item  ">
                     {{trans('areaClientWords.historicoC')}}
                 </div>
@@ -508,7 +508,7 @@
             </div>
             {{--  items | meus dados   --}}
             <div class="d-flex bd-highlight border-bottom ">
-                <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
+                <div class="me-auto p-2 bd-highlight  item evtOclick itemDados" id="boxData-client">
                     {{trans('areaClientWords.meusDados')}}
                 </div>
                 <div class="p-2 bd-highlight">
@@ -517,7 +517,7 @@
             </div>
             {{--  items | vale de desconto   --}}
             <div class="d-flex bd-highlight border-bottom ">
-                <div class="me-auto p-2 bd-highlight item ">
+                <div class="me-auto p-2 bd-highlight item itemPromocao evtOclick">
                     {{trans('areaClientWords.meusVale')}}
                 </div>
                 <div class="p-2 bd-highlight">
@@ -791,7 +791,7 @@
                 </div>
                 {{--       items | meus selos     --}}
                 <div class="d-flex bd-highlight border-bottom" id="seloArea">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item evtOclick  itemSelos">
                         {{trans('areaClientWords.meuSelos')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -810,7 +810,7 @@
                 </div>
                 {{--  items | meus dados   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight  item" id="boxData-client">
+                    <div class="me-auto p-2 bd-highlight  item evtOclick itemDados" id="boxData-client">
                         {{trans('areaClientWords.meusDados')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -828,7 +828,7 @@
                 </div>
                 {{--  items | metodo de pagamento   --}}
                 <div class="d-flex bd-highlight border-bottom" id="box-pagamento">
-                    <div class="me-auto p-2 bd-highlight item">
+                    <div class="me-auto p-2 bd-highlight item evtOclick  itemPagamento">
                         {{trans('areaClientWords.metodoPagamento')}}
                     </div>
                     <div class="p-2 bd-highlight">
