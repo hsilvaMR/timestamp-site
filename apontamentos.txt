@@ -373,7 +373,7 @@ passar o comando # git merge master(nome_da_branch)
 
 1º # git merge master
 2º # git push origin name_branch
-3º
+3º 4º 5º
 
 clonar um repositorio apartir de um novo dispositivo e fazer commit | windows
 https://www.youtube.com/watch?v=CeVwylVFv-M
