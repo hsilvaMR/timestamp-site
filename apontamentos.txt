@@ -371,7 +371,8 @@ juntar as versõe de uma branch para outra branch
 estando na branch A copiar as dados da branch master .  Para isso basta  
 passar o comando # git merge master(nome_da_branch)
 
-# git merge master
+1º # git merge master
+2º # git push origin name_branch
 
 clonar um repositorio apartir de um novo dispositivo e fazer commit | windows
 https://www.youtube.com/watch?v=CeVwylVFv-M
