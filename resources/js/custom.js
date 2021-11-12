@@ -18,17 +18,16 @@ $(function() {
         e.preventDefault();
         $.ajax({
                 type: "POST",
-                // dataType: "json",
                 url: form.attr('action'),
-                data: new FormData(this),
+                // data: new FormData(this),
+                dataType: "json",
                 contentType: false,
-                // method: $(this).attr('method'),
                 processData: false,
                 cache: false,
                 headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
                 success: function(data) {
-
                     var resp = JSON.parse(data);
+                    // resp = $.parseJSON(resposta)
                     // var resp = JSON.parse(response);
 
                     if (resp.fields != "") {
@@ -97,7 +96,6 @@ $(function() {
     });
 
     /***********************************scripts modal login register*********************** */
-
     //abrir box dados pessoais menu-left
     $('#boxData-client').on('click', function() {
         console.log("open-box-client-data");
@@ -120,7 +118,7 @@ $(function() {
         $('.box-client-area').addClass("d-none")
     }); */
 
-    //open box api 
+    //open box API
     $('#apiBX').on('click', function() {
         console.log("open box api");
         $('.box-api').removeClass("d-none")
@@ -377,8 +375,6 @@ function resizeScren() {
         /* The viewport is greater than 700 pixels wide */
     }
 }
-
-
 
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml
