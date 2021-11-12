@@ -1,47 +1,102 @@
-/*
-                ================================                    ========================================
-                                                          SITE              
-                ================================                    ==========================================
-*/
-
-
-
-
-
-
-/*
-================================                     ========================================
-                                    PLATAFORMA
- ================================                    ==========================================
-*/
-
-/***********************************scripts modal login register*********************** */
-
-//location.replace("{{ route('delivery') }}?id="+id);  dashboard-home
-// <a href="{{ route('home') }}"> 
-// $("#btn-login").on(function() {
-
-// alert('test btn login');
-/*console.log("inside in btn-login")
-var url = "{{ route('dashboard-home') }}"
-window.location.href = url;*/
-// })
-
 $(function() {
 
-    $('#btn-login').on('click', function() {
+    /*
+                    ================================                    ========================================
+                                                              SITE              
+                    ================================                    ==========================================
+    */
 
+    /*
+    ================================                     ========================================
+                                        PLATAFORMA
+     ================================                    ==========================================
 
-        alert("test login")
-            // $('.modal-login').addClass("border border-danger")
-            //   $('.errorMessage').addClass("d-block")
+    /**  login form  */
 
+    $('#formAddConta').on('submit', function(e) {
+        var form = $(this);
+        e.preventDefault();
+        $.ajax({
+                type: "POST",
+                // dataType: "json",
+                url: form.attr('action'),
+                data: new FormData(this),
+                contentType: false,
+                // method: $(this).attr('method'),
+                processData: false,
+                cache: false,
+                headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+                success: function(data) {
 
-        var routeName = 'dashboard-home'
-        var url = '/area-cliente';
-        window.location.href = url
-            //console.log(url)
+                    var resp = JSON.parse(data);
+                    // var resp = JSON.parse(response);
+
+                    if (resp.fields != "") {
+
+                        alert(resp.fields + " EMPTY")
+                        console.log(data + "EMPTY")
+
+                        $('.modal-login').addClass("border border-danger")
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(resp.fields);
+                    }
+
+                    switch (resp.mensagem) {
+                        case 'success':
+                            var url = '/area-cliente';
+                            window.location.href = url
+                            break;
+                        case 'Senha Inválido':
+                            alert(resp.mensagem + "Senha Inválido")
+                            var url = '/login-page';
+                            window.location.href = url
+                            break;
+
+                        default:
+                            alert(resp.mensagem + "INVALID USER")
+                            var url = '/login-page';
+                            window.location.href = url
+                    }
+                },
+                error: function(data) {
+                    console.log(data)
+                }
+            })
+            /*.done(function(response) {
+
+                var resp = JSON.parse(response);
+
+                if (resp.fields != "") {
+
+                    alert(resp.fields)
+
+                    $('.modal-login').addClass("border border-danger")
+                    $('.errorMessage').removeClass('d-none')
+                    $('.errorMessage').html(resposta);
+
+                }
+
+                switch (resp.mensagem) {
+                    case 'success':
+                        var url = '/area-cliente';
+                        window.location.href = url
+                        break;
+                    case 'Senha Inválido':
+                        alert(resp.mensagem)
+                        var url = '/login-page';
+                        window.location.href = url
+                        break;
+
+                    default:
+                        var url = '/login-page';
+                        window.location.href = url
+                }
+
+            });*/
+
     });
+
+    /***********************************scripts modal login register*********************** */
 
     //abrir box dados pessoais menu-left
     $('#boxData-client').on('click', function() {

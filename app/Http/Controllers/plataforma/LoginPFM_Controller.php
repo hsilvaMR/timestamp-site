@@ -4,6 +4,8 @@ namespace App\Http\Controllers\plataforma;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class LoginPFM_Controller extends Controller
 {
@@ -32,14 +34,52 @@ class LoginPFM_Controller extends Controller
     }
 
     // validação de credenciais de acesso a plataforma
-    public function validation()
+    public function validation(Request $request)
     {
 
+        $email = trim($request->fmail);
+        $password = trim($request->fpassword);
+        $response = [];
 
+        if (empty($email)) {
 
-        return view('plataforma/pages/homePFM');
+            $this->response['fields'] = 'Campo endereço de email vazio.';
+            return json_encode($response, true);
+        }
+        if (empty($password)) {
+
+            $this->response['fields'] = 'Campo password vazio.';
+            return json_encode($response, true);
+        }
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+
+            $this->response['fields'] = 'E-mail inválido.';
+            return json_encode($response, true);
+        }
+        if (empty($password)) {
+
+            $this->response['fields'] = 'Campo palavra-passe vazio.';
+            return json_encode($response, true);
+        }
+
+        //$user = \DB::table('time_clients')->where('email', $email)->first();
+        $user = DB::table('utilizadors')->where('email', $email)->get();
+
+        if (isset($user->email) && empty($user->email) == false) {
+
+            if (strcmp($password, $user->senha) == 0) {
+
+                $this->response['mensagem'] = 'success';
+                return json_encode($response, true);
+            } else {
+
+                $this->response['mensagem'] = 'Senha Inválido';
+                return json_encode($response, true);
+            }
+        }
+        $error = 'Utilizador Inválido';
+        return ($error);
     }
-
 
     public function registarUtilizador(Request $request)
     {

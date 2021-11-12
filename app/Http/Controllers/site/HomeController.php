@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\site;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Session;
 
@@ -16,7 +17,7 @@ class HomeController extends Controller
     {
         // $this->dados['headTitulo'] = 'Login-selos';
 
-        $query = \DB::table('tests')->select('nome')->get();
+        $query = DB::table('tests')->select('nome')->get();
         $this->dados['name'] = $query;
         //$client = \DB::table('test')->where('nome', $email)->first();
         //$user_compra = \DB::table('time_compra')->where('id_cliente', $id_user)->get();

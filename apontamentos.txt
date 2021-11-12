@@ -68,6 +68,8 @@ https://stackoverflow.com/questions/1273566/how-do-i-check-if-the-mouse-is-over-
 if ($('#element:hover').length < 0) {
     // do something ;)
 }
+// AJAX 
+https://api.jquery.com/jquery.ajax/
 
 
 ================================================                ================================================
@@ -107,6 +109,8 @@ Curso Laravel udemy
 https://www.udemy.com/course/curso-de-laravel-8/learn/lecture/22603654?start=165#overview
 
 
+Laravel 8 tutorial | Ajax Form validation and display errors on blade without page refresh
+https://www.youtube.com/watch?v=Pij6bn0ebLo 
 consultar a versão laravel 
 # php artisan -V
 
