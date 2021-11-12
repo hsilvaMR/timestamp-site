@@ -27,7 +27,6 @@ class LoginPFM_Controller extends Controller
 		$this->dados['headPagina'] = 'Login';
 		$this->dados['faceTipo'] = 'website';*/
 
-
         //return view('pages/timestamp/login', $this->dados);
         return view('plataforma.pages.homePFM', ['title' => 'login']);
     }

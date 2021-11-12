@@ -14,20 +14,23 @@
             {{-- body --}}
             <div class="modal-body">
                 <div class="d-flex flex-column bd-highlight mb-3 box-fields">
-                    <div class="p-2 bd-highlight fields-font">
-                        <label for="">EMAIL</label><br>
-                        <input type="text" id="fname" name="fname" class="py-2">
-                    </div>
-                    <div class="p-2 bd-highlight  fields-font">
-                        <label for="">PASSWORD</label><br>
-                        <input type="text" id="fname" name="fname" class="py-2">
-                    </div>
-                    <div class="p-2 bd-highlight text-center fields-font" data-bs-toggle="modal"
-                        data-bs-target="#boxModalPassword">
-                        <label for="" class="py-3" id="recoverPass">ESQUECEU A PASSWORD?</label>
-                    </div>
+                    <form id="formAddConta" action="" name="formLogin" method="post">
+                        {!! csrf_field() !!}
+                        <div class="p-2 bd-highlight fields-font">
+                            <label for="">EMAIL</label><br>
+                            <input type="text" id="fmail" name="fmail" class="py-2">
+                        </div>
+                        <div class="p-2 bd-highlight  fields-font">
+                            <label for="">PASSWORD</label><br>
+                            <input type="text" id="fpass" name="fpassword" class="py-2">
+                        </div>
+                        <div class="p-2 bd-highlight text-center fields-font" data-bs-toggle="modal"
+                            data-bs-target="#boxModalPassword">
+                            <label for="" class="py-3" id="recoverPass">ESQUECEU A PASSWORD?</label><br>
+                            <label for="" class="errorMessage text-danger">Login invalido</label>
+                        </div>
+                    </form>
                 </div>
-
             </div>
             {{-- BTN REGISTAR |  ENTRAR --}}
             <div class="container-fluid">

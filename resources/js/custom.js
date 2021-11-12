@@ -30,6 +30,13 @@ window.location.href = url;*/
 $(function() {
 
     $('#btn-login').on('click', function() {
+
+
+        alert("test login")
+            // $('.modal-login').addClass("border border-danger")
+            //   $('.errorMessage').addClass("d-block")
+
+
         var routeName = 'dashboard-home'
         var url = '/area-cliente';
         window.location.href = url
@@ -143,7 +150,6 @@ $(function() {
             $(".btnRegs").attr("width", "25px");
             $(".btnRegs").attr("height", "25px");
         }
-
 
     });
 
@@ -301,15 +307,10 @@ $(function() {
         }
     }, false);
 
-    // autoload Modal on Page Load
+    // Open autoload Modal 
     $(window).on('load', function() {
         $('#boxModalLogin').modal('show');
     });
-
-
-
-
-
 
 })
 
