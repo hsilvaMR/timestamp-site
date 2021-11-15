@@ -103,42 +103,30 @@ class LoginPFM_Controller extends Controller
     {
 
         $this->utilizador = new  Utilizador;
-        $email = trim($request->fmail);
+        $email = trim($request->femail);
         $password = trim($request->fpassword);
-        $user = "";
         $response = "";
 
 
         if (!empty($email)  && !empty($password)) {
 
-            $user = $this->utilizador->where('email', $email)->get();
-            if (!$user->empty()) {
+            $user = $this->utilizador->where('email', $email)->first();
 
-                $user = $this->utilizador->where('senha', $password)->get();
+            if (!empty($user->email)) {
 
-                if (strcmp($user, $password) == 0) {
+                if (strcmp($user->senha, $password) == 0) {
 
                     $response = "sucess";
-                    // echo  $this->response;
+                } else {
+                    $response = "invalidPass";
                 }
-
-                $response = "invalidPass";
-                // echo  $this->response;
             } else {
-                $response = "invalidUser";
+                $response = "invalidUser " . $user;
             }
         } else {
             $response = "emptyField";
         }
         //echo  $response;
         return $response;
-
-        // else {
-
-        //     $this->response = "campos vazios !";
-        //     echo  $this->response;
-        // }
-
-        // return $response;
     }
 }

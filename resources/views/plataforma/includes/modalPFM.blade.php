@@ -19,7 +19,7 @@
                         @csrf
                         <div class="p-2 bd-highlight fields-font">
                             <label for="">EMAIL</label><br>
-                            <input type="text" id="fmail" name="fmail" class="py-2">
+                            <input type="text" id="fmail" name="femail" class="py-2">
                         </div>
                         <div class="p-2 bd-highlight  fields-font">
                             <label for="">PASSWORD</label><br>
