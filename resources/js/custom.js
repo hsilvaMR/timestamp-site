@@ -28,10 +28,11 @@ $(function() {
 
                 switch (data) {
                     case 'sucess':
+                        $('#formAddConta')[0].reset();
                         var url = '/area-cliente';
                         window.location.href = url
                         break;
-                    case 'invalidPass':
+                    case 'invalidUser':
                         $('.errorMessage').removeClass('d-none')
                         $('.errorMessage').html(data);
                         break;
@@ -40,6 +41,10 @@ $(function() {
                         $('.errorMessage').html(data);
                         break;
                     case 'emptyField':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'e-mail invalido':
                         $('.errorMessage').removeClass('d-none')
                         $('.errorMessage').html(data);
                         break;

@@ -108,27 +108,30 @@ class LoginPFM_Controller extends Controller
         $password = trim($request->fpassword);
         $response = "";
 
-
         if (!empty($email)  && !empty($password)) {
 
-            $user = $this->utilizador->where('email', $email)->first();
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
-            if (!empty($user->email)) {
+                $user = $this->utilizador->where('email', $email)->first();
+                if (!empty($user->email)) {
 
-                if (strcmp($user->senha, $password) == 0) {
+                    if (strcmp($user->senha, $password) == 0) {
 
-                    Cookie::queue(Cookie::make('nameUser', $user->nome, 43200));
-                    $response = "sucess";
+                        Cookie::queue(Cookie::make('nameUser', $user->nome, 43200));
+                        $response = "sucess";
+                    } else {
+                        $response = "invalidPass";
+                    }
                 } else {
-                    $response = "invalidPass";
+                    $response = "invalidUser";
                 }
             } else {
-                $response = "invalidUser " . $user;
+                $response = "e-mail invalido";
             }
         } else {
             $response = "emptyField";
         }
-        //echo  $response;
+
         return $response;
     }
 }
