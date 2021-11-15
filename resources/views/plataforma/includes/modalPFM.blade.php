@@ -68,48 +68,48 @@
             {{-- body --}}
             <div class="modal-body">
                 <div class="d-flex flex-column bd-highlight mb-3 box-fields">
-                    {{-- nome --}}
-                    <div class="p-2 bd-highlight fields-font">
-                        <label for="">NOME</label><br>
-                        <input type="text" id="fname" name="fname" class="py-2">
-                    </div>
-                    {{-- apelido --}}
-                    <div class="p-2 bd-highlight  fields-font">
-                        <label for="">APELIDO</label><br>
-                        <input type="text" id="fname" name="fname" class="py-2">
-                    </div>
-                    {{-- e-mail --}}
-                    <div class="p-2 bd-highlight  fields-font">
-                        <label for="">E-MAIL</label><br>
-                        <input type="text" id="fname" name="fname" class="py-2">
-                    </div>
-                    {{-- password --}}
-                    <div class="p-2 bd-highlight  fields-font">
-                        <label for="">PASSWORD</label><br>
-                        <input type="text" id="fname" name="fname" class="py-2">
-                    </div>
-                    {{-- TERMOS --}}
-                    <div class="p-2 bd-highlight  fields-font box-termos">
-                        {{-- politica de privacidade   Li e aceito a "Politica de privacidade --}}
-                        <input type="radio" id="RBprivacit" name="typeTermo" value="">
-                        <label for="RBprivacit">Li e aceito a Politica de privacidade</label><br>
+                    <form id="formRegister" action="{{route('registerValidation')}}" name="formRegister" method="POST">
+                        @csrf
+                        {{-- nome --}}
+                        <div class="p-2 bd-highlight fields-font">
+                            <label for="">NOME</label><br>
+                            <input type="text" id="fname" name="fnome" class="py-2">
+                        </div>
+                        {{-- apelido --}}
+                        <div class="p-2 bd-highlight  fields-font">
+                            <label for="">APELIDO</label><br>
+                            <input type="text" id="fname" name="fapelido" class="py-2">
+                        </div>
+                        {{-- e-mail --}}
+                        <div class="p-2 bd-highlight  fields-font">
+                            <label for="">E-MAIL</label><br>
+                            <input type="text" id="fname" name="fmail" class="py-2">
+                        </div>
+                        {{-- password --}}
+                        <div class="p-2 bd-highlight  fields-font">
+                            <label for="">PASSWORD</label><br>
+                            <input type="text" id="fname" name="fpassword" class="py-2">
+                        </div>
+                        {{-- TERMOS --}}
+                        <div class="p-2 bd-highlight  fields-font box-termos">
+                            {{-- politica de privacidade   Li e aceito a "Politica de privacidade --}}
+                            <input type="radio" id="RBprivacit" name="typeTermo" value="termo">
+                            <label for="RBprivacit">Li e aceito a Politica de privacidade</label><br>
 
-                        {{-- <div class="mb-3 check-round">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label for="checkbox">Li e aceito a "Politica de privacidade</label><br>
-                        </div> --}}
-                        {{-- descontos --}}
-                        <input type="radio" id="RBdescontos" name="typeTermo" value="">
-                        <label for="RBdescontos">Deseja receber os melhores descontos?</label>
-                        {{-- <div class="check-round">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label for="checkbox">Deseja receber os melhores descontos?</label>
-                        </div> --}}
+                            {{-- descontos --}}
+                            <input type="radio" id="RBdescontos" name="typeTermo" value="desconto">
+                            <label for="RBdescontos">Deseja receber os melhores descontos?</label>
+                        </div>
 
-                    </div>
-                    <div class="p-2 bd-highlight text-center fields-font">
-                        <label for="" class="py-3">ESQUECEU A PASSWORD?</label>
-                    </div>
+                        <label for="" class="errorMessage text-danger d-none text-center py-1 pb-2"></label>
+
+                        <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button>
+
+                        <div class="p-2 bd-highlight text-center fields-font">
+                            <label for="" class="py-3">ESQUECEU A PASSWORD?</label>
+                        </div>
+
+                    </form>
                 </div>
             </div>
             {{-- BTN REGISTAR |  ENTRAR --}}

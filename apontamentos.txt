@@ -231,6 +231,16 @@ https://www.youtube.com/watch?v=WN2hHvxMHTI
 
 
 ====== migration =========
+run 
+php artisan migrate
+
+EDITAR | APAGAR | ATUALIZAR COLUNAS NA TABELA   
+  metodo down . 
+php artisan migrate: rollback |  php artisan migrate: rollback --step=2
+
+
+status
+php artisan migrate:status
  editar | adicionar colunas nas tabelas que já foram criado pela migration
  https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510382#overview
 
@@ -463,6 +473,10 @@ shift+alt+A //Toggles comments in VScode.
 
 Site referencia hesasoft
 https://mwatt5.webnode.pt/ 
+
+
+consulta lista negra banco de portugal 
+https://www.bportugal.pt/area-cidadao/formulario/227
 
 
 ================================================                ================================================

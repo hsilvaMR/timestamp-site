@@ -28,10 +28,11 @@ $(function() {
 
                 switch (data) {
                     case 'sucess':
+                        $('#formAddConta')[0].reset();
                         var url = '/area-cliente';
                         window.location.href = url
                         break;
-                    case 'invalidPass':
+                    case 'invalidUser':
                         $('.errorMessage').removeClass('d-none')
                         $('.errorMessage').html(data);
                         break;
@@ -40,6 +41,10 @@ $(function() {
                         $('.errorMessage').html(data);
                         break;
                     case 'emptyField':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'e-mail invalido':
                         $('.errorMessage').removeClass('d-none')
                         $('.errorMessage').html(data);
                         break;
@@ -65,6 +70,57 @@ $(function() {
             }
         })
     });
+
+
+    /**   form registar user   */
+
+    $('#formRegister').on('submit', function(e) {
+        var form = $(this);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
+
+                switch (data) {
+                    case 'registado':
+                        alert(data)
+                        $('#formRegister')[0].reset();
+                        break;
+                    case 'invalid email':
+                        alert(data)
+                            // $('.errorMessage').removeClass('d-none')
+                            // $('.errorMessage').html(data);
+                        break;
+                    case 'deve preencher todos campos':
+                        alert(data)
+                        break;
+                    default:
+                        alert(data)
+                        break;
+                }
+            },
+            error: function(jqXHR) {
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+            }
+        })
+    });
+
 
     /***********************************scripts modal login register*********************** */
     //abrir box dados pessoais menu-left
