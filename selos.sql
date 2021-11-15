@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 11-Nov-2021 às 19:00
+-- Tempo de geração: 15-Nov-2021 às 13:47
 -- Versão do servidor: 10.4.21-MariaDB
 -- versão do PHP: 7.4.23
 
@@ -149,6 +149,13 @@ CREATE TABLE `utilizadors` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
+-- Extraindo dados da tabela `utilizadors`
+--
+
+INSERT INTO `utilizadors` (`id`, `created_at`, `updated_at`, `nome`, `email`, `senha`, `acesso`, `tipo`, `token`) VALUES
+(1, NULL, NULL, 'Honório Eduardo', 'hsilva@mredis.com', 'Hkn15D77', '2', 'Admin', '');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -236,7 +243,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `utilizadors`
 --
 ALTER TABLE `utilizadors`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

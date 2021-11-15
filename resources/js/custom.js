@@ -1,48 +1,72 @@
-/*
-                ================================                    ========================================
-                                                          SITE              
-                ================================                    ==========================================
-*/
-
-
-
-
-
-
-/*
-================================                     ========================================
-                                    PLATAFORMA
- ================================                    ==========================================
-*/
-
-/***********************************scripts modal login register*********************** */
-
-//location.replace("{{ route('delivery') }}?id="+id);  dashboard-home
-// <a href="{{ route('home') }}"> 
-// $("#btn-login").on(function() {
-
-// alert('test btn login');
-/*console.log("inside in btn-login")
-var url = "{{ route('dashboard-home') }}"
-window.location.href = url;*/
-// })
-
 $(function() {
 
-    $('#btn-login').on('click', function() {
+    /*
+                    ================================                    ========================================
+                                                              SITE              
+                    ================================                    ==========================================
+    */
 
+    /*
+    ================================                     ========================================
+                                        PLATAFORMA
+     ================================                    ==========================================
 
-        alert("test login")
-            // $('.modal-login').addClass("border border-danger")
-            //   $('.errorMessage').addClass("d-block")
+    /**  login form  */
 
+    $('#formAddConta').on('submit', function(e) {
+        var form = $(this);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
 
-        var routeName = 'dashboard-home'
-        var url = '/area-cliente';
-        window.location.href = url
-            //console.log(url)
+                switch (data) {
+                    case 'sucess':
+                        var url = '/area-cliente';
+                        window.location.href = url
+                        break;
+                    case 'invalidPass':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'emptyField':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    default:
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                }
+            },
+            error: function(jqXHR) {
+                //  https://www.w3schools.com/js/js_ajax_http.asp
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+
+            }
+        })
     });
 
+    /***********************************scripts modal login register*********************** */
     //abrir box dados pessoais menu-left
     $('#boxData-client').on('click', function() {
         console.log("open-box-client-data");
@@ -65,7 +89,7 @@ $(function() {
         $('.box-client-area').addClass("d-none")
     }); */
 
-    //open box api 
+    //open box API
     $('#apiBX').on('click', function() {
         console.log("open box api");
         $('.box-api').removeClass("d-none")
@@ -322,8 +346,6 @@ function resizeScren() {
         /* The viewport is greater than 700 pixels wide */
     }
 }
-
-
 
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml

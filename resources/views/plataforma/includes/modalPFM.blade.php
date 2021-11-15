@@ -12,13 +12,14 @@
                 <h5 class="modal-title title-font" id="exampleModalLabel">ACESSO</h5>
             </div>
             {{-- body --}}
+
             <div class="modal-body">
                 <div class="d-flex flex-column bd-highlight mb-3 box-fields">
-                    <form id="formAddConta" action="" name="formLogin" method="post">
-                        {!! csrf_field() !!}
+                    <form id="formAddConta" action="{{route('loginValidation')}}" name="formLogin" method="POST">
+                        @csrf
                         <div class="p-2 bd-highlight fields-font">
                             <label for="">EMAIL</label><br>
-                            <input type="text" id="fmail" name="fmail" class="py-2">
+                            <input type="text" id="fmail" name="femail" class="py-2">
                         </div>
                         <div class="p-2 bd-highlight  fields-font">
                             <label for="">PASSWORD</label><br>
@@ -27,9 +28,11 @@
                         <div class="p-2 bd-highlight text-center fields-font" data-bs-toggle="modal"
                             data-bs-target="#boxModalPassword">
                             <label for="" class="py-3" id="recoverPass">ESQUECEU A PASSWORD?</label><br>
-                            <label for="" class="errorMessage text-danger">Login invalido</label>
+                            <label for="" class="errorMessage text-danger d-none"></label>
                         </div>
+                        <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button>
                     </form>
+
                 </div>
             </div>
             {{-- BTN REGISTAR |  ENTRAR --}}
@@ -42,9 +45,9 @@
                     </div>
                     <div class="col col-entrar d-flex justify-content-center" id="btn-login">
                         <span class="py-4">ENTRAR</span>
+                        {{-- <button class="bt" type="submit">Criar Conta</button> --}}
                     </div>
                 </div>
-
             </div>
 
         </div>
