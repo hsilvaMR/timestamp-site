@@ -82,7 +82,7 @@ class LoginPFM_Controller extends Controller
         return $response;
     }
 
-    public function validation(Request $request)
+    public function login(Request $request)
     {
         $this->utilizador = new  Utilizador;
         $email = trim($request->femail);
@@ -113,5 +113,8 @@ class LoginPFM_Controller extends Controller
         }
 
         return $response;
+    }
+    public function logout(Request $request)
+    {
     }
 }
