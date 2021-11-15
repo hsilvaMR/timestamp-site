@@ -90,6 +90,8 @@ $(function() {
                 switch (data) {
                     case 'registado':
                         alert(data)
+                            // $('.errorMessage').removeClass('d-none')
+                            // $('.errorMessage').html(data);
                         $('#formRegister')[0].reset();
                         break;
                     case 'invalid email':
