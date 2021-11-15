@@ -18,6 +18,7 @@ class LoginMiddleware
     public function handle(Request $request, Closure $next)
     {
         // return $next($request);
-        return Response(" test de Middleware ");
+        dd($request);
+        //return Response(" test de Middleware ");
     }
 }

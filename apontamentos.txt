@@ -103,6 +103,9 @@ sobre Rotas
  Middleware
 https://laravel.com/docs/8.x/middleware
 
+imprimindo objecto request 
+dd($request)
+
 CSRF Protection
 https://laravel.com/docs/8.x/csrf
 
@@ -255,7 +258,6 @@ php artisan migrate:status
 
 comandos status | reset | refresh 
 https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21511060#overview
-
 
 
 ============================  BLADE RESUMO  ============================ 
