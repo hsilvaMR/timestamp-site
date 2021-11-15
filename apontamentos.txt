@@ -71,6 +71,8 @@ if ($('#element:hover').length < 0) {
 // AJAX 
 https://api.jquery.com/jquery.ajax/
 
+AJAX XMLHttp
+https://www.w3schools.com/js/js_ajax_http.asp
 
 ================================================                ================================================
                                                     LARAVEL  

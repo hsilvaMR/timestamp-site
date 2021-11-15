@@ -17,82 +17,37 @@ $(function() {
         var form = $(this);
         e.preventDefault();
         $.ajax({
-                type: "POST",
-                url: form.attr('action'),
-                // data: new FormData(this),
-                dataType: "json",
-                contentType: false,
-                processData: false,
-                cache: false,
-                headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
-                success: function(data) {
-                    var resp = JSON.parse(data);
-                    // resp = $.parseJSON(resposta)
-                    // var resp = JSON.parse(response);
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
 
-                    if (resp.fields != "") {
-
-                        alert(resp.fields + " EMPTY")
-                        console.log(data + "EMPTY")
-
-                        $('.modal-login').addClass("border border-danger")
-                        $('.errorMessage').removeClass('d-none')
-                        $('.errorMessage').html(resp.fields);
-                    }
-
-                    switch (resp.mensagem) {
-                        case 'success':
-                            var url = '/area-cliente';
-                            window.location.href = url
-                            break;
-                        case 'Senha Inválido':
-                            alert(resp.mensagem + "Senha Inválido")
-                            var url = '/login-page';
-                            window.location.href = url
-                            break;
-
-                        default:
-                            alert(resp.mensagem + "INVALID USER")
-                            var url = '/login-page';
-                            window.location.href = url
-                    }
-                },
-                error: function(data) {
-                    console.log(data)
-                }
-            })
-            /*.done(function(response) {
-
-                var resp = JSON.parse(response);
-
-                if (resp.fields != "") {
-
-                    alert(resp.fields)
-
-                    $('.modal-login').addClass("border border-danger")
-                    $('.errorMessage').removeClass('d-none')
-                    $('.errorMessage').html(resposta);
-
-                }
-
-                switch (resp.mensagem) {
+                switch (data) {
                     case 'success':
-                        var url = '/area-cliente';
-                        window.location.href = url
+                        alert(data)
                         break;
-                    case 'Senha Inválido':
-                        alert(resp.mensagem)
-                        var url = '/login-page';
-                        window.location.href = url
+                    case 'invalidPass':
+                        alert(data)
                         break;
-
+                    case 'invalidUser':
+                        alert(data)
+                        break;
+                    case 'emptyField':
+                        alert(data)
+                        break;
                     default:
-                        var url = '/login-page';
-                        window.location.href = url
+                        alert(data)
                 }
+            },
+            error: function(jqXHR) {
+                console.log(data)
 
-            });*/
-
+            }
+        })
     });
 
     /***********************************scripts modal login register*********************** */
