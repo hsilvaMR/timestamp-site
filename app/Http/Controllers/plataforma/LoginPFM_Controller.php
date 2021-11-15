@@ -3,12 +3,16 @@
 namespace App\Http\Controllers\plataforma;
 
 use App\Http\Controllers\Controller;
+use App\Models\Utilizador;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 
 class LoginPFM_Controller extends Controller
 {
+
+    //$utilizador = new Utilizador;
+    private $utilizador;
 
     public function index()
     {
@@ -93,5 +97,44 @@ class LoginPFM_Controller extends Controller
         // $utilizador = \DB::table('time_clients')->where('email', $email)->first();
 
         return view('plataforma/pages/homePFM');
+    }
+
+    public function validation_v1(Request $request)
+    {
+
+        $this->utilizador = new  Utilizador;
+        $email = trim($request->fmail);
+        $password = trim($request->fpassword);
+        $user = "";
+        $response = "";
+
+
+        if (!empty($email)  && empty($password)) {
+
+            $user = $this->utilizador->email->where('email', $email)->get();
+            if (!$user->empty()) {
+
+                $user = $this->utilizador->email->where('senha', $password)->get();
+
+                if (strcmp($user, $password) == 0) {
+
+                    $response = "login sucess";
+                    echo  $this->response;
+                }
+
+                $response = "login invalido";
+                echo  $this->response;
+            }
+        }
+        $response = "invalid user";
+        echo  $response;
+
+        // else {
+
+        //     $this->response = "campos vazios !";
+        //     echo  $this->response;
+        // }
+
+        // return $response;
     }
 }
