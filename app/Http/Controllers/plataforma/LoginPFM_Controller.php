@@ -111,10 +111,10 @@ class LoginPFM_Controller extends Controller
 
         if (!empty($email)  && !empty($password)) {
 
-            $user = $this->utilizador->email->where('email', $email)->get();
+            $user = $this->utilizador->where('email', $email)->get();
             if (!$user->empty()) {
 
-                $user = $this->utilizador->email->where('senha', $password)->get();
+                $user = $this->utilizador->where('senha', $password)->get();
 
                 if (strcmp($user, $password) == 0) {
 
@@ -124,8 +124,9 @@ class LoginPFM_Controller extends Controller
 
                 $response = "invalidPass";
                 // echo  $this->response;
+            } else {
+                $response = "invalidUser";
             }
-            $response = "invalidUser";
         } else {
             $response = "emptyField";
         }

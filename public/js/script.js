@@ -44,7 +44,19 @@ $(function() {
                 }
             },
             error: function(jqXHR) {
-                console.log(data)
+
+                //  https://www.w3schools.com/js/js_ajax_http.asp
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
 
             }
         })

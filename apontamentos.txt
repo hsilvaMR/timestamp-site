@@ -74,6 +74,9 @@ https://api.jquery.com/jquery.ajax/
 AJAX XMLHttp
 https://www.w3schools.com/js/js_ajax_http.asp
 
+error function ajax 
+https://stackoverflow.com/questions/6792878/jquery-ajax-error-function
+
 ================================================                ================================================
                                                     LARAVEL  
 ================================================               =================================================
