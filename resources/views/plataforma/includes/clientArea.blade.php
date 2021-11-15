@@ -11,7 +11,13 @@
                 {{-- name title --}}
                 <div class="p-2 bd-highlight">
                     <label for="" class="titleName">{{trans('areaClientWords.nomeCliente')}}</label><br>
-                    <label for="" id="nameClient" class="py-2">Honorio Silva</label>
+                    <label for="" id="nameClient" class="py-2">
+                        @if(isset($cokie) && !empty($cokie) )
+                        {{ $cokie}}
+                        @else
+                        Default
+                        @endif
+                    </label>
                 </div>
                 {{-- adquirir selos btn --}}
                 <div class="p-2 bd-highlight btn-pay-selos text-center mb-3 mt-3">

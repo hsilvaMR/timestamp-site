@@ -27,24 +27,28 @@ $(function() {
             success: function(data) {
 
                 switch (data) {
-                    case 'success':
-                        alert(data)
+                    case 'sucess':
+                        var url = '/area-cliente';
+                        window.location.href = url
                         break;
                     case 'invalidPass':
-                        alert(data)
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
                         break;
                     case 'invalidUser':
-                        alert(data)
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
                         break;
                     case 'emptyField':
-                        alert(data)
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
                         break;
                     default:
-                        alert(data)
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
                 }
             },
             error: function(jqXHR) {
-
                 //  https://www.w3schools.com/js/js_ajax_http.asp
 
                 var msg = "";

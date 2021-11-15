@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Utilizador;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Cookie;
 
 
 class LoginPFM_Controller extends Controller
@@ -116,6 +117,7 @@ class LoginPFM_Controller extends Controller
 
                 if (strcmp($user->senha, $password) == 0) {
 
+                    Cookie::queue(Cookie::make('nameUser', $user->nome, 43200));
                     $response = "sucess";
                 } else {
                     $response = "invalidPass";
