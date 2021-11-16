@@ -29,7 +29,7 @@ $(function() {
                 switch (data) {
                     case 'sucess':
                         $('#formAddConta')[0].reset();
-                        var url = '/area-cliente';
+                        var url = '/platform/area-cliente';
                         window.location.href = url
                         break;
                     case 'invalidUser':
