@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\plataforma;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Utilitario;
 use App\Models\Utilizador;
+use App\Models\LogAcesso;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cookie;
@@ -15,6 +17,8 @@ class LoginPFM_Controller extends Controller
 
     //$utilizador = new Utilizador;
     private $utilizador;
+    private $utilitario;
+    private $logiAcesso;
     private $dados = [];
 
     public function index()
@@ -99,6 +103,8 @@ class LoginPFM_Controller extends Controller
                     if (Hash::check($password, $user->senha)) {
                         Cookie::queue(Cookie::make('nameUser', $user->nome . " " . $user->apelido, 43200));
                         $response = "sucess";
+                        self::addLogAcesso($request, $user->id);
+                        // self::createDateOAL()
                     } else {
                         $response = "invalidPass";
                     }
@@ -116,5 +122,27 @@ class LoginPFM_Controller extends Controller
     }
     public function logout(Request $request)
     {
+    }
+
+    public function addLogAcesso(Request $request, $user_id)
+    {
+        $this->logiAcesso = new LogAcesso;
+        $this->utilitario = new  Utilitario;
+
+
+        $this->utilitario->getCurrentDataTime();
+        //  $timezone = Carbon::now(get_local_time());
+
+        $this->logiAcesso->insert(
+            [
+                'utilizadors_id' => $user_id,
+                'data' => $request->server->get('REMOTE_ADDR'),
+                'duracao' =>  $this->utilitario->getCurrentDataTime(),
+                'ip' => trim($request->server->get('REMOTE_ADDR')),
+                'browser' => trim($request->server->get('HTTP_SEC_CH_UA')),
+                'sistemaOperativo' => trim($request->server->get('HTTP_SEC_CH_UA_PLATFORM')),
+                'local' =>  $request->getLocale()
+            ]
+        );
     }
 }
