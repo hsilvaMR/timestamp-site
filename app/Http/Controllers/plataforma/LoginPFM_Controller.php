@@ -113,18 +113,18 @@ class LoginPFM_Controller extends Controller
         $password = trim($request->fpassword);
         $response = "";
 
+        // $test = $request->get("femail");
+
         if (!empty($email)  && !empty($password)) {
 
             if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
                 $user = $this->utilizador->where('email', $email)->first();
-                if (!empty($user->email)) {
+                if (!empty($user->email) || !empty($user->senha)) {
 
                     if (Hash::check($password, $user->senha)) {
-                        Cookie::queue(Cookie::make('name_user', $user->nome . " " . $user->apelido, 43200));
-                        Cookie::queue(Cookie::make('email_user', $user->email, 43200));
-                        Cookie::queue(Cookie::make('pass_user', $user->senha, 43200));
-                        Cookie::queue(Cookie::make('id_user', $user->id, 43200));
+                        self::setSession($user);
+                        self::setCookie($user);
                         $response = "sucess";
                         self::addLogAcesso($request, $user->id);
                         // self::createDateOAL()
@@ -155,6 +155,10 @@ class LoginPFM_Controller extends Controller
         //  $email = trim($request->femail);
         // $password = trim($request->fpassword);
 
+        // $user = $this->utilizador->where('email', $email)
+        // ->where('senha', $password)
+        // ->get()
+        // ->first();
 
         // regras de validação
         $regras = [
@@ -191,5 +195,21 @@ class LoginPFM_Controller extends Controller
                 'local' =>  $request->getLocale()
             ]
         );
+    }
+
+    public  function  setCookie($user)
+    {
+        Cookie::queue(Cookie::make('name_user', $user->nome, 43200));
+        Cookie::queue(Cookie::make('apelido_user', $user->apelido, 43200));
+        Cookie::queue(Cookie::make('email_user', $user->email, 43200));
+        Cookie::queue(Cookie::make('pass_user', $user->senha, 43200));
+        Cookie::queue(Cookie::make('id_user', $user->id, 43200));
+    }
+
+    public function setSession($user)
+    {
+        session_start();
+        $_SESSION['nome'] = $user->nome;
+        $_SESSION['email'] = $user->email;
     }
 }

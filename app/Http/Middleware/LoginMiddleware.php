@@ -20,7 +20,13 @@ class LoginMiddleware
     // private $login;
     public function handle(Request $request, Closure $next)
     {
+        session_start();
+        if (isset($_SESSION['nome']) && $_SESSION['nome'] != "") {
+            return $next($request);
+        } else {
 
+            return redirect()->route('box-login');
+        }
         // $this->login = new LoginPFM_Controller;
 
         /*if (($this->login->login($request) == "sucess")) {
@@ -33,6 +39,5 @@ class LoginMiddleware
         // dd($request);
 
         //return Response(" test de Middleware ");
-        return $next($request);
     }
 }

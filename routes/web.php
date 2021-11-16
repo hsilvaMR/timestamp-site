@@ -22,12 +22,12 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::middleware(LoginMiddleware::class)
-    ->get('/login-page', [LoginPFM_Controller::class, 'pageLogin'])
-    ->name('box-login');
-Route::middleware(LoginMiddleware::class)
-    ->post('/login-validation', [LoginPFM_Controller::class, 'login_v2'])
-    ->name('loginValidation');
+Route::get('/login-page', [LoginPFM_Controller::class, 'pageLogin'])->name('box-login');
+Route::post('/login-validation', [LoginPFM_Controller::class, 'login'])->name('loginValidation');
 Route::post('/logout-validation', [LoginPFM_Controller::class, 'logout'])->name('logouValidation');
 Route::post('/register-validation', [LoginPFM_Controller::class, 'registarUser'])->name('registerValidation');
-Route::get('/area-cliente', [HomePFM_Controller::class, 'index'])->name('dashboard-home');
+
+// middleware validação area cliente 
+Route::middleware(LoginMiddleware::class)
+    ->get('/area-cliente', [HomePFM_Controller::class, 'index'])
+    ->name('dashboard-home');

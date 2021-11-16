@@ -13,7 +13,7 @@ $(function() {
 
     /**  login form  */
 
-    /*$('#formAddConta').on('submit', function(e) {
+    $('#formAddConta').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
         $.ajax({
@@ -69,7 +69,7 @@ $(function() {
 
             }
         })
-    });*/
+    });
 
 
     /**   form registar user   */

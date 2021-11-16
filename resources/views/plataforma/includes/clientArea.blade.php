@@ -12,8 +12,8 @@
                 <div class="p-2 bd-highlight">
                     <label for="" class="titleName">{{trans('areaClientWords.nomeCliente')}}</label><br>
                     <label for="" id="nameClient" class="py-2">
-                        @if(isset($cokie) && !empty($cokie) )
-                        {{ $cokie}}
+                        @if(isset($CK_name) && isset($CK_apelido) )
+                        {{ $CK_name}} {{" "}} {{ $CK_apelido}}
                         @else
                         Default
                         @endif
