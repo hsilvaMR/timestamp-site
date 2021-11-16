@@ -13,7 +13,7 @@ $(function() {
 
     /**  login form  */
 
-    $('#formAddConta').on('submit', function(e) {
+    /*$('#formAddConta').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
         $.ajax({
@@ -69,7 +69,7 @@ $(function() {
 
             }
         })
-    });
+    });*/
 
 
     /**   form registar user   */
@@ -391,10 +391,49 @@ $(function() {
 
     // Open autoload Modal 
     $(window).on('load', function() {
+        // checkSession();
         $('#boxModalLogin').modal('show');
     });
 
 })
+
+
+function checkSession() {
+
+    $.ajax({
+        type: "POST",
+        url: "/login-validation",
+        contentType: false,
+        processData: false,
+        dataType: "text",
+        cache: false,
+        headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+        success: function(data) {
+
+            switch (data) {
+                case 'sucess':
+                    var url = '/area-cliente';
+                    window.location.href = url
+                    break;
+                default:
+                    $('#boxModalLogin').modal('show');
+                    break;
+            }
+        },
+        error: function(jqXHR) {
+            var msg = "";
+            if (jqXHR.status != null) {
+                msg = jqXHR.statusText;
+            }
+            if (jqXHR.readyState != null) {
+
+                msg = jqXHR.responseText;
+            }
+            alert(msg)
+        }
+    })
+
+}
 
 function resizeScren() {
 

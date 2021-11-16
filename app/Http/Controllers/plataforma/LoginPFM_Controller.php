@@ -86,6 +86,26 @@ class LoginPFM_Controller extends Controller
         return $response;
     }
 
+    public function session(Request $request)
+    {
+
+        //$this->dados['cokie'] = Cookie::get('name_user');
+
+        $name = Cookie::get('name_user');
+        $email = Cookie::get('email_user');
+        $password = Cookie::get('pass_user');
+        $id_user =  Cookie::get('id_user');
+        $response = "";
+
+        if (!empty($email) && !empty($password) || !empty($password)  || !empty($id_user)) {
+
+            $response = "sucess";
+            return  $response;
+        } else {
+            self::login($request);
+        }
+    }
+
     public function login(Request $request)
     {
         $this->utilizador = new  Utilizador;
@@ -101,7 +121,10 @@ class LoginPFM_Controller extends Controller
                 if (!empty($user->email)) {
 
                     if (Hash::check($password, $user->senha)) {
-                        Cookie::queue(Cookie::make('nameUser', $user->nome . " " . $user->apelido, 43200));
+                        Cookie::queue(Cookie::make('name_user', $user->nome . " " . $user->apelido, 43200));
+                        Cookie::queue(Cookie::make('email_user', $user->email, 43200));
+                        Cookie::queue(Cookie::make('pass_user', $user->senha, 43200));
+                        Cookie::queue(Cookie::make('id_user', $user->id, 43200));
                         $response = "sucess";
                         self::addLogAcesso($request, $user->id);
                         // self::createDateOAL()
@@ -122,6 +145,30 @@ class LoginPFM_Controller extends Controller
     }
     public function logout(Request $request)
     {
+    }
+
+    // without ajax 
+    public function login_v2(Request $request)
+    {
+
+        // $this->utilizador = new  Utilizador;
+        //  $email = trim($request->femail);
+        // $password = trim($request->fpassword);
+
+
+        // regras de validação
+        $regras = [
+            'femail' => 'email',
+            'fpassword' => 'required'
+        ];
+
+        // mensagem feedback
+        $mensagem = [
+            'femail.email' => "campo e-mail de preenchimento Obrigátorio",
+            'fpassword.required' => "campo password de preenchimento Obrigátorio"
+        ];
+        $request->validate($regras, $mensagem);
+        print_r($request->all());
     }
 
     public function addLogAcesso(Request $request, $user_id)

@@ -42,6 +42,8 @@ https://www.youtube.com/watch?v=cksgCkee2uY
 ================================================               =================================================
 
 funcão para test de ajax
+//AJAX
+https://www.tutorialsteacher.com/jquery/jquery-ajax-method
  var myAjax = new XMLHttpRequest();
 		 myAjax.open("POST", document.getElementById("#formCSelos").value + "ajax-test", true);
 		 myAjax.onreadystatechange() = function(){

@@ -12,7 +12,7 @@ class HomePFM_Controller extends Controller
 
     public function index()
     {
-        $this->dados['cokie'] = Cookie::get('nameUser');
+        $this->dados['cokie'] = Cookie::get('name_user');
         return view('plataforma.pages.platform', ['title' => 'dashboard'], $this->dados);
     }
 
