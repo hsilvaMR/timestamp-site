@@ -97,7 +97,7 @@ class LoginPFM_Controller extends Controller
                 if (!empty($user->email)) {
 
                     if (Hash::check($password, $user->senha)) {
-                        Cookie::queue(Cookie::make('nameUser', $user->nome, 43200));
+                        Cookie::queue(Cookie::make('nameUser', $user->nome . " " . $user->apelido, 43200));
                         $response = "sucess";
                     } else {
                         $response = "invalidPass";
