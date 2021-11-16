@@ -136,8 +136,8 @@ class LoginPFM_Controller extends Controller
         $this->logiAcesso->insert(
             [
                 'utilizadors_id' => $user_id,
-                'data' => $request->server->get('REMOTE_ADDR'),
-                'duracao' =>  $this->utilitario->getCurrentDataTime(),
+                'data' =>  $this->utilitario->getCurrentDataTime(),
+                'duracao' =>  "1",
                 'ip' => trim($request->server->get('REMOTE_ADDR')),
                 'browser' => trim($request->server->get('HTTP_SEC_CH_UA')),
                 'sistemaOperativo' => trim($request->server->get('HTTP_SEC_CH_UA_PLATFORM')),
