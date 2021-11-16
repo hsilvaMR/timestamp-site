@@ -248,9 +248,12 @@ php artisan migrate:status
  https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510382#overview
 
  relacionamento de tabelas um para um 
+  // $table->foreign('id_user')->references('id')->on('utilizadors');
+  // $table->unique('user_id')
  https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510670#overview
 
  relacionamento de tabelas um para muitos 
+ // $table->foreign('id_user')->references('id')->on('utilizadors');
  https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510684#overview
 
  relacionamento de tabelas muitos  para muitos 
