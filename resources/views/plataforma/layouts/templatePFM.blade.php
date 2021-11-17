@@ -13,6 +13,8 @@
 
     @yield('home')
 
+    @yield('javascript')
+
     @include('plataforma/includes/footerPFM')
 
     {{-- library jquery --}}

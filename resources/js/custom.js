@@ -71,16 +71,12 @@ $(function() {
         })
     });
 
-
-    /*  logout  */
-
     $('.btnLogout').on('click', function() {
-
-        var url = '/area-cliente';
+        // alert("test logout")
+        var url = $('#routeID').val();
         window.location.href = url
-
+            // 
     });
-
 
     /**   form registar user   */
 
@@ -285,6 +281,10 @@ $(function() {
             $(".btnRegs").attr("height", "25px");
         }
 
+    });
+
+    $('.btnRegister').on('click', function() {
+        window.location.href = $(this).data('value');
     });
 
     //abrir box menu-right

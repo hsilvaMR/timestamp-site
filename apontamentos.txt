@@ -61,9 +61,14 @@ https://www.tutorialsteacher.com/jquery/jquery-ajax-method
 		}
 
 
-Passar router no js 
-https://pt.stackoverflow.com/questions/226799/laravel-5-4-requisi%C3%A7%C3%A3o-ajax-usando-route-com-vari%C3%A1vel-js
 
+ =======Passar router no js======================
+
+https://pt.stackoverflow.com/questions/226799/laravel-5-4-requisi%C3%A7%C3%A3o-ajax-usando-route-com-vari%C3%A1vel-js
+ url:"{{ route('ajax_input_store') }}",
+ https://www.codegrepper.com/code-examples/javascript/route+name+in+ajax+html+laravel+controller
+
+ https://www.youtube.com/watch?v=NiAwFKv1oog&t=87s
 
 
 
@@ -106,6 +111,9 @@ https://laravelquestions.com/2020/12/07/window-location-href-not-working-properl
 
    ========== Apontamentos Laravel =================
 
+
+=================================SESSION============================
+https://laravel.com/docs/8.x/session
 
 sobre Rotas 
  https://laravel.com/docs/8.x/routing#redirect-routes

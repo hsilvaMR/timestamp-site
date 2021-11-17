@@ -9,6 +9,7 @@ return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\Utilitario' => $baseDir . '/app/Http/Controllers/Utilitario.php',
     'App\\Http\\Controllers\\plataforma\\ClientPFM_Controller' => $baseDir . '/app/Http/Controllers/plataforma/ClientPFM_Controller.php',
     'App\\Http\\Controllers\\plataforma\\HomePFM_Controller' => $baseDir . '/app/Http/Controllers/plataforma/HomePFM_Controller.php',
     'App\\Http\\Controllers\\plataforma\\LoginPFM_Controller' => $baseDir . '/app/Http/Controllers/plataforma/LoginPFM_Controller.php',

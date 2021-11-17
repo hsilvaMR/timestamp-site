@@ -519,6 +519,7 @@ class ComposerStaticInit09ef051ad64efb8791d91fa13cb03113
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\Utilitario' => __DIR__ . '/../..' . '/app/Http/Controllers/Utilitario.php',
         'App\\Http\\Controllers\\plataforma\\ClientPFM_Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/plataforma/ClientPFM_Controller.php',
         'App\\Http\\Controllers\\plataforma\\HomePFM_Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/plataforma/HomePFM_Controller.php',
         'App\\Http\\Controllers\\plataforma\\LoginPFM_Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/plataforma/LoginPFM_Controller.php',

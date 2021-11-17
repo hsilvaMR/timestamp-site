@@ -72,6 +72,7 @@
                 {{--  items | encerrar sessão   --}}
                 <div class="d-flex bd-highlight border-bottom ">
                     <div class="me-auto p-2 bd-highlight item btnLogout">
+                        <input type="hidden" id="routeID" value="{{route('logout')}}">
                         {{trans('areaClientWords.encerrar')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -894,3 +895,15 @@
     </div>
 </div>
 @endsection
+
+{{-- @section('javascript') --}}
+<script>
+    /*  logout  */
+  /*   $('.btnLogout').on('click', function() {
+        alert("test logout")
+        // console.log(" test logou ...");
+        // var url = "{{route('logout')}}";
+        // window.location.href = url
+    }); */
+</script>
+{{-- @stop --}}

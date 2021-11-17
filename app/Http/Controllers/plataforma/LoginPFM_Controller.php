@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;
 
 
+
 class LoginPFM_Controller extends Controller
 {
 
@@ -44,7 +45,7 @@ class LoginPFM_Controller extends Controller
         return view('plataforma.pages.homePFM', ['title' => 'login']);
     }
 
-    public function registarUser(Request $request)
+    public function registarUtilizador(Request $request)
     {
 
         $nome = trim($request->fnome);
@@ -123,7 +124,7 @@ class LoginPFM_Controller extends Controller
                 if (!empty($user->email) || !empty($user->senha)) {
 
                     if (Hash::check($password, $user->senha)) {
-                        self::setSession($user);
+                        self::setSession($request, $user);
                         self::setCookie($user);
                         $response = "sucess";
                         self::addLogAcesso($request, $user->id);
@@ -143,12 +144,21 @@ class LoginPFM_Controller extends Controller
 
         return $response;
     }
-    public function logout()
+    public function logout(Request $request)
     {
 
-        session_destroy();
-        // return view('plataforma.pages.platform', ['title' => 'dashboard'], $this->dados); 
-        return redirect()->route('box-login');
+        //session_start();
+        // Auth::logout();
+        //  $request->session()->flush();
+        $request->session()->forget(['nome', 'email']);
+        if (!$request->session()->has('nome') && !$request->session()->has('email')) {
+            return redirect()->route('box-login');
+        }
+
+        //return redirect()->route('box-login');
+
+        // $value = $request->session()->pull('key', 'default');
+
     }
 
     // without ajax 
@@ -210,10 +220,13 @@ class LoginPFM_Controller extends Controller
         Cookie::queue(Cookie::make('id_user', $user->id, 43200));
     }
 
-    public function setSession($user)
+    public function setSession(Request $request, $user)
     {
-        session_start();
-        $_SESSION['nome'] = $user->nome;
-        $_SESSION['email'] = $user->email;
+
+        $request->session()->put('nome', $user->nome);
+        $request->session()->put('email', $user->email);
+        //session_start();
+        // $_SESSION['nome'] = $user->nome;
+        // $_SESSION['email'] = $user->email;
     }
 }

@@ -32,12 +32,12 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/login-page', [LoginPFM_Controller::class, 'pageLogin'])->name('box-login');
 Route::post('/login-validation', [LoginPFM_Controller::class, 'login'])->name('loginValidation');
 Route::post('/register-validation', [LoginPFM_Controller::class, 'registarUser'])->name('registerValidation');
-Route::post('/login-page', [LoginPFM_Controller::class, 'logout'])->name('loginValidation');
+Route::post('/login-page', [LoginPFM_Controller::class, 'logout'])->name('logout');
 
 //});//
 
 /******* platform  *******/
 //Route::prefix('/platform')->group(function () {
-Route::post('/logout-validation', [LoginPFM_Controller::class, 'logout'])->name('logouValidation');
+//Route::post('/logout-validation', [LoginPFM_Controller::class, 'logout'])->name('logouValidation');
 Route::get('/area-cliente', [HomePFM_Controller::class, 'index'])->name('dashboard-home')->middleware('loginMiddleware');
 //});

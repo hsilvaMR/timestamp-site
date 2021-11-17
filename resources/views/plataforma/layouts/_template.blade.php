@@ -14,6 +14,8 @@
     @yield('home')
     @include('plataforma/includes/footerPFM')
 
+    @yield('javascript')
+
     {{-- library jquery --}}
     <script src="{{ asset('js/jquery.js') }}"></script>
 
