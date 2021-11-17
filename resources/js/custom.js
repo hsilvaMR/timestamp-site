@@ -29,7 +29,7 @@ $(function() {
                 switch (data) {
                     case 'sucess':
                         $('#formAddConta')[0].reset();
-                        var url = '/platform/area-cliente';
+                        var url = '/area-cliente';
                         window.location.href = url
                         break;
                     case 'invalidUser':
@@ -69,6 +69,16 @@ $(function() {
 
             }
         })
+    });
+
+
+    /*  logout  */
+
+    $('.btnLogout').on('click', function() {
+
+        var url = '/area-cliente';
+        window.location.href = url
+
     });
 
 

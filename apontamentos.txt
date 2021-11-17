@@ -60,6 +60,14 @@ https://www.tutorialsteacher.com/jquery/jquery-ajax-method
 			// }	
 		}
 
+
+Passar router no js 
+https://pt.stackoverflow.com/questions/226799/laravel-5-4-requisi%C3%A7%C3%A3o-ajax-usando-route-com-vari%C3%A1vel-js
+
+
+
+
+
 #npm run watch	
 
 // jquery mouse Over  event

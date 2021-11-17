@@ -143,8 +143,12 @@ class LoginPFM_Controller extends Controller
 
         return $response;
     }
-    public function logout(Request $request)
+    public function logout()
     {
+
+        session_destroy();
+        // return view('plataforma.pages.platform', ['title' => 'dashboard'], $this->dados); 
+        return redirect()->route('box-login');
     }
 
     // without ajax 

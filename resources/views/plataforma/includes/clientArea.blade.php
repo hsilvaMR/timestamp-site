@@ -71,7 +71,7 @@
                 </div>
                 {{--  items | encerrar sessão   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item btnLogout">
                         {{trans('areaClientWords.encerrar')}}
                     </div>
                     <div class="p-2 bd-highlight">

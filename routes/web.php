@@ -18,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 /******* site  *******/
-Route::prefix('site')->group(function () {
-    Route::get('/', [HomeController::class, 'index'])->name('home');
-});
+//Route::prefix('site')->group(function () {
+Route::get('/', [HomeController::class, 'index'])->name('home');
+//});
 
 // middleware validação area cliente 
 // Route::middleware(LoginMiddleware::class)
@@ -28,14 +28,16 @@ Route::prefix('site')->group(function () {
 //     ->name('dashboard-home');
 
 /******* login   *******/
-Route::prefix('/login')->group(function () {
-    Route::get('/login-page', [LoginPFM_Controller::class, 'pageLogin'])->name('box-login');
-    Route::post('/login-validation', [LoginPFM_Controller::class, 'login'])->name('loginValidation');
-    Route::post('/register-validation', [LoginPFM_Controller::class, 'registarUser'])->name('registerValidation');
-});
+//Route::prefix('/login')->group(function () {
+Route::get('/login-page', [LoginPFM_Controller::class, 'pageLogin'])->name('box-login');
+Route::post('/login-validation', [LoginPFM_Controller::class, 'login'])->name('loginValidation');
+Route::post('/register-validation', [LoginPFM_Controller::class, 'registarUser'])->name('registerValidation');
+Route::post('/login-page', [LoginPFM_Controller::class, 'logout'])->name('loginValidation');
+
+//});//
 
 /******* platform  *******/
-Route::prefix('/platform')->group(function () {
-    Route::post('/logout-validation', [LoginPFM_Controller::class, 'logout'])->name('logouValidation');
-    Route::get('/area-cliente', [HomePFM_Controller::class, 'index'])->name('dashboard-home')->middleware('loginMiddleware');
-});
+//Route::prefix('/platform')->group(function () {
+Route::post('/logout-validation', [LoginPFM_Controller::class, 'logout'])->name('logouValidation');
+Route::get('/area-cliente', [HomePFM_Controller::class, 'index'])->name('dashboard-home')->middleware('loginMiddleware');
+//});
