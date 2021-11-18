@@ -444,6 +444,27 @@ function checkSession() {
     })
 
 }
+// scroll to top 
+$('#myBtn').on('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+window.onscroll = function() {
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        $('#myBtn').css("display", "block");
+    } else {
+        $('#myBtn').css("display", "none");
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 
 function resizeScren() {
 

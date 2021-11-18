@@ -12,6 +12,8 @@
     @yield('menu-header')
     @yield('home')
 
+    <button id="myBtn">Top</button>
+
     @include('site/includes/footer')
 
     {{-- @yield('javascript') --}}

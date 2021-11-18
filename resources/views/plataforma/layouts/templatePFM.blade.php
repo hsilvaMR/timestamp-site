@@ -15,6 +15,8 @@
 
     @yield('javascript')
 
+    <button id="myBtn">Top</button>
+
     @include('plataforma/includes/footerPFM')
 
     {{-- library jquery --}}
