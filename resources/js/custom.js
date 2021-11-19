@@ -403,44 +403,21 @@ $(function() {
         $('#boxModalLogin').modal('show');
     });
 
-    $('.col-mstamp').on('click', function(e) {
+    $('.col-mstamp').on('click', function() {
 
-        e.preventDefault();
-        $("#mdTipoSelo").modal('hide').on('hidden.bs.modal', function() {
-                //    $("#cadastro").modal('show');
-                $('#mdTbl_mstp').modal('show');
-            })
-            /*  if ($("#mdTipoSelo").is(":visible")) {
-                 // $('#mdTipoSelo').modal('hide')
-                 //  $('#mdTbl_mstp').modal('show');
-                 alert("modal is visible")
-             }
-             $('#mdTbl_mstp').modal('show'); */
-            //  var modal = document.getElementById('id01');
+        $('#mdTipoSelo').modal('hide');
+        // $('#mdTipoSelo').css('display', 'none')
+        $('#mdTbl_mstp').modal('show');
     });
 
+    $('#btnTbl_precoClose').on('click', function() {
 
+        $('.tblMstamp').modal('hide')
+            // $('#mdTbl_mstp').css('display', 'none')
+            // $('.modal-backdrop').modal('show');
 
+    });
 
-
-    $('#btnTbl_precoClose').on('click', function(e) {
-
-        // if ($("#mdTipoSelo").is(":visible")) {
-
-        //     $('#mdTipoSelo').modal('show')
-        //     $('#mdTbl_mstp').modal('show');
-        // }
-
-        e.preventDefault();
-        $("#mdTbl_mstp").modal('hide').on('hidden.bs.modal', function() {
-                //    $("#cadastro").modal('show');
-                $('#mdTbl_mstp').modal('show');
-                $('#mdTipoSelo').modal('show')
-                $('#mdTbl_mstp').modal('show');
-            })
-            // data-bs-dismiss="modal"   mdTbl_mstp 
-            // $(".dropdown-toggle").attr("data-toggle", "dropdown");
-    })
 })
 
 function checkSession() {
