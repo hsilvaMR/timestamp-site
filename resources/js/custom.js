@@ -387,7 +387,6 @@ $(function() {
             $('.box-client-dados').removeClass("d-none")
             $('.box-promocao').addClass("d-none")
         }
-
     })
 
     window.addEventListener('resize', function() {
@@ -405,6 +404,28 @@ $(function() {
         $('#boxModalLogin').modal('show');
     });
 
+    $('.col-mstamp').on('click', function() {
+        // checkSession();
+        /*  $('#staticBackdrop').modal('hide', {
+             showClose: true,
+             closeExisting: true,
+         }); */
+        $('#mdTipoSelo').modal('hide')
+            // if (e.target == $('.modal-tipo-selos')) {
+            //     $('.modal-tipo-selos').css("display", "none");
+            // }
+
+        $('#tabelaPreco-Mstamp').modal('show');
+        //  var modal = document.getElementById('id01');
+
+    });
+
+    $('#btnTbl_precoClose').on('click', function(e) {
+
+        $('#mdTipoSelo').modal('hide')
+            // data-bs-dismiss="modal"  
+            // $(".dropdown-toggle").attr("data-toggle", "dropdown");
+    })
 })
 
 function checkSession() {

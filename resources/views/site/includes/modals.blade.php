@@ -1,6 +1,6 @@
 @section('modal')
 {{-- Modal os nossos selos temporais  tipos de selos MsTamp | Mtech --}}
-<div class="modal fade modal-tipo-selos" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+<div class="modal fade modal-tipo-selos" id="mdTipoSelo" data-bs-backdrop="static" data-bs-keyboard="false"
     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered  modal-site">
@@ -43,8 +43,8 @@
 
                     </div>
                     {{-- col  Mtech --}}
-                    <div class="col " style="cursor: pointer;">
-                        <div class="d-flex flex-column col-mstamp ms-4 me-4  justify-content-center mb-1">
+                    <div class="col  " style="cursor: pointer;">
+                        <div class="d-flex flex-column col-mtech  ms-4 me-4  justify-content-center mb-1">
                             {{-- img  Mtech --}}
                             <div class="p-2 bd-highlight">
                                 <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
@@ -86,7 +86,7 @@
                     </h5>
                 </div>
                 <div class="p-2 bd-highlight flex-shrink-1 curso-pointer text-end">
-                    <i class=" fas fa-times fa-2x" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <i class="fas fa-times fa-2x btnTbl_precoClose" data-bs-dismiss="modal" aria-label="Close"></i>
                 </div>
             </div>
             {{-- body --}}

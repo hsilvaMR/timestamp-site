@@ -58,9 +58,10 @@ https://www.tutorialsteacher.com/jquery/jquery-ajax-method
 			// if(this.status==404){
 			// 	console.log(this.responseText);
 			// }	
-		}
+		} 
 
-
+==============MODAL=======================
+https://jquerymodal.com/
 
  =======Passar router no js======================
 
