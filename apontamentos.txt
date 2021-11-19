@@ -42,6 +42,8 @@ https://www.youtube.com/watch?v=cksgCkee2uY
 ================================================               =================================================
 
 funcão para test de ajax
+//AJAX
+https://www.tutorialsteacher.com/jquery/jquery-ajax-method
  var myAjax = new XMLHttpRequest();
 		 myAjax.open("POST", document.getElementById("#formCSelos").value + "ajax-test", true);
 		 myAjax.onreadystatechange() = function(){
@@ -57,6 +59,19 @@ funcão para test de ajax
 			// 	console.log(this.responseText);
 			// }	
 		}
+
+
+
+ =======Passar router no js======================
+
+https://pt.stackoverflow.com/questions/226799/laravel-5-4-requisi%C3%A7%C3%A3o-ajax-usando-route-com-vari%C3%A1vel-js
+ url:"{{ route('ajax_input_store') }}",
+ https://www.codegrepper.com/code-examples/javascript/route+name+in+ajax+html+laravel+controller
+
+ https://www.youtube.com/watch?v=NiAwFKv1oog&t=87s
+
+
+
 
 #npm run watch	
 
@@ -97,11 +112,17 @@ https://laravelquestions.com/2020/12/07/window-location-href-not-working-properl
    ========== Apontamentos Laravel =================
 
 
+=================================SESSION============================
+https://laravel.com/docs/8.x/session
+
 sobre Rotas 
  https://laravel.com/docs/8.x/routing#redirect-routes
 
  Middleware
 https://laravel.com/docs/8.x/middleware
+
+imprimindo objecto request 
+dd($request)
 
 CSRF Protection
 https://laravel.com/docs/8.x/csrf
@@ -220,7 +241,12 @@ listar as todas rotas
 sobre Rotas 
  https://laravel.com/docs/8.x/routing#redirect-routes
 
- Middleware
+ ====================================Middleware=====================================================
+
+ // inserido middleware no kernel simplificando a sua chamada 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/22872363#overview
+
+
 https://laravel.com/docs/8.x/middleware
 
 CSRF Protection
@@ -245,9 +271,12 @@ php artisan migrate:status
  https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510382#overview
 
  relacionamento de tabelas um para um 
+  // $table->foreign('id_user')->references('id')->on('utilizadors');
+  // $table->unique('user_id')
  https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510670#overview
 
  relacionamento de tabelas um para muitos 
+ // $table->foreign('id_user')->references('id')->on('utilizadors');
  https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510684#overview
 
  relacionamento de tabelas muitos  para muitos 
@@ -255,7 +284,6 @@ php artisan migrate:status
 
 comandos status | reset | refresh 
 https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21511060#overview
-
 
 
 ============================  BLADE RESUMO  ============================ 

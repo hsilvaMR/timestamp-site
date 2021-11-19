@@ -41,7 +41,7 @@
 }
 
 .content-zIndex .cardZindex {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: 300px;
     font-size: 18px;
@@ -66,7 +66,7 @@
 }
 
 .content-zIndex .btnRegister span {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -117,7 +117,7 @@
 }
 
 .item-col {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: 600px;
     font-size: 18px;
@@ -279,7 +279,7 @@
 .tblMstamp .col-basico .item label,
 .tblMstamp .col-premium .item label,
 .tblMstamp .col-ultimate .item label {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -299,7 +299,7 @@
 .tblMstamp .col-premium .itemPrice span,
 .tblMstamp .col-ultimate .itemPrice span {
     color: #ccc9c2;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -308,7 +308,7 @@
 .tblMstamp .col-basico .btnPay span,
 .tblMstamp .col-premium .btnPay span,
 .tblMstamp .col-ultimate .btnPay span {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -332,6 +332,27 @@
 .col-mstamp:hover {
     box-shadow: -20px -20px 60px 0.15px rgba(248, 155, 134, 0.2), 20px 20px 60px 0.15px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
+}
+
+
+/*  scroll to top BTN */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #F78065;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 
@@ -887,7 +908,7 @@
 }
 
 .form-payment .btn-save-paymentM label {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: bolder;
     font-size: 23px;

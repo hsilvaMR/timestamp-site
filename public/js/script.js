@@ -71,6 +71,12 @@ $(function() {
         })
     });
 
+    $('.btnLogout').on('click', function() {
+        // alert("test logout")
+        var url = $('#routeID').val();
+        window.location.href = url
+            // 
+    });
 
     /**   form registar user   */
 
@@ -90,6 +96,8 @@ $(function() {
                 switch (data) {
                     case 'registado':
                         alert(data)
+                            // $('.errorMessage').removeClass('d-none')
+                            // $('.errorMessage').html(data);
                         $('#formRegister')[0].reset();
                         break;
                     case 'invalid email':
@@ -275,6 +283,10 @@ $(function() {
 
     });
 
+    $('.btnRegister').on('click', function() {
+        window.location.href = $(this).data('value');
+    });
+
     //abrir box menu-right
     $('.evtMVr').on('click', function() {
         // abrir box selos 
@@ -389,20 +401,70 @@ $(function() {
 
     // Open autoload Modal 
     $(window).on('load', function() {
+        // checkSession();
         $('#boxModalLogin').modal('show');
     });
 
 })
 
+function checkSession() {
+
+    $.ajax({
+        type: "POST",
+        url: "/login-validation",
+        contentType: false,
+        processData: false,
+        dataType: "text",
+        cache: false,
+        headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+        success: function(data) {
+
+            switch (data) {
+                case 'sucess':
+                    var url = '/area-cliente';
+                    window.location.href = url
+                    break;
+                default:
+                    $('#boxModalLogin').modal('show');
+                    break;
+            }
+        },
+        error: function(jqXHR) {
+            var msg = "";
+            if (jqXHR.status != null) {
+                msg = jqXHR.statusText;
+            }
+            if (jqXHR.readyState != null) {
+
+                msg = jqXHR.responseText;
+            }
+            alert(msg)
+        }
+    })
+
+}
+// scroll to top 
+$('#myBtn').on('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+window.onscroll = function() {
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $('#myBtn').css("display", "block");
+        } else {
+            $('#myBtn').css("display", "none");
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+
 function resizeScren() {
 
     if (window.matchMedia("(max-width: >=700px)").matches) {
         /* The viewport is less than, or equal to, 700 pixels wide */
-    } else {
-        /* The viewport is greater than 700 pixels wide */
-    }
+    } else {}
 }
-
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml
 

@@ -19,11 +19,17 @@
                         @csrf
                         <div class="p-2 bd-highlight fields-font">
                             <label for="">EMAIL</label><br>
-                            <input type="text" id="fmail" name="femail" class="py-2">
+                            <input type="text" id="fmail" value="{{ old('femail')}}" name="femail" class="py-2">
+                            <label for="text-danger text-center">
+                                {{$errors->has('femail')? $errors->first('femail') : ''}}
+                            </label>
                         </div>
                         <div class="p-2 bd-highlight  fields-font">
                             <label for="">PASSWORD</label><br>
-                            <input type="text" id="fpass" name="fpassword" class="py-2">
+                            <input type="text" id="fpass" value="{{ old('fpassword')}}" name="fpassword" class="py-2">
+                            <label for="text-danger text-center">
+                                {{$errors->has('fpassword')? $errors->first('fpassword') : ''}}
+                            </label>
                         </div>
                         <div class="p-2 bd-highlight text-center fields-font" data-bs-toggle="modal"
                             data-bs-target="#boxModalPassword">

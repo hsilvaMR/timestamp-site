@@ -13,6 +13,10 @@
 
     @yield('home')
 
+    @yield('javascript')
+
+    <button id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
     @include('plataforma/includes/footerPFM')
 
     {{-- library jquery --}}

@@ -12,8 +12,8 @@
                 <div class="p-2 bd-highlight">
                     <label for="" class="titleName">{{trans('areaClientWords.nomeCliente')}}</label><br>
                     <label for="" id="nameClient" class="py-2">
-                        @if(isset($cokie) && !empty($cokie) )
-                        {{ $cokie}}
+                        @if(isset($CK_name) && isset($CK_apelido) )
+                        {{ $CK_name}} {{" "}} {{ $CK_apelido}}
                         @else
                         Default
                         @endif
@@ -71,7 +71,8 @@
                 </div>
                 {{--  items | encerrar sessão   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item btnLogout">
+                        <input type="hidden" id="routeID" value="{{route('logout')}}">
                         {{trans('areaClientWords.encerrar')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -894,3 +895,15 @@
     </div>
 </div>
 @endsection
+
+{{-- @section('javascript') --}}
+<script>
+    /*  logout  */
+  /*   $('.btnLogout').on('click', function() {
+        alert("test logout")
+        // console.log(" test logou ...");
+        // var url = "{{route('logout')}}";
+        // window.location.href = url
+    }); */
+</script>
+{{-- @stop --}}

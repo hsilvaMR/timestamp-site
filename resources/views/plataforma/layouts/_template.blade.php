@@ -12,7 +12,11 @@
     @yield('menu-header')
 
     @yield('home')
+
+    <button id="myBtn"><i class="fas fa-arrow-up"></i></button>
     @include('plataforma/includes/footerPFM')
+
+    @yield('javascript')
 
     {{-- library jquery --}}
     <script src="{{ asset('js/jquery.js') }}"></script>
