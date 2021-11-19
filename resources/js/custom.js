@@ -407,7 +407,6 @@ $(function() {
 
 })
 
-
 function checkSession() {
 
     $.ajax({
@@ -452,29 +451,20 @@ $('#myBtn').on('click', function() {
 
 window.onscroll = function() {
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        $('#myBtn').css("display", "block");
-    } else {
-        $('#myBtn').css("display", "none");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $('#myBtn').css("display", "block");
+        } else {
+            $('#myBtn').css("display", "none");
+        }
     }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
+    // When the user clicks on the button, scroll to the top of the document
 
 function resizeScren() {
 
     if (window.matchMedia("(max-width: >=700px)").matches) {
         /* The viewport is less than, or equal to, 700 pixels wide */
-    } else {
-        /* The viewport is greater than 700 pixels wide */
-    }
+    } else {}
 }
-
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml
 
