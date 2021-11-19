@@ -353,7 +353,6 @@ $(function() {
             $('.box-selos').addClass("d-none")
             $('.box-client-dados').removeClass("d-none")
         }
-
         /**** box  pagamentos   ****/
         // selos 
         if ($('.itemSelos:hover').length > 0) {
@@ -404,19 +403,42 @@ $(function() {
         $('#boxModalLogin').modal('show');
     });
 
-    $('.col-mstamp', [0]).on('click', function() {
+    $('.col-mstamp').on('click', function(e) {
 
-        $('#mdTipoSelo').modal('hide')
-
-        $('#mdTbl_mstp').modal('show');
-        //  var modal = document.getElementById('id01');
-
+        e.preventDefault();
+        $("#mdTipoSelo").modal('hide').on('hidden.bs.modal', function() {
+                //    $("#cadastro").modal('show');
+                $('#mdTbl_mstp').modal('show');
+            })
+            /*  if ($("#mdTipoSelo").is(":visible")) {
+                 // $('#mdTipoSelo').modal('hide')
+                 //  $('#mdTbl_mstp').modal('show');
+                 alert("modal is visible")
+             }
+             $('#mdTbl_mstp').modal('show'); */
+            //  var modal = document.getElementById('id01');
     });
+
+
+
+
 
     $('#btnTbl_precoClose').on('click', function(e) {
 
-        $('#mdTipoSelo').modal('hide')
-            // data-bs-dismiss="modal"  
+        // if ($("#mdTipoSelo").is(":visible")) {
+
+        //     $('#mdTipoSelo').modal('show')
+        //     $('#mdTbl_mstp').modal('show');
+        // }
+
+        e.preventDefault();
+        $("#mdTbl_mstp").modal('hide').on('hidden.bs.modal', function() {
+                //    $("#cadastro").modal('show');
+                $('#mdTbl_mstp').modal('show');
+                $('#mdTipoSelo').modal('show')
+                $('#mdTbl_mstp').modal('show');
+            })
+            // data-bs-dismiss="modal"   mdTbl_mstp 
             // $(".dropdown-toggle").attr("data-toggle", "dropdown");
     })
 })
