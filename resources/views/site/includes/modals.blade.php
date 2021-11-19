@@ -73,8 +73,7 @@
     </div>
 </div>
 {{-- Modal Tabela de Preços | Mstamp--}}
-<div class="modal fade tblMstamp" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade tblMstamp" id="mdTbl_mstp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}

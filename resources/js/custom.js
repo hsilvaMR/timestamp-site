@@ -398,24 +398,17 @@ $(function() {
         }
     }, false);
 
-    // Open autoload Modal 
+    // ============MODAL=================
     $(window).on('load', function() {
         // checkSession();
         $('#boxModalLogin').modal('show');
     });
 
-    $('.col-mstamp').on('click', function() {
-        // checkSession();
-        /*  $('#staticBackdrop').modal('hide', {
-             showClose: true,
-             closeExisting: true,
-         }); */
-        $('#mdTipoSelo').modal('hide')
-            // if (e.target == $('.modal-tipo-selos')) {
-            //     $('.modal-tipo-selos').css("display", "none");
-            // }
+    $('.col-mstamp', [0]).on('click', function() {
 
-        $('#tabelaPreco-Mstamp').modal('show');
+        $('#mdTipoSelo').modal('hide')
+
+        $('#mdTbl_mstp').modal('show');
         //  var modal = document.getElementById('id01');
 
     });

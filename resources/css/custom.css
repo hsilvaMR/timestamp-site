@@ -126,6 +126,10 @@
     cursor: pointer;
 }
 
+.footer .item-col:hover {
+    color: #F78065;
+}
+
 
 /* home all  css */
 
@@ -191,6 +195,14 @@
 .col-1A,
 .col-3B {
     cursor: pointer;
+}
+
+.col-3B:hover,
+.col-2B:hover,
+.col-1A:hover {
+    background-color: white !important;
+    opacity: 0.5;
+    /* border: grey thin solid; */
 }
 
 
@@ -433,11 +445,13 @@
 }
 
 .modal-login .col-registar:hover {
-    border-top: 1.5px solid #F78065;
+    /* background: #F78065; */
+    opacity: 0.4;
 }
 
 .modal-login .col-entrar:hover {
-    border-top: 1.5px solid #141313;
+    /* background-color: #E8E9EB; */
+    opacity: 0.4;
 }
 
 .modal-login .col-entrar span,
