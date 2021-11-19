@@ -60,6 +60,9 @@ https://www.tutorialsteacher.com/jquery/jquery-ajax-method
 			// }	
 		} 
 
+
+ chamando uma classe em especifica no  jquery 
+ $('.col-mstamp', [0]).on('click', function() {
 ==============MODAL=======================
 https://jquerymodal.com/
 

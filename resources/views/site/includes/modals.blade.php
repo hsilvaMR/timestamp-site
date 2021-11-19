@@ -40,7 +40,6 @@
                                 {{ trans('homeWords.msTampVejaOspreco') }}
                             </div>
                         </div>
-
                     </div>
                     {{-- col  Mtech --}}
                     <div class="col  " style="cursor: pointer;">
@@ -84,8 +83,10 @@
                             alt="">
                     </h5>
                 </div>
+                {{--  CLOSE BTN --}}
                 <div class="p-2 bd-highlight flex-shrink-1 curso-pointer text-end">
-                    <i class="fas fa-times fa-2x btnTbl_precoClose" data-bs-dismiss="modal" aria-label="Close"></i>
+                    <i class="fas fa-times fa-2x " id="btnTbl_precoClose" data-bs-dismiss="modal"
+                        aria-label="Close"></i>
                 </div>
             </div>
             {{-- body --}}
