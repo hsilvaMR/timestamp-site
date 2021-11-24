@@ -537,3 +537,15 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
 
  multibanco
   https://geekalicious.pt/pt/php/integracao-servico-pagamentos-easypay-multibanco-mb-atm/
+
+
+
+
+  SOAPClient
+  https://www.php.net/manual/en/class.soapclient.php
+
+  https://pt.wikipedia.org/wiki/SOAP
+
+  https://medium.com/mestredev/consumindo-um-webservice-com-soapclient-do-php-4a04169343e4
+
+  https://stackoverflow.com/questions/35908226/generating-request-response-xml-from-a-wsdl
