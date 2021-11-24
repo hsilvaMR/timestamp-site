@@ -520,3 +520,20 @@ https://www.youtube.com/watch?v=UHdF0qODFeg&t=159s
 
 HTTP 404 PAGE NOT FOUND
 https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-using-port-80-on-your-server-field-notes/
+
+
+==========================================                ================================================
+                                       Integracao API PAGAMENTOS  
+=========================================               =================================================
+ 
+
+ HIPAY
+   https://developer.hipay.com/online-payments/sdk-reference/sdk-php
+   https://developer.hipay.com/online-payments/sdk-reference/sdk-php
+
+   PAGAMENTOS PHP 
+   https://www.youtube.com/watch?v=bP5WG2f1in8
+  https://jumpseller.pt/payment-gateways/
+
+ multibanco
+  https://geekalicious.pt/pt/php/integracao-servico-pagamentos-easypay-multibanco-mb-atm/
