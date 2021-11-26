@@ -527,7 +527,29 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
 =========================================               =================================================
  
 
- HIPAY
+   HIPAY
+
+    passos para integracao no aplicação
+
+    1º criar conta 
+     https://professional.hipay.com/login
+
+     2º ir acount > information > webservice access
+     https://professional.hipay.com/profile/information/
+
+     copiar login e password 
+
+     3º ir Products > My website 
+     https://professional.hipay.com/product/website
+     copiar ID
+     Nesta área poderás inserir os teus sites| lojas 
+     
+     4º ir no seu ficheiro php e inserir os dados copiados 
+      ex: hipay.php 
+
+
+
+
    https://developer.hipay.com/online-payments/sdk-reference/sdk-php
    https://developer.hipay.com/online-payments/sdk-reference/sdk-php
 
