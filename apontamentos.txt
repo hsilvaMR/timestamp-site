@@ -531,6 +531,9 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
    https://developer.hipay.com/online-payments/sdk-reference/sdk-php
    https://developer.hipay.com/online-payments/sdk-reference/sdk-php
 
+   FILE XML SOAP HIPAY
+   https://ws.hipay.com/soap/payment-v2?wsdl
+
    PAGAMENTOS PHP 
    https://www.youtube.com/watch?v=bP5WG2f1in8
   https://jumpseller.pt/payment-gateways/
@@ -538,14 +541,26 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
  multibanco
   https://geekalicious.pt/pt/php/integracao-servico-pagamentos-easypay-multibanco-mb-atm/
 
+  STRIPPER 
+  https://www.youtube.com/watch?v=EildM6OMcoQ&t=613s
 
 
+==========================================                ================================================
+                                           WEB SERVICE SOAP 
+=========================================               =================================================
+                      
 
   SOAPClient
   https://www.php.net/manual/en/class.soapclient.php
+  https://medium.com/mestredev/consumindo-um-webservice-com-soapclient-do-php-4a04169343e4
+  https://www.devmedia.com.br/criando-e-consumindo-webservices-em-php-5-e-zend-framework/24937
+
+  https://www.devmedia.com.br/web-services-rest-versus-soap/32451
+
+  Send SOAP Request and read XML response from PHP page
+   https://www.youtube.com/watch?v=Cl4puOAk6vk
 
   https://pt.wikipedia.org/wiki/SOAP
-
-  https://medium.com/mestredev/consumindo-um-webservice-com-soapclient-do-php-4a04169343e4
-
-  https://stackoverflow.com/questions/35908226/generating-request-response-xml-from-a-wsdl
+ 
+  PHP soap client example git 
+  https://gist.github.com/akalongman/56484900eaf19b18cfbd
