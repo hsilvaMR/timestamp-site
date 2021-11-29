@@ -115,6 +115,9 @@ https://laravelquestions.com/2020/12/07/window-location-href-not-working-properl
 
    ========== Apontamentos Laravel =================
 
+   upload arquivos 
+   https://laravel.com/docs/5.8/filesystem
+
 
 =================================SESSION============================
 https://laravel.com/docs/8.x/session
