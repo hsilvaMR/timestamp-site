@@ -443,7 +443,28 @@ fazer commit de fciheiros quando se troca de varios dispositivos para o mesmo re
 2º #git push origin nome_da_branch
 
 atualizar o repositorio quando se trabalha numa máquina diferente (supondo que já existe uma cópia do repositorio na maquina )
+
 1º #git pull url_do_repositorio  nome_da_branch 
+
+
+Git LFS 
+Nota :  o github normal suporta apenas ficheiros com tamanho <=100MB 
+Para adicionar ficheiros com tamanho superiores a 100MB É necessário instalar uma extensao 
+do git   https://git-lfs.github.com/
+
+https://www.youtube.com/watch?v=xPFLAAhuGy0
+
+1º no diretorio do projecto  # git lfs install
+2º # git lfs track "*.extesion"   | especificar as extensão do ficheiro  extesion
+3º # git add .gitattributes
+e add adicionar os comandos normal 
+git add file.psd
+git commit -m "Add design file"
+git push origin main
+
+
+
+
 
 
 ================================================                ================================================
@@ -586,3 +607,13 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
  
   PHP soap client example git 
   https://gist.github.com/akalongman/56484900eaf19b18cfbd
+
+
+  ================================================                ================================================
+                                                   CPANEL  
+================================================               =================================================
+
+ criar um backup site completo 
+ https://www.shorttutorials.com/control-panel/download-full-backup.html
+
+ https://www.youtube.com/watch?v=xHyv7F2PC-U
