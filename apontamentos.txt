@@ -100,6 +100,19 @@ https://stackoverflow.com/questions/6792878/jquery-ajax-error-function
                                                     LARAVEL  
 ================================================               =================================================
 
+
+Front-End Laravel 
+https://laravel.com/docs/5.8/blade
+
+Compiling Assets (Mix)
+https://laravel.com/docs/5.8/mix
+
+Authentication
+https://laravel.com/docs/5.8/authentication
+
+Laravel How To Upload,View And Download Pdf,Docx,Mp4,Mp3 In Laravel Laravel 8 Tutorial From Scratch
+https://www.youtube.com/watch?v=IYswY0Jgup4
+
 windows loaction 
 window.location.href = '/area-cliente'
 
