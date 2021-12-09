@@ -75,7 +75,8 @@ https://pt.stackoverflow.com/questions/226799/laravel-5-4-requisi%C3%A7%C3%A3o-a
  https://www.youtube.com/watch?v=NiAwFKv1oog&t=87s
 
 
-
+copiar texto 
+https://qawithexperts.com/article/javascript/creating-copy-to-clipboard-using-javascript-or-jquery/364
 
 #npm run watch	
 
