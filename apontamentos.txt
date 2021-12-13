@@ -106,6 +106,10 @@ https://stackoverflow.com/questions/6792878/jquery-ajax-error-function
                                                     LARAVEL  
 ================================================               =================================================
 
+Notificação
+https://laravel.com/docs/8.x/notifications#generating-notifications
+https://www.youtube.com/watch?v=5DREuAvFnps
+
 Laravel  TipsForDev
 https://tipsfordev.com/laravel-undefined-variable-id-controller
 

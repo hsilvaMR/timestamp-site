@@ -72,7 +72,6 @@ $(function() {
     });
     // login v2 
     $('.login_v2').on('click', function() {
-
         var form = $('#formAddConta');
         e.preventDefault();
         $.ajax({
