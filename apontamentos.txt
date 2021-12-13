@@ -64,6 +64,7 @@ https://www.tutorialsteacher.com/jquery/jquery-ajax-method
 
 datables js  v1.10
 https://datatables.net/examples/plug-ins/range_filtering.html  
+https://www.youtube.com/watch?v=bxnwqL8MNdw
 
  chamando uma classe em especifica no  jquery 
  $('.col-mstamp', [0]).on('click', function() {
