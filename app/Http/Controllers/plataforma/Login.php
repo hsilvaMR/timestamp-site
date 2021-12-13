@@ -42,12 +42,11 @@ class Login extends Controller
 		$this->dados['faceTipo'] = 'website';*/
 
         //return view('pages/timestamp/login', $this->dados);
-        return view('plataforma.pages.homePFM', ['title' => 'login']);
+        return view('plataforma.pages.home', ['title' => 'login']);
     }
 
     public function registarUtilizador(Request $request)
     {
-
         $nome = trim($request->fnome);
         $apelido = trim($request->fapelido);
         $email = trim($request->fmail);
@@ -147,18 +146,10 @@ class Login extends Controller
     public function logout(Request $request)
     {
 
-        //session_start();
-        // Auth::logout();
-        //  $request->session()->flush();
         $request->session()->forget(['nome', 'email']);
         if (!$request->session()->has('nome') && !$request->session()->has('email')) {
             return redirect()->route('box-login');
         }
-
-        //return redirect()->route('box-login');
-
-        // $value = $request->session()->pull('key', 'default');
-
     }
 
     // without ajax 
@@ -225,8 +216,5 @@ class Login extends Controller
 
         $request->session()->put('nome', $user->nome);
         $request->session()->put('email', $user->email);
-        //session_start();
-        // $_SESSION['nome'] = $user->nome;
-        // $_SESSION['email'] = $user->email;
     }
 }

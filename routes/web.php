@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 /******* site  *******/
 //Route::prefix('site')->group(function () {
-Route::get('/', [Home::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 //});
 
 // middleware validação area cliente 
