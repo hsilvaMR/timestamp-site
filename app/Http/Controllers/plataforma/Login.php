@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Hash;
 
 
 
-class LoginPFM_Controller extends Controller
+class Login extends Controller
 {
 
     //$utilizador = new Utilizador;
