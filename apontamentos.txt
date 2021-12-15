@@ -41,6 +41,16 @@ https://www.youtube.com/watch?v=cksgCkee2uY
                                                    JAVASCRIPTS  
 ================================================               =================================================
 
+
+
+DataPicker
+https://jqueryui.com/datepicker/#min-max
+https://www.devmedia.com.br/calendario-em-jquery-criando-calendarios-com-datepicker/37458
+
+
+
+
+
 funcão para test de ajax
 //AJAX
 https://www.tutorialsteacher.com/jquery/jquery-ajax-method

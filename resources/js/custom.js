@@ -71,13 +71,14 @@ $(function() {
         })
     });
     // login v2 
-    $('.login_v2').on('click', function() {
+    $('.login_v2').on('click', function(e) {
         var form = $('#formAddConta');
+        var formData = new FormData(form)
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: form.attr('action'),
-            data: new FormData(this),
+            data: formData,
             contentType: false,
             processData: false,
             cache: false,
@@ -139,7 +140,6 @@ $(function() {
     });
 
     /**   form registar user   */
-
     $('#formRegister').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
@@ -457,11 +457,7 @@ $(function() {
         }
     }, false);
 
-    // ============MODAL=================
-    $(window).on('load', function() {
-        // checkSession();
-        $('#boxModalLogin').modal('show');
-    });
+
 
     $('.col-mstamp').on('click', function() {
 
@@ -479,6 +475,12 @@ $(function() {
     });
 
 })
+
+// ============MODAL=================
+$(window).on('load', function() {
+    // checkSession();
+    $('#boxModalLogin').modal('show');
+});
 
 function checkSession() {
 
@@ -540,7 +542,7 @@ function resizeScren() {
 }
 
 
-function loadHipay() {
+/*function loadHipay() {
 
     jQuery(document).ready(function() {
         jQuery('<div class="sa_payPal_overlay" style="visibility:visible;position:fixed; width:100%; height:100%; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr=\'#88ffffff\', EndColorStr=\'#88ffffff\'); background: rgba(0,0,0,0.7); top:0; left:0; z-index: 999999;"><div style="background:#FFF; background-image:linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -o-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -moz-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -webkit-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -ms-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -webkit-gradient(linear, left top,left bottom,color-stop(0.45, #FFFFFF),color-stop(0.8, #E9ECEF));display: block;margin: auto;position: fixed; margin-left:-150px;left:50%;top:30%;text-align:center;color:#2F6395;font-family:Arial;padding:15px;font-size:13px;font-weight:bold;width: 300px;-webkit-box-shadow:3px 2px 13px rgba(50, 50, 49, 0.25);box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 0px 5px;border:1px solid #CFCFCF;border-radius:6px;"><img style="display:block;margin:0 auto 10px" src="https://www.paypalobjects.com/en_US/i/icon/icon_animated_prog_dkgy_42wx42h.gif"><h2 style="font-size:30px; margin-bottom:10px;"><? if($LANG=='
@@ -550,7 +552,7 @@ function loadHipay() {
             en '){echo "You will be redirected to a secure Hipay environment to finalize your payment.";} ?></p><div style="margin:20px auto 0;"><img src="/img/hipay-logo.svg" width="100px"/></div></div></div>').appendTo('body');
     });
 
-}
+}*/
 
 
 function incializarHipay(id, tracking) {
