@@ -31,7 +31,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 //Route::prefix('/login')->group(function () {
 Route::get('/login-page', [Login::class, 'pageLogin'])->name('box-login');
 Route::post('/login-validation', [Login::class, 'login'])->name('loginValidation');
-Route::post('/register-validation', [Login::class, 'registarUser'])->name('registerValidation');
+Route::post('/register-validation', [Login::class, 'registarUtilizador'])->name('registerValidation');
 Route::post('/login-page', [Login::class, 'logout'])->name('logout');
 
 //});//

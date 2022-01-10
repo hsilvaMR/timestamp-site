@@ -655,3 +655,13 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
  https://www.shorttutorials.com/control-panel/download-full-backup.html
 
  https://www.youtube.com/watch?v=xHyv7F2PC-U
+
+
+ ========================== Mredis =======================================
+
+ altera espaço em disco cpanel 
+
+ IR DOMINIO MCODE > Avancado > Webhost Manager > Funções Conta > Modificação Cota > selecionar o dominio > clique em Modificar 
+ https://hosting93.serverhs.org:2087/cpsess8874848021/scripts/quotalist
+
+

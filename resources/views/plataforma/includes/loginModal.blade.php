@@ -36,7 +36,7 @@
                             <label for="" class="py-3" id="recoverPass">ESQUECEU A PASSWORD?</label><br>
                             <label for="" class="errorMessage text-danger d-none"></label>
                         </div>
-                        {{-- <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button> --}}
+                        <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button>
                     </form>
 
                 </div>
@@ -109,7 +109,7 @@
 
                         <label for="" class="errorMessage text-danger d-none text-center py-1 pb-2"></label>
 
-                        {{-- <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button> --}}
+                        <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button>
 
                         <div class="p-2 bd-highlight text-center fields-font">
                             <label for="" class="py-3">ESQUECEU A PASSWORD?</label>
