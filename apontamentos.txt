@@ -647,7 +647,7 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
   https://gist.github.com/akalongman/56484900eaf19b18cfbd
 
 
-  ================================================                ================================================
+================================================                ================================================
                                                    CPANEL  
 ================================================               =================================================
 
@@ -659,9 +659,34 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
 
  ========================== Mredis =======================================
 
+              === WHM ====
+
  altera espaço em disco cpanel 
 
  IR DOMINIO MCODE > Avancado > Webhost Manager > Funções Conta > Modificação Cota > selecionar o dominio > clique em Modificar 
  https://hosting93.serverhs.org:2087/cpsess8874848021/scripts/quotalist
 
+ ver pacotes | editar pacotes
+ https://hosting93.serverhs.org:2087/cpsess8874848021/scripts/editpkg2
+
+ Ver lista de contas | dominios 
+ https://hosting93.serverhs.org:2087/cpsess0139692641/scripts4/listaccts
+
+
+ WHM CRIAÇÃO DE PACOTES 
+ https://kb.ptisp.com/whm-o-que-e-um-package/
+
+  Adicionar | desativar | remover | APP NO CPANEL 
+  Feature Manager > editar 
+ https://hosting93.serverhs.org:2087/cpsess0139692641/scripts2/featuremanager/editFeatureList?name=mcodept_full
+
+
+
+
+ ================================================                ================================================
+                                                    DIVERSOS  
+================================================               =================================================
+
+Conversor pdf to word  
+https://www.adobe.com/pt/acrobat/online/pdf-to-word.html
 
