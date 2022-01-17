@@ -2,19 +2,19 @@
 <html lang="pt-PT">
 
 <head>
-    @include('plataforma/includes/headPFM')
+    @include('plataforma/includes/head')
     <title>@yield('title')</title>
 </head>
 
 <body>
 
-    @include('plataforma/includes/_headerPFM')
+    @include('plataforma/includes/_header')
     @yield('menu-header')
 
     @yield('home')
 
     <button id="myBtn"><i class="fas fa-arrow-up"></i></button>
-    @include('plataforma/includes/footerPFM')
+    @include('plataforma/includes/footer')
 
     @yield('javascript')
 
