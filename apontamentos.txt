@@ -681,6 +681,25 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
  https://hosting93.serverhs.org:2087/cpsess0139692641/scripts2/featuremanager/editFeatureList?name=mcodept_full
 
 
+ consultar o nameserver webhs 
+ https://hosting93.serverhs.org:2087/cpsess4510968637/scripts/editsets
+
+  ns1.webhs.org
+  ns2.webhs.org
+
+    Explicitly Set the Nameservers
+     
+     
+Nameserver 1 : ns1.mcode.pt
+Nameserver 2 : ns2.mcode.pt
+
+Como Alterar Nameservers no Namecheap
+https://kinsta.com/pt/base-de-conhecimento/alterar-nameservers-no-namecheap/
+
+
+Consultar propagação de DNS  
+https://www.whatsmydns.net/
+
 
 
  ================================================                ================================================
