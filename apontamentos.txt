@@ -659,7 +659,8 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
 
  ========================== Mredis =======================================
 
-              === WHM ====
+              === WHM ====   
+    https://hosting93.serverhs.org:2087/logout/?locale=pt   | view login 
 
  altera espaço em disco cpanel 
 
@@ -687,11 +688,15 @@ https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-u
   ns1.webhs.org
   ns2.webhs.org
 
-    Explicitly Set the Nameservers
-     
-     
+Explicitly Set the Nameservers
+         
 Nameserver 1 : ns1.mcode.pt
 Nameserver 2 : ns2.mcode.pt
+
+Como Apontar Domínio para  um servidor  [Hostinger] | quando o dominio foi comprado numa outra entidade  
+https://www.hostinger.pt/tutoriais/como-apontar-o-nome-de-dominio-para-hostinger
+
+https://aceleraperformance.com.br/outros/como-apontar-dominio/
 
 Como Alterar Nameservers no Namecheap
 https://kinsta.com/pt/base-de-conhecimento/alterar-nameservers-no-namecheap/
