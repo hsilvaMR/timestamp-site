@@ -12,8 +12,8 @@ $(function() {
      ================================                    ==========================================
 
     /**  login form  */
-
-    $('#formAddConta').on('submit', function(e) {
+    // v1 
+    $('#formLogin').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
         $.ajax({
@@ -70,15 +70,16 @@ $(function() {
             }
         })
     });
-    // login v2 
-    $('.login_v2').on('click', function(e) {
-        var form = $('#formAddConta');
-        var formData = new FormData(form)
+
+    // login v2
+    $('#btn-login').on('click', function(e) {
+        //document.forms[0].submit()
+        var form = $(document.forms[0]);
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: form.attr('action'),
-            data: formData,
+            data: new FormData(document.forms[0]),
             contentType: false,
             processData: false,
             cache: false,
@@ -87,7 +88,7 @@ $(function() {
 
                 switch (data) {
                     case 'sucess':
-                        $('#formAddConta')[0].reset();
+                        $('#formLogin')[0].reset();
                         var url = '/area-cliente';
                         window.location.href = url
                         break;
@@ -128,9 +129,7 @@ $(function() {
 
             }
         })
-
-
-    })
+    });
 
     $('.btnLogout').on('click', function() {
         // alert("test logout")
@@ -139,14 +138,15 @@ $(function() {
             // 
     });
 
-    /**   form registar user   */
-    $('#formRegister').on('submit', function(e) {
-        var form = $(this);
+    /**   registar utilizar form    **/
+    $('#btn-registar').on('click', function(e) {
+
+        var form = $(document.forms[1]);
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: form.attr('action'),
-            data: new FormData(this),
+            data: new FormData(document.forms[1]),
             contentType: false,
             processData: false,
             cache: false,

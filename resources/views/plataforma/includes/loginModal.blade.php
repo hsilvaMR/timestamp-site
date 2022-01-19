@@ -15,7 +15,7 @@
 
             <div class="modal-body">
                 <div class="d-flex flex-column bd-highlight mb-3 box-fields">
-                    <form id="formAddConta" action="{{route('loginValidation')}}" name="formLogin" method="POST">
+                    <form id="formLogin" action="{{route('loginValidation')}}" name="formLogin" method="POST">
                         @csrf
                         <div class="p-2 bd-highlight fields-font">
                             <label for="">EMAIL</label><br>
@@ -36,9 +36,7 @@
                             <label for="" class="py-3" id="recoverPass">ESQUECEU A PASSWORD?</label><br>
                             <label for="" class="errorMessage text-danger d-none"></label>
                         </div>
-                        <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button>
                     </form>
-
                 </div>
             </div>
             {{-- BTN REGISTAR |  ENTRAR --}}
@@ -49,9 +47,8 @@
                         data-bs-target="#boxModalRegister">
                         <span class="py-4">REGISTAR</span>
                     </div>
-                    <div class="col col-entrar d-flex justify-content-center  login_v2" id="btn-login">
+                    <div class="col col-entrar d-flex justify-content-center " id="btn-login">
                         <span class="py-4">ENTRAR</span>
-                        {{-- <button class="bt" type="submit">Criar Conta</button> --}}
                     </div>
                 </div>
             </div>
@@ -109,7 +106,7 @@
 
                         <label for="" class="errorMessage text-danger d-none text-center py-1 pb-2"></label>
 
-                        <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button>
+                        {{-- <button class="bt py-2 text-center" id="btntesLogin" type="submit">Criar Conta</button> --}}
 
                         <div class="p-2 bd-highlight text-center fields-font">
                             <label for="" class="py-3">ESQUECEU A PASSWORD?</label>
@@ -122,7 +119,7 @@
             <div class="container-fluid">
 
                 <div class="row  align-items-center">
-                    <div class="col col-registar  d-flex justify-content-center">
+                    <div class="col col-registar  d-flex justify-content-center" id="btn-registar">
                         <span class="py-4">REGISTAR</span>
                     </div>
                     <div class="col col-entrar d-flex justify-content-center" data-bs-target="#boxModalLogin"
