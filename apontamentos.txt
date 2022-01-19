@@ -70,7 +70,8 @@ https://www.tutorialsteacher.com/jquery/jquery-ajax-method
 			// }	
 		} 
 
-
+Laravel Login with AJAX
+https://laracasts.com/discuss/channels/requests/laravel-login-with-ajax?page=1
 
 datables js  v1.10
 https://datatables.net/examples/plug-ins/range_filtering.html  

@@ -13,7 +13,7 @@ $(function() {
 
     /**  login form  */
 
-    $('#formAddConta').on('submit', function(e) {
+    $('#formLogin').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
         $.ajax({
@@ -72,6 +72,7 @@ $(function() {
     });
     // login v2 
     $('.login_v2').on('click', function(e) {
+
         var form = $('#formAddConta');
         var formData = new FormData(form)
         e.preventDefault();
@@ -131,6 +132,116 @@ $(function() {
 
 
     })
+
+    // login v2.1
+
+    $('#btn-login').on('click', function(e) {
+
+        //document.forms[0].submit()
+        var form = $(document.forms[0]);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(document.forms[0]),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
+
+                switch (data) {
+                    case 'sucess':
+                        $('#formLogin')[0].reset();
+                        var url = '/area-cliente';
+                        window.location.href = url
+                        break;
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'emptyField':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'e-mail invalido':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    default:
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                }
+            },
+            error: function(jqXHR) {
+                //  https://www.w3schools.com/js/js_ajax_http.asp
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+
+            }
+        })
+    });
+
+    /* $('#btn-login').on('click', function(e) {
+ 
+         /*var femail = $("#fmail").val();
+         var fpassword = $("#fpass").val();
+ 
+         var form = $('#formAddConta');
+         var formData = new FormData(form)
+         e.preventDefault();
+ 
+         $.ajax({
+             type: "POST",
+             url: "{{ route('loginValidation') }}",
+             data: { femail: femail, fpassword: fpassword },
+             contentType: false,
+              processData: false,
+             cache: false,
+             headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+             success: function(data) {
+ 
+                 if (data == "sucess") {
+                     alert("login sucess")
+                 } else {
+                     alert(data)
+                 }
+             },
+             error: function(jqXHR) {
+                 //  https://www.w3schools.com/js/js_ajax_http.asp
+ 
+                 var msg = "";
+                 if (jqXHR.status != null) {
+ 
+                     msg = jqXHR.statusText;
+                 }
+                 if (jqXHR.readyState != null) {
+ 
+                     msg = jqXHR.responseText;
+                 }
+                 alert(msg)
+ 
+             }
+ 
+         })
+ 
+ 
+     });*/
+
+
 
     $('.btnLogout').on('click', function() {
         // alert("test logout")
