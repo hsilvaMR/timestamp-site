@@ -138,7 +138,7 @@ $(function() {
             // 
     });
 
-    /**   form registar user   **/
+    /**   registar utilizar form    **/
     $('#btn-registar').on('click', function(e) {
 
         var form = $(document.forms[1]);
