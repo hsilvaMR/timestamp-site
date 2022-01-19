@@ -500,8 +500,13 @@ git add file.psd
 git commit -m "Add design file"
 git push origin main
 
+clonar repositorio do github para cpanel
+https://www.youtube.com/watch?v=3-6wQIDj-yE
 
 
+https://www.youtube.com/watch?v=18tXFctuqQ0
+
+https://www.youtube.com/watch?v=-whBU90olDA
 
 
 
@@ -568,6 +573,8 @@ https://mwatt5.webnode.pt/
 
 consulta lista negra banco de portugal 
 https://www.bportugal.pt/area-cidadao/formulario/227
+
+
 
 
 ================================================                ================================================
@@ -706,6 +713,13 @@ Consultar propagação de DNS
 https://www.whatsmydns.net/
 
 
+compra de dominio e alojamento web 
+https://www.webhs.pt/
+
+revenda de alojamento
+https://www.webhs.pt/revenda/linux-ssd/
+
+
 
  ================================================                ================================================
                                                     DIVERSOS  
@@ -713,6 +727,8 @@ https://www.whatsmydns.net/
 
 Conversor pdf to word  
 https://www.adobe.com/pt/acrobat/online/pdf-to-word.html
+
+
 
 
 ================================================                ================================================
