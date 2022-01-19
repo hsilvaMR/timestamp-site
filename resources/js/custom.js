@@ -12,7 +12,7 @@ $(function() {
      ================================                    ==========================================
 
     /**  login form  */
-
+    // v1 
     $('#formLogin').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
@@ -70,73 +70,9 @@ $(function() {
             }
         })
     });
-    // login v2 
-    $('.login_v2').on('click', function(e) {
 
-        var form = $('#formAddConta');
-        var formData = new FormData(form)
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: form.attr('action'),
-            data: formData,
-            contentType: false,
-            processData: false,
-            cache: false,
-            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
-            success: function(data) {
-
-                switch (data) {
-                    case 'sucess':
-                        $('#formAddConta')[0].reset();
-                        var url = '/area-cliente';
-                        window.location.href = url
-                        break;
-                    case 'invalidUser':
-                        $('.errorMessage').removeClass('d-none')
-                        $('.errorMessage').html(data);
-                        break;
-                    case 'invalidUser':
-                        $('.errorMessage').removeClass('d-none')
-                        $('.errorMessage').html(data);
-                        break;
-                    case 'emptyField':
-                        $('.errorMessage').removeClass('d-none')
-                        $('.errorMessage').html(data);
-                        break;
-                    case 'e-mail invalido':
-                        $('.errorMessage').removeClass('d-none')
-                        $('.errorMessage').html(data);
-                        break;
-                    default:
-                        $('.errorMessage').removeClass('d-none')
-                        $('.errorMessage').html(data);
-                }
-            },
-            error: function(jqXHR) {
-                //  https://www.w3schools.com/js/js_ajax_http.asp
-
-                var msg = "";
-                if (jqXHR.status != null) {
-
-                    msg = jqXHR.statusText;
-                }
-                if (jqXHR.readyState != null) {
-
-                    msg = jqXHR.responseText;
-                }
-                alert(msg)
-
-            }
-        })
-
-
-    })
-
-    // login v2.1
-
+    // login v2
     $('#btn-login').on('click', function(e) {
-
         //document.forms[0].submit()
         var form = $(document.forms[0]);
         e.preventDefault();
@@ -195,54 +131,6 @@ $(function() {
         })
     });
 
-    /* $('#btn-login').on('click', function(e) {
- 
-         /*var femail = $("#fmail").val();
-         var fpassword = $("#fpass").val();
- 
-         var form = $('#formAddConta');
-         var formData = new FormData(form)
-         e.preventDefault();
- 
-         $.ajax({
-             type: "POST",
-             url: "{{ route('loginValidation') }}",
-             data: { femail: femail, fpassword: fpassword },
-             contentType: false,
-              processData: false,
-             cache: false,
-             headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
-             success: function(data) {
- 
-                 if (data == "sucess") {
-                     alert("login sucess")
-                 } else {
-                     alert(data)
-                 }
-             },
-             error: function(jqXHR) {
-                 //  https://www.w3schools.com/js/js_ajax_http.asp
- 
-                 var msg = "";
-                 if (jqXHR.status != null) {
- 
-                     msg = jqXHR.statusText;
-                 }
-                 if (jqXHR.readyState != null) {
- 
-                     msg = jqXHR.responseText;
-                 }
-                 alert(msg)
- 
-             }
- 
-         })
- 
- 
-     });*/
-
-
-
     $('.btnLogout').on('click', function() {
         // alert("test logout")
         var url = $('#routeID').val();
@@ -250,14 +138,15 @@ $(function() {
             // 
     });
 
-    /**   form registar user   */
-    $('#formRegister').on('submit', function(e) {
-        var form = $(this);
+    /**   form registar user   **/
+    $('#btn-registar').on('click', function(e) {
+
+        var form = $(document.forms[1]);
         e.preventDefault();
         $.ajax({
             type: "POST",
             url: form.attr('action'),
-            data: new FormData(this),
+            data: new FormData(document.forms[1]),
             contentType: false,
             processData: false,
             cache: false,
