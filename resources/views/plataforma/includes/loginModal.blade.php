@@ -49,7 +49,7 @@
                         data-bs-target="#boxModalRegister">
                         <span class="py-4">REGISTAR</span>
                     </div>
-                    <div class="col col-entrar d-flex justify-content-center" id="btn-login">
+                    <div class="col col-entrar d-flex justify-content-center  login_v2" id="btn-login">
                         <span class="py-4">ENTRAR</span>
                         {{-- <button class="bt" type="submit">Criar Conta</button> --}}
                     </div>

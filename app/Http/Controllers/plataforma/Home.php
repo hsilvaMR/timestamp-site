@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
 
-class HomePFM_Controller extends Controller
+class Home extends Controller
 {
     private $dados = [];
 

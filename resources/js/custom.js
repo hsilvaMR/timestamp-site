@@ -1,9 +1,9 @@
 $(function() {
 
     /*
-                    ================================                    ========================================
-                                                              SITE              
-                    ================================                    ==========================================
+        ================================           ========================================
+                                            SITE              
+        ================================           ==========================================
     */
 
     /*
@@ -70,6 +70,67 @@ $(function() {
             }
         })
     });
+    // login v2 
+    $('.login_v2').on('click', function(e) {
+        var form = $('#formAddConta');
+        var formData = new FormData(form)
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: formData,
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
+
+                switch (data) {
+                    case 'sucess':
+                        $('#formAddConta')[0].reset();
+                        var url = '/area-cliente';
+                        window.location.href = url
+                        break;
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'emptyField':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'e-mail invalido':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    default:
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                }
+            },
+            error: function(jqXHR) {
+                //  https://www.w3schools.com/js/js_ajax_http.asp
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+
+            }
+        })
+
+
+    })
 
     $('.btnLogout').on('click', function() {
         // alert("test logout")
@@ -79,7 +140,6 @@ $(function() {
     });
 
     /**   form registar user   */
-
     $('#formRegister').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
@@ -397,51 +457,30 @@ $(function() {
         }
     }, false);
 
-    // ============MODAL=================
-    $(window).on('load', function() {
-        // checkSession();
-        $('#boxModalLogin').modal('show');
+
+
+    $('.col-mstamp').on('click', function() {
+
+        $('#mdTipoSelo').modal('hide');
+        // $('#mdTipoSelo').css('display', 'none')
+        $('#mdTbl_mstp').modal('show');
     });
 
-    $('.col-mstamp').on('click', function(e) {
+    $('#btnTbl_precoClose').on('click', function() {
 
-        e.preventDefault();
-        $("#mdTipoSelo").modal('hide').on('hidden.bs.modal', function() {
-                //    $("#cadastro").modal('show');
-                $('#mdTbl_mstp').modal('show');
-            })
-            /*  if ($("#mdTipoSelo").is(":visible")) {
-                 // $('#mdTipoSelo').modal('hide')
-                 //  $('#mdTbl_mstp').modal('show');
-                 alert("modal is visible")
-             }
-             $('#mdTbl_mstp').modal('show'); */
-            //  var modal = document.getElementById('id01');
+        $('.tblMstamp').modal('hide')
+            // $('#mdTbl_mstp').css('display', 'none')
+            // $('.modal-backdrop').modal('show');
+
     });
 
-
-
-
-
-    $('#btnTbl_precoClose').on('click', function(e) {
-
-        // if ($("#mdTipoSelo").is(":visible")) {
-
-        //     $('#mdTipoSelo').modal('show')
-        //     $('#mdTbl_mstp').modal('show');
-        // }
-
-        e.preventDefault();
-        $("#mdTbl_mstp").modal('hide').on('hidden.bs.modal', function() {
-                //    $("#cadastro").modal('show');
-                $('#mdTbl_mstp').modal('show');
-                $('#mdTipoSelo').modal('show')
-                $('#mdTbl_mstp').modal('show');
-            })
-            // data-bs-dismiss="modal"   mdTbl_mstp 
-            // $(".dropdown-toggle").attr("data-toggle", "dropdown");
-    })
 })
+
+// ============MODAL=================
+$(window).on('load', function() {
+    // checkSession();
+    $('#boxModalLogin').modal('show');
+});
 
 function checkSession() {
 
@@ -500,6 +539,80 @@ function resizeScren() {
     if (window.matchMedia("(max-width: >=700px)").matches) {
         /* The viewport is less than, or equal to, 700 pixels wide */
     } else {}
+}
+
+
+/*function loadHipay() {
+
+    jQuery(document).ready(function() {
+        jQuery('<div class="sa_payPal_overlay" style="visibility:visible;position:fixed; width:100%; height:100%; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr=\'#88ffffff\', EndColorStr=\'#88ffffff\'); background: rgba(0,0,0,0.7); top:0; left:0; z-index: 999999;"><div style="background:#FFF; background-image:linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -o-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -moz-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -webkit-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -ms-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -webkit-gradient(linear, left top,left bottom,color-stop(0.45, #FFFFFF),color-stop(0.8, #E9ECEF));display: block;margin: auto;position: fixed; margin-left:-150px;left:50%;top:30%;text-align:center;color:#2F6395;font-family:Arial;padding:15px;font-size:13px;font-weight:bold;width: 300px;-webkit-box-shadow:3px 2px 13px rgba(50, 50, 49, 0.25);box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 0px 5px;border:1px solid #CFCFCF;border-radius:6px;"><img style="display:block;margin:0 auto 10px" src="https://www.paypalobjects.com/en_US/i/icon/icon_animated_prog_dkgy_42wx42h.gif"><h2 style="font-size:30px; margin-bottom:10px;"><? if($LANG=='
+            pt '){echo "Espere alguns segundos.";} if($LANG=='
+            en '){echo "Wait a few seconds.";} ?></h2><p style="font-size:12px;color:#003171;font-weight:400"><? if($LANG=='
+            pt '){echo "Você será redirecionado para um ambiente seguro do Hipay para finalizar o seu pagamento.";} if($LANG=='
+            en '){echo "You will be redirected to a secure Hipay environment to finalize your payment.";} ?></p><div style="margin:20px auto 0;"><img src="/img/hipay-logo.svg" width="100px"/></div></div></div>').appendTo('body');
+    });
+
+}*/
+
+
+function incializarHipay(id, tracking) {
+
+    loadHipay();
+    var call = "call";
+    $.ajax({
+        type: "POST",
+        url: "/_carrinho/js_hipay.php",
+        cache: false,
+        data: {
+            call: call,
+            id: id,
+            tracking: tracking
+        },
+        success: function(data) {
+
+            var jsonRetorna = $.parseJSON(data);
+            var url = jsonRetorna['url'];
+            var result = jsonRetorna['result'];
+            var message = jsonRetorna['message'];
+            var id = jsonRetorna['id'];
+            //var status = jsonRetorna['status'];
+
+            //if(status!=""){
+            if (url != "") {
+                console.log(url)
+                window.location.href = url;
+            } else {
+
+                if (result != "") {
+                    console.log(result)
+                }
+                if (message != "") {
+
+                    console.log(message)
+                }
+                if (id != "") {
+
+                    console.log(id)
+                }
+
+                console.log(data)
+
+            }
+        },
+        error: function(xhr, status, error) {
+            //alert(ajaxContext.responseText)
+
+            window.location.href = "https://www.ci-interiordecor.com";
+
+            console.log(xhr.status)
+            console.log(xhr.statusText)
+            console.log(xhr.readyState)
+            console.log(xhr.responseText)
+
+        }
+    });
+
+
 }
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml

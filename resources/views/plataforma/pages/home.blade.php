@@ -1,11 +1,11 @@
-@extends('plataforma/layouts/templatePFM')
+@extends('plataforma/layouts/template')
 
 {{-- title --}}
 @section('title', $title)
 
 @section('home')
 {{-- MODALS  --}}
-@include('plataforma/includes/modalPFM')
+@include('plataforma/includes/loginModal')
 @yield('modal')
 @yield('scripts')
 
