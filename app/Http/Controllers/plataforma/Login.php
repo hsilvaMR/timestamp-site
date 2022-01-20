@@ -58,27 +58,31 @@ class Login extends Controller
 
         if (!empty($nome) || !empty($email) || !empty($apelido) || !empty($password)) {
 
-            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            if (empty($this->utilizador->where('email', $email)->first())) {
 
-                $checkInsert = $this->utilizador->insert(
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
-                    [
-                        'nome' =>   $nome,
-                        'apelido' => $apelido,
-                        'email' =>  $email,
-                        'senha' =>  Hash::make($password),
-                        'acesso' => 1,
-                        'token' => $token,
-                    ]
-                );
+                    $checkInsert = $this->utilizador->insert(
 
-                if ($checkInsert != null) {
+                        [
+                            'nome' =>   $nome,
+                            'apelido' => $apelido,
+                            'email' =>  $email,
+                            'senha' =>  Hash::make($password),
+                            'acesso' => 1,
+                            'token' => $token,
+                        ]
+                    );
 
-                    $response = "registado";
-                    //$this->dados['register'] = "registado";
+                    if ($checkInsert != null) {
+
+                        $response = "registado";
+                    }
+                } else {
+                    $response = "invalid email";
                 }
             } else {
-                $response = "invalid email";
+                $response = "este utilizador já existe";
             }
         } else {
             $response = "deve preencher todos campos";
@@ -216,5 +220,47 @@ class Login extends Controller
 
         $request->session()->put('nome', $user->nome);
         $request->session()->put('email', $user->email);
+    }
+
+    public function recuperarPassword(Request $request)
+    {
+
+        $this->utilizador = new  Utilizador;
+        // $token = str_random(12);
+        $token = trim($request->_token);
+        $response = "init";
+        // $email = trim($request->Recemail);
+
+        if (!empty($request->rCmail)) {
+
+            if (filter_var($request->rCmail, FILTER_VALIDATE_EMAIL)) {
+
+                //Enviar email para validar a conta:
+                $data = ['token' => $token];
+                \Mail::send('email/validar_conta', $data, function ($message) use ($request) {
+                    $message->to($request->rCmail, '')->subject('Recuperar Password');
+                    $message->from(
+                        config('mail.from')['address'],
+                        config('mail.from')['name']
+                    );
+                });
+
+                $response = "send";
+            } else {
+                $response = 'O campo endereço de email inválido. Introduza um endereço de email válido.';
+            }
+        } else {
+
+            $response = 'O campo endereço de email vazio';
+        }
+        return $response;
+    }
+
+    public function criarPassword()
+    {
+
+        //return view('email.home', ['title' => 'login']);
+
+        return "definir nova password";
     }
 }

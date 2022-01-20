@@ -509,6 +509,9 @@ https://www.youtube.com/watch?v=18tXFctuqQ0
 
 https://www.youtube.com/watch?v=-whBU90olDA
 
+Git Ignore 
+https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
+
 
 
 ================================================                ================================================

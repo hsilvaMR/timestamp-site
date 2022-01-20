@@ -189,6 +189,56 @@ $(function() {
         })
     });
 
+    // recuperar password
+    $('#btn-recoverPass').on('click', function(e) {
+
+        var form = $(document.forms[2]);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(document.forms[2]),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
+
+                switch (data) {
+                    case 'send':
+                        alert('Email enviado com sucesso')
+                        $('#formRecover')[0].reset();
+                        break;
+                    case 'empty':
+                        alert('O campo endereço de email vazio')
+
+                        break;
+                    case 'invalidAdress':
+                        alert('O campo endereço de email inválido. Introduza um endereço de email válido')
+                        break;
+                    default:
+                        alert(data)
+                        break;
+                }
+            },
+            error: function(jqXHR) {
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+            }
+
+        })
+
+    })
+
 
     /***********************************scripts modal login register*********************** */
     //abrir box dados pessoais menu-left

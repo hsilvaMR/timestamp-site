@@ -78,6 +78,9 @@ return [
                 'log',
             ],
         ],
+
+
+
     ],
 
     /*
@@ -92,8 +95,22 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS'),
+        'name' => env('MAIL_FROM_NAME'),
+    ],
+
+
+    // customize  
+    'recetor' => 'site@mredis.com',
+
+    'geral' => [
+        'nome' => 'Mredis | Site',
+        'email' => 'site@mredis.com'
+    ],
+
+    'tiago' => [
+        'nome' => 'Clara Vieira',
+        'email' => 'cvieira@mredis.com'
     ],
 
     /*

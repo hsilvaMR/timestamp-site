@@ -149,11 +149,14 @@
             {{-- body --}}
             <div class="modal-body">
                 <div class="d-flex flex-column bd-highlight  box-fields">
-                    {{-- nome --}}
-                    <div class="p-2 bd-highlight fields-font">
-                        <label for="">E-MAIL</label><br>
-                        <input type="text" id="fmail" name="email" class="py-2">
-                    </div>
+                    <form id="formRecover" action="{{route('recoverPass')}}" name="formRecover" method="POST">
+                        {{-- nome --}}
+                        @csrf
+                        <div class="p-2 bd-highlight fields-font">
+                            <label for="">E-MAIL</label><br>
+                            <input type="text" id="fmailRec" name="rCmail" class="py-2">
+                        </div>
+                    </form>
                     {{-- descricao --}}
                     <div class="p-2 bd-highlight text-center fields-font">
                         <label for="" class="py-3">ESQUECEU A PASSWORD?</label>
@@ -163,7 +166,7 @@
             {{-- BTN | RECUPERAR --}}
             <div class="container-fluid">
                 <div class="row  align-items-center">
-                    <div class="col col-recuperar  d-flex justify-content-center">
+                    <div class="col col-recuperar  d-flex justify-content-center" id="btn-recoverPass">
                         <span class="py-4">RECUPERAR</span>
                     </div>
                 </div>

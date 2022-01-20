@@ -33,6 +33,9 @@ Route::get('/login-page', [Login::class, 'pageLogin'])->name('box-login');
 Route::post('/login-validation', [Login::class, 'login'])->name('loginValidation');
 Route::post('/register-validation', [Login::class, 'registarUtilizador'])->name('registerValidation');
 Route::post('/login-page', [Login::class, 'logout'])->name('logout');
+// recuperar password
+Route::post('/recover', [Login::class, 'recuperarPassword'])->name('recoverPass');
+Route::get('/recover-new-password/{token}', [Login::class, 'criarPassword'])->name('recoverNewPass');
 
 //});//
 
