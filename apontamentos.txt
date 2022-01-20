@@ -171,6 +171,12 @@ CSRF Protection
 https://laravel.com/docs/8.x/csrf
 
 
+Erro no envio de email   | Laravel - Connection could not be established with host smtp [ #0]
+https://stackoverflow.com/questions/27721120/laravel-connection-could-not-be-established-with-host-smtp-gmail-com-0
+https://laracasts.com/discuss/channels/laravel/connection-could-not-be-established-with-host-1
+
+
+
     aceder nova maquina 93
    https://hosting93.serverhs.org:2083/logout/?locale=pt
 

@@ -39,7 +39,7 @@ return [
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
+            'username' => env('MAIL_USERNAME', 'Honorio Silva'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
             'auth_mode' => null,
@@ -104,8 +104,8 @@ return [
     'recetor' => 'site@mredis.com',
 
     'geral' => [
-        'nome' => 'Mredis | Site',
-        'email' => 'site@mredis.com'
+        'nome' => 'selos temporario | Site',
+        'email' => 'hsilva@mredis.com'
     ],
 
     'tiago' => [

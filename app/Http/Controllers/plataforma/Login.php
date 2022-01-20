@@ -238,10 +238,10 @@ class Login extends Controller
                 //Enviar email para validar a conta:
                 $data = ['token' => $token];
                 \Mail::send('email/validar_conta', $data, function ($message) use ($request) {
-                    $message->to($request->rCmail, '')->subject('Recuperar Password');
+                    $message->to($request->rCmail)->subject('Recuperar Password');
                     $message->from(
-                        config('mail.from')['address'],
-                        config('mail.from')['name']
+                        config('mail.geral')['email'],
+                        config('mail.geral')['nome']
                     );
                 });
 
@@ -262,5 +262,19 @@ class Login extends Controller
         //return view('email.home', ['title' => 'login']);
 
         return "definir nova password";
+    }
+
+
+    public function sendMail($request)
+    {
+
+        $dados = ['token' => $token];
+        Mail::send('backoffice.emails.recuperar-password', $dados, function ($message) use ($request) {
+            $message->from(config('backoffice.noreply')['mail'], config('backoffice.noreply')['nome']);
+            $message->subject(trans('backoffice.subjectRestore'));
+            $message->to($request->email);
+            $message->replyTo($request->email);
+        });
+        return 'sucesso';
     }
 }
