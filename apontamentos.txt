@@ -745,6 +745,6 @@ https://www.adobe.com/pt/acrobat/online/pdf-to-word.html
                                                 selos temporais  
  ================================================               =================================================
 
- Acessos timestamp
+ Acesso timestamp
   email: hsilva@mredis.com | test@mredis.com  
   password: Hkn15d77#23 
