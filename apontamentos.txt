@@ -1,0 +1,741 @@
+
+
+================================================                ================================================
+                                                   BOOTSTRAP  
+================================================               =================================================
+
+<!-- Modal -->
+https://getbootstrap.com/docs/5.1/components/modal/
+
+remover border " border-0"
+
+customizar o bootstrap com sass in laravel
+https://www.youtube.com/watch?v=SOIIl33nthw
+
+customizar bootstrap  com sass 
+https://www.youtube.com/watch?v=aWmiEQYxy1w
+
+
+================================================                ================================================
+                                                     CSS  
+================================================               =================================================
+
+
+criar desfoque | desfocagem  na imagem 
+https://www.w3schools.com/howto/howto_css_blurred_background.asp
+
+criar desfoque numa determinada zona especifica 
+https://www.studytonight.com/css-howtos/how-to-create-a-blurry-background-image-with-css
+
+rounded checkBox
+https://codepen.io/AllThingsSmitty/pen/WjZVjo
+
+customizar radio button | alterando o item de selecão
+https://codepen.io/imohkay/pen/wyxuB
+
+customizar checkBox 
+https://www.youtube.com/watch?v=cksgCkee2uY
+
+
+================================================                ================================================
+                                                   JAVASCRIPTS  
+================================================               =================================================
+
+
+
+DataPicker
+https://jqueryui.com/datepicker/#min-max
+https://www.devmedia.com.br/calendario-em-jquery-criando-calendarios-com-datepicker/37458
+
+
+
+
+
+funcão para test de ajax
+//AJAX
+https://www.tutorialsteacher.com/jquery/jquery-ajax-method
+ var myAjax = new XMLHttpRequest();
+		 myAjax.open("POST", document.getElementById("#formCSelos").value + "ajax-test", true);
+		 myAjax.onreadystatechange() = function(){
+			// ajax.onreadystatechange() = function(){
+
+			if(this.readyState== 4 && this.status==200){
+				console.log(this.responseText);
+     		}
+			if(this.status==500){
+				console.log(this.responseText);
+			}
+			// if(this.status==404){
+			// 	console.log(this.responseText);
+			// }	
+		} 
+
+Laravel Login with AJAX
+https://laracasts.com/discuss/channels/requests/laravel-login-with-ajax?page=1
+
+datables js  v1.10
+https://datatables.net/examples/plug-ins/range_filtering.html  
+https://www.youtube.com/watch?v=bxnwqL8MNdw
+
+ chamando uma classe em especifica no  jquery 
+ $('.col-mstamp', [0]).on('click', function() {
+==============MODAL=======================
+https://jquerymodal.com/
+
+ =======Passar router no js======================
+
+https://pt.stackoverflow.com/questions/226799/laravel-5-4-requisi%C3%A7%C3%A3o-ajax-usando-route-com-vari%C3%A1vel-js
+ url:"{{ route('ajax_input_store') }}",
+ https://www.codegrepper.com/code-examples/javascript/route+name+in+ajax+html+laravel+controller
+
+ https://www.youtube.com/watch?v=NiAwFKv1oog&t=87s
+
+
+copiar texto 
+https://qawithexperts.com/article/javascript/creating-copy-to-clipboard-using-javascript-or-jquery/364
+
+#npm run watch	
+
+// jquery mouse Over  event
+$('.evtMVr').on('mouseenter', function() {
+https://stackoverflow.com/questions/1273566/how-do-i-check-if-the-mouse-is-over-an-element-in-jquery
+
+// check mouseOver
+if ($('#element:hover').length < 0) {
+    // do something ;)
+}
+// AJAX 
+https://api.jquery.com/jquery.ajax/
+
+AJAX XMLHttp
+https://www.w3schools.com/js/js_ajax_http.asp
+
+error function ajax 
+https://stackoverflow.com/questions/6792878/jquery-ajax-error-function
+
+================================================                ================================================
+                                                    LARAVEL  
+================================================               =================================================
+
+Notificação
+https://laravel.com/docs/8.x/notifications#generating-notifications
+https://www.youtube.com/watch?v=5DREuAvFnps
+
+Laravel  TipsForDev
+https://tipsfordev.com/laravel-undefined-variable-id-controller
+
+Front-End Laravel 
+https://laravel.com/docs/5.8/blade
+
+Compiling Assets (Mix)
+https://laravel.com/docs/5.8/mix
+
+Authentication
+https://laravel.com/docs/5.8/authentication
+
+Laravel How To Upload,View And Download Pdf,Docx,Mp4,Mp3 In Laravel Laravel 8 Tutorial From Scratch
+https://www.youtube.com/watch?v=IYswY0Jgup4
+
+windows loaction 
+window.location.href = '/area-cliente'
+
+comunity
+https://laravelquestions.com/2020/12/07/window-location-href-not-working-properly/
+
+========Teclas de Atalho ======
+ 
+ save all file => CRTL + G 
+ procurar ficheiros => CRTL + T 
+
+ open new workspace CRTL + SHIFT+ N 
+
+   ========== Apontamentos Laravel =================
+
+   upload arquivos 
+   https://laravel.com/docs/5.8/filesystem
+
+
+=================================SESSION============================
+https://laravel.com/docs/8.x/session
+
+sobre Rotas 
+ https://laravel.com/docs/8.x/routing#redirect-routes
+
+ Middleware
+https://laravel.com/docs/8.x/middleware
+
+imprimindo objecto request 
+dd($request)
+
+CSRF Protection
+https://laravel.com/docs/8.x/csrf
+
+
+    aceder nova maquina 93
+   https://hosting93.serverhs.org:2083/logout/?locale=pt
+
+Curso Laravel udemy  
+https://www.udemy.com/course/curso-de-laravel-8/learn/lecture/22603654?start=165#overview
+
+
+Laravel 8 tutorial | Ajax Form validation and display errors on blade without page refresh
+https://www.youtube.com/watch?v=Pij6bn0ebLo 
+consultar a versão laravel 
+# php artisan -V
+
+instalação
+
+ 
+ step1 
+instalar o composer
+ https://getcomposer.org/download/
+
+após a instalação do composer 
+abrir cmd > e digitar seguinte comando # composer create-project laravel/laravel example-app
+para instalar laravel 
+
+criação de projectos 
+abrir cmd > ir no diretorio onde será gerado o projecto e inserir o comando 
+# C:\User\myuser\mydir\laravelProject> laravel new myFirtsProject
+
+abrir o projecto  no visual code
+# code .
+
+criando ficheiro 
+# php artisan make:nome_pasta nome_ficheiro
+make:cast
+      make:channel
+      make:command
+      make:component
+      make:controller
+      make:event
+      make:exception
+      make:factory
+      make:job
+      make:listener
+      make:mail
+      make:middleware
+      make:migration
+      make:model
+      make:notification
+      make:observer
+      make:policy
+      make:provider
+      make:request
+      make:resource
+      make:rule
+      make:seeder
+      make:test
+ EXECUTAR FICHEIROS 
+
+ php artisan serve
+ php artisan migrate
+ ....      
+
+configuracao global do composer p/ aceder remotamente update de todos  pacotes
+#composer config -g repo.packagist composer https://packagist.org  
+
+configuracao global do composer p/ protocolos 
+#composer config -g github-protocols https ssh
+
+
+produtivade com artisan
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20122238#overview
+
+ver todos comandos do artisan 
+# php artisan list
+
+abrir a app no browser
+# php artisan serve 
+
+configurar porta no browser 
+# php artisan list --port=900
+
+colocando app em modo de manutenção
+# php artisan down
+tirar a app do modo de manutenção
+# php artisan down
+
+
+enviando paramentro em rotas 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761948#overview
+
+enviando paramentro em rotas opcionais 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761960#overview
+
+rotas de fallback 404 not found
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20903732#overview 
+
+encaminhar parametros de rota para controladores 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20906220#overview
+
+encaminhar parametros de controladores para views
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20926580#overview
+
+agrupando rotas 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761984#overview
+
+redirecionamento de rota
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20761982#overview
+
+
+listar as todas rotas 
+#php artisan route:list
+sobre Rotas 
+ https://laravel.com/docs/8.x/routing#redirect-routes
+
+ ====================================Middleware=====================================================
+
+ // inserido middleware no kernel simplificando a sua chamada 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/22872363#overview
+
+
+https://laravel.com/docs/8.x/middleware
+
+CSRF Protection
+https://laravel.com/docs/8.x/csrf
+
+carregar ficheiro para servidores remoto comercial cpanel
+https://www.youtube.com/watch?v=WN2hHvxMHTI
+
+
+====== migration =========
+run 
+php artisan migrate
+
+EDITAR | APAGAR | ATUALIZAR COLUNAS NA TABELA   
+  metodo down . 
+php artisan migrate: rollback |  php artisan migrate: rollback --step=2
+
+
+status
+php artisan migrate:status
+ editar | adicionar colunas nas tabelas que já foram criado pela migration
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510382#overview
+
+ relacionamento de tabelas um para um 
+  // $table->foreign('id_user')->references('id')->on('utilizadors');
+  // $table->unique('user_id')
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510670#overview
+
+ relacionamento de tabelas um para muitos 
+ // $table->foreign('id_user')->references('id')->on('utilizadors');
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510684#overview
+
+ relacionamento de tabelas muitos  para muitos 
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510694#overview
+
+comandos status | reset | refresh 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21511060#overview
+
+
+============================  BLADE RESUMO  ============================ 
+
+Incluindo comentarios e blocos PHP 
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20945398#overview
+
+if e else
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20129552#overview
+
+@iseet
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/20966138#overview
+
+balde diretivas
+https://laravel.com/docs/8.x/blade#section-directives
+
+assets
+https://laravel.com/docs/8.x/mix#introduction
+
+GERENCIANDO E ORGANIZANDO ASSETS 
+https://www.youtube.com/watch?v=_SgRRuYwpj0
+
+instalando biblioteca jquery e bootstrap no laravel
+https://www.youtube.com/watch?v=LQQk1ZSyqLM 
+# npm install jquery
+# npm install bootstrap 
+
+
+Ver logs de erro 
+storage/logs/laravel.log
+
+como corrigir erro ao rodar o comando #php artisan serve
+1º atualizar o composer de modo a gerar o vendor  #Composer update
+https://stackoverflow.com/questions/64523505/php-artisan-failed-to-open-stream-no-such-file-or-directory
+
+2º criar uma cópia do ficheiro env.example # copy .env.example .env 
+https://pt.stackoverflow.com/questions/370513/500-server-error-laravel  
+3º gerar uma nova para o artisan # php artisan key:generate
+4º rodar aplicação #php artisan serve 
+
+Como corrigir erro ao rodar comando #npm run dev | npm run watch 
+https://stackoverflow.com/questions/61044879/npm-error-in-laravel-7-when-running-npm-run-dev
+
+1º verificar a pasta node_modules caso ñ existir rodar comando #npm install
+2º rodar novamente comando # npm run dev 
+
+como corrigir erro ao carregar/abrir app com  php artisan serve   "Warning: Unknown: failed to open stream: No such file or directory in Unknown on line"
+1º verificar na raiz do projecto se existe o ficheiro server.php
+2º pausar anti-virus por alguns minutos e de seguida  ir  em qualquer projecto laravel e copiar este ficheiro e colar no seu projecto. Antes desta  
+3º rodar novamente  app.  
+
+
+Eloquents --> ORM(Object Relational Mapping) Mecanismo/extrutura  que permitem e simplicam a 
+manipulação de dados  da base de dados.  Atualmente existem dois padrões Data Mapper | Active Record 
+
+OBS :. Laravel Utiliza o padrão active record 
+ https://laravel.com/docs/8.x/eloquent#introduction
+ https://imasters.com.br/banco-de-dados/aprenda-9-truques-para-o-eloquent-laravel
+
+ https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21496246#overview
+
+
+ editor Online php 
+ https://extendsclass.com/php.html
+
+
+ consulta em tabelas 
+ https://laravel.com/docs/8.x/queries
+
+ validar o formato do email --->  FILTER_VALIDATE_EMAIL
+ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			return 'O campo endereço de email inválido. Introduza um endereço de email válido.';
+ }
+ 
+verificar a password quando vem encriptada da base de dados 
+if (!Hash::check($password, $client->password)) {
+				return 'Dados incorretos. Email ou password incorretos.';
+}
+
+criar cookies  
+	Cookie::queue(Cookie::make('time_user_cookie', $client->id, 43200));
+
+   pegar valor da cookie 
+   $id_user = Cookie::get('time_user_cookie');
+
+   Apontamentos genericos laravel  -- tutorialspoint --
+   https://www.tutorialspoint.com/laravel/laravel_request.htm
+================================================                ================================================
+                                                    GITHUBS  
+================================================               =================================================
+
+
+no gitIgnore estão os diretorios ou ficheiros que não são mandados para o repositorio quando se faz commit 
+para subir todos ficheiros do projecto basta ir ao gitIgnore  comentar ou apagar o ficheiro
+
+
+criar varias branch para um determinado projecto | após clonar o projecto deve-se criar uma nova branch 
+
+https://www.youtube.com/watch?v=8znk5eDbVGA
+
+https://www.youtube.com/watch?v=NR9jc5ODvuM 
+
+criar branch 
+#  git checkout -b [name_of_your_new_branch]
+
+consultar todas branch
+# git branch -a
+
+listar ficheiros de uma branch
+https://stackoverflow.com/questions/1910783/git-1-list-all-files-in-a-branch-2-compare-files-from-different-branch/1910828
+# git ls-tree -r branch(nome da branch)
+
+estando dentro de uma branch listar todos ficheiros 
+# git ls-files
+
+listar ficheiros adicionados na nova branch para master 
+# git diff --name-only branch1 master
+
+consultar a branch onde  que se encontra 
+# git branch –show-current
+
+mudar de branch 
+#git checkout branch(nome da branch)
+
+consultar log 
+# git log 
+
+consultar branch abertas(ativas)
+#git branch
+
+remover branch
+#git branch -dev nomeDaBranch
+
+juntar as versõe de uma branch para outra branch
+estando na branch A copiar as dados da branch master .  Para isso basta  
+passar o comando # git merge master(nome_da_branch)
+
+1º # git merge master
+2º # git push origin name_branch
+
+clonar um repositorio apartir de um novo dispositivo e fazer commit | windows
+https://www.youtube.com/watch?v=CeVwylVFv-M
+
+1º partindo do principio que no novo dispositivo tem gitBash instalado 
+2º abrir o painel de control ir ao  gestor de credenciais > credenciais do windows > apagar credencias github
+2º dentro do diretorio clonado abrir o terminal e configurar dados de usuario #git config --global user.name "name" | #git config --global user.email "seu email" 
+3º git add .
+4º git commit -m "commit from new device"
+5º git push origin nome-da-branch 
+
+fazer commit de fciheiros quando se troca de varios dispositivos para o mesmo repositorio.
+1º #git pull url_do_repositorio  nome_da_branch 
+2º #git push origin nome_da_branch
+
+atualizar o repositorio quando se trabalha numa máquina diferente (supondo que já existe uma cópia do repositorio na maquina )
+
+1º #git pull url_do_repositorio  nome_da_branch 
+
+
+Git LFS 
+Nota :  o github normal suporta apenas ficheiros com tamanho <=100MB 
+Para adicionar ficheiros com tamanho superiores a 100MB É necessário instalar uma extensao 
+do git   https://git-lfs.github.com/
+
+https://www.youtube.com/watch?v=xPFLAAhuGy0
+
+1º no diretorio do projecto  # git lfs install
+2º # git lfs track "*.extesion"   | especificar as extensão do ficheiro  extesion
+3º # git add .gitattributes
+e add adicionar os comandos normal 
+git add file.psd
+git commit -m "Add design file"
+git push origin main
+
+clonar repositorio do github para cpanel
+https://www.youtube.com/watch?v=3-6wQIDj-yE
+
+
+https://www.youtube.com/watch?v=18tXFctuqQ0
+
+https://www.youtube.com/watch?v=-whBU90olDA
+
+
+
+================================================                ================================================
+                                                    PROJECTOS  
+================================================               =================================================
+
+error ajaxa jquery 500
+https://www.codeproject.com/Questions/653678/500-Internal-Server-Error-when-pass-data-in-ajax
+
+
+
+================================================                ================================================
+                                                    FIGMA  
+================================================               =================================================
+
+Atalhos
+ocultar colunas esq e direita --> CTRL + \
+aumentar zoom de um objecto/box CTRL + SCROLL(BOTAO AUMENTAR/DIMINUIR RATO)
+
+
+================================================                ================================================
+                                                    VS CODE  
+================================================               =================================================
+https://code.visualstudio.com/docs/getstarted/tips-and-tricks
+
+TECLAS DE Atalho
+Abrir varias janelas nos mesmo workspace ---> CRTL + \ (ideal para análise de código do mesmo projecto)
+
+expandir(toggle) a tela F11 
+
+How to Remove the file preview in Visual Studio Code  | remover  barra de navegação lado direito  "miniMap"
+https://stackoverflow.com/questions/44774709/removing-the-file-preview-on-the-right-side-of-the-editor-in-vs-code
+https://www.youtube.com/watch?v=wJpQidmp_ts
+
+para desativar o mini mapa ou barra de navegação vertical do lado direito 
+ir configuracao > na area de pesquisa  inserir "editor.minimap.enabled"
+
+selecionar todas ocorrencia de uma palavra 
+CRTL + F2
+
+renomear todas ocorrencia de palavra
+F2
+comentario multiplas linhas  Toggles
+shift+alt+A //Toggles comments in VScode.
+
+
+================================================                ================================================
+                                                    GOOGLE  
+================================================               =================================================
+
+ FONTES 
+ https://fonts.google.com/
+ https://fonts.google.com/specimen/Merriweather
+ https://developers.google.com/fonts/docs/getting_started
+
+================================================                ================================================
+                                                    OUTRO  
+================================================               =================================================
+
+Site referencia hesasoft
+https://mwatt5.webnode.pt/ 
+
+
+consulta lista negra banco de portugal 
+https://www.bportugal.pt/area-cidadao/formulario/227
+
+
+
+
+================================================                ================================================
+                                                    XAMPP  
+================================================               =================================================
+
+fixe this problem in xampp server HTTP Error 404 The requested resource is not found
+https://www.youtube.com/watch?v=UHdF0qODFeg&t=159s
+
+HTTP 404 PAGE NOT FOUND
+https://seankilleen.com/2012/11/how-to-stop-sql-server-reporting-services-from-using-port-80-on-your-server-field-notes/
+
+
+==========================================                ================================================
+                                       Integracao API PAGAMENTOS  
+=========================================               =================================================
+ 
+
+   HIPAY
+
+    passos para integracao no aplicação
+
+    1º criar conta 
+     https://professional.hipay.com/login
+
+     2º ir acount > information > webservice access
+     https://professional.hipay.com/profile/information/
+
+     copiar login e password 
+
+     3º ir Products > My website 
+     https://professional.hipay.com/product/website
+     copiar ID
+     Nesta área poderás inserir os teus sites| lojas 
+     
+     4º ir no seu ficheiro php e inserir os dados copiados 
+      ex: hipay.php 
+
+
+
+
+   https://developer.hipay.com/online-payments/sdk-reference/sdk-php
+   https://developer.hipay.com/online-payments/sdk-reference/sdk-php
+
+   FILE XML SOAP HIPAY
+   https://ws.hipay.com/soap/payment-v2?wsdl
+
+   PAGAMENTOS PHP 
+   https://www.youtube.com/watch?v=bP5WG2f1in8
+  https://jumpseller.pt/payment-gateways/
+
+ multibanco
+  https://geekalicious.pt/pt/php/integracao-servico-pagamentos-easypay-multibanco-mb-atm/
+
+  STRIPPER 
+  https://www.youtube.com/watch?v=EildM6OMcoQ&t=613s
+
+
+==========================================                ================================================
+                                           WEB SERVICE SOAP 
+=========================================               =================================================
+                      
+
+  SOAPClient
+  https://www.php.net/manual/en/class.soapclient.php
+  https://medium.com/mestredev/consumindo-um-webservice-com-soapclient-do-php-4a04169343e4
+  https://www.devmedia.com.br/criando-e-consumindo-webservices-em-php-5-e-zend-framework/24937
+
+  https://www.devmedia.com.br/web-services-rest-versus-soap/32451
+
+  Send SOAP Request and read XML response from PHP page
+   https://www.youtube.com/watch?v=Cl4puOAk6vk
+
+  https://pt.wikipedia.org/wiki/SOAP
+ 
+  PHP soap client example git 
+  https://gist.github.com/akalongman/56484900eaf19b18cfbd
+
+
+================================================                ================================================
+                                                   CPANEL  
+================================================               =================================================
+
+ criar um backup site completo 
+ https://www.shorttutorials.com/control-panel/download-full-backup.html
+
+ https://www.youtube.com/watch?v=xHyv7F2PC-U
+
+
+ ========================== Mredis =======================================
+
+              === WHM ====   
+    https://hosting93.serverhs.org:2087/logout/?locale=pt   | view login 
+
+ altera espaço em disco cpanel 
+
+ IR DOMINIO MCODE > Avancado > Webhost Manager > Funções Conta > Modificação Cota > selecionar o dominio > clique em Modificar 
+ https://hosting93.serverhs.org:2087/cpsess8874848021/scripts/quotalist
+
+ ver pacotes | editar pacotes
+ https://hosting93.serverhs.org:2087/cpsess8874848021/scripts/editpkg2
+
+ Ver lista de contas | dominios 
+ https://hosting93.serverhs.org:2087/cpsess0139692641/scripts4/listaccts
+
+
+ WHM CRIAÇÃO DE PACOTES 
+ https://kb.ptisp.com/whm-o-que-e-um-package/
+
+  Adicionar | desativar | remover | APP NO CPANEL 
+  Feature Manager > editar 
+ https://hosting93.serverhs.org:2087/cpsess0139692641/scripts2/featuremanager/editFeatureList?name=mcodept_full
+
+
+ consultar o nameserver webhs 
+ https://hosting93.serverhs.org:2087/cpsess4510968637/scripts/editsets
+
+  ns1.webhs.org
+  ns2.webhs.org
+
+Explicitly Set the Nameservers
+         
+Nameserver 1 : ns1.mcode.pt
+Nameserver 2 : ns2.mcode.pt
+
+Como Apontar Domínio para  um servidor  [Hostinger] | quando o dominio foi comprado numa outra entidade  
+https://www.hostinger.pt/tutoriais/como-apontar-o-nome-de-dominio-para-hostinger
+
+https://aceleraperformance.com.br/outros/como-apontar-dominio/
+
+Como Alterar Nameservers no Namecheap
+https://kinsta.com/pt/base-de-conhecimento/alterar-nameservers-no-namecheap/
+
+
+Consultar propagação de DNS  
+https://www.whatsmydns.net/
+
+
+compra de dominio e alojamento web 
+https://www.webhs.pt/
+
+revenda de alojamento
+https://www.webhs.pt/revenda/linux-ssd/
+
+
+
+ ================================================                ================================================
+                                                    DIVERSOS  
+ ================================================               =================================================
+
+Conversor pdf to word  
+https://www.adobe.com/pt/acrobat/online/pdf-to-word.html
+
+
+
+
+================================================                ================================================
+                                                  selos temporais  
+ ================================================               =================================================
+
+ acesso 
+  email: hsilva@mredis.com
+  password: Hkn15d77#23
