@@ -10,9 +10,13 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 {{-- bootstrap css  --}}
-<link rel="stylesheet" href="{{ asset('site/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 {{-- custom   css  --}}
-<link rel="stylesheet" href="{{ asset('site/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+{{-- custom   sass bootstrap --}}
+<link rel="stylesheet" href="{{ asset('css/mainSass.css') }}">
+{{-- <link rel="stylesheet" href="{{ asset('css/mainSass.css') }}"> --}}
 
 {{-- GOOGLE FONTS --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,3 +27,7 @@
 
 {{-- Montserrat FONTS --}}
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+{{-- Font Awesome --}}
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />

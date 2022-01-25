@@ -27,34 +27,48 @@
                         {{trans('homeWords.QuandoOnde')}}
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none  d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block ">
+
+                        {{-- @if($name!=null || $name!="")
+                        @foreach($name as $nomes) --}}
+
+                        {{-- <label>Nome: {{ $nomes->nome }}</label> --}}
                         Os serviços da <i class="color-rose-words">Time Stamp Solutions </i> (Selos Temporais) fazem-se
                         valer de chaves
                         públicas e fontes de tempo credíveis para disponibilizar selos temporais
                         fiáveis, de acordo com os padrões internacionais.
+                        {{-- @endforeach
+                        @endforeach
+                        @endif --}}
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body  d-none d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block">
 
                         {{trans('homeWords.umServico')}}
 
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block">
                         {{trans('homeWords.contudo')}}
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none d-md-none d-sm-none d-lg-block d-xl-block  d-xxl-block ">
                         Os selos temporais emitidos pelos nossos
                         serviços <i class="color-rose-words">Time Stamp Solutions </i> respeitam e implementam os
                         seguintes standards:
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none d-md-none d-sm-none d-lg-block d-xl-block d-xxl-block">
                         {{trans('homeWords.eTSI')}}
                     </div>
 
-                    <div class="p-2 bd-highlight  font-words-body ">
+                    <div
+                        class="p-2 bd-highlight  font-words-body d-none  d-md-none d-sm-none d-lg-block d-xl-block  d-xxl-block">
                         A Política e Práticas de Certificação de Validação Cronológica e a Declaração de Práticas de
                         Certificação (DPC) da
                         <i class="color-rose-words">Time Stamp Solutions </i> poderão ser consultadas em:
@@ -69,7 +83,7 @@
         <div class="row mt-5  justify-content-center">
 
             {{-- coluna 1  tabela de precos --}}
-            <div class=" col col-1A" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <div class=" col col-1A" data-bs-toggle="modal" data-bs-target="#mdTipoSelo">
                 <img src="{{ asset('img/col1.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">
@@ -87,7 +101,7 @@
             </div>
 
             {{-- coluna 2 processo de compra --}}
-            <div class=" col col-2B" data-bs-toggle="modal" data-bs-target="#proce-compra">
+            <div class=" col col-2B" data-bs-toggle="modal" data-bs-target="#processo-compra">
                 <img src="{{ asset('img/col2.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">
@@ -104,7 +118,7 @@
 
             </div>
             {{-- coluna 3 como adquirir --}}
-            <div class=" col col-3B"   data-bs-toggle="modal" data-bs-target="#modal-registar">
+            <div class=" col col-3B" data-bs-toggle="modal" data-bs-target="#register">
                 <img src="{{ asset('img/col3.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">
