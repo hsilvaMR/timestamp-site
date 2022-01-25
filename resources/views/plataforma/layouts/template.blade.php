@@ -2,18 +2,22 @@
 <html lang="pt-PT">
 
 <head>
-    @include('plataforma/includes/headPFM')
+    @include('plataforma/includes/head')
     <title>@yield('title')</title>
 </head>
 
 <body>
 
-    @include('plataforma/includes/headerPFM')
+    @include('plataforma/includes/header')
     @yield('menu-header')
 
     @yield('home')
 
-    @include('plataforma/includes/footerPFM')
+    @yield('javascript')
+
+    <button id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
+    @include('plataforma/includes/footer')
 
     {{-- library jquery --}}
     <script src="{{ asset('js/jquery.js') }}"></script>

@@ -1,9 +1,9 @@
 $(function() {
 
     /*
-                    ================================                    ========================================
-                                                              SITE              
-                    ================================                    ==========================================
+        ================================           ========================================
+                                            SITE              
+        ================================           ==========================================
     */
 
     /*
@@ -12,88 +12,233 @@ $(function() {
      ================================                    ==========================================
 
     /**  login form  */
-
-    $('#formAddConta').on('submit', function(e) {
+    // v1 
+    $('#formLogin').on('submit', function(e) {
         var form = $(this);
         e.preventDefault();
         $.ajax({
-                type: "POST",
-                url: form.attr('action'),
-                // data: new FormData(this),
-                dataType: "json",
-                contentType: false,
-                processData: false,
-                cache: false,
-                headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
-                success: function(data) {
-                    var resp = JSON.parse(data);
-                    // resp = $.parseJSON(resposta)
-                    // var resp = JSON.parse(response);
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(this),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
 
-                    if (resp.fields != "") {
-
-                        alert(resp.fields + " EMPTY")
-                        console.log(data + "EMPTY")
-
-                        $('.modal-login').addClass("border border-danger")
-                        $('.errorMessage').removeClass('d-none')
-                        $('.errorMessage').html(resp.fields);
-                    }
-
-                    switch (resp.mensagem) {
-                        case 'success':
-                            var url = '/area-cliente';
-                            window.location.href = url
-                            break;
-                        case 'Senha Inválido':
-                            alert(resp.mensagem + "Senha Inválido")
-                            var url = '/login-page';
-                            window.location.href = url
-                            break;
-
-                        default:
-                            alert(resp.mensagem + "INVALID USER")
-                            var url = '/login-page';
-                            window.location.href = url
-                    }
-                },
-                error: function(data) {
-                    console.log(data)
-                }
-            })
-            /*.done(function(response) {
-
-                var resp = JSON.parse(response);
-
-                if (resp.fields != "") {
-
-                    alert(resp.fields)
-
-                    $('.modal-login').addClass("border border-danger")
-                    $('.errorMessage').removeClass('d-none')
-                    $('.errorMessage').html(resposta);
-
-                }
-
-                switch (resp.mensagem) {
-                    case 'success':
+                switch (data) {
+                    case 'sucess':
+                        $('#formAddConta')[0].reset();
                         var url = '/area-cliente';
                         window.location.href = url
                         break;
-                    case 'Senha Inválido':
-                        alert(resp.mensagem)
-                        var url = '/login-page';
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'emptyField':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'e-mail invalido':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    default:
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                }
+            },
+            error: function(jqXHR) {
+                //  https://www.w3schools.com/js/js_ajax_http.asp
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+
+            }
+        })
+    });
+
+    // login v2
+    $('#btn-login').on('click', function(e) {
+        //document.forms[0].submit()
+        var form = $(document.forms[0]);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(document.forms[0]),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
+
+                switch (data) {
+                    case 'sucess':
+                        $('#formLogin')[0].reset();
+                        var url = '/area-cliente';
                         window.location.href = url
                         break;
-
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'invalidUser':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'emptyField':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
+                    case 'e-mail invalido':
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
+                        break;
                     default:
-                        var url = '/login-page';
-                        window.location.href = url
+                        $('.errorMessage').removeClass('d-none')
+                        $('.errorMessage').html(data);
                 }
+            },
+            error: function(jqXHR) {
+                //  https://www.w3schools.com/js/js_ajax_http.asp
 
-            });*/
+                var msg = "";
+                if (jqXHR.status != null) {
 
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+
+            }
+        })
     });
+
+    $('.btnLogout').on('click', function() {
+        // alert("test logout")
+        var url = $('#routeID').val();
+        window.location.href = url
+            // 
+    });
+
+    /**   registar utilizar form    **/
+    $('#btn-registar').on('click', function(e) {
+
+        var form = $(document.forms[1]);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(document.forms[1]),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
+
+                switch (data) {
+                    case 'registado':
+                        alert(data)
+                            // $('.errorMessage').removeClass('d-none')
+                            // $('.errorMessage').html(data);
+                        $('#formRegister')[0].reset();
+                        break;
+                    case 'invalid email':
+                        alert(data)
+                            // $('.errorMessage').removeClass('d-none')
+                            // $('.errorMessage').html(data);
+                        break;
+                    case 'deve preencher todos campos':
+                        alert(data)
+                        break;
+                    default:
+                        alert(data)
+                        break;
+                }
+            },
+            error: function(jqXHR) {
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+            }
+        })
+    });
+
+    // recuperar password
+    $('#btn-recoverPass').on('click', function(e) {
+
+        var form = $(document.forms[2]);
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: form.attr('action'),
+            data: new FormData(document.forms[2]),
+            contentType: false,
+            processData: false,
+            cache: false,
+            headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+            success: function(data) {
+
+                switch (data) {
+                    case 'send':
+                        alert('Email enviado com sucesso')
+                        $('#formRecover')[0].reset();
+                        break;
+                    case 'empty':
+                        alert('O campo endereço de email vazio')
+
+                        break;
+                    case 'invalidAdress':
+                        alert('O campo endereço de email inválido. Introduza um endereço de email válido')
+                        break;
+                    default:
+                        alert(data)
+                        break;
+                }
+            },
+            error: function(jqXHR) {
+
+                var msg = "";
+                if (jqXHR.status != null) {
+
+                    msg = jqXHR.statusText;
+                }
+                if (jqXHR.readyState != null) {
+
+                    msg = jqXHR.responseText;
+                }
+                alert(msg)
+            }
+
+        })
+
+    })
+
 
     /***********************************scripts modal login register*********************** */
     //abrir box dados pessoais menu-left
@@ -248,6 +393,10 @@ $(function() {
 
     });
 
+    $('.btnRegister').on('click', function() {
+        window.location.href = $(this).data('value');
+    });
+
     //abrir box menu-right
     $('.evtMVr').on('click', function() {
         // abrir box selos 
@@ -314,7 +463,6 @@ $(function() {
             $('.box-selos').addClass("d-none")
             $('.box-client-dados').removeClass("d-none")
         }
-
         /**** box  pagamentos   ****/
         // selos 
         if ($('.itemSelos:hover').length > 0) {
@@ -348,7 +496,6 @@ $(function() {
             $('.box-client-dados').removeClass("d-none")
             $('.box-promocao').addClass("d-none")
         }
-
     })
 
     window.addEventListener('resize', function() {
@@ -360,22 +507,163 @@ $(function() {
         }
     }, false);
 
-    // Open autoload Modal 
-    $(window).on('load', function() {
-        $('#boxModalLogin').modal('show');
+
+
+    $('.col-mstamp').on('click', function() {
+
+        $('#mdTipoSelo').modal('hide');
+        // $('#mdTipoSelo').css('display', 'none')
+        $('#mdTbl_mstp').modal('show');
+    });
+
+    $('#btnTbl_precoClose').on('click', function() {
+
+        $('.tblMstamp').modal('hide')
+            // $('#mdTbl_mstp').css('display', 'none')
+            // $('.modal-backdrop').modal('show');
+
     });
 
 })
+
+// ============MODAL=================
+$(window).on('load', function() {
+    // checkSession();
+    $('#boxModalLogin').modal('show');
+});
+
+function checkSession() {
+
+    $.ajax({
+        type: "POST",
+        url: "/login-validation",
+        contentType: false,
+        processData: false,
+        dataType: "text",
+        cache: false,
+        headers: { 'X-CSRF-Token': '{!! csrf_token() !!}' },
+        success: function(data) {
+
+            switch (data) {
+                case 'sucess':
+                    var url = '/area-cliente';
+                    window.location.href = url
+                    break;
+                default:
+                    $('#boxModalLogin').modal('show');
+                    break;
+            }
+        },
+        error: function(jqXHR) {
+            var msg = "";
+            if (jqXHR.status != null) {
+                msg = jqXHR.statusText;
+            }
+            if (jqXHR.readyState != null) {
+
+                msg = jqXHR.responseText;
+            }
+            alert(msg)
+        }
+    })
+
+}
+// scroll to top 
+$('#myBtn').on('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+window.onscroll = function() {
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            $('#myBtn').css("display", "block");
+        } else {
+            $('#myBtn').css("display", "none");
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
 
 function resizeScren() {
 
     if (window.matchMedia("(max-width: >=700px)").matches) {
         /* The viewport is less than, or equal to, 700 pixels wide */
-    } else {
-        /* The viewport is greater than 700 pixels wide */
-    }
+    } else {}
 }
 
+
+/*function loadHipay() {
+
+    jQuery(document).ready(function() {
+        jQuery('<div class="sa_payPal_overlay" style="visibility:visible;position:fixed; width:100%; height:100%; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr=\'#88ffffff\', EndColorStr=\'#88ffffff\'); background: rgba(0,0,0,0.7); top:0; left:0; z-index: 999999;"><div style="background:#FFF; background-image:linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -o-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -moz-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -webkit-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -ms-linear-gradient(top, #FFFFFF 45%, #E9ECEF 80%);background-image: -webkit-gradient(linear, left top,left bottom,color-stop(0.45, #FFFFFF),color-stop(0.8, #E9ECEF));display: block;margin: auto;position: fixed; margin-left:-150px;left:50%;top:30%;text-align:center;color:#2F6395;font-family:Arial;padding:15px;font-size:13px;font-weight:bold;width: 300px;-webkit-box-shadow:3px 2px 13px rgba(50, 50, 49, 0.25);box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 0px 5px;border:1px solid #CFCFCF;border-radius:6px;"><img style="display:block;margin:0 auto 10px" src="https://www.paypalobjects.com/en_US/i/icon/icon_animated_prog_dkgy_42wx42h.gif"><h2 style="font-size:30px; margin-bottom:10px;"><? if($LANG=='
+            pt '){echo "Espere alguns segundos.";} if($LANG=='
+            en '){echo "Wait a few seconds.";} ?></h2><p style="font-size:12px;color:#003171;font-weight:400"><? if($LANG=='
+            pt '){echo "Você será redirecionado para um ambiente seguro do Hipay para finalizar o seu pagamento.";} if($LANG=='
+            en '){echo "You will be redirected to a secure Hipay environment to finalize your payment.";} ?></p><div style="margin:20px auto 0;"><img src="/img/hipay-logo.svg" width="100px"/></div></div></div>').appendTo('body');
+    });
+
+}*/
+
+
+function incializarHipay(id, tracking) {
+
+    loadHipay();
+    var call = "call";
+    $.ajax({
+        type: "POST",
+        url: "/_carrinho/js_hipay.php",
+        cache: false,
+        data: {
+            call: call,
+            id: id,
+            tracking: tracking
+        },
+        success: function(data) {
+
+            var jsonRetorna = $.parseJSON(data);
+            var url = jsonRetorna['url'];
+            var result = jsonRetorna['result'];
+            var message = jsonRetorna['message'];
+            var id = jsonRetorna['id'];
+            //var status = jsonRetorna['status'];
+
+            //if(status!=""){
+            if (url != "") {
+                console.log(url)
+                window.location.href = url;
+            } else {
+
+                if (result != "") {
+                    console.log(result)
+                }
+                if (message != "") {
+
+                    console.log(message)
+                }
+                if (id != "") {
+
+                    console.log(id)
+                }
+
+                console.log(data)
+
+            }
+        },
+        error: function(xhr, status, error) {
+            //alert(ajaxContext.responseText)
+
+            window.location.href = "https://www.ci-interiordecor.com";
+
+            console.log(xhr.status)
+            console.log(xhr.statusText)
+            console.log(xhr.readyState)
+            console.log(xhr.responseText)
+
+        }
+    });
+
+
+}
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml
 

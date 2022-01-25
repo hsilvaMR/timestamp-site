@@ -41,7 +41,7 @@
 }
 
 .content-zIndex .cardZindex {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: 300px;
     font-size: 18px;
@@ -66,7 +66,7 @@
 }
 
 .content-zIndex .btnRegister span {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -117,13 +117,17 @@
 }
 
 .item-col {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: 600px;
     font-size: 18px;
     line-height: 17px;
     color: #000000;
     cursor: pointer;
+}
+
+.footer .item-col:hover {
+    color: #F78065;
 }
 
 
@@ -191,6 +195,14 @@
 .col-1A,
 .col-3B {
     cursor: pointer;
+}
+
+.col-3B:hover,
+.col-2B:hover,
+.col-1A:hover {
+    background-color: white !important;
+    opacity: 0.5;
+    /* border: grey thin solid; */
 }
 
 
@@ -279,7 +291,7 @@
 .tblMstamp .col-basico .item label,
 .tblMstamp .col-premium .item label,
 .tblMstamp .col-ultimate .item label {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -299,7 +311,7 @@
 .tblMstamp .col-premium .itemPrice span,
 .tblMstamp .col-ultimate .itemPrice span {
     color: #ccc9c2;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -308,7 +320,7 @@
 .tblMstamp .col-basico .btnPay span,
 .tblMstamp .col-premium .btnPay span,
 .tblMstamp .col-ultimate .btnPay span {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -324,14 +336,35 @@
     color: #000000;
 }
 
-.col-mstamp:hover {
+.modal-tipo-selos .col-mstamp:hover {
     box-shadow: -20px -20px 60px 0.15px rgba(248, 155, 134, 0.2), 20px 20px 60px 0.15px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
 }
 
-.col-mstamp:hover {
+.modal-tipo-selos .col-mtech:hover {
     box-shadow: -20px -20px 60px 0.15px rgba(248, 155, 134, 0.2), 20px 20px 60px 0.15px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
+}
+
+
+/*  scroll to top BTN */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #F78065;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 
@@ -412,11 +445,13 @@
 }
 
 .modal-login .col-registar:hover {
-    border-top: 1.5px solid #F78065;
+    /* background: #F78065; */
+    opacity: 0.4;
 }
 
 .modal-login .col-entrar:hover {
-    border-top: 1.5px solid #141313;
+    /* background-color: #E8E9EB; */
+    opacity: 0.4;
 }
 
 .modal-login .col-entrar span,
@@ -887,7 +922,7 @@
 }
 
 .form-payment .btn-save-paymentM label {
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat'sans-serif;
     font-style: normal;
     font-weight: bolder;
     font-size: 23px;

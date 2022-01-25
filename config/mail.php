@@ -39,7 +39,7 @@ return [
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
+            'username' => env('MAIL_USERNAME', 'Honorio Silva'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
             'auth_mode' => null,
@@ -78,6 +78,9 @@ return [
                 'log',
             ],
         ],
+
+
+
     ],
 
     /*
@@ -92,8 +95,22 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS'),
+        'name' => env('MAIL_FROM_NAME'),
+    ],
+
+
+    // customize  
+    'recetor' => 'site@mredis.com',
+
+    'geral' => [
+        'nome' => 'selos temporario | Site',
+        'email' => 'hsilva@mredis.com'
+    ],
+
+    'tiago' => [
+        'nome' => 'Clara Vieira',
+        'email' => 'cvieira@mredis.com'
     ],
 
     /*

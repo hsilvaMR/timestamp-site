@@ -1,7 +1,7 @@
 @section('modal')
 {{-- Modal os nossos selos temporais  tipos de selos MsTamp | Mtech --}}
-<div class="modal fade modal-tipo-selos" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade modal-tipo-selos" id="mdTipoSelo" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticTipoSelo" aria-hidden="true">
 
     <div class="modal-dialog modal-dialog-centered  modal-site">
         <div class="modal-content">
@@ -40,11 +40,10 @@
                                 {{ trans('homeWords.msTampVejaOspreco') }}
                             </div>
                         </div>
-
                     </div>
                     {{-- col  Mtech --}}
-                    <div class="col " style="cursor: pointer;">
-                        <div class="d-flex flex-column col-mstamp ms-4 me-4  justify-content-center mb-1">
+                    <div class="col  " style="cursor: pointer;">
+                        <div class="d-flex flex-column col-mtech  ms-4 me-4  justify-content-center mb-1">
                             {{-- img  Mtech --}}
                             <div class="p-2 bd-highlight">
                                 <img src="{{ asset('img/Mtech-figureB.svg') }}" class="img-fluid" alt="">
@@ -73,8 +72,7 @@
     </div>
 </div>
 {{-- Modal Tabela de Preços | Mstamp--}}
-<div class="modal fade tblMstamp" id="tabelaPreco-Mstamp" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+<div class="modal fade tblMstamp" id="mdTbl_mstp" tabindex="-1" aria-labelledby="exampleTBL" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
@@ -85,8 +83,10 @@
                             alt="">
                     </h5>
                 </div>
-                <div class="p-2 bd-highlight flex-shrink-1 curso-pointer text-end">
-                    <i class=" fas fa-times fa-2x" data-bs-dismiss="modal" aria-label="Close"></i>
+                {{--  CLOSE BTN    --}}
+                <div class="p-2 bd-highlight flex-shrink-1 curso-pointer text-end" data-bs-dismiss="modal"
+                    id="btnTbl_precoClose">
+                    <i class="fas fa-times fa-2x " aria-label="Close"></i>
                 </div>
             </div>
             {{-- body --}}
@@ -223,7 +223,7 @@
     </div>
 </div>
 {{-- Modal Tabela de Preços |  Mtech--}}
-<div class="modal fade" id="tabelaPreco-Mtech" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="tabelaPreco-Mtech" tabindex="-1" aria-labelledby="examplePreco" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}
@@ -307,7 +307,7 @@
 </div>
 
 {{-- Modal Processo de Compra  --}}
-<div class="modal fade" id="processo-compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="processo-compra" tabindex="-1" aria-labelledby="exampleCompra" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-site">
         <div class="modal-content">
             {{-- title --}}

@@ -83,7 +83,7 @@
         <div class="row mt-5  justify-content-center">
 
             {{-- coluna 1  tabela de precos --}}
-            <div class=" col col-1A" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <div class=" col col-1A" data-bs-toggle="modal" data-bs-target="#mdTipoSelo">
                 <img src="{{ asset('img/col1.png') }}" class="img-fluid" alt="">
 
                 <div class="d-flex flex-column  justify-content-center mb-1">

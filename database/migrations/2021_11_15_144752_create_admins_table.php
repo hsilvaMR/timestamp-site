@@ -4,26 +4,27 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUtilizadorsTable extends Migration
+class CreateAdminsTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    // criar tabela e inserir e colunas 
     public function up()
     {
-        Schema::create('utilizadors', function (Blueprint $table) {
+        Schema::create('admins', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->string('nome', 100);
-            $table->string('apelido', 50);
+            $table->string('apelido', 100);
             $table->string('email', 50);
-            $table->string('senha', 255);
-            $table->string('acesso', 1);
+            $table->string('senha', 12);
+            $table->string('acesso', 2);
+            $table->string('tipo', 20);
             $table->string('token', 255);
         });
+        // Schema::create('admins', function (Blueprint $table) {
     }
 
     /**
@@ -31,12 +32,8 @@ class CreateUtilizadorsTable extends Migration
      *
      * @return void
      */
-
-    // nota para usar executar o metodo dowm 
-    // php artisan migrate: rollback
-
     public function down()
     {
-        Schema::dropIfExists('utilizadors');
+        Schema::dropIfExists('admins');
     }
 }

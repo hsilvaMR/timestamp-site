@@ -47,6 +47,7 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        // new password 7XpXAc3[^kN}
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
