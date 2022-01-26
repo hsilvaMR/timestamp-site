@@ -464,7 +464,7 @@ consultar branch abertas(ativas)
 #git branch
 
 remover branch
-#git branch -dev nomeDaBranch
+#git branch -d nomeDaBranch
 
 juntar as versõe de uma branch para outra branch
 estando na branch A copiar as dados da branch master .  Para isso basta  
@@ -739,12 +739,10 @@ Conversor pdf to word
 https://www.adobe.com/pt/acrobat/online/pdf-to-word.html
 
 
-
-
 ================================================                ================================================
                                                 selos temporais  
  ================================================               =================================================
 
- Acessoss timestamp
+ Acessos timestamp
   email: hsilva@mredis.com | test@mredis.com  
   password: Hkn15d77#23 
