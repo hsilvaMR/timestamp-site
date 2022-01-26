@@ -739,12 +739,10 @@ Conversor pdf to word
 https://www.adobe.com/pt/acrobat/online/pdf-to-word.html
 
 
-
-
 ================================================                ================================================
                                                 selos temporais  
  ================================================               =================================================
 
- Acessoss timestamp
+ Acessos timestamp
   email: hsilva@mredis.com | test@mredis.com  
   password: Hkn15d77#23 
