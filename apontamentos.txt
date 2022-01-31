@@ -309,6 +309,10 @@ https://www.youtube.com/watch?v=WN2hHvxMHTI
 run 
 php artisan migrate
 
+======Model======
+criando um classe Model e gerar a sua migracao
+#php artisan make:model Mymodel -m 
+
 EDITAR | APAGAR | ATUALIZAR COLUNAS NA TABELA   
   metodo down . 
 php artisan migrate: rollback |  php artisan migrate: rollback --step=2
@@ -333,6 +337,9 @@ php artisan migrate:status
 
 comandos Status | Reset | Refresh 
 https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21511060#overview
+
+mETODO UP E down
+https://www.udemy.com/course/curso-completo-do-desenvolvedor-laravel/learn/lecture/21510490#overview
 
 
 ============================  BLADE RESUMO  ============================ 
@@ -738,6 +745,11 @@ https://www.webhs.pt/revenda/linux-ssd/
 Conversor pdf to word  
 https://www.adobe.com/pt/acrobat/online/pdf-to-word.html
 
+framework for front end 
+https://www.positronx.io/vue/
+
+MD bootstrap 
+https://mdbootstrap.com/docs/standard/extended/login/
 
 ================================================                ================================================
                                                 selos temporais  
