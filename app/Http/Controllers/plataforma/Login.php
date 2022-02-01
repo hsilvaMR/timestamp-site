@@ -10,6 +10,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
 
 
 
@@ -127,7 +129,7 @@ class Login extends Controller
                 if (!empty($user->email) || !empty($user->senha)) {
 
                     if (Hash::check($password, $user->senha)) {
-                        self::setSession($request, $user);
+                        self::setSession($user);
                         self::setCookie($user);
                         $response = "sucess";
                         self::addLogAcesso($request, $user->id);
@@ -147,13 +149,14 @@ class Login extends Controller
 
         return $response;
     }
-    public function logout(Request $request)
+    public function logout()
     {
 
-        $request->session()->forget(['nome', 'email']);
-        if (!$request->session()->has('nome') && !$request->session()->has('email')) {
-            return redirect()->route('box-login');
-        }
+        Session::forget("email");
+        Session::forget("nome");
+
+        return view('plataforma.pages.home', ['title' => 'login']);
+        //return Redirect::route("logout");
     }
 
     // without ajax 
@@ -215,11 +218,10 @@ class Login extends Controller
         Cookie::queue(Cookie::make('id_user', $user->id, 43200));
     }
 
-    public function setSession(Request $request, $user)
+    public function setSession($user)
     {
-
-        $request->session()->put('nome', $user->nome);
-        $request->session()->put('email', $user->email);
+        Session::put('email', $user->email);
+        Session::put('nome', $user->nome);
     }
 
     public function recuperarPassword(Request $request)

@@ -88,6 +88,8 @@ $(function() {
 
                 switch (data) {
                     case 'sucess':
+                        localStorage.setItem('Usmail', $('#fmail').val())
+                        localStorage.setItem('Uspassword', $('#fpass').val())
                         $('#formLogin')[0].reset();
                         var url = '/area-cliente';
                         window.location.href = url
@@ -530,6 +532,7 @@ $(function() {
 $(window).on('load', function() {
     // checkSession();
     $('#boxModalLogin').modal('show');
+    rememberLogin()
 });
 
 function checkSession() {
@@ -663,6 +666,19 @@ function incializarHipay(id, tracking) {
     });
 
 
+}
+
+function rememberLogin() {
+
+    if (localStorage.getItem("Usmail") != null && localStorage.getItem("Uspassword") != "") {
+
+        var mail = localStorage.getItem("Usmail");
+        var password = localStorage.getItem("Uspassword");
+
+        $('#fmail').val(mail);
+        $('#fpass').val(password);
+
+    }
 }
 
 // REF: http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml

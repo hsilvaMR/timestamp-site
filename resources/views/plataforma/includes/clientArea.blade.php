@@ -225,8 +225,9 @@
                 </div>
                 {{--  items | encerrar sessão   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item  btnLogout">
                         {{trans('areaClientWords.encerrar')}}
+                        <input type="hidden" id="routeID" value="{{route('logout')}}">
                     </div>
                     <div class="p-2 bd-highlight">
                         <i class="fas ms-5 fa-chevron-right"></i>
@@ -413,7 +414,8 @@
                 </div>
                 {{--  items | encerrar sessão   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item  btnLogout">
+                         <input type="hidden" id="routeID" value="{{route('logout')}}">
                         {{trans('areaClientWords.encerrar')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -542,7 +544,8 @@
             </div>
             {{--  items | encerrar sessão   --}}
             <div class="d-flex bd-highlight border-bottom ">
-                <div class="me-auto p-2 bd-highlight item ">
+                <div class="me-auto p-2 bd-highlight item  btnLogout">
+                    <input type="hidden" id="routeID" value="{{route('logout')}}">
                     {{trans('areaClientWords.encerrar')}}
                 </div>
                 <div class="p-2 bd-highlight">
@@ -714,7 +717,8 @@
                 </div>
                 {{--  items | encerrar sessão   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item btnLogout">
+                        <input type="hidden" id="routeID" value="{{route('logout')}}">
                         {{trans('areaClientWords.encerrar')}}
                     </div>
                     <div class="p-2 bd-highlight">
@@ -844,7 +848,8 @@
                 </div>
                 {{--  items | encerrar sessão   --}}
                 <div class="d-flex bd-highlight border-bottom ">
-                    <div class="me-auto p-2 bd-highlight item ">
+                    <div class="me-auto p-2 bd-highlight item  btnLogout">
+                        <input type="hidden" id="routeID" value="{{route('logout')}}">
                         {{trans('areaClientWords.encerrar')}}
                     </div>
                     <div class="p-2 bd-highlight">

@@ -5,6 +5,8 @@ namespace App\Http\Middleware;
 use Closure;
 use Facade\FlareClient\Http\Response;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
 // use App\Http\Controllers\plataforma\LoginPFM_Controller;
 
 class LoginMiddleware
@@ -21,32 +23,16 @@ class LoginMiddleware
     public function handle(Request $request, Closure $next)
     {
 
+        //if ($request->session()->has('nome') && $request->session()->has('email')) {
+        if (Session::get("email") != null  && Session::get("nome") != null) {
 
-        /*  session_start();
-        if (isset($_SESSION['nome']) && $_SESSION['nome'] != "") {
             return $next($request);
+
         } else {
 
-            return redirect()->route('box-login');
+            //return redirect()->route('box-login');
+
+            return Redirect::route("box-login");
         }
- */
-        if ($request->session()->has('nome') && $request->session()->has('email')) {
-
-            return $next($request);
-        } else {
-            return redirect()->route('box-login');
-        }
-        // $this->login = new LoginPFM_Controller;
-
-        /*if (($this->login->login($request) == "sucess")) {
-
-            return $next($request);
-        } else {
-            return Response(" invalido Login ");
-        }*/
-
-        // dd($request);
-
-        //return Response(" test de Middleware ");
     }
 }
