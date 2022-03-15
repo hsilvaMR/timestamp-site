@@ -96,11 +96,11 @@
                         {{-- TERMOS --}}
                         <div class="p-2 bd-highlight  fields-font box-termos">
                             {{-- politica de privacidade   Li e aceito a "Politica de privacidade --}}
-                            <input type="radio" id="RBprivacit" name="typeTermo" value="termo">
+                            <input type="checkbox" id="RBprivacit" name="typeTermo" value="termo">
                             <label for="RBprivacit">Li e aceito a Politica de privacidade</label><br>
 
                             {{-- descontos --}}
-                            <input type="radio" id="RBdescontos" name="typeTermo" value="desconto">
+                            <input type="checkbox" id="RBdescontos" name="typeTermo" value="desconto">
                             <label for="RBdescontos">Deseja receber os melhores descontos?</label>
                         </div>
 
